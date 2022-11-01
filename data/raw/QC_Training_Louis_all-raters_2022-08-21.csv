@@ -1,0 +1,150 @@
+Case_127,louis,Pass,
+Case_141,louis,Fail,"catastrophic failure! overall too small; dura/marrow inside of contour"
+Case_40,louis,Fail,x-rot error; cerebellum is too high vis-a-vis contour
+Case_62,louis,Fail,"zscale too small; MRI does not meet contour at apex"
+Case_27,louis,Pass,
+Case_104,louis,Fail,"x-rot error; orbitofrontal contour cutting through eye"
+Case_20,louis,Fail,"catastrophic failure!"
+Case_95,louis,Pass,
+Case_97,louis,Pass,
+Case_72,louis,Fail,"overall too smal - mostly by z-scale; dura/marrow inside of contour"
+Case_103,louis,Fail,"x-scale too small; cortex does not meet contour."
+Case_142,louis,Fail,"z-scale too big; apex of brain outside of contour"
+Case_107,louis,Pass,
+Case_126,louis,Fail,"this one should be/could be warning or pass.  The cerebrum fits well.  The cerebellum is unusually large, and thus a linear fit can't do the job.  So, if QC of cerebrum fit-> Pass and if whole brain->FAIL. (can you note this real id of this subject?)"
+Case_90,louis,Pass,
+Case_71,louis,Pass,
+Case_17,louis,Fail,oddly shaped head; strong occipital patelia. not clear that a better linear reg is possible. borderline case... could be pass or fail.
+Case_53,louis,Fail,"x-rot (around LR axis) error; cerebellum too high compared to contour"
+Case_105,louis,Pass,
+Case_112,louis,Pass,
+Case_37,louis,Fail,"slight x-rot (around LR axis) error; orbitofrontal contour cutting through eye; zscale could be a slight bit larger"
+Case_125,louis,Fail,"catastrophic failure!"
+Case_2,louis,Fail,"zscale off + y-scale (AP) too small; occipital tissue does not match contour"
+Case_30,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_110,louis,Pass,terrible intensity inhomogeneity
+Case_36,louis,Pass,
+Case_114,louis,Fail,overall too small; dura/marrow/scalp inside of contour
+Case_23,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye; yscale could be a bit smaller."
+Case_55,louis,Fail,"y-scale (AP) and perhap z-scale too small; occipital tissue does not match contour"
+Case_108,louis,Pass,zscale is a bit big
+Case_12,louis,Fail,"y-scale (AP) too big; occipital tissue outside of contour; intensity issue"
+Case_39,louis,Pass,
+Case_150,louis,Pass,"z-scale could be bigger, but will pass for me."
+Case_44,louis,Fail,zscale error; (may x-rot as well) cerebellum is too high vis-a-vis contour
+Case_54,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_143,louis,Fail,"x-scale (LR direction) too small; (and maybe zscale) cortex does not meet contour."
+Case_31,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_60,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_77,louis,Fail,"y-scale (AP) too small; occipital tissue does not match contour"
+Case_51,louis,Fail,"x-rot (around LR axis) error; cerebellum too high compared to contour; orbitofrontal contour cutting through eye fat"
+Case_147,louis,Fail,"y-scale (AP) too big; x-rot issue; occipital tissue outside of contour"
+Case_19,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_100,louis,Fail,z-scale too big; apex of brain outside of contour
+Case_92,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_70,louis,Pass,
+Case_131,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye; y scale might be a bit small"
+Case_128,louis,Pass,
+Case_82,louis,Fail,"z-scale too big; apex of brain outside of contour"
+Case_45,louis,Pass,
+Case_91,louis,Fail,"y-scale (AP) too small (and maybe zscale); pareital/occipital tissue does not match contour"
+Case_85,louis,Pass,
+Case_15,louis,Pass,
+Case_118,louis,Fail,zscale too small; MRI does not meet contour at apex
+Case_8,louis,Fail,"catastrophic failure!"
+Case_25,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_102,louis,Fail,"overall too small; dura/marrow inside of contour; ztrans error; overall fail!!"
+Case_3,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye; yscale slightly too big"
+Case_73,louis,Fail,"x-rot (around LR axis) error; cerebellum/tentorium contour mismatch"
+Case_115,louis,Pass,
+Case_138,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_113,louis,Fail,bad intensity; all around scale is too small
+Case_86,louis,Pass,
+Case_134,louis,Fail,"zscale too small; MRI does not meet contour at apex; extremely bright thick scalp"
+Case_79,louis,Pass,
+Case_83,louis,Fail,"y-scale (AP) too big; frontal pole outside of contour"
+Case_98,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_117,louis,Fail,zscale too small; MRI does not meet contour at apex
+Case_88,louis,Fail,"catastrophic failure! scalings are too small"
+Case_137,louis,Fail,"y-scale (AP) too big; occipital tissue outside of contour"
+Case_130,louis,Pass,
+Case_123,louis,Fail,"z-scale too big; apex of brain outside of contour"
+Case_56,louis,Fail,"y-scale (AP) too small; occipital tissue does not match contour; x-rot (around LR axis) error; cerebellum contour mismatch"
+Case_76,louis,Fail,"x-rot (around LR axis) error; cerebellum/tentorium contour mismatch"
+Case_96,louis,Fail,"zscale too small; MRI does not meet contour at apex"
+Case_22,louis,Pass,
+Case_65,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_94,louis,Pass,my bad; this one looks good; I've changed it from FAIL to PASS
+Case_139,louis,Fail,"z-scale too big; apex of brain outside of contour"
+Case_64,louis,Fail,odd asymmetric brain w large ventricles; zsscale too big (frontal contour mismatch)
+Case_101,louis,Fail,overall too small; dura/marrow inside of contour
+Case_10,louis,Fail,y-scale (AP) too small; occipital tissue does not match contour
+Case_136,louis,Pass,
+Case_33,louis,Pass,this one was perfect; my bad!  changed to PASS!
+Case_66,louis,Fail,z-scale too big; apex of brain outside of contour; base of cerebellum outside contour
+Case_78,louis,Fail,"y-scale (AP) too small; xrot error ; occipital tissue does not match contour; cerebellum mismatch"
+Case_11,louis,Fail,
+Case_148,louis,Fail,"zscale too small; xscale too small; MRI does not meet contour at apex"
+Case_89,louis,Pass,
+Case_28,louis,Pass,
+Case_120,louis,Fail,"y-scale (AP) too big; frontal tissue outside of contour"
+Case_16,louis,Fail,"odd head shape; back of head is flat; looks like an error of y-scale; this is borderline fail/borderline pass."
+Case_46,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_146,louis,Fail,"catastrophic failure!"
+Case_135,louis,Fail,"catastrophic failure!"
+Case_29,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_132,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_93,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_67,louis,Pass,
+Case_21,louis,Fail,"x-scale (LR direction) too big; cortex outside of contour. x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_41,louis,Fail,x-rot error; cerebellum is too high vis-a-vis contour
+Case_75,louis,Fail,"zscale and y-scale (AP) too small; occipital tissue does not match contour"
+Case_140,louis,Pass,
+Case_61,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_35,louis,Pass,
+Case_48,louis,Fail,"x-rot (around LR axis) error; probably z-trans and z-scale issue as well; orbitofrontal contour cutting through eye"
+Case_116,louis,Pass,
+Case_49,louis,Pass,
+Case_43,louis,Fail,x-rot error; cerebellum is too high vis-a-vis contour and orbitofrontal mis-match
+Case_74,louis,Pass,
+Case_58,louis,Pass,
+Case_144,louis,Fail,"y-scale (AP) too big; occipital tissue outside of contour"
+Case_149,louis,Fail,cerebrum fits well; cerebellum would be better with a slight change in x-rot + slight increase in z-scale.
+Case_122,louis,Pass,
+Case_121,louis,Fail,catastrophic failure!
+Case_63,louis,Pass,
+Case_106,louis,Pass,"asymmetric brain, but pass stx reg"
+Case_52,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye fat"
+Case_68,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_87,louis,Fail,"catastrophic failure! x-rot (around LR axis) error; cerebellum/tentorium contour mismatch; xscale too big"
+Case_5,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through tissue"
+Case_18,louis,Fail,x-rot (around LR axis) error; cerebellum not included well within contour.
+Case_99,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_119,louis,Fail,"x-rot error; orbitofrontal contour cutting through eye"
+Case_50,louis,Fail,"x-rot (around LR axis) error; and yscale error; orbitofrontal contour cutting through eye fat"
+Case_38,louis,Fail,"catastrophic failure!"
+Case_34,louis,Pass,
+Case_81,louis,Fail,"y-scale (AP) too big; xrot error ; occipital tissue does not match contour; cerebellum mismatch"
+Case_24,louis,Pass,
+Case_13,louis,Fail,"zscale slightly too small; MRI does not meet contour at apex; intensity issues"
+Case_57,louis,Fail,"x-rot (around LR axis) error; cerebellum contour mismatch; y-scale (AP) too small; occipital tissue does not match contour"
+Case_69,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_7,louis,Fail,yscale and zscale too small at frontal lobe; x-scale too small
+Case_145,louis,Fail,"catastrophic failure!"
+Case_129,louis,Fail,"y-scale (AP) too big; occipital & frontal tissue outside of contour; intensity issue"
+Case_26,louis,Fail,"x-rot (around LR axis) error; orbitofrontal contour cutting through eye"
+Case_84,louis,Fail,"catastrophic failure!"
+Case_133,louis,Fail,"catastrophic failure!"
+Case_9,louis,Pass,
+Case_32,louis,Fail,"overall too small; dura/marrow inside of contour"
+Case_80,louis,Pass,
+Case_42,louis,Fail,x-rot error; cerebellum is too high vis-a-vis contour and orbitofrontal mis-match
+Case_4,louis,Pass,
+Case_1,louis,Fail,"x-rot error; orbitofrontal contour cutting through eye"
+Case_47,louis,Fail,"y-scale (AP) too big; occipital tissue outside of contour"
+Case_14,louis,Pass,this should be a pass; my bad!
+Case_111,louis,Pass,asymmetric brain
+Case_124,louis,Pass,
+Case_59,louis,Fail,x-rot (around LR axis) error; cerebellum contour mismatch
+Case_109,louis,Pass,terrible intensity inhomogeneity
+Case_6,louis,Fail,x-rot (around LR axis) error; cerebellum/tentorium contour mismatch
