@@ -9,6 +9,8 @@ library("readr")
 # Read raw data
 rater1_1 <- fread(here("data/raw/Acquisition99_v2_all-raters_2022-09-23.csv"))
 rater1_2 <- fread(here("data/raw/Acquisition99_v2_louis_2022-10-28.csv"))
+rater1_c <- fread(here("data/raw/Acquisition99_v2_louis_consensus.csv"),
+                  header = FALSE)
 
 # Remove extra cols
 rater1_2[, `:=`(V3 = NULL, V4 = NULL, V5 = NULL)]
@@ -16,28 +18,31 @@ rater1_2[, `:=`(V3 = NULL, V4 = NULL, V5 = NULL)]
 # Change colnames
 setnames(rater1_1, c("Image", "Rating", "Rater", "Comment", "Time"))
 setnames(rater1_2, c("Image", "Rating", "Rater", "Comment", "Time"))
+setnames(rater1_c, c("Image", "Rating", "Comment"))
 
 # Assign Session No
-rater1_1[, Session := 1]
-rater1_2[, Session := 2]
+rater1_1[, Session := "First"]
+rater1_2[, Session := "Second"]
+rater1_c[, Session := "Consensus"]
 
 # Join two timepoints
-rater1 <- rbindlist(list(rater1_1, rater1_2), use.names = TRUE)
-rm(rater1_1, rater1_2)
+rater1 <- rbindlist(list(rater1_1, rater1_2, rater1_c),
+                    use.names = TRUE, fill = TRUE)
+rm(rater1_1, rater1_2, rater1_c)
 
 # Rename Rater1
 rater1[, Rater := "Rater01"]
 
 # Timing
 setorder(rater1, cols = "Time")
-rater1[!is.na(Time) & Session == 1, Diff := Time - shift(Time)]
-rater1[!is.na(Time) & Session == 2, Diff := Time - shift(Time)]
+rater1[!is.na(Time) & Session == "First", Diff := Time - shift(Time)]
+rater1[!is.na(Time) & Session == "Second", Diff := Time - shift(Time)]
 
 ## Rater 2-10
 # Read raw data
 raters2_10 <- fread(here("data/raw/T1_Final_Recoded_all-raters_2022-04-05.csv"))
 setnames(raters2_10, c("Image", "Rater", "Rating", "Comment", "Time"))
-raters2_10[, Session := 1]
+raters2_10[, Session := NA]
 
 # Check numbers
 # raters2_10[, .N, by = Rater]
@@ -75,6 +80,19 @@ acq_99[, Image := purrr::map_chr(
   stringr::str_split(Image, "_"),
   ~ paste(.[[1]], sprintf("%02d", as.integer(.[[2]])), sep = "_")
 )]
+
+# Matrix of comments
+setorder(acq_99, cols = "Rater")
+acq_99_comments <- acq_99[
+  (!Session %in% c("First", "Second")) & Image %in% acq_99[
+    Session == "Consensus" & Rating == "Fail", Image],
+  .(Image, Rater, Comment)] %>%
+    dcast(Image ~ Rater, value.var = "Comment")
+#acq_99_comments[1]
+
+## TSV
+write_delim(acq_99_comments, here("data/derivatives/acq_99_comments.csv"),
+            delim = "\t")
 
 # Write RDS objects
 write_rds(acq_99, here("data/derivatives/acquisition_99_dt.rds"))

@@ -9,41 +9,31 @@ library("ggplot2")
 
 ## Acquisition 99 / ADNI
 # Data.table 99
-fnames <- c("acquisition_99_dt.rds", "rater1_dt.rds")
-fpaths <- here("data/derivatives", fnames)
+fname <- "acquisition_99_dt.rds"
+fpath <- here("data/derivatives", fname)
 
-if (!file.exists(fpaths[[1]])) {
+if (!file.exists(fpath)) {
   source(here("scripts/data_acquisition99.R"))
 } else {
-  acq_99 <- read_rds(fpaths[[1]])
-  rater1 <- read_rds(fpaths[[2]])
+  acq_99 <- read_rds(fpath)
 }
 
-rm(fnames, fpaths)
+rm(fname, fpath)
 
-acq_99 <- acq_99[!Rater == "Rater01", .(Image, Rater, Rating, Diff)]
-trainees <- acq_99[Diff < duration(15, "minutes"),
-  .(.N, Time = Diff, Dataset = "Training"), by = .(Rater, Rating)]
+acq_99[Session == "First" & Rater == "Rater01", Rater := "Rater01_1"]
+acq_99[Session == "Second" & Rater == "Rater01", Rater := "Rater01_2"]
+acq_99 <- acq_99[Rater != "Rater01"]
 
-expert <- rater1[Rater == "Rater01_1", Rater := "Rater01"][
-  Diff < duration(15, "minutes") & Rater == "Rater01",
-  .(.N, Time = Diff, Dataset = "Training Dataset"),
-  by = .(Rater, Rating)]
+acq_99_N <- acq_99[, .N, by = .(Rater, Rating)]
+acq_99_N[, .(X = mean(N), SD = sd(N)), by = Rating]
 
-time_99 <- rbindlist(list(expert, trainees))
+acq_99_time <- acq_99[Diff < duration(15, "minutes"),
+  .(Image, Rater = as.character(Rater), Rating, Diff,
+    Dataset = "Training", Task = "Acquisition")]
 
-ggplot(time_99, aes(x = Rating, y = Time, fill = Rating)) +
-  geom_boxplot() +
-  facet_wrap(. ~ Rater, scales = "free", nrow = 10, ) +
-  coord_flip() +
-  labs(title = "Training Dataset", y = "Time (s)") +
-  scale_fill_manual(values = c("darkred", "darkgreen")) +
-  theme_linedraw() +
-  theme(text = element_text(size = 16),
-    legend.position = "none")
-
-ggsave(here("plots/time_99.png"), width = 7, height = 14)
-
+acq_99_time[, .(X = median(Diff), SD = sd(Diff)), by = .(Rater, Rating)]
+acq_99_time[, .(X = median(Diff), SD = sd(Diff)),
+            by = .(Rater, Rating)][, .(X = mean(X), SD = sd(X)), by = Rating]
 
 # Data.table ADNI
 fpath <- here("data/derivatives/acquisition_dt.rds")
@@ -56,97 +46,223 @@ if (!file.exists(fpath)) {
 
 rm(fpath)
 
-acquis$Rating <- factor(acquis$Rating, levels = c("Fail", "Warning", "Pass"))
-adni <- acquis[,
-  .(.N, Time = Diff, Dataset = "Full Dataset"),
-  by = .(Rater, Rating)]
+acquis_N <- acquis[, .N, by = .(Rater, Rating)]
+acquis_N[, .(X = mean(N), SD = sd(N)), by = Rating]
 
-# Table
-setorder(acq_99, Rater)
-acq_99 <- acq_99[!Rater == "Rater01", .(Image, Rater, Rating, Diff)]
-trainees_99_prop <- acq_99[, .N, by = .(Rater, Rating)]
-trainees_99_time <- acq_99[Diff < duration(15, "minutes"),
-  .(.N, Time = mean(Diff), SD = format(sd(Diff), scientific = FALSE)),
-  by = .(Rater, Rating)]
-trainees_99 <- trainees_99_prop[trainees_99_time, on = .(Rater, Rating)]
+acquis_time <- acquis[Diff < duration(15, "minutes"),
+  .(Image, Rater = as.character(Rater), Rating, Diff,
+    Dataset = "Full", Task = "Acquisition")]
 
-expert_99_prop <- rater1[Rater == "Rater01", .N, by = .(Rater, Rating)]
-expert_99_time <- rater1[Diff < duration(15, "minutes") & Rater == "Rater01",
-  .(.N, Time = mean(Diff), SD = format(sd(Diff), scientific = FALSE)),
-  by = .(Rater, Rating)]
-expert_99 <- expert_99_prop[expert_99_time, on = .(Rater, Rating)]
+acquis_time[, .(X = median(Diff), SD = sd(Diff)), by = .(Rater, Rating)]
+acquis_time[, .(X = median(Diff), SD = sd(Diff)),
+            by = .(Rater, Rating)][, .(X = mean(X), SD = sd(X)), by = Rating]
 
-time_99 <- rbindlist(list(expert_99, trainees_99))
-write_csv(time_99, here("data/derivatives/timing_99.csv"))
+## Registration 99 / ADNI
+# Data.table 99
+fpath <- here("data/derivatives/registration_99_dt.rds")
 
-setorder(acquis, Rater)
-table_adni_prop <- acquis[, .N, by = .(Rater, Rating)]
-table_adni_time <- acquis[Diff < duration(15, "minutes"),
-  .(.N, Time = mean(Diff), SD = format(sd(Diff), scientific = FALSE)),
-  by = .(Rater, Rating)]
+if (!file.exists(fpath)) {
+  source(here("scripts/data_registration99.R"))
+} else {
+  reg_99 <- read_rds(fpath)
+}
 
-table_adni <- table_adni_prop[table_adni_time, on = .(Rater, Rating)]
-write_csv(table_adni, here("data/derivatives/timing_adni.csv"))
+rm(fpath)
 
-# Plot
-ggplot(adni, aes(x = Rating, y = Time, fill = Rating)) +
-  geom_boxplot() +
-  facet_wrap(. ~ Rater, scales = "free", nrow = 7, ) +
+reg_99[Session == "First" & Rater == "Rater01", Rater := "Rater01_1"]
+reg_99[Session == "Second" & Rater == "Rater01", Rater := "Rater01_2"]
+reg_99 <- reg_99[Rater != "Rater01"]
+
+reg_99_N <- reg_99[, .N, by = .(Rater, Rating)]
+reg_99_N[, .(X = mean(N), SD = sd(N)), by = Rating]
+
+reg_99_time <- reg_99[Diff < duration(15, "minutes"),
+  .(Image, Rater = as.character(Rater), Rating, Diff,
+    Dataset = "Training", Task = "Registration")]
+
+reg_99_time[, .(X = median(Diff), SD = sd(Diff)), by = .(Rater, Rating)]
+reg_99_time[, .(X = median(Diff), SD = sd(Diff)),
+            by = .(Rater, Rating)][, .(X = mean(X), SD = sd(X)), by = Rating]
+
+# Data.table ADNI
+fpath <- here("data/derivatives/registration_dt.rds")
+
+if (!file.exists(fpath)) {
+  source(here("scripts/data_registration.R"))
+} else {
+  regis <- read_rds(fpath)
+}
+
+rm(fpath)
+
+regis_N <- regis[, .N, by = .(Rater, Rating)]
+regis_N[, .(X = mean(N), SD = sd(N)), by = Rating]
+
+regis_time <- regis[Diff < duration(15, "minutes"),
+  .(Image, Rater = as.character(Rater), Rating, Diff,
+    Dataset = "Full", Task = "Registration")]
+
+regis_time[, .(X = median(Diff), SD = sd(Diff)), by = .(Rater, Rating)]
+regis_time[, .(X = median(Diff), SD = sd(Diff)),
+           by = .(Rater, Rating)][, .(X = mean(X), SD = sd(X)), by = Rating]
+
+## Merge datasets
+time <- rbindlist(list(acq_99_time, acquis_time, reg_99_time, regis_time))
+time[, Rating := factor(Rating, levels = c("Pass", "Warning", "Fail"))]
+time[, Dataset := factor(Dataset, levels = c("Training", "Full"))]
+
+# Acq99 time between expert sessions
+acq_99_time[startsWith(Rater, "Rater01"), median(Diff), by = Rater]
+wilcox.test(acq_99_time[Rater == "Rater01_1", as.numeric(Diff)],
+            acq_99_time[Rater == "Rater01_2", as.numeric(Diff)])
+
+# Acq99 time between ratings (with expert):
+acq_99_time[, median(Diff), by = Rating]
+wilcox.test(acq_99_time[Rating == "Pass", as.numeric(Diff)],
+            acq_99_time[Rating == "Fail", as.numeric(Diff)])
+
+# Acq99 time between ratings (only trainees):
+acq_99_time[!startsWith(Rater, "Rater01"), median(Diff), by = Rating]
+
+wilcox.test(acq_99_time[(!startsWith(Rater, "Rater01")) & Rating == "Pass",
+            as.numeric(Diff)],
+            acq_99_time[(!startsWith(Rater, "Rater01")) & Rating == "Fail",
+            as.numeric(Diff)])
+
+# Acq99 expert sessions
+acq_99_time[startsWith(Rater, "Rater01"), median(Diff), by = Rater]
+wilcox.test(acq_99_time[Rater == "Rater01_1", as.numeric(Diff)],
+            acq_99_time[Rater == "Rater01_2", as.numeric(Diff)])
+
+# adni acquisition time between ratings:
+acquis_time[, median(Diff), by = Rating]
+kruskal.test(acquis_time[, .(Diff, Rating)])
+
+# ADNI vs training (Expert only)
+acq_99_time[startsWith(Rater, "Rater01"), median(Diff)]
+acquis_time[Rater == "Rater01", median(Diff)]
+wilcox.test(acq_99_time[startsWith(Rater, "Rater01"), as.numeric(Diff)],
+            acquis_time[Rater == "Rater01", as.numeric(Diff)])
+
+# ADNI vs training
+raters_adni <- acquis_time[, unique(Rater)]
+acq_99_time[Rater %in% raters_adni, median(Diff)]
+acquis_time[, median(Diff)]
+
+wilcox.test(acq_99_time[Rater %in% raters_adni, as.numeric(Diff)],
+            acquis_time[, as.numeric(Diff)])
+
+# Acq99 time between expert sessions
+reg_99_time[startsWith(Rater, "Rater01"), median(Diff), by = Rater]
+wilcox.test(reg_99_time[Rater == "Rater01_1", as.numeric(Diff)],
+            reg_99_time[Rater == "Rater01_2", as.numeric(Diff)])
+
+# Reg99 time between ratings (with expert):
+reg_99_time[, median(Diff), by = Rating]
+wilcox.test(reg_99_time[Rating == "Pass", as.numeric(Diff)],
+            reg_99_time[Rating == "Fail", as.numeric(Diff)])
+
+# Reg99 time between ratings (only trainees):
+reg_99_time[!startsWith(Rater, "Rater01"), median(Diff), by = Rating]
+wilcox.test(reg_99_time[(!startsWith(Rater, "Rater01")) & Rating == "Pass",
+                        as.numeric(Diff)],
+            reg_99_time[(!startsWith(Rater, "Rater01")) & Rating == "Fail",
+                        as.numeric(Diff)])
+
+# Reg99 expert sessions
+reg_99_time[startsWith(Rater, "Rater01"), median(Diff), by = Rater]
+wilcox.test(reg_99_time[Rater == "Rater01_1", as.numeric(Diff)],
+            reg_99_time[Rater == "Rater01_2", as.numeric(Diff)])
+
+# adni acquisition time between ratings:
+regis_time[, median(Diff), by = Rating]
+wilcox.test(regis_time[Rating == "Pass", as.numeric(Diff)],
+            regis_time[Rating == "Fail", as.numeric(Diff)])
+
+# ADNI vs training
+raters_adni <- regis_time[, unique(Rater)]
+reg_99_time[Rater %in% raters_adni, median(Diff)]
+regis_time[, median(Diff)]
+
+wilcox.test(reg_99_time[Rater %in% raters_adni, as.numeric(Diff)],
+            regis_time[, as.numeric(Diff)])
+
+
+## Plots
+# Clean acq99
+q25 <- quantile(acq_99_time[, Diff], 0.25)
+q75 <- quantile(acq_99_time[, Diff], 0.75)
+time[Dataset == "Training" & Task == "Acquisition",
+     plot := Diff < q75 + 3 * (q75 - q25)]
+
+# Clean acquis
+q25 <- quantile(acquis_time[, Diff], 0.25)
+q75 <- quantile(acquis_time[, Diff], 0.75)
+time[Dataset == "Full" & Task == "Acquisition",
+     plot := Diff < q75 + 3 * (q75 - q25)]
+
+
+ggplot(time[Task == "Acquisition" & plot == T],
+       aes(x = Rater, y= Diff, fill = Rating)) +
+  geom_boxplot(outlier.shape = NA) +
   coord_flip() +
-  scale_fill_manual(values = c("darkred", "yellow", "darkgreen")) +
-  labs(title = "Full Dataset", y = "Time (s)") +
+  facet_wrap(. ~ Dataset, scales = "free") +
+  labs(y = "Time (s)", title = "Task: Raw acquisition QC") +
+  scale_fill_manual(values = c("darkgreen", "yellow3", "darkred")) +
   theme_linedraw() +
-  theme(text = element_text(size = 16),
-    legend.position = "top")
+  theme(text = element_text(size = 21), legend.position = "bottom")
 
-ggsave(here("plots/time_adni.png"), width = 7, height = 14)
+ggsave(here("plots/time_acquisition.png"), width = 12, height = 15)
 
+# Clean reg99
+q25 <- quantile(reg_99_time[, Diff], 0.25)
+q75 <- quantile(reg_99_time[, Diff], 0.75)
+time[Dataset == "Training" & Task == "Registration",
+     plot := Diff < q75 + 3 * (q75 - q25)]
+
+q25 <- quantile(regis_time[, Diff], 0.25)
+q75 <- quantile(regis_time[, Diff], 0.75)
+time[Dataset == "Full" & Task == "Registration",
+     plot := Diff < q75 + 3 * (q75 - q25)]
+
+ggplot(time[Task == "Registration" & plot == T],
+       aes(x = Rater, y= Diff, fill = Rating)) +
+  geom_boxplot(outlier.shape = NA) +
+  coord_flip() +
+  facet_wrap(. ~ Dataset, scales = "free") +
+  labs(y = "Time (s)", title = "Task: Linear registration QC") +
+  scale_fill_manual(values = c("darkgreen", "darkred")) +
+  theme_linedraw() +
+  theme(text = element_text(size = 21), legend.position = "bottom")
+
+ggsave(here("plots/time_registration.png"), width = 12, height = 15)
 
 ## Registration and Segmentation
 # Data.table
-fnames <- c("registration_dt.rds", "segmentation_dt.rds")
-fpaths <- here("data/derivatives", fnames)
+fname <- "segmentation_dt.rds"
+fpath <- here("data/derivatives", fname)
 
-if (!file.exists(fpaths[[1]])) {
-  source(here("scripts/data_registration.R"))
-} else {
-  regist <- read_rds(fpaths[[1]])
-}
-
-if (!file.exists(fpaths[[2]])) {
+if (!file.exists(fpath)) {
   source(here("scripts/data_segmentation.R"))
 } else {
-  rskull <- read_rds(fpaths[[2]])
+  rskull <- read_rds(fpath)
 }
 
-rm(fnames, fpaths)
-
-# Plot
-q25 <- quantile(rater1[Rater == "Rater01", Diff], 0.25, na.rm = TRUE)
-q75 <- quantile(rater1[Rater == "Rater01", Diff], 0.75, na.rm = TRUE)
-set1 <- rater1[Rater == "Rater01" , .(Rater, Rating, Diff, Dataset = "Acquisition")]
-set1_r <- set1[Diff < q75 + 3 * (q75 - q25)]
-
-q25 <- quantile(regist[, Diff], 0.25, na.rm = TRUE)
-q75 <- quantile(regist[, Diff], 0.75, na.rm = TRUE)
-set2 <- regist[, .(Rater, Rating, Diff, Dataset = "Registration")]
-set2_r <- set2[Diff < q75 + 3 * (q75 - q25)]
+rm(fname, fpath)
 
 q25 <- quantile(rskull[, Diff], 0.25, na.rm = TRUE)
 q75 <- quantile(rskull[, Diff], 0.75, na.rm = TRUE)
-set3 <- rskull[, .(Rater, Rating, Diff, Dataset = "Segmentation")]
-set3_r <- set3[Diff < q75 + 3 * (q75 - q25)]
+rskull[, plot := Diff < q75 + 3 * (q75 - q25)]
 
-datasets <- rbindlist(list(set1_r, set2_r, set3_r))
-ggplot(datasets,
-  aes(x = Rater, y = Diff)) +
-  geom_violin(aes(fill = Rating), trim = F, alpha = .5) +
-  geom_boxplot(aes(colour = Rating), position = position_dodge(width = 0.9),
-               width = 0.2, outlier.shape = NA, alpha = .5) +
-  facet_wrap(. ~ Dataset, scales = "free", nrow = 1, ) +
-  labs(y = "Time (s)") +
-  scale_fill_manual(values = c("darkred", "darkgreen", "yellow")) +
-  scale_colour_manual(values = c("darkred", "darkgreen", "yellow4")) +
+ggplot(rskull[plot == T], aes(x = Rater, y = Diff, fill = Rating)) +
+  #geom_violin(aes(fill = Rating), trim = F, alpha = .5) +
+  #geom_boxplot(aes(colour = Rating), position = position_dodge(width = 0.9),
+               #width = 0.2, outlier.shape = NA, alpha = .5) +
+  geom_boxplot(outlier.shape = NA) +
+  coord_flip() +
+  labs(y = "Time (s)", title = "Task: Skull segmentation QC") +
+  scale_fill_manual(values = c("darkred", "darkgreen")) +
+  scale_colour_manual(values = c("darkred", "darkgreen")) +
 theme_linedraw() +
 theme(text = element_text(size = 18))
-ggsave(here("plots/time_experts.png"), width = 8, height = 5)
+ggsave(here("plots/time_segmentation.png"), width = 8, height = 5)
