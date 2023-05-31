@@ -17,7 +17,7 @@ acquis <- rbindlist(list(acquis1, acquis), use.names = TRUE)
 
 # Codify raters
 acquis <- acquis[(! Rater %in% c("Mahdiye", "Mahsa")) & Rating != "Pending"]
-rater_codes <- sprintf("Rater%02d", 1:8)
+rater_codes <- c("Expert01", sprintf("Rater%02d", 1:7))
 rater_usernames <- c("louis", "Sofia", "reza", "Neda", "vmadge",
                      "alexliv", "dandrews.qrater", "estonge")
 

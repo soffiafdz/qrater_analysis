@@ -39,8 +39,9 @@ setorder(regis, cols = "Timestamp")
 for (i in seq_along(raters_names)) {
   rater <- raters_names[[i]]
   print(rater)
-  regis[Rater == rater, `:=`(Rater = sprintf("Rater%02d", i + 1),
-                             Diff = Timestamp - shift(Timestamp))]
+  regis[Rater == rater,
+        `:=`(Rater = sprintf("Rater%02d", i),
+             Diff = Timestamp - shift(Timestamp))]
 }
 rm(i, rater)
 rm(raters_names)

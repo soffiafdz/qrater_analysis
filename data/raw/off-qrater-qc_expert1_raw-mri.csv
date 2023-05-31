@@ -1,0 +1,100 @@
+Image,QC,Comment
+Case_01,pass,
+Case_10,pass,
+Case_11,fail,
+Case_12,pass,
+Case_13,pass,
+Case_14,pass,
+Case_15,fail,slight rigning
+Case_16,fail,
+Case_17,pass,
+Case_18,pass,
+Case_19,pass,
+Case_02,pass,
+Case_20,pass,
+Case_21,fail,cerebellum
+Case_22,fail,occi pole
+Case_23,pass,
+Case_24,fail,extreme reduced intensity range + rigning
+Case_25,pass,slight rigning
+Case_26,pass,
+Case_27,fail ,occi pole
+Case_28,fail ,occi pole
+Case_29,pass,
+Case_03,fail ,occi pole
+Case_30,fail,slight rigning
+Case_31,pass,
+Case_32,pass,
+Case_33,fail,occi pole
+Case_34,pass,OBO left occi pole (v4)
+Case_35,fail,cerebellum
+Case_36,pass,
+Case_37,pass,slight rigning
+Case_38,pass,
+Case_39,pass,
+Case_04,fail,occi pole
+Case_40,pass,slight rigning
+Case_41,pass,
+Case_42,pass,
+Case_43,fail,cerebellum
+Case_44,fail,occi pole
+Case_45,pass`,repeat of prev!
+Case_46,pass,obo frontal midline
+Case_47,pass,
+Case_48,pass,slight rigning
+Case_49,pass,slight rigning
+Case_05,pass,
+Case_50,pass,
+Case_51,pass,cerebellum
+Case_52,pass,
+Case_53,fail,cerebellum
+Case_54,pass,slight rigning
+Case_55,fail,slight rigning
+Case_56,pass,slight rigning
+Case_57,pass,cerebellum
+Case_58,pass,
+Case_59,fail,ringing
+Case_06,pass,
+Case_60,pass,
+Case_61,pass,repeat of prev!
+Case_62,pass,
+Case_63,fail,ringing
+Case_64,pass,
+Case_65,pass,greatly reduced dynamic range
+Case_66,pass,
+Case_67,pass,
+Case_68,pass,
+Case_69,pass,
+Case_07,pass,cerebellum
+Case_70,pass,
+Case_71,pass,
+Case_72,pass,
+Case_73,pass,
+Case_74,pass,greatly reduced dynamic range
+Case_75,pass,
+Case_76,pass,
+Case_77,pass,
+Case_78,pass,
+Case_79,fail,susceptibility artefact dental left
+Case_08,pass,
+Case_80,fail,top+bottom cut
+Case_81,fail,eye movement into orbitofrontal�
+Case_82,fail,odd intensity artefact occi coronal slices
+Case_83,pass,
+Case_84,pass,
+Case_85,pass,
+Case_86,pass,
+Case_87,pass,
+Case_88,fail,movement noise
+Case_89,pass,
+Case_09,pass,
+Case_90,pass,done� 63 timer completed.
+Case_91,,
+Case_92,,
+Case_93,,
+Case_94,,
+Case_95,,
+Case_96,,
+Case_97,,
+Case_98,,
+Case_99,,

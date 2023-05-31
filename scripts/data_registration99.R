@@ -8,50 +8,50 @@ library("purrr")
 library("stringr")
 
 # Read raw data
-#rater1 <- fread(here("data/raw/QC_Training_Louis_all-raters_2022-08-21.csv"))
-rater1_1 <- fread(here("data/raw/ADNI3_99_LinReg_v2_all-raters_2022-09-23.csv"))
-rater1_2 <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_2022-10-12.csv"))
-rater1_c <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_consensus.csv"),
+#expert <- fread(here("data/raw/QC_Training_Louis_all-raters_2022-08-21.csv"))
+expert_1 <- fread(here("data/raw/ADNI3_99_LinReg_v2_all-raters_2022-09-23.csv"))
+expert_2 <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_2022-10-12.csv"))
+expert_c <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_consensus.csv"),
                   header = FALSE)
 ratings <- fread(here("data/raw/ADNI3_99_LinReg_all-raters_2022-10-14.csv"))
 history <- fread(here("data/raw/ADNI3_99_LinReg_all-raters_History_2022-10-14.csv"))
 
 # Remove unused cols
-rater1_2[, `:=`(V3 = NULL, V4 = NULL, V5 = NULL)]
+expert_2[, `:=`(V3 = NULL, V4 = NULL, V5 = NULL)]
 
 # Change colnames
-setnames(rater1_1, c("Image", "Rating", "Rater", "Comment", "Timestamp"))
-setnames(rater1_2, c("Image", "Rating", "Rater", "Comment", "Timestamp"))
-setnames(rater1_c, c("Image", "Rating", "Comment"))
+setnames(expert_1, c("Image", "Rating", "Rater", "Comment", "Timestamp"))
+setnames(expert_2, c("Image", "Rating", "Rater", "Comment", "Timestamp"))
+setnames(expert_c, c("Image", "Rating", "Comment"))
 setnames(ratings, c("Image", "Rating", "Rater", "Comment", "Timestamp"))
 setnames(history, c("Image", "Rater", "Rating", "Comment", "Timestamp"))
 
 # Merge history and ratings (and remove duplicate rows)
-raters2_9 <- unique(rbindlist(list(ratings, history), use.names = TRUE))
+trainees <- unique(rbindlist(list(ratings, history), use.names = TRUE))
 
 # Remove duplicate rating for Case_33:Reza
 # Ground-truth is Fail (Checked current rating on Qrater)
-raters2_9 <- raters2_9[!(Image == 'Case_33' & Rater == 'reza' & Rating == 'Pass')]
+trainees <- trainees[!(Image == 'Case_33' & Rater == 'reza' & Rating == 'Pass')]
 
 
 # Extract most recent & non-Pending or Warning ratings from history
-raters2_9 <- raters2_9[raters2_9[!Rating %in% c("Pending", "Warning"),
-                             .I[Timestamp == max(Timestamp)],
-                             by = .(Image, Rater)]$V1]
+trainees <- trainees[trainees[!Rating %in% c("Pending", "Warning"),
+                              .I[Timestamp == max(Timestamp)],
+                              by = .(Image, Rater)]$V1]
 
 # Mark passing session
-rater1_1[, Session := "First"]
-rater1_2[, Session := "Second"]
-rater1_c[, `:=`(Rater = "louis", Session = "Consensus")]
-raters2_9[, Session := NA]
+expert_1[, Session := "First"]
+expert_2[, Session := "Second"]
+expert_c[, `:=`(Rater = "louis", Session = "Consensus")]
+trainees[, Session := NA]
 
 # Check numbers
-#raters2_9[, .N, by = Rater]
+#trainees[, .N, by = Rater]
 
 # Add rater 1
-reg_99 <- rbindlist(list(rater1_1, rater1_2, rater1_c, raters2_9),
+reg_99 <- rbindlist(list(expert_1, expert_2, expert_c, trainees),
                     use.names = TRUE, fill = TRUE)
-rm(rater1_1, rater1_2, rater1_c, raters2_9)
+rm(expert_1, expert_2, expert_c, trainees)
 
 # Extract rater names and change them
 raters_names <- reg_99[, unique(Rater)]
@@ -66,10 +66,9 @@ rm(new_order)
 setorder(reg_99, cols = "Timestamp")
 for (i in seq_along(raters_names)) {
     rater <- raters_names[[i]]
-    #print(rater)
     reg_99[Rater == rater,
         `:=`(
-            Rater = sprintf("Rater%02d", i),
+            Rater = fifelse(i == 1, "Expert01", sprintf("Rater%02d", i - 1)),
             Diff = Timestamp - shift(Timestamp))]
 }
 rm(i, rater)
@@ -95,8 +94,8 @@ reg_99_comments[1]
 #write_csv(reg_99, here("data/derivatives/registration_99.csv"))
 write_delim(reg_99_comments, here("data/derivatives/reg_99_comments.csv"),
             delim = "\t")
-write_delim(reg_99_wide, here("data/derivatives/reg_99_wide.csv"),
-            delim = "\t")
+#write_delim(reg_99_wide, here("data/derivatives/reg_99_wide.csv"),
+            #delim = "\t")
 
 
 # Write RDS objects
