@@ -1,0 +1,80 @@
+Image,QC,Comments
+Case_01,Fail,Bright nose. Intensity homogeneity issues.
+Case_02,Pass,Grainy/Noisy image.
+Case_03,Pass,Coverage Anterior/Posterior?
+Case_04,Fail,Coverage Anterior/Posterior. Occipital cortex cut?
+Case_05,Pass,
+Case_06,Pass,
+Case_07,Fail,Ringing artifacts. Lower cerebellum cut.
+Case_08,Pass,
+Case_09,Fail,Ringing artitfacts. Lower cerebellum cut.
+Case_10,Pass,Slight ringing? Tight coverage.
+Case_11,Pass,Dark cerebellum. Bright object inter-hemispheric space.
+Case_12,Pass,Very intense light around nose.
+Case_13,Pass,
+Case_14,Pass,
+Case_15,Fail,Slight ringing and motion artifacts.
+Case_16,Fail,Severe motion artifacts.
+Case_17,Pass,
+Case_18,Pass,
+Case_19,Pass,
+Case_20,Fail,Slight ringing.
+Case_21,Pass,Intensity inhomogeneity (bright nose and bright spot on right interhemispheric parietal area).
+Case_22,Fail,Very tight coverage in occipital pole. Slight movement? Borderline case.
+Case_23,Pass,
+Case_24,Fail,Extremely dark image. Intensity homogeneity artifact.
+Case_25,Pass,Very minimal but present ringing artifact. Borderline case?
+Case_26,Pass,
+Case_27,Fail,Coverage. Occipital pole is cut.
+Case_28,Fail,Anterio-posterior coverage. Occipital and frontal poles are cut.
+Case_29,Pass,
+Case_30,Fail,Ringing and motion artifacts.
+Case_31,Pass,
+Case_32,Pass,
+Case_33,Fail,Coverage. Occipital pole slightly cut. Minimal ringing.
+Case_34,Pass,
+Case_35,Fail,Coverage. Inferio-superior coverage is very tight.
+Case_36,Pass,
+Case_37,Pass,Very minimal ringing.
+Case_38,Pass,
+Case_39,Pass,
+Case_40,Fail,Ringing/ghosting artifacts (notably in saggital view)
+Case_41,Pass,Minimal ringing. Not enough to flag.
+Case_42,Pass,Ringing/ghosting artifacts. Borderline case. Could potentially pass.
+Case_43,Fail,Lower border of cerebellum too dark/not covered.
+Case_44,Pass,Very tight anterio/posterior coverage. Brain still in view.
+Case_45,Pass,Lower cerebellum dark. Borderline case.
+Case_46,Pass,Tight coverage (anterio-posterior) but brain in view.
+Case_47,Pass,
+Case_48,Pass,Lower cerebellum too dark. Hard to tell if inside view.
+Case_49,Pass,Minimal ringing. Borderline case.
+Case_50,Pass,
+Case_51,Pass,Tight coverage of cerebellum.
+Case_52,Pass,
+Case_53,Fail,Coverage. Cerebellum definitely cut.
+Case_54,Fail,Severe ghosting artifacts.
+Case_55,Fail,Severe ghosting artifacts.
+Case_56,Fail,Severe ghosting artifacts.
+Case_57,Pass,Tight coverage of cerebellum
+Case_58,Pass,
+Case_59,Fail,Extremely noisy. Motion.
+Case_60,Pass,
+Case_61,Pass,Very bright nose. Slight ringing. Borderline case.
+Case_62,Pass,
+Case_63,Fail,Extreme noisy. Ringing artifacts.
+Case_64,Pass,Slight ghosting. Borderline?
+Case_65,Fail,Intensity artifact. Bright spot makes image too dark.
+Case_66,Pass,Tight coverage (Anterior-posterior). Brain still inside view.
+Case_67,Pass,Bright nose.
+Case_68,Pass,
+Case_69,Pass,Wrap-around but does not affect image.
+Case_70,Pass,
+Case_71,Fail,Intensity artifacts in occipital lobe.
+Case_72,Pass,Very minimal ringing?
+Case_73,Pass,
+Case_74,Pass,
+Case_75,Pass,
+Case_76,Pass,Tight cerebellum coverage.
+Case_77,Pass,
+Case_78,Pass,
+Case_79,Fail,Sign droppage on left inferior quadrant.

@@ -1,0 +1,1189 @@
+Image,Rating,Comment,Rater,Session
+mri141_no_name_20100414_131230_7_mri_T1,Fail,"extremely dark scan, bright nose; cerebelum cut?. Intensity non-uniformity",Expert01,Consensus
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"",Expert01,Consensus
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"intensity drop at cerebellum, no bottom cerebellum. Intensity non-uniformity",Expert01,Consensus
+mri164_no_name_20101022_081913_7_mri_T1,Pass,Intensity non-uniformity,Expert01,Consensus
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Expert01,Consensus
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Noise,Expert01,Consensus
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Movement,Expert01,Consensus
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,Movement,Expert01,Consensus
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Expert01,Consensus
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Expert01,Consensus
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Expert01,Consensus
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,Odd contrast,Expert01,Consensus
+mri138_no_name_20100315_085007_6_mri_T1,Pass,"",Expert01,Consensus
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,odd bright mid-saggital struct.  Artefact?  base of cerebellum cut. UBO. Coverage,Expert01,Consensus
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,Coverage,Expert01,Consensus
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Expert01,Consensus
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,no data,Expert01,Consensus
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"",Expert01,Consensus
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"",Expert01,Consensus
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Consensus
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Consensus
+mri149_no_name_20100616_092335_8_mri_T1,Pass,cerrebellum cut? very close.. Coverage,Expert01,Consensus
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,occipital pole cut close; should check brain mask. Coverage,Expert01,Consensus
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,Movement,Expert01,Consensus
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Expert01,Consensus
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"",Expert01,Consensus
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,signal drop out from dental work? does not affect brain. occipital pole cut. Intensity non-uniformity. Coverage,Expert01,Consensus
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,signal drop out from dental work. Intensity non-uniformity,Expert01,Consensus
+mri13_na632364_20110517_131234_15_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Consensus
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,"",Expert01,Consensus
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,Odd contrast,Expert01,Consensus
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Expert01,Consensus
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Expert01,Consensus
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Consensus
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,Movement,Expert01,Consensus
+mri142_no_name_20100409_090847_7_mri_T1,Pass,base of cerebellum is close.,Expert01,Consensus
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,Odd contrast,Expert01,Consensus
+mri175_no_name_20110112_090848_15_mri_T1,Fail,IS wrap around; base of cerebellum cut. need to check brain / cerebellum mask.. Coverage,Expert01,Consensus
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,occipital pole cut close. Odd contrast,Expert01,Consensus
+mri1848_no_name_20131014_090100_7_mri_T1,Pass,odd mid-sagittal bright UBOl signal drop at base of scan.  Cerebellum cut close.. Intensity non-uniformity. UBO,Expert01,Consensus
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"",Expert01,Consensus
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,Intensity non-uniformity,Expert01,Consensus
+mri144_no_name_20100930_091919_10_mri_T1,Pass,cerebellum cut close!  . Intensity non-uniformity,Expert01,Consensus
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"",Expert01,Consensus
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Expert01,Consensus
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Expert01,Consensus
+mri156_no_name_20100803_074946_9_mri_T1,Fail,signal drop at base; cerebellum base cut,Expert01,Consensus
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"",Expert01,Consensus
+mri122_na255888_20130514_132141_23_mri_T1,Fail,cerebellum cut!. Coverage,Expert01,Consensus
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,Movement,Expert01,Consensus
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,Movement,Expert01,Consensus
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,Movement,Expert01,Consensus
+mri174_no_name_20101115_084222_9_mri_T1,Fail,cerebellum cut. Coverage. Intensity non-uniformity,Expert01,Consensus
+mri172_no_name_20101104_084154_7_mri_T1,Pass,Intensity non-uniformity,Expert01,Consensus
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,Movement. Noise,Expert01,Consensus
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Expert01,Consensus
+mri140_no_name_20100316_085253_7_mri_T1,Fail,cerebellum slightly cut. Coverage. Intensity non-uniformity,Expert01,Consensus
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,mid-sagittal UBO; . UBO,Expert01,Consensus
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Expert01,Consensus
+mri113_na985026_20121101_143641_17_mri_T1,Fail,Movement. Noise,Expert01,Consensus
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"",Expert01,Consensus
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,no data,Expert01,Consensus
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,ocipital cut close; check brain mask. Coverage,Expert01,Consensus
+mri177_no_name_20101004_092909_8_mri_T1,Pass,Intensity non-uniformity,Expert01,Consensus
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"",Expert01,Consensus
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,Intensity non-uniformity. Odd contrast,Expert01,Consensus
+mri114_na578878_20121114_142513_21_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Consensus
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"",Expert01,Consensus
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"",Expert01,Consensus
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,Odd contrast,Expert01,Consensus
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Expert01,Consensus
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,no data,Expert01,Consensus
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Expert01,Consensus
+mri179_no_name_20101014_095134_7_mri_T1,Pass,"",Expert01,Consensus
+mri172_no_name_20101104_084154_8_mri_T1,Pass,extremely dark scan; base slices very dark; cerebellum cut?. Odd contrast,Expert01,Consensus
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Expert01,Consensus
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,huge dental susceptibility!. UDO,Expert01,Consensus
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Expert01,Consensus
+mri104_na971602_20120127_095829_21_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Consensus
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"",Expert01,Consensus
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,Intensity non-uniformity. Odd contrast,Expert01,Consensus
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Expert01,Consensus
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Expert01,Consensus
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Expert01,Consensus
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Expert01,Consensus
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Expert01,Consensus
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,Movement. Noise. Odd contrast,Expert01,Consensus
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,"",Expert01,Consensus
+mri103_na113933_20130117_111022_17_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Consensus
+mri153_no_name_20100527_080656_6_mri_T1,Pass,"",Expert01,Consensus
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Expert01,Consensus
+mri139_no_name_20100318_080946_6_mri_T1,Pass,"",Expert01,Consensus
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Expert01,Consensus
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Movement. Noise,Expert01,Consensus
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Expert01,Consensus
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Expert01,Consensus
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"",Expert01,Consensus
+mri125_na453098_20130612_114015_23_mri_T1,Fail,cerebellum cut!. Coverage,Expert01,Consensus
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Expert01,Consensus
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,Coverage. UBO,Expert01,First
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"very bright nose; intensity non-uniformity, signal drop off in cerebellum. . Intensity non-uniformity",Expert01,First
+mri141_no_name_20100414_131230_7_mri_T1,Fail,extremely bright nose; very reduced intensity for rest of image.  intensity nonuniformity. signal drop at base of cerebellum.. Intensity non-uniformity,Expert01,First
+mri164_no_name_20101022_081913_7_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Expert01,First
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Noise,Expert01,First
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,susceptibility above ear canal; loss of contrast occipital pole.. Intensity non-uniformity. Odd contrast,Expert01,First
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,Movement,Expert01,First
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,lots of WM hypointensity,Expert01,First
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Expert01,First
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Expert01,First
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"",Expert01,First
+mri138_no_name_20100315_085007_6_mri_T1,Fail,base of cerebellum cut. Coverage,Expert01,First
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,base of cerebellum cut. UBO,Expert01,First
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,lots of WM hypointensities...; occipital pole cut.,Expert01,First
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Expert01,First
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,no data,Expert01,First
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"",Expert01,First
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"signal drop in mouth, does not appear to affect brain.",Expert01,First
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,First
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,First
+mri149_no_name_20100616_092335_8_mri_T1,Pass,"",Expert01,First
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,occipital lobe very close to cut. Coverage,Expert01,First
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,Noise,Expert01,First
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,some WM hypo intensities,Expert01,First
+mri145_no_name_20100507_074909_6_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,occipital pole cut;. Coverage,Expert01,First
+mri13_na632364_20110517_131234_15_mri_T1,Fail,"top and bottom signal drop off; base cerebellum cut, . Coverage",Expert01,First
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,"",Expert01,First
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,somewhat limited contrast,Expert01,First
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Expert01,First
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Expert01,First
+mri1584_no_name_20101119_131115_4_mri_T1,Pass,slight susceptibility or flow artefact above left ear canal,Expert01,First
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,slight ringing,Expert01,First
+mri142_no_name_20100409_090847_7_mri_T1,Pass,"signal drop base cerebellum; bright nose, dark scan",Expert01,First
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,dark cerebellum; . Intensity non-uniformity,Expert01,First
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,some WM hypotintensities. Noise,Expert01,First
+mri175_no_name_20110112_090848_15_mri_T1,Fail,signal drop at bottom of scan; cerebellum cut.. Coverage,Expert01,First
+mri1170_no_name_20100803_114436_9_mri_T1,Fail,occipital pole cut. Coverage. Intensity non-uniformity,Expert01,First
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,very bright voxels forehead. dark scan. ubo paritel midline. (similar to case 11). Intensity non-uniformity. UBO,Expert01,First
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"",Expert01,First
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri144_no_name_20100930_091919_10_mri_T1,Fail,bright face; dark scan; signal loss bottom; cerebellum cut,Expert01,First
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,slight rigning. Movement,Expert01,First
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Expert01,First
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Expert01,First
+mri156_no_name_20100803_074946_9_mri_T1,Fail,signal drop bottom; cerebellum cut. Coverage. Intensity non-uniformity,Expert01,First
+mri163_no_name_20100812_071836_7_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri122_na255888_20130514_132141_23_mri_T1,Fail,cerebellum cut. Coverage,Expert01,First
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,severe rigning. Movement,Expert01,First
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,strong ringing. Movement,Expert01,First
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,strong ringing. Movement. Noise,Expert01,First
+mri174_no_name_20101115_084222_9_mri_T1,Fail,signal drop bottom; cerebellum cut. Coverage. Intensity non-uniformity,Expert01,First
+mri172_no_name_20101104_084154_7_mri_T1,Pass,bright nose/face; dark volume. Intensity non-uniformity,Expert01,First
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,very strong ringing. Movement. Noise,Expert01,First
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Expert01,First
+mri140_no_name_20100316_085253_7_mri_T1,Fail,cerebellum cut. Coverage,Expert01,First
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,ubo - midline parietal (like case 11  (and 45?)). UBO,Expert01,First
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Expert01,First
+mri113_na985026_20121101_143641_17_mri_T1,Fail,rigning; cerebellum cut. Movement. Noise,Expert01,First
+mri180_no_name_20101108_083349_14_mri_T1,Pass,some WM hypointensities; big ventricles!,Expert01,First
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,no data!,Expert01,First
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,occipital pole very tight. Coverage,Expert01,First
+mri177_no_name_20101004_092909_8_mri_T1,Pass,"very bright front of face; dark scan; non uniformity, very dark base of scan; cerebellum might be cut.. Intensity non-uniformity",Expert01,First
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"",Expert01,First
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,very bright occipital pole. Intensity non-uniformity,Expert01,First
+mri114_na578878_20121114_142513_21_mri_T1,Fail,4-5cm UDO (cyst?) in right frontal; cerebellum cut;,Expert01,First
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,bright forehead and frontal pole. Intensity non-uniformity,Expert01,First
+mri1874_4935_20130703_160512_9_mri_T1,Pass,bright arteries,Expert01,First
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,"",Expert01,First
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Expert01,First
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,no data,Expert01,First
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Expert01,First
+mri179_no_name_20101014_095134_7_mri_T1,Pass,bright fat in face. Intensity non-uniformity,Expert01,First
+mri172_no_name_20101104_084154_8_mri_T1,Pass,bright nose. Intensity non-uniformity,Expert01,First
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,bright arteries,Expert01,First
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,huge signal drop out left inferior. Intensity non-uniformity,Expert01,First
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,lots of WM hypointensities,Expert01,First
+mri104_na971602_20120127_095829_21_mri_T1,Fail,lots of WM hypointensities; cerebellum cut,Expert01,First
+mri183_no_name_20120105_100805_9_mri_T1,Pass,lots of atrophy,Expert01,First
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Expert01,First
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Expert01,First
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Expert01,First
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Expert01,First
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,Intensity non-uniformity,Expert01,First
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,rigning. Movement,Expert01,First
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,"",Expert01,First
+mri103_na113933_20130117_111022_17_mri_T1,Fail,bright occipital lobe/pole; cerebellum cut. Intensity non-uniformity,Expert01,First
+mri153_no_name_20100527_080656_6_mri_T1,Pass,"",Expert01,First
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Expert01,First
+mri139_no_name_20100318_080946_6_mri_T1,Pass,"",Expert01,First
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Expert01,First
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,rigning. Movement,Expert01,First
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,some WM hypointensities,Expert01,First
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,some micro gyri?,Expert01,First
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"",Expert01,First
+mri125_na453098_20130612_114015_23_mri_T1,Fail,cerebellum cut,Expert01,First
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Expert01,First
+mri141_no_name_20100414_131230_7_mri_T1,Fail,"extremely dark scan, bright nose; cerebelum cut?. Intensity non-uniformity",Expert01,Second
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"",Expert01,Second
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"intensity drop at cerebellum, no bottom cerebellum. Intensity non-uniformity",Expert01,Second
+mri164_no_name_20101022_081913_7_mri_T1,Pass,Intensity non-uniformity,Expert01,Second
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Expert01,Second
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Noise,Expert01,Second
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Movement,Expert01,Second
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,Movement,Expert01,Second
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Expert01,Second
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Expert01,Second
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Expert01,Second
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,Odd contrast,Expert01,Second
+mri138_no_name_20100315_085007_6_mri_T1,Pass,"",Expert01,Second
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,odd bright mid-saggital struct.  Artefact? of cerebellum cut. UBO. Coverage,Expert01,Second
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,Coverage,Expert01,Second
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Expert01,Second
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,no data,Expert01,Second
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"",Expert01,Second
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"",Expert01,Second
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Second
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Second
+mri149_no_name_20100616_092335_8_mri_T1,Pass,cerrebellum cut? very close.. Coverage,Expert01,Second
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,occipital pole cut close; should check brain mask. Coverage,Expert01,Second
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,Movement,Expert01,Second
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Expert01,Second
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"",Expert01,Second
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,signal drop out from dental work? does not affect brain. pole cut. Intensity non-uniformity. Coverage,Expert01,Second
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,signal drop out from dental work. Intensity non-uniformity,Expert01,Second
+mri13_na632364_20110517_131234_15_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Second
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,"",Expert01,Second
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,Odd contrast,Expert01,Second
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Expert01,Second
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Expert01,Second
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,occipital pole cut. Coverage,Expert01,Second
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,Movement,Expert01,Second
+mri142_no_name_20100409_090847_7_mri_T1,Pass,base of cerebellum is close.,Expert01,Second
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,Odd contrast,Expert01,Second
+mri175_no_name_20110112_090848_15_mri_T1,Pass,IS wrap around; base of cerebellum cut very close. need to check brain / cerebellum mask.. Coverage,Expert01,Second
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,occipital pole cut close. Odd contrast,Expert01,Second
+mri1848_no_name_20131014_090100_7_mri_T1,Pass,odd mid-sagittal bright UBOl signal drop at base of scan.  Cerebellum cut close.. Intensity non-uniformity. UBO,Expert01,Second
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"",Expert01,Second
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,Intensity non-uniformity,Expert01,Second
+mri144_no_name_20100930_091919_10_mri_T1,Pass,Intensity non-uniformity,Expert01,Second
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"",Expert01,Second
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Expert01,Second
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Expert01,Second
+mri156_no_name_20100803_074946_9_mri_T1,Fail,signal drop at base; cerebellum base cut,Expert01,Second
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"",Expert01,Second
+mri122_na255888_20130514_132141_23_mri_T1,Fail,cerebellum cut!. Coverage,Expert01,Second
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,Movement,Expert01,Second
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,Movement,Expert01,Second
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,Movement,Expert01,Second
+mri174_no_name_20101115_084222_9_mri_T1,Pass,Coverage. Intensity non-uniformity,Expert01,Second
+mri172_no_name_20101104_084154_7_mri_T1,Pass,Intensity non-uniformity,Expert01,Second
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,Movement. Noise,Expert01,Second
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Expert01,Second
+mri140_no_name_20100316_085253_7_mri_T1,Pass,Coverage. Intensity non-uniformity,Expert01,Second
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,mid-sagittal UBO; . UBO,Expert01,Second
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Expert01,Second
+mri113_na985026_20121101_143641_17_mri_T1,Fail,Movement. Noise,Expert01,Second
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"",Expert01,Second
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,no data,Expert01,Second
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,ocipital cut close; check brain mask. Coverage,Expert01,Second
+mri177_no_name_20101004_092909_8_mri_T1,Pass,Intensity non-uniformity,Expert01,Second
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"",Expert01,Second
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,Intensity non-uniformity. Odd contrast,Expert01,Second
+mri114_na578878_20121114_142513_21_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Second
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"",Expert01,Second
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"",Expert01,Second
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,Odd contrast,Expert01,Second
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Expert01,Second
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,no data,Expert01,Second
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Expert01,Second
+mri179_no_name_20101014_095134_7_mri_T1,Pass,"",Expert01,Second
+mri172_no_name_20101104_084154_8_mri_T1,Pass,extremely dark scan; base slices very dark; cerebellum cut?. Odd contrast,Expert01,Second
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Expert01,Second
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,huge dental susceptibility!. UDO,Expert01,Second
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Expert01,Second
+mri104_na971602_20120127_095829_21_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Second
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"",Expert01,Second
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,Intensity non-uniformity. Odd contrast,Expert01,Second
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Expert01,Second
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Expert01,Second
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Expert01,Second
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Expert01,Second
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Expert01,Second
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,Movement. Noise. Odd contrast,Expert01,Second
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,"",Expert01,Second
+mri103_na113933_20130117_111022_17_mri_T1,Fail,cerebellum cut. Coverage,Expert01,Second
+mri153_no_name_20100527_080656_6_mri_T1,Pass,"",Expert01,Second
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Expert01,Second
+mri139_no_name_20100318_080946_6_mri_T1,Pass,"",Expert01,Second
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Expert01,Second
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Movement. Noise,Expert01,Second
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Expert01,Second
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Expert01,Second
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"",Expert01,Second
+mri125_na453098_20130612_114015_23_mri_T1,Fail,cerebellum cut!. Coverage,Expert01,Second
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Expert01,Second
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,ringing artifact,Rater01,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Rater01,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater01,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Rater01,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"",Rater01,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,"",Rater01,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,Incomplete AP coverage,Rater01,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"",Rater01,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"",Rater01,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,AP coverage; low dynamic range,Rater01,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,low GM/WM contrast,Rater01,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Rater01,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Rater01,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,incomplete AP coverage,Rater01,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"",Rater01,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,"",Rater01,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,Tight FOV,Rater01,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,Tight FOV,Rater01,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater01,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,Cerebellum cut,Rater01,
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,Ring artifacts,Rater01,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,Slight noise?,Rater01,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,"Noise, ring artifacts",Rater01,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,Motion artifacts; cerebellum cut?,Rater01,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"Bright scalp, big ventricles",Rater01,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,No data,Rater01,
+mri1080_no_name_20081115_073735_10_mri_T1,Fail,Incomplete AP coverage,Rater01,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,Ring artifacts; incomplete inf/sup coverage,Rater01,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,Huge ventricles,Rater01,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,Bright spots,Rater01,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,"",Rater01,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,No data,Rater01,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Rater01,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,low WM/GM contrast,Rater01,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,Signal drop-off left inferior portion,Rater01,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,Incomplete coverage (Inf/Sup),Rater01,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,Tight FOV; wrap-around; brain intact,Rater01,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Rater01,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Rater01,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Rater01,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Motion artifacts,Rater01,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,Incomplete coverage (cerebellum cut),Rater01,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,Tight AP fit,Rater01,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,Low intensity,Rater01,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,Tight AP coverage,Rater01,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,Reduced dynamic range due to bright nose,Rater01,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,Tight AP fit (cut scalp),Rater01,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,low WM/GM contrast; Tight AP fit,Rater01,
+mri149_no_name_20100616_092335_8_mri_T1,Pass,Barely covering cerebellum,Rater01,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,Tight AP fit (scalp cut off),Rater01,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,Tight superior coverage,Rater01,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,Posterior scalp cut,Rater01,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,Superior scalp cut off,Rater01,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,slight intensity non-uniformity; incomplete cerebellum coverage?,Rater01,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,"Bright nose, low dynamic range; tight inferior fit",Rater01,
+mri140_no_name_20100316_085253_7_mri_T1,Pass,Low dynamic range due to bright nose; tight inferior fit,Rater01,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,Tight AP fit,Rater01,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,Very tight cerebellum fit,Rater01,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,non-uniformity artifact,Rater01,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"Tight FOV; signal drop-off mouth, doesn't affect brain",Rater01,
+mri1848_no_name_20131014_090100_2_mri_T1,Pass,intensity non-uniformity artifact; Inf/Sup coverage,Rater01,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Slight noise;,Rater01,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Tight FOV; scalp cut,Rater01,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,Non-uniformity Intensity artifact,Rater01,
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,VERY tight FOV; incomplete AP coverage?,Rater01,
+mri1689_no_name_20121009_124907_2_mri_T1,Fail,Tight FOV; incomplete coverage,Rater01,
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,Incomplete coverage (posterior)?,Rater01,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,Slight noise; incomplete AP coverage?,Rater01,
+mri1657_no_name_20091019_130916_3_mri_T1,Fail,Tight FOV; incomplete coverage AP,Rater01,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,slight motion artifacts; Incomplete coverage,Rater01,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,low dynamic range due to bright nose,Rater01,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,Tight Inf/Sup coverage?,Rater01,
+mri1170_no_name_20100803_114436_9_mri_T1,Fail,Incomplete AP coverage,Rater01,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,Reduced dynamic range; Non-uniformity intensity artifact,Rater01,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,Intensity non-uniformity; cerebellum cut?,Rater01,
+mri163_no_name_20100812_071836_7_mri_T1,Fail,low dynamic range; non-uniformity intensity artifact,Rater01,
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,VERY tight FOV; incomplete coverage,Rater01,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,Cerebellum cut?,Rater01,
+mri1055_no_name_20110211_133540_2_mri_T1,Fail,"Tight fit, scalp off picture; Incomplete coverage?",Rater01,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,Is cerebellum cut? low dynamic range; non-uniformity intensity artifact,Rater01,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,Tight fit; scalp off; AP poles fit?,Rater01,
+mri178_no_name_20101019_072213_7_mri_T1,Fail,Tight FOV; incomplete IS coverage,Rater01,
+mri179_no_name_20101014_095134_7_mri_T1,Fail,cerebellum coverage?,Rater01,
+mri181_no_name_20110225_075722_14_mri_T1,Fail,Tight FOV (Inf/Sup)?,Rater01,
+mri172_no_name_20101104_084154_8_mri_T1,Fail,Non-uniformity intensity artifact,Rater01,
+mri1720_no_name_20100422_113312_4_mri_T1,Fail,Tight FOV; scalp cut AP,Rater01,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,Tight FOV; wrap-around; Incomplete coverage; intensity non-uniformity artifact,Rater01,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,Incomplete coverage (cerebellum),Rater01,
+mri1688_no_name_20110805_130424_2_mri_T1,Fail,Incomplete coverage (AP)? Poles in picture,Rater01,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,Tight FOV; scalp cut (AP),Rater01,
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,Noisy? Tight FOV; brain still in picture,Rater01,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,Incomplete coverage,Rater01,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,Tight FOV (Inf/Sup),Rater01,
+mri153_no_name_20100527_080656_6_mri_T1,Fail,Cerebellum cut,Rater01,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"Tight FOV; AP scalp cut, brain intact?",Rater01,
+mri139_no_name_20100318_080946_6_mri_T1,Fail,Is cerebellum complete?,Rater01,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,Tight FOV (AP); scalp cut off; Are Poles in picture?,Rater01,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,Tight FOV (AP),Rater01,
+mri177_no_name_20101004_092909_8_mri_T1,Fail,Non-uniformity intensity artifact,Rater01,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,Considerable movement (ringing) artefacts,Rater02,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,Thick dura,Rater02,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Rater02,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,"",Rater02,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Rater02,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,Part of occipital lobe is cropped.,Rater02,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Rater02,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,Part of cerebellum is cropped.,Rater02,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,A bit noisy?,Rater02,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Slight ringing artefact,Rater02,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"Eye movement artefact, low GM/WM contrast",Rater02,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"Slight movement (ringing) artefacts, Low GM/WM artefacts",Rater02,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"Low GM/WM contrast, and overall low contrast",Rater02,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"Slight movement (ringing) artefacts, ",Rater02,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,"",Rater02,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,Incomplete coverage of cerebellum.,Rater02,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,"Slight movement (ringing) artefacts (look at the 4th row, second slice from right), Low GM/WM contrast",Rater02,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"Slight movement (ringing) artefacts (look at the axial view, 2nd row, 4th and 5th slice from right)",Rater02,
+mri1001_no_name_20090113_091713_3_mri_T1,Fail,Considerable movement (ringing) artefacts,Rater02,
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,"Intensity non-uniformity, very very slight movement (look at artefacts outside the skull)",Rater02,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"",Rater02,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,"",Rater02,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"Very slight movement (ringing) artefacts (look at 3rd row, 2nd image from right)",Rater02,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Rater02,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,Vascular problem on frontal lobe?,Rater02,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,Incomplete coverage of cerebellum.,Rater02,
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,Considerable amount of movement (ringing) artefact.,Rater02,
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,Considerable amount of movement (ringing) artefact.,Rater02,
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,Considerable movement (ringing) artefact.,Rater02,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,Intensity non-uniformity,Rater02,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,"Considerable movement (ringing) artefacts, low GM/WM contrast",Rater02,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,Low contrast,Rater02,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,"Too much movement (ringing) artefacts, Inappropriate cut of cerebellum base",Rater02,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"Slight movement artefacts, bright skull (possible short echo time), Low GM/WM contrast",Rater02,
+mri177_no_name_20101004_092909_8_mri_T1,Pass,Too much intensity non-uniformity,Rater02,
+mri178_no_name_20101019_072213_7_mri_T1,Pass,Intensity non-uniformity,Rater02,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,No GM/WM contrast!  Slight movement (ringing) artefacts,Rater02,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"UBO in different parts, Possible bad phase encoding direction",Rater02,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,"Slight movement, Low GM/WM contrast",Rater02,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,Slight movement and possible bad phase encoding direction,Rater02,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,"Intensity non-uniformity, Low GM/WM contrast",Rater02,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,"Low contrast, Signal blackout (look at middle columns, especially coronal and axial view)",Rater02,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,Incomplete coverage (both at some upper parts of the cortex and cerebellum base),Rater02,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,Movement artefacts and possible bad phase encoding direction,Rater02,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"Low dynamic range, Low GM/WM contrast",Rater02,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"Low dynamic range, Low GM/WM contrast",Rater02,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,Intensity non-uniformity,Rater02,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,"Slight movement (ringing) artefacts, Low GM/WM contrast",Rater02,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Rater02,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Considerable amount of movement (ringing) artefacts,Rater02,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"Low dynamic range, Low GM/WM contrast",Rater02,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"Very slight movement (ringing) artefacts, Low GM/WM contrast",Rater02,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"High intensity in the middle of axial view (look at the top row, 5th from the right)",Rater02,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,Low GM/WM contrast,Rater02,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,"Non-uniformity, Incomplete cerebellum coverage (dura cannot be seen in the 5th row, 5th slice from right), Low GM/WM contrast, UBO (look at second row, 3rd, 4th, and 5th image from left, also look at 4th row, first image from right)",Rater02,
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,"Part of occipital lobe seems to be cut (look at third row, the second from the right)",Rater02,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,Intensity non-uniformity,Rater02,
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"Intensity non-uniformity, incomplete coverage of cerebellum (coronal view)",Rater02,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,"Intensity non-uniformity, Low dynamic range, Possible bad cut of cerebellum (dura cannot be seen in the coronal view)",Rater02,
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,"Occipital lobe is not completely covered (look at the second row, second from left, and fourth row, second from the right).",Rater02,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,"Intensity non-uniformity, incomplete coverage of cerebellum (dura cannot be seen in the coronal view)",Rater02,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,"Incomplete coverage of frontal lobe (look at 3rd and 4th row, 1st slice from the right)",Rater02,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,A slight intensity non-uniformity,Rater02,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,"Inappropriate crop of occipital lobe (look at the 3rd row, 3rd slice from the right)",Rater02,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,"Possible unwanted noise (look at the 4th row, first image from the right)",Rater02,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Rater02,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,"Inappropriate crop of occipital lobe (look at the 3rd row, 2nd image from right)",Rater02,
+mri142_no_name_20100409_090847_7_mri_T1,Pass,"Intensity non-uniformity, Possible inappropriate coverage of cerebellum base (when I increase the contrast of this image, I kinda can detect the dura below the cerebellum, so I passed this one)",Rater02,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,"Intensity non-uniformity, Bad coverage of cerebellum (dura cannot be seen in some images - such as 5th row, 5th from right)",Rater02,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,"Intensity non-uniformity, UBO (look at those white lines between two hemispheres), Bad crop of cerebellum (look at 3rd row, second slice from the right)",Rater02,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,"Intensity non-uniformity, Bad coverage of cerebellum (dura cannot be seen, plus look at 4th row, 2nd and 3rd image from right)",Rater02,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,"Intensity non-uniformity, Inappropriate cut of cerebellum base (look at the 3rd row, 2nd slice from right, or 4th row, 3rd slice from left)",Rater02,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"Low contrast (probably due to intensity non-uniformity), bad correction of eye movement? (phase encoding in AP direction, instead of LR direction)",Rater02,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,"Intensity non-uniformity, Inappropriate cut of cerebellum (look at 5th row, 5th column from the right)",Rater02,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,Possible slight movement (ringing) artefacts,Rater02,
+mri140_no_name_20100316_085253_7_mri_T1,Fail,"Intensity non-uniformity, Low contrast, Inappropriate cut of cerebellum base (it could be passed I think)",Rater02,
+mri1051_no_name_20100601_144805_4_mri_T1,Fail,"Low contrast, Bad cut of occipital lobe (look at the 3rd row, second slice from right).",Rater02,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,"Considerable movement (ringing) artefacts, Bad cut of cerebellum base (look at 5th row, 4th image from the right)",Rater02,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"Intensity non-uniformity, Movement artefacts and possible bad phase encoding direction",Rater02,
+mri172_no_name_20101104_084154_8_mri_T1,Pass,Too much intensity non-uniformity,Rater02,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,"Low GM/WM contrast, Severe intensity non-uniformity (look at 3rd row, 2nd image from the right - there is a sudden change in the intensity of occipital lobe)",Rater02,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,"Bright skull, Possible loss of cerebellum coverage (look at the 3rd row, 2nd and 3rd image from the right)",Rater02,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,"Bad cut of cerebellum base (look at 5th row, 4th column from the right)",Rater02,
+mri153_no_name_20100527_080656_6_mri_T1,Fail,"Slight intensity non-uniformity, Possible bad cut of cerebellum base (look at the 4th row, 3rd column from the right)",Rater02,
+mri139_no_name_20100318_080946_6_mri_T1,Fail,"Possible bad cut of cerebellum base (look at 5th row, 5th slice from the right)",Rater02,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"Intensity non-uniformity, Possible bad cut of cerebellum base (look at the 3rd row, 3rd column from the right - however I passed this one)",Rater02,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,"Intensity non-uniformity, Low GM/WM contrast, Bad cut of cerebellum base (look at the 5th row, 5th column from the right)",Rater02,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,Rater02,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,Rater02,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,Rater02,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,"Bad coverage of cerebellum (look at 5th row, 4th column from the right)",Rater02,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,low intensity range; non uniformity,Rater03,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Rater03,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,"",Rater03,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Is there ringing artefact?,Rater03,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,ringing artefact,Rater03,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Rater03,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater03,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Rater03,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,low dynamic range,Rater03,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,small nonuniformity,Rater03,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Rater03,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,"",Rater03,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"",Rater03,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,low intensity range; dark scan,Rater03,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,slight ringing artefact,Rater03,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Rater03,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,"",Rater03,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Rater03,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Rater03,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"",Rater03,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,low wm/gm contrast,Rater03,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,slight non-uniformity,Rater03,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater03,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,incomplete coverage - missing the base of the cerebellum,Rater03,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Rater03,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,slight moving artefact,Rater03,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Rater03,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater03,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,missing cerebellum,Rater03,
+mri1181_no_name_20120626_143537_2_mri_T1,Pass,very slight movement and ringing artefact,Rater03,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,"",Rater03,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,movement artefact,Rater03,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Rater03,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Rater03,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,movement artefact,Rater03,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,"",Rater03,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,slightly tight AP FOV,Rater03,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,low wm/gm contrast; slightly tight AP FOV and non-uniformity,Rater03,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,non-uniformity,Rater03,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,low wm/gm contrast,Rater03,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,"",Rater03,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Rater03,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Rater03,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,incomplete coverage (part of the brain is lost),Rater03,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Rater03,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,shadow on occipital part; ,Rater03,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Rater03,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Rater03,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,low wm/gm contrast,Rater03,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,cropped neck but cerebellum is intact; slight non-uniformity,Rater03,
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,movement and ringing artefact,Rater03,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Rater03,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Rater03,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,cropped neck but cerebellum is intact; slight AP non-uniformity,Rater03,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,incomplete coverage (tight top to bottom FOV) Might be useful for task that don't require the whole brain - wmh analysis,Rater03,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain - wmh analysis,Rater03,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,"low dynamic range; very dark incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"low dynamic range; non uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,low dynamic range - dark low wm/gm contrast,Rater03,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,non-uniformity artefact; slight movement,Rater03,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,"non-uniformity artefact incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,"non-uniformity artefact (bright forehead); low dynamic range incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,"non-uniformity; low dynamic range; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,"intensity non-uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,cutting the neck but cerebellum is intact,Rater03,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,"ringing artefact; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,"thick scalp; non-uniformity (brighter in the back); incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri153_no_name_20100527_080656_6_mri_T1,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,"incomplete coverage Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri139_no_name_20100318_080946_6_mri_T1,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,"tight top to bottom FOV; might be useful for tasks that don't require the whole brain, i. e. wmh analysis",Rater03,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,noisy,Rater03,
+mri177_no_name_20101004_092909_8_mri_T1,Fail,"non-uniformity; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,non-uniformity,Rater03,
+mri140_no_name_20100316_085253_7_mri_T1,Fail,low dynamic range,Rater03,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,non-uniformity artefact; low dynamic range,Rater03,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,incomplete coverage (tight top to bottom FOV),Rater03,
+mri172_no_name_20101104_084154_8_mri_T1,Fail,tight top to bottom FOV; could be used in tasks such as WMH analysis low dynamic range;dark,Rater03,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,slight movement artefact; neck is cropped but cerebellum is intact,Rater03,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,low WM/GM contrast thick scalp,Rater03,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,incomplete coverage tight AP FOV (losing both occipital and frontal sections) ,Rater03,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,non-uniformity; tight FOV but cerebellum is intact,Rater03,
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,incomplete coverage tight AP FOV; Occipital lobe is cut,Rater03,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,incomplete coverage tight AP FOV; low dynamic range,Rater03,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,incomplete coverage,Rater03,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,low dynamic range; dark tight top to bottom FOV but cerebellum seems to be intact ,Rater03,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,"incomplete coverage - tight top to bottom FOV; Might be useful for tasks that don't require the whole brain, e.g. wmh analysis non-uniformity;",Rater03,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,low dynamic range,Rater03,
+mri1247_no_name_20110908_132555_2_mri_T1,Fail,incomplete coverage; tight AP FOV; Occipital lobe is cut.,Rater03,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,tight top to bottom FOV; could be used in tasks such as WMH analysis,Rater03,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,incomplete coverage tight AP FOV,Rater03,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,tight top to bottom FOV; could be used in tasks such as WMH analysis,Rater03,
+mri1114_no_name_20100614_141342_4_mri_T1,Pass,slight movement and ringing artefact Tight AP,Rater03,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,"low dynamic range; AP non-uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",Rater03,
+mri1170_no_name_20100803_114436_9_mri_T1,Fail,non-uniformity artefact; slightly tight AP FOV,Rater03,
+mri178_no_name_20101019_072213_7_mri_T1,Fail,tight top to bottom FOV; could be used in tasks such as WMH analysis,Rater03,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"incomplete coverage - tight top to bottom FOV; Might be useful for tasks that don't require the whole brain, e.g. wmh analysis slight non-uniformity",Rater03,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,tight AP FOV but brain fully covered; larger ventricles,Rater04,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Some noise (recoverable),Rater04,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,tight AP FOV but brain is covered,Rater04,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,some noise (recoverable),Rater04,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater04,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"",Rater04,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,No data,Rater04,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,tight AP FOV but brain still covered,Rater04,
+mri1848_no_name_20131014_090100_2_mri_T1,Pass,dark/low dynamic range - non-uniformity artefact (bright nose); bright calcified falx cerebri; low GM/WM contrast but some slides are good; signal loss on lowest slices; tight SI FOV; threshold pass,Rater04,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,non-uniformity artefact (signal loss on lowest scans); low GM/WM contrast in top most and bottom most scans; threshold pass; tight SI FOV,Rater04,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,low GM/WM contrast in lower slices; some non-uniformity - signal dropout (recoverable?),Rater04,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,low dynamic range; low GM/WM contrast in some slices; threshold pass,Rater04,
+mri1848_no_name_20131014_090100_16_mri_T1,Pass,"bright calcified falx cerebri; non-uniformity artefact (bright nose, recoverable); low GM/WM contrast in some slices",Rater04,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,tight AP FOV but brain is covered,Rater04,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,tight AP FOV but full brain covered; low GM/WM contrast in some slices,Rater04,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,tight AP FOV but brain is covered;,Rater04,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,low dynamic range; low GM/WM contrast; threshold pass,Rater04,
+mri1169_no_name_20120112_133942_2_mri_T1,Pass,tight AP FOV but brain is JUST covered; GM/WM contrast low in few slices; threshold pass due to coverage,Rater04,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,tight AP FOV - incomplete coverage,Rater04,
+mri149_no_name_20100616_092335_8_mri_T1,Pass,low GM/WM contrast in few slides,Rater04,
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,tight AP FOV but brain is covered; thick dura in frontal pole?,Rater04,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"",Rater04,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,tight AP FOV but brain is covered,Rater04,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"",Rater04,
+mri1119_no_name_20100504_140644_4_mri_T1,Pass,tight AP FOV but brain seems to be covered; low dynamic range; low GM/WM contrast in some slices,Rater04,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,tight AP FOV but brain is covered; low GM/WM contrast,Rater04,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,incomplete coverage - cerebellum cut off,Rater04,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,bright region in LH frontal lobe;,Rater04,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,non-uniformity artefact/low dynamic range; low GM/WM contrast,Rater04,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,low GM/WM contrast in few slices;,Rater04,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,tight AP FOV but brain is covered,Rater04,
+mri1584_no_name_20101119_131115_4_mri_T1,Pass,tight AP FOV but brain is JUST covered;,Rater04,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,low GM/WM contrast;,Rater04,
+mri142_no_name_20100409_090847_7_mri_T1,Pass,non-uniformity artefact (bright nose); low GM/WM contrast; threshold pass,Rater04,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,non-uniformity artefact (recoverable),Rater04,
+mri175_no_name_20110112_090848_15_mri_T1,Pass,low GM/WM contrast;,Rater04,
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,tight AP FOV but brain covered; non-uniformity artefact (recoverable),Rater04,
+mri1848_no_name_20131014_090100_7_mri_T1,Pass,non-uniformity artefact (bright nose); low dynamic range; low Gm/WM contrast; bright calcified flax cerebri; threshold pass;,Rater04,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,tight AP FOV but brain covered;,Rater04,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,"",Rater04,
+mri144_no_name_20100930_091919_10_mri_T1,Pass,non-uniformity artefact (bright nose); low dynamic range; low GM/WM contrast; threshold pass,Rater04,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"",Rater04,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Rater04,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater04,
+mri156_no_name_20100803_074946_9_mri_T1,Pass,low GM/WM contrast; large ventricle; non-uniformity artefact (bright nose);,Rater04,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,non-uniformity artefact (bright nose); low GM/WM contrast; threshold pass,Rater04,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,incomplete coverage - cerebellum cut off;,Rater04,
+mri1181_no_name_20120626_143537_2_mri_T1,Pass,"",Rater04,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,"",Rater04,
+mri1114_no_name_20100614_141342_4_mri_T1,Pass,tight AP FOV but brain is JUST covered;,Rater04,
+mri174_no_name_20101115_084222_9_mri_T1,Pass,non-uniformity artefact (bright nose); low GM/WM contrast,Rater04,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,non-uniformity artefact (bright nose); GM/WM contrast low in some slides,Rater04,
+mri1040_no_name_20080616_141810_3_mri_T1,Pass,slight movement;,Rater04,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Rater04,
+mri140_no_name_20100316_085253_7_mri_T1,Pass,low dynamic range; low GM/WM contrast,Rater04,
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,low dynamic range/ non-uniformity artefact (bright nose); bright calcified falx cerebri; low GM/WM contrast,Rater04,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Rater04,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,incomplete coverage - cerebellum cut off; slight movement (recoverable);,Rater04,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,large ventricle;,Rater04,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,no data,Rater04,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,"",Rater04,
+mri177_no_name_20101004_092909_8_mri_T1,Pass,non-uniformity artefact (bright nose); poor GM/WM contrast;  threshold pass,Rater04,
+mri178_no_name_20101019_072213_7_mri_T1,Pass,tight SI FOV but brain looks fully covered; low GM/WM contrast;,Rater04,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,tight AP FOV but brain covered; low GM/WM contrast in few slides,Rater04,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,slight movement; dark region in RH (infarct?); incomplete coverage - cerebellum cutoff,Rater04,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,low GM/WM contrast in some slides;,Rater04,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,non-uniformity artefact (bright blood vessels);,Rater04,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,slight movement;,Rater04,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Rater04,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,no data,Rater04,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Rater04,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,tight SI FOV but brain seems fully covered; some non-uniformity artefact (bright nose);,Rater04,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Rater04,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,acquisition artefact; incomplete coverage,Rater04,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Rater04,
+mri104_na971602_20120127_095829_21_mri_T1,Pass,non-uniformity artefact (blood vessels); tight SI FOV - brain is JUST covered?; threshold pass,Rater04,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,severe atrophy; low GM/WM contrast in some slices;,Rater04,
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,tight AP FOV barely enough coverage; signal drop off in occipital lobe; threshold pass,Rater04,
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Rater04,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,tight AP FOV but brain covered,Rater04,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,low GM/WM contrast in some slides;,Rater04,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Rater04,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Rater04,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,slight movement;,Rater04,
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,tight SI FOV but brain covered,Rater04,
+mri103_na113933_20130117_111022_17_mri_T1,Pass,"",Rater04,
+mri153_no_name_20100527_080656_6_mri_T1,Pass,"",Rater04,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Rater04,
+mri139_no_name_20100318_080946_6_mri_T1,Pass,tight SI FOV but brain seems covered,Rater04,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Rater04,
+mri1416_no_name_20060321_125903_4_mri_T1,Pass,slight movement (recoverable?); threshold pass,Rater04,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,GM/WM contrast low in some slices,Rater04,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater04,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,bright anomaly between eyes; low GM/WM contrast,Rater04,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,incomplete coverage -cerebellum cut off,Rater04,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Rater04,
+mri141_no_name_20100414_131230_7_mri_T1,Pass,"dark/low dynamic range - non-uniformity artefact (bright nose, recoverable); low GM/WM contrast; tight SI FOV; threshold pass",Rater04,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,movement (non-recoverable?); large ventricle; tight AP FOV but brain is covered,Rater04,
+mri172_no_name_20101104_084154_8_mri_T1,Pass,poor GM/WM contrast; tight SI FOV - not sure of coverage; threshold pass,Rater04,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,Incomplete coverage Non-uniformity artifact,Rater05,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"",Rater05,
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,Incomplete coverage Intensity non-uniformity artefacts,Rater05,
+mri164_no_name_20101022_081913_7_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,"",Rater05,
+mri1012_no_name_20070828_101847_3_mri_T1,Pass,Head tilted forward and to the left,Rater05,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,Some incomplete coverage near nose,Rater05,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater05,
+mri1838_no_name_20130916_090719_3_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"",Rater05,
+mri138_no_name_20100315_085007_6_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,Head tilted forward,Rater05,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,Head tilted forward,Rater05,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,Intensity non-uniformity Very dark with no contrast in color or intensity,Rater05,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"",Rater05,
+mri1169_no_name_20120112_133942_2_mri_T1,Pass,Head tilted forward and to the right,Rater05,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,Incomplete coverage Movement artifacts,Rater05,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,Head tilted forward,Rater05,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"",Rater05,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Rater05,
+mri145_no_name_20100507_074909_6_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1119_no_name_20100504_140644_4_mri_T1,Pass,"",Rater05,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,Head tilted to left,Rater05,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1869_no_name_20131217_075350_2_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,Reduced signal intensity,Rater05,
+mri1584_no_name_20101119_131115_4_mri_T1,Pass,"",Rater05,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"",Rater05,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,"Incomplete coverage, reduced signal intensity",Rater05,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,Head tilted forward and to the right,Rater05,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,Incomplete coverage Reduced intensity,Rater05,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,Noisy scan with some movement artifacts,Rater05,
+mri1855_no_name_20131122_101643_2_mri_T1,Fail,Incomplete coverage Slightly noisy scan,Rater05,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,"Incomplete coverage Bright intensity around nose, slighty reduced intensity",Rater05,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,Reduced signal intensity at the neck and front of the face,Rater05,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,Some reduced intensity at bottom of the neck,Rater05,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,Very slight movement artifacts,Rater05,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,Incomplete coverage Noisy scan,Rater05,
+mri163_no_name_20100812_071836_7_mri_T1,Fail,Incomplete coverage Bright intensity near nose,Rater05,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,Bright intensity but enough contrast Incomplete coverage,Rater05,
+mri1181_no_name_20120626_143537_2_mri_T1,Pass,"",Rater05,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,Slight movement artifacts,Rater05,
+mri1114_no_name_20100614_141342_4_mri_T1,Pass,Slightly noisy scan Reduced coverage near front of face,Rater05,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,Incomplete coverage Intensity non-uniformity,Rater05,
+mri172_no_name_20101104_084154_7_mri_T1,Fail,"Incomplete coverage Bright intensity at nose, signl dropout at neck",Rater05,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,Movement artifacts,Rater05,
+mri140_no_name_20100316_085253_7_mri_T1,Fail,Reduced dynamic range Incomplete coverage,Rater05,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"Intensity non-uniformity, lower intensity near front of face",Rater05,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,Incomplete coverage,Rater05,
+mri180_no_name_20101108_083349_14_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,Very low intensity Some bright artifacts in the back-to-front scans,Rater05,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,Movement artifacts Lower signal intensity in the neck area,Rater05,
+mri177_no_name_20101004_092909_8_mri_T1,Fail,"Incomplete coverage Bright intensity at nose, reduced intensity throughout scan",Rater05,
+mri178_no_name_20101019_072213_7_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,Some signal dropout around neck,Rater05,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1856_no_name_20131120_080018_2_mri_T1,Fail,Incomplete coverage Low signal intensity throughout,Rater05,
+mri1394_no_name_20051115_114024_3_mri_T1,Fail,Intensity non-uniformity Signal loss around neck and front of face,Rater05,
+mri157_no_name_20100713_080405_6_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,"Very low signal intensity, all images very unclear",Rater05,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,Head tilted forward Some movement artifacts,Rater05,
+mri179_no_name_20101014_095134_7_mri_T1,Fail,"Incomplete coverage Intensity non-uniformity, AP inhomogeneity at nose",Rater05,
+mri172_no_name_20101104_084154_8_mri_T1,Fail,Incomplete coverage Intensity non-uniformity due to bright spot at nose,Rater05,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,Signal loss around neck,Rater05,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,Very low-intensity signal Complete signal loss on the left side of the left-to-right images,Rater05,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,Some signal dropout at bottom of neck,Rater05,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,Incomplete coverage,Rater05,
+mri183_no_name_20120105_100805_9_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,Some cutoff on the left of the front-to-back images,Rater05,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,Incomplete coverage Very bright skull,Rater05,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Rater05,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,Low signal intensity,Rater05,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,Intensity non-uniformity around the neck Head tilted back Movement artifacts,Rater05,
+mri1867_no_name_20140113_100959_2_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,"Signal dropout in the mouth due to dental work, causing signal dropout further behind in the brain",Rater05,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,Incomplete coverage Intensity non-uniformity,Rater05,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,Incomplete coverage,Rater05,
+mri153_no_name_20100527_080656_6_mri_T1,Fail,Incomplete coverage Intensity non-uniformity with bright spot around nose and scalp,Rater05,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,Head tilted forward,Rater05,
+mri139_no_name_20100318_080946_6_mri_T1,Fail,Incomplete coverage Intensity non-uniformity,Rater05,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,Signal dropout in mouth area,Rater05,
+mri1416_no_name_20060321_125903_4_mri_T1,Pass,Some movement artifacts,Rater05,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,Slightly noisy signal Low intensity signal,Rater05,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater05,
+mri181_no_name_20110225_075722_14_mri_T1,Fail,Incomplete coverage Noisy signal,Rater05,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,Incomplete coverage,Rater05,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,Low intensity signal Head tilted forward,Rater05,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,Signal drop out on both sides of neck,Rater05,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Incomplete coverage on front to back image Some signal dropout at the posterior neck ,Rater05,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,Intensity non-uniformity near posterior neck,Rater05,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,"Signal dropout around neck, reduced intensity throughout",Rater05,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,Reduced signal intensity at front of face near the mouth and at the neck Noisy signal,Rater05,
+mri1040_no_name_20080616_141810_3_mri_T1,Pass,Movement artifacts Signal dropout or incomplete coverage at bottom of neck Head tilted forward,Rater05,
+mri1874_4935_20130703_160512_9_mri_T1,Fail,Low signal intensity and intensity non-uniformity Head tilted back,Rater05,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,Reduced intensity,Rater05,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,Anterior/forehead skull cut slightly by FOV.,Rater06,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,Appears noisy.,Rater06,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,Thick and bright dura?,Rater06,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,"Significant ringing due to motion, low GM/WM contrast.",Rater06,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Rater06,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,Frontal and parietal/occipital lobe pathology or inhomogeneity?,Rater06,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"Bright image, bright scalp and fat, low GM/WM contrast.",Rater06,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,"Posterior skull, maybe dura, cut by limited FOV.",Rater06,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"low GM/WM contrast, skull and maybe dura cut anterior+posterior due to limited FOV ",Rater06,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,No image is visible.,Rater06,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"Low intensity dynamic range, low GM/WM contrast, posterior skull cut by FOV, potentially into occipital lobe.",Rater06,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,Occipital and frontal lobes cut by limited FOV.,Rater06,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,Posterior skull cut by limited FOV.,Rater06,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,Posterior skull cut by limited FOV.,Rater06,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"Bright scalp, limited WM GM contrast.",Rater06,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"Appears noisy, posterior skull cut by limited FOV.",Rater06,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"Appears noisy, posterior skull cut by limited FOV.",Rater06,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"Appears noisy, posterior skull cut by limited FOV.",Rater06,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,Posterior and anterior skull cut by FOV,Rater06,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,Incomplete coverage - base of cerebellum cut by FOV,Rater06,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,Anterior and posterior skull cut by FOV,Rater06,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"bright scalp, inhomogeneity at edge of cerebellum, FOV cut at edge of cerebellum1",Rater06,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,No image visible.,Rater06,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,FOV cuts posterior skull to edge of occipital lobe.,Rater06,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,"Low GM WM contrast, noisy",Rater06,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,No visible image.,Rater06,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,Left side cerebellum and inferior brain signal loss.,Rater06,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"Severe frontal lobe pathology, FOV cuts anterior and posterior skull to brain edge.",Rater06,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"Severe left hemisphere pathology, FOV hits base edge of cerebellum, bright scalp and nose, limited dynamic range ",Rater06,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"some inhomogeneity across the image, noisy",Rater06,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,some inhomogeneity,Rater06,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"noisy, FOV cuts posterior skull ",Rater06,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Ringing throughout WM and near cortex,Rater06,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,base of cerebellum cut by FOV,Rater06,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"Bright scalp/nose/forehead, intensity inhomogeneity, low GM/WM contrast.",Rater06,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,"Bright nose, very dark images, low intensity dynamic range, cerebellum cut?, low GM/WM contrast. ",Rater06,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"Potential occipital lobe cut by FOV limit (posterior skull cut), low GM/WM contrast (possibly due to noise).",Rater06,
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,"Inferior cerebellum cut by FOV, low GM/WM contrast, bright forehead, nose, and temples; dark image and low intensity dynamic range.",Rater06,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,"Inferior cerebellum maybe cut by FOV? Hard to tell. Bright nose and scalp, dark image and low intensity dynamic range. ",Rater06,
+mri138_no_name_20100315_085007_6_mri_T1,Fail,"Low intensity dynamic range, bright nose, intensity homogeneity leading to darkened inferior portion of cerebellum, potential base of cerebellum cut by limited FOV, low GM/WM contrast.",Rater06,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,"Low intensity dynamic range, bright forehead and nose, potential base of cerebellum cut by limited FOV, UBO near midline.",Rater06,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"Posterior skull cut by limited FOV, some striations visible in WM near midline - due to pathology or ringing from motion?",Rater06,
+mri1169_no_name_20120112_133942_2_mri_T1,Pass,"Appears noisy, low GM/WM contrast, posterior skull cut by limited FOV",Rater06,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,"Intensity inhomogeneity, bright scalp, limited GM/WM contrast,  base of the cerebellum cut by FOV?",Rater06,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,Striations due to ringing or pathology in WM? Intensity inhomogeneity due to pathology near midline? Edge of frontal lobe cut by limited FOV.,Rater06,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,Some ringing or is it pathology? Low GM/WM contrast.,Rater06,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"Bright forehead and nose, low GM/WM contrast, low contrast at base edge of cerebellum.",Rater06,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,"Low intensity dynamic range, low GM/WM contrast, edge of occipital lobe cut by limited FOV.",Rater06,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,Some ringing or pathology? Superior skull cut and potential superior brain cut due to limited FOV.,Rater06,
+mri1869_no_name_20131217_075350_2_mri_T1,Fail,"Left side UBO, bright scalp, low WM/GM contrast, superior skull and maybe superior brain cut by limited FOV.",Rater06,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,"Dark image, low intensity dynamic range, low GM WM contrast.",Rater06,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,"Low WM GM contrast, posterior skull including edge of occipital lobe cut by limited FOV.",Rater06,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"Appears noisy, ringing due to limited motion in WM?",Rater06,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,"Low intensity dynamic range, bright nose, dark image, low GM WM contrast, base of occipital partially cut by FOV.",Rater06,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,"Bright brain tissue, low MW GM contrast, some ringing, intensity inhomogeneity.",Rater06,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,"Bright scalp, base of cerebellum cut by limited FOV, superior skull cut to edge of brain by limited FOV.",Rater06,
+mri1170_no_name_20100803_114436_9_mri_T1,Fail,"Posterior skull cuts edge of occipital lobe by limited FOV, low GM WM contrast.",Rater06,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,"Very dark image, low intensity dynamic range, bright nose and forehead, inferior edge of cerebellum cut by limited FOV / inhomogeneity.",Rater06,
+mri1855_no_name_20131122_101643_2_mri_T1,Fail,"Superior skull cut by limited FOV to superior edge of brain, intensity inhomogeneity, low WM GM contrast.",Rater06,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,"Bright nose, limited intensity dynamic range, dark image, low GM WM contrast, potential inferior edge of cerebellum cut by limited FOV",Rater06,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"Appears noisy, frontal lobe pathology or intensity inhomogeneity?",Rater06,
+mri156_no_name_20100803_074946_9_mri_T1,Pass,"Bright nose, intensity inhomogeneity, low GM WM contrast, potential inferior edge of cerebellum cut by limited FOV",Rater06,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"Bright nose, low intensity dynamic range, dark image, low GM WM contrast, superior skull cut by FOV",Rater06,
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,"Ringing in WM near cortex, can affect cortical thickness estimates.",Rater06,
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,Ringing in WM and near cortex.,Rater06,
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,Ringing in WM and near cortex.,Rater06,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,"Low GM WM contrast, base of cerebellum cut by FOV",Rater06,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,"Low intensity dynamic range, bright nose, low WM  GM contrast",Rater06,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,Noisy and ringing in WM,Rater06,
+mri140_no_name_20100316_085253_7_mri_T1,Fail,"bright nose, limited dynamic range, dark image, low GM WM contrast, FOV cuts to inferior edge of cerebellum ",Rater06,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,"dark image, low intensity dynamic range, bright noise and forehead, low GM WM contrast, inhomogeneity ",Rater06,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"low intensity dynamic range, low GM WM contrast, anterior and posterior skull cut by FOV",Rater06,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,"Ringing throughout WM, inferior image cut to base of cerebellum by FOV",Rater06,
+mri177_no_name_20101004_092909_8_mri_T1,Pass,"dark image, limited intensity dynamic range, bright nose, low GM WM contrast, inhomogeneity ",Rater06,
+mri178_no_name_20101019_072213_7_mri_T1,Fail,"Bright nose, low WM GM contrast, FOV at the edge of the base of the cerebellum and cuts superior skull into edge of brain",Rater06,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,"Posterior skull cut by FOV to the edge of the occipital lobe, inhomogeneity ",Rater06,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,"Ringing, lower edge of cerebellum cut by FOV, superior skull cut by FOV",Rater06,
+mri1856_no_name_20131120_080018_2_mri_T1,Fail,"Bright nose and forehead, inhomogeneity at superior edge of brain, superior skull cut to brain's edge by FOV, inhomogeneity in frontal lobe ",Rater06,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"Noisy, inhomogeneity, signal drop out near midline or severe pathology?",Rater06,
+mri157_no_name_20100713_080405_6_mri_T1,Fail,"Base of cerebellum darkens near FOV limit, FOV hit base of cerebellum, bright scalp ",Rater06,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,Signal dropout near midline or severe pathology?,Rater06,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,"Inhomogeneity near superior and inferior edge of FOV, edge of FOV hits base of cerebellum",Rater06,
+mri172_no_name_20101104_084154_8_mri_T1,Fail,"Bright nose, low dynamic range, very dark image, very low GM WM contrast, based of cerebellum may be cut by limited FOV, superior skull cut to edge of brain",Rater06,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"Noisy, inhomogeneity or severe pathology near midline?",Rater06,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,"Inhomogeneity, tight FOV hits edge of cerebellum, cuts superior skull and superior brain",Rater06,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,"FOV cuts posterior skull, inhomogeneity at occipital lobe near FOV edge, noisy ",Rater06,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,"Bright scalp, inhomogeneity in frontal lobe and toward edge of cerebellum, low GM WM contrast, FOV hits lower edge of cerebellum and cuts it",Rater06,
+mri1688_no_name_20110805_130424_2_mri_T1,Fail,"low dynamic range, FOV cuts posterior skull to edge of occipital lobe, noisy, low GM WM contrast, signal dropout at frontal lobe due to FOV",Rater06,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"low dynamic range, noisy, inhomogeneity or pathology toward midline?",Rater06,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,"Noisy, some ringing, bright scalp ",Rater06,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,"Inhomogeneity, superior skull cut by limited FOV, inferior cerebellum hit by FOV, inhomogeneity near FOV edge for cerebellum and superior brain",Rater06,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,"superior skull cut by FOV, inhomogeneity in superior brain near FOV edge, some ringing in occipital lobe, inferior edge of FOV hits cerebellum ",Rater06,
+mri153_no_name_20100527_080656_6_mri_T1,Fail,"Bright scalp and nose, inhomogeneity near cerebellum at inferior FOV edge ",Rater06,
+mri139_no_name_20100318_080946_6_mri_T1,Fail,"inhomogeneity globally and near base of cerebellum, bright scalp, low WM GM contrast, FOV cuts cerebellum base",Rater06,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,signal loss / inhomogeneity or pathology near midline?,Rater06,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"low dynamic range, low WM GM contrast, posterior and anterior skull cut by FOV",Rater06,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,some ringing left side,Rater06,
+mri181_no_name_20110225_075722_14_mri_T1,Fail,"bright nose and scalp, inhomogeneity near FOV edges, superior skull cut by FOV, inferior FOV hits base of cerebellum ",Rater06,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"dark image, limited dynamic range",Rater06,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,strong Ringing artifact,Rater07,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Rater07,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,"incomplete coverage (cerebellum, cut)",Rater07,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,incomplete coverage (occipital lobe),Rater07,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,incomplete coverage (cerebellum),Rater07,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,incomplete coverage (occipital and frontal lobe),Rater07,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,"",Rater07,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,incomplete coverage (occipital lobe) + weird shering in axial,Rater07,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Rater07,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,incomplete coverage (occipital lobe),Rater07,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"",Rater07,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,incomplete coverage (cerebellum),Rater07,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater07,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,incomplete coverage (cerebellum) + some non-uniformity,Rater07,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,incomplete coverage (cerebellum),Rater07,
+mri1181_no_name_20120626_143537_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,"",Rater07,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,potential incomplete coverage (cerebellum) but I think its ,Rater07,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,"incomplete coverage (cerebellum) + Noisy * skull cut by the FOV, might cause masking issues",Rater07,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,Some ringing outsie of the brain (frontal),Rater07,
+mri177_no_name_20101004_092909_8_mri_T1,Pass,"some non-uniformity, * skull cut by the FOV, might cause masking issues",Rater07,
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,"incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"",Rater07,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Rater07,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri172_no_name_20101104_084154_8_mri_T1,Pass,"some non-uniformity because of the high intensity nose * skull cut by the FOV, might cause masking issues",Rater07,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Rater07,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,"Strong deformation (maybe from metal, jaw) missing part of the brain",Rater07,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"",Rater07,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,non-uniformity + incomplete coverage (occipital and frontal lobe),Rater07,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Rater07,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Rater07,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,"potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri139_no_name_20100318_080946_6_mri_T1,Pass,potential incomplete coverage (cerebellum),Rater07,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"some shearing in coronal * skull cut by the FOV, might cause masking issues",Rater07,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,Noisy + ringing artifact in Axial / coronal,Rater07,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Rater07,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater07,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,incomplete coverage (cerebellum),Rater07,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Rater07,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"* skull cut by the FOV, might cause masking issues",Rater07,
+mri141_no_name_20100414_131230_7_mri_T1,Pass,incomplete coverage (cerebellum migh be cut off) + non-uniformity,Rater07,
+mri1120_no_name_20120720_085040_2_mri_T1,Fail,"potential : incomplete coverage (occipital lobe, very close to the end) + weird shearing effect in the axial",Rater07,
+mri1848_no_name_20131014_090100_2_mri_T1,Pass,potential incomplete coverage (cerebellum) + some non-uniformity,Rater07,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"Intensity not normalized + """"Fat"""" around skull, that might cause BET problem low wm/GM contrast",Rater07,
+mri1372_no_name_20070112_101236_4_mri_T1,Pass,"""""Non-uniformity"""" We cannot see much with the current scaling, the small high-intensity dot throw off the scaling.  low GM/WM contrast but except from that, brain coverage seems fine and : * skull cut by the FOV, might cause masking issues",Rater07,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",Rater07,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,"some non-uniformity + potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,"nearly no contrast, might be from the image scaling low wm/gm contrast",Rater07,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,non-uniformity,Rater07,
+mri175_no_name_20110112_090848_15_mri_T1,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1170_no_name_20100803_114436_9_mri_T1,Fail,"potential : incomplete coverage (occipital lobe, very close to the end) + some non-uniformity",Rater07,
+mri1848_no_name_20131014_090100_7_mri_T1,Pass,potential incomplete coverage (cerebellum),Rater07,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",Rater07,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,potential incomplete coverage (cerebellum),Rater07,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,"Noisy, maybe some ringing",Rater07,
+mri140_no_name_20100316_085253_7_mri_T1,Pass,potential incomplete coverage (cerebellum) + very dark near GM in the occipital lobe,Rater07,
+mri1243_no_name_20070111_103213_3_mri_T1,Pass,"Scaling is wrong, white slice on top, however the brain looks fine, but hard to see with this scaling low GM/WM contrast",Rater07,
+mri1051_no_name_20100601_144805_4_mri_T1,Fail,potential incomplete coverage (occipital and frontal lobe),Rater07,
+mri1080_no_name_20081115_073735_10_mri_T1,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,low GM/WM contrast,Rater07,
+mri1405_no_name_20070301_144025_4_mri_T1,Pass,"Scaling is of because of few high intensity voxels otherwise the brain lookis fine, but hard to see anything with the current scaling low wm/gm contrast low GM/WM contrast",Rater07,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,potential incomplete coverage (cerebellum),Rater07,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,"potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",Rater07,
+mri160_no_name_20100621_080230_7_mri_T1,Fail,potential incomplete coverage (cerebellum),Rater07,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri153_no_name_20100527_080656_6_mri_T1,Pass,potential incomplete coverage (cerebellum),Rater07,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",Rater07,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"",Rater08,
+mri1848_no_name_20131014_090100_2_mri_T1,Pass,strong inhomogeneity reduced dynamic range ,Rater08,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,bright skull reduced dynamic range,Rater08,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Rater08,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,"",Rater08,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,skull cut in front and back very bright blood vessels,Rater08,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,"",Rater08,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Rater08,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater08,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,strong inhomogeneity ,Rater08,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,low contrast,Rater08,
+mri138_no_name_20100315_085007_6_mri_T1,Pass,strong inhomogeneity,Rater08,
+mri1848_no_name_20131014_090100_16_mri_T1,Pass,strong inhomogeneity ,Rater08,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,"",Rater08,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Rater08,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,no brain visible,Rater08,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,"",Rater08,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,low contrast,Rater08,
+mri1169_no_name_20120112_133942_2_mri_T1,Pass,"",Rater08,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,brain cut in the back,Rater08,
+mri149_no_name_20100616_092335_8_mri_T1,Pass,strong inhomogeneity,Rater08,
+mri1053_no_name_20081016_133126_3_mri_T1,Pass,skull cut in front and back,Rater08,
+mri1003_no_name_20110510_104039_2_mri_T1,Pass,"",Rater08,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,skull cut in front and back,Rater08,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,strong inhomogeneity ,Rater08,
+mri1119_no_name_20100504_140644_4_mri_T1,Pass,skull cut in front and back,Rater08,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,skull cut in the back,Rater08,
+mri13_na632364_20110517_131234_15_mri_T1,Pass,strong inhomogeneity top of the skull is cut,Rater08,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,skull is very bright,Rater08,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,low intensity low contrast,Rater08,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Rater08,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,skull cut in the back ,Rater08,
+mri1584_no_name_20101119_131115_4_mri_T1,Pass,skull cut in the front and in the back,Rater08,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,"",Rater08,
+mri142_no_name_20100409_090847_7_mri_T1,Pass,strong inhomogeneity low contrast ,Rater08,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,"",Rater08,
+mri175_no_name_20110112_090848_15_mri_T1,Pass,very bright skull low contrast low dynamic range,Rater08,
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,"",Rater08,
+mri1848_no_name_20131014_090100_7_mri_T1,Pass,very low contrast strong inhomogeneity low dynamic range,Rater08,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,back of the skull cut ,Rater08,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,"",Rater08,
+mri144_no_name_20100930_091919_10_mri_T1,Pass,strong inhomogeneity very low contrast ,Rater08,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,"",Rater08,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Rater08,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater08,
+mri141_no_name_20100414_131230_7_mri_T1,Pass,"bright voxel on the nose, reduced dynamic range, intensity homogeneity ",Rater08,
+mri156_no_name_20100803_074946_9_mri_T1,Pass,strong signal inhomogeneity,Rater08,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"",Rater08,
+mri122_na255888_20130514_132141_23_mri_T1,Pass,cerebellum cut off,Rater08,
+mri1181_no_name_20120626_143537_2_mri_T1,Pass,"",Rater08,
+mri1069_no_name_20100127_110528_4_mri_T1,Pass,"",Rater08,
+mri1114_no_name_20100614_141342_4_mri_T1,Pass,"",Rater08,
+mri174_no_name_20101115_084222_9_mri_T1,Pass,"",Rater08,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,"strong inhomogeneity, low contrast",Rater08,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,strong motion artefacts,Rater08,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Rater08,
+mri140_no_name_20100316_085253_7_mri_T1,Pass,"low contrast, strong inhomogeneity",Rater08,
+mri1848_no_name_20131014_090100_6_mri_T1,Pass,"low contrast,strong inhomogeneity",Rater08,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Rater08,
+mri113_na985026_20121101_143641_17_mri_T1,Pass,"ghosting, cerebellum cut off",Rater08,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"",Rater08,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,no signal,Rater08,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,"",Rater08,
+mri177_no_name_20101004_092909_8_mri_T1,Pass,"low contrast, strong inhomogeneity",Rater08,
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"",Rater08,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,"",Rater08,
+mri114_na578878_20121114_142513_21_mri_T1,Pass,"cerebellum cut off, motion artifacts",Rater08,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"",Rater08,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"",Rater08,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,low contrast,Rater08,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,"",Rater08,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,no signal,Rater08,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,"",Rater08,
+mri179_no_name_20101014_095134_7_mri_T1,Pass,"",Rater08,
+mri172_no_name_20101104_084154_8_mri_T1,Pass,"low contrast, strong inhomogeneity ",Rater08,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Rater08,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,big signal void,Rater08,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Rater08,
+mri104_na971602_20120127_095829_21_mri_T1,Pass,cerebellum slightly cutoff,Rater08,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"",Rater08,
+mri1106_no_name_20090324_132237_9_mri_T1,Pass,"back of the head cut-off, signal drop off in the back of the brain",Rater08,
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Rater08,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Rater08,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Rater08,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Rater08,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Rater08,
+mri1141_no_name_20090923_142930_3_mri_T1,Pass,"",Rater08,
+mri16_nacc327046_20081009_090004_3_mri_T1,Pass,"",Rater08,
+mri103_na113933_20130117_111022_17_mri_T1,Pass,cerebellum slightly cut off,Rater08,
+mri153_no_name_20100527_080656_6_mri_T1,Pass,cerebellum slightly cut off,Rater08,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Rater08,
+mri139_no_name_20100318_080946_6_mri_T1,Pass,"",Rater08,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,"",Rater08,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,motion artefacts,Rater08,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Rater08,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater08,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,"",Rater08,
+mri125_na453098_20130612_114015_23_mri_T1,Pass,half of cerebellum cut off,Rater08,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Rater08,
+mri141_no_name_20100414_131230_7_mri_T1,Fail,incomplete coverage,Rater09,
+mri1848_no_name_20131014_090100_2_mri_T1,Fail,incomplete coverage,Rater09,
+mri1164_no_name_20130528_123109_2_mri_T1,Pass,"",Rater09,
+mri1012_no_name_20070828_101847_3_mri_T1,Fail,ringing artifact,Rater09,
+mri1701_no_name_20130201_110229_2_mri_T1,Pass,"",Rater09,
+mri1838_no_name_20130916_090719_3_mri_T1,Pass,"",Rater09,
+mri138_no_name_20100315_085007_6_mri_T1,Fail,incomplete coverage,Rater09,
+mri1848_no_name_20131014_090100_16_mri_T1,Fail,incomplete coverage,Rater09,
+mri1689_no_name_20121009_124907_2_mri_T1,Pass,"",Rater09,
+mri1372_no_name_20070112_101236_4_mri_T1,Fail,"",Rater09,
+mri1120_no_name_20120720_085040_2_mri_T1,Pass,"",Rater09,
+mri164_no_name_20101022_081913_7_mri_T1,Pass,intensity non-uniformity,Rater09,
+mri1163_no_name_20100518_125129_4_mri_T1,Pass,slightly ringing artifact,Rater09,
+mri1408_no_name_20060213_114512_3_mri_T1,Pass,"",Rater09,
+mri1697_no_name_20111205_131446_2_mri_T1,Pass,"",Rater09,
+mri1169_no_name_20120112_133942_2_mri_T1,Fail,incomplete coverage of occipital,Rater09,
+mri1708_no_name_20120410_122713_2_mri_T1,Fail,incomplete coverage,Rater09,
+mri149_no_name_20100616_092335_8_mri_T1,Fail,incomplete coverage of cerebellum,Rater09,
+mri1053_no_name_20081016_133126_3_mri_T1,Fail,incomplete coverage (front to back),Rater09,
+mri1003_no_name_20110510_104039_2_mri_T1,Fail,ringing artifact,Rater09,
+mri1058_no_name_20091013_130157_3_mri_T1,Pass,"",Rater09,
+mri145_no_name_20100507_074909_6_mri_T1,Pass,intensity nonuniformity,Rater09,
+mri1119_no_name_20100504_140644_4_mri_T1,Fail,incomplete coverage,Rater09,
+mri1657_no_name_20091019_130916_3_mri_T1,Pass,"",Rater09,
+mri13_na632364_20110517_131234_15_mri_T1,Fail,incomplete coverage,Rater09,
+mri1869_no_name_20131217_075350_2_mri_T1,Pass,intensity non-uniformity,Rater09,
+mri1083_no_name_20110121_143212_2_mri_T1,Pass,"",Rater09,
+mri1006_no_name_20101019_130607_4_mri_T1,Pass,"",Rater09,
+mri1584_no_name_20101119_131115_4_mri_T1,Fail,incomplete coverage,Rater09,
+mri142_no_name_20100409_090847_7_mri_T1,Fail,incomplete coverage,Rater09,
+mri1001_no_name_20090113_091713_3_mri_T1,Pass,"",Rater09,
+mri175_no_name_20110112_090848_15_mri_T1,Fail,incomplete coverage,Rater09,
+mri1170_no_name_20100803_114436_9_mri_T1,Pass,non-uniformity intensity,Rater09,
+mri1192_no_name_20121108_113541_2_mri_T1,Pass,"",Rater09,
+mri1855_no_name_20131122_101643_2_mri_T1,Pass,intensity non-uniformity,Rater09,
+mri144_no_name_20100930_091919_10_mri_T1,Fail,"incomplete coverage, dark",Rater09,
+mri1361_no_name_20100430_110613_3_mri_T1,Pass,"",Rater09,
+mri1043_no_name_20090422_142946_3_mri_T1,Pass,"",Rater09,
+mri163_no_name_20100812_071836_7_mri_T1,Pass,"",Rater09,
+mri122_na255888_20130514_132141_23_mri_T1,Fail,incomplete coverage,Rater09,
+mri1181_no_name_20120626_143537_2_mri_T1,Fail,ringing artifact,Rater09,
+mri1069_no_name_20100127_110528_4_mri_T1,Fail,ringing artifact,Rater09,
+mri1114_no_name_20100614_141342_4_mri_T1,Fail,ringing artifact,Rater09,
+mri174_no_name_20101115_084222_9_mri_T1,Fail,incomplete coverage,Rater09,
+mri172_no_name_20101104_084154_7_mri_T1,Pass,"",Rater09,
+mri1243_no_name_20070111_103213_3_mri_T1,Fail,"",Rater09,
+mri1040_no_name_20080616_141810_3_mri_T1,Fail,ringing artifact,Rater09,
+mri1848_no_name_20131014_090100_7_mri_T1,Fail,"incomplete coverage, dark, low dynamic range",Rater09,
+mri156_no_name_20100803_074946_9_mri_T1,Fail,"incomplete coverage, intensity non-uniformity",Rater09,
+mri1011_no_name_20101005_121740_2_mri_T1,Pass,noise?,Rater09,
+mri1601_no_name_20100608_112214_4_mri_T1,Pass,slightly ringing artifact,Rater09,
+mri1687_no_name_20110809_113654_2_mri_T1,Pass,"",Rater09,
+mri1055_no_name_20110211_133540_2_mri_T1,Pass,"",Rater09,
+mri140_no_name_20100316_085253_7_mri_T1,Fail,"incomplete coverage, intensity non-uniformity",Rater09,
+mri1848_no_name_20131014_090100_6_mri_T1,Fail,"incomplete coverage, intensity non-uniformity",Rater09,
+mri1683_no_name_20130211_105905_2_mri_T1,Pass,"",Rater09,
+mri113_na985026_20121101_143641_17_mri_T1,Fail,"ringing artifact, incomplete movement",Rater09,
+mri180_no_name_20101108_083349_14_mri_T1,Pass,"",Rater09,
+mri1051_no_name_20100601_144805_4_mri_T1,Pass,unidentified bright object,Rater09,
+mri178_no_name_20101019_072213_7_mri_T1,Pass,"intensity inhomogeneity,",Rater09,
+mri1080_no_name_20081115_073735_10_mri_T1,Pass,low WM/GM contrast,Rater09,
+mri114_na578878_20121114_142513_21_mri_T1,Fail,"incomplete coverage, slight ringing artifact",Rater09,
+mri1856_no_name_20131120_080018_2_mri_T1,Pass,"",Rater09,
+mri1874_4935_20130703_160512_9_mri_T1,Pass,"wrap around artifact, no effect on the brain",Rater09,
+mri1394_no_name_20051115_114024_3_mri_T1,Pass,low GM/WM contrast,Rater09,
+mri157_no_name_20100713_080405_6_mri_T1,Pass,incomplete coverage?,Rater09,
+mri1405_no_name_20070301_144025_4_mri_T1,Fail,"",Rater09,
+mri1307_no_name_20091022_105948_3_mri_T1,Pass,slightly ringing artifact,Rater09,
+mri179_no_name_20101014_095134_7_mri_T1,Fail,incomplete coverage,Rater09,
+mri172_no_name_20101104_084154_8_mri_T1,Fail,"low dynamic range, incomplete coverage",Rater09,
+mri1331_no_name_20101011_110555_4_mri_T1,Pass,"",Rater09,
+mri1044_no_name_20111102_092113_2_mri_T1,Fail,"",Rater09,
+mri1720_no_name_20100422_113312_4_mri_T1,Pass,"",Rater09,
+mri104_na971602_20120127_095829_21_mri_T1,Fail,incomplete coverage,Rater09,
+mri183_no_name_20120105_100805_9_mri_T1,Pass,"",Rater09,
+mri1106_no_name_20090324_132237_9_mri_T1,Fail,"low GM/WM contrast, intensity non-uniformity",Rater09,
+mri160_no_name_20100621_080230_7_mri_T1,Pass,"",Rater09,
+mri1688_no_name_20110805_130424_2_mri_T1,Pass,"",Rater09,
+mri1699_no_name_20120206_120623_2_mri_T1,Pass,"",Rater09,
+mri1451_no_name_20061115_110308_5_mri_T1,Pass,"",Rater09,
+mri1867_no_name_20140113_100959_2_mri_T1,Pass,"",Rater09,
+mri1141_no_name_20090923_142930_3_mri_T1,Fail,noisy scan ,Rater09,
+mri16_nacc327046_20081009_090004_3_mri_T1,Fail,incomplete coverage,Rater09,
+mri103_na113933_20130117_111022_17_mri_T1,Fail,incomplete coverage,Rater09,
+mri153_no_name_20100527_080656_6_mri_T1,Pass,coverage?,Rater09,
+mri1097_no_name_20090218_141450_3_mri_T1,Pass,"",Rater09,
+mri139_no_name_20100318_080946_6_mri_T1,Pass,"",Rater09,
+mri1206_no_name_20110329_110526_2_mri_T1,Pass,consider shape of brain ,Rater09,
+mri1416_no_name_20060321_125903_4_mri_T1,Fail,ringing artifact,Rater09,
+mri1690_no_name_20110826_131122_2_mri_T1,Pass,"",Rater09,
+mri1241_no_name_20130116_152733_2_mri_T1,Pass,"",Rater09,
+mri181_no_name_20110225_075722_14_mri_T1,Pass,intensity non-uniformity,Rater09,
+mri125_na453098_20130612_114015_23_mri_T1,Fail,incomplete coverage,Rater09,
+mri1110_no_name_20090526_143733_3_mri_T1,Pass,"",Rater09,
+mri1247_no_name_20110908_132555_2_mri_T1,Pass,low GM/WM contrast,Rater09,
+mri1410_no_name_20060327_104115_4_mri_T1,Pass,low GM/WM contrast,Rater09,
+mri1146_no_name_20091201_140624_3_mri_T1,Pass,slightly ringing artifact,Rater09,
+mri1423_no_name_20090611_111241_3_mri_T1,Pass,slightly ringing artifacts,Rater09,
+mri177_no_name_20101004_092909_8_mri_T1,Fail,"low dynamic range, dark, intensity inhomogeneity, (coverage of cerebellum?)",Rater09,

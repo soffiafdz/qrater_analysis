@@ -1,0 +1,31 @@
+Image,QC,Comment
+Case_103,Fail,Mismatch in around cerebellum and occipital lobe
+Case_104,Fail,Complete failure. Potential fail in registration for this analysis. Check real registration.
+Case_105,Pass,A bit overscaled in comparison to template.
+Case_106,Fail,Z-scale too small in comparison to template.
+Case_107,Pass,Very good fit.
+Case_108,Pass,"Overscale in inferior temporal lobe, but might be due to limitations of linear reg."
+Case_010,Fail,Issues on Y-Scale and X-Scale
+Case_110,Pass,
+Case_111,Pass,Assymetry; bit overcale in inferior temporal lobe.
+Case_112,Pass,
+Case_113,Fail,Underscale. Registration was done to meninges.
+Case_114,Fail,Underscaled.
+Case_115,Fail,Complete failure. Possibly due to latest registration.
+Case_116,Fail,Z-Scale too small.
+Case_117,Fail,X-Scale issues.
+Case_119,Fail,
+Case_120,Fail,Y-Scale too big.
+Case_122,Pass,
+Case_123,Pass,
+Case_124,Fail,Complete failure. Potentially from latest registration.
+Case_127,Fail,Rotation artifact. Orbitofrontal/Eyes.
+Case_128,Fail,Rotation artifact? Not sure.
+Case_129,Fail,Y-Scale
+Case_130,Pass,
+Case_132,Fail,Rotation artifact. Z-Scale.
+Case_133,Pass,
+Case_135,Fail,Overscale and rotation.
+Case_136,Pass,
+Case_137,Fail,Y-scale. Rotation around cerebellum-tentorium.
+Case_013,Fail,
