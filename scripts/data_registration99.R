@@ -8,13 +8,13 @@ library("purrr")
 library("stringr")
 
 # Read raw data
-#expert <- fread(here("data/raw/QC_Training_Louis_all-raters_2022-08-21.csv"))
-expert_1 <- fread(here("data/raw/ADNI3_99_LinReg_v2_all-raters_2022-09-23.csv"))
-expert_2 <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_2022-10-12.csv"))
-expert_c <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_consensus.csv"),
+path     <- "data/raw/qc_ratings/registration/balanced_data"
+expert_1 <- fread(here(path, "MULTI_99_Linear_Expert_all-raters_2022-09-23.csv"))
+expert_2 <- fread(here(path, "MULTI_99_Linear_Expert_all-raters_2022-10-12.csv"))
+expert_c <- fread(here(path, "MULTI_99_Linear_Expert_consensus.csv"),
                   header = FALSE)
-ratings <- fread(here("data/raw/ADNI3_99_LinReg_all-raters_2022-10-14.csv"))
-history <- fread(here("data/raw/ADNI3_99_LinReg_all-raters_History_2022-10-14.csv"))
+ratings <- fread(here(path, "MULTI_99_Linear_all-raters_2022-10-14.csv"))
+history <- fread(here(path, "MULTI_99_Linear_all-raters_History_2022-10-14.csv"))
 
 # Remove unused cols
 expert_2[, `:=`(V3 = NULL, V4 = NULL, V5 = NULL)]
@@ -73,6 +73,13 @@ for (i in seq_along(raters_names)) {
 }
 rm(i, rater)
 rm(raters_names)
+
+# Load original QC
+case_ids <- here("data/raw/list_cases_linreg.csv") |>
+  fread(select = c("ID", "QC"), col.names = c("Image", "Orig_QC"))
+
+reg_99 <- case_ids[reg_99, on = "Image"]
+rm(case_ids)
 
 # Leading 0 for Cases
 reg_99[, Image := map_chr(

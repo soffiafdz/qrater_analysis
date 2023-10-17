@@ -28,7 +28,8 @@ rm(ls1, ls2, lst)
 
 ## LinReg
 ls1 <- fread(here("data/raw/cases_linreg.csv"))
-ls2 <- fread(here("data/raw/ADNI3_99_LinReg_v2_louis_consensus.csv"),
+pre <- "data/raw/qc_ratings/registration/balanced_data"
+ls2 <- fread(here(pre, "MULTI_99_Linear_Expert_consensus.csv"),
              header = FALSE)
 lst <- ls1[ls2, on = .(ID = V1), .(ID, Address, QC)]
 

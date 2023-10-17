@@ -6,11 +6,13 @@ library("data.table")
 library("readr")
 library("magrittr")
 
+# Path to data
+path     <- "data/raw/qc_ratings/raw/balanced_data"
 ## Rater 1
 # Read raw data
-expert_1 <- fread(here("data/raw/Acquisition99_v2_all-raters_2022-09-23.csv"))
-expert_2 <- fread(here("data/raw/Acquisition99_v2_louis_2022-10-28.csv"))
-expert_c <- fread(here("data/raw/Acquisition99_v2_louis_consensus.csv"),
+expert_1 <- fread(here(path, "NACC_99_Expert_2022-09-23.csv"))
+expert_2 <- fread(here(path, "NACC_99_Expert_2022-10-28.csv"))
+expert_c <- fread(here(path, "NACC_99_Expert_consensus.csv"),
                   header = FALSE)
 
 # Remove extra cols
@@ -41,7 +43,7 @@ expert[!is.na(Time) & Session == "Second", Diff := Time - shift(Time)]
 
 ## Rater 2-10
 # Read raw data
-trainees <- fread(here("data/raw/T1_Final_Recoded_all-raters_2022-04-05.csv"))
+trainees <- fread(here(path, "NACC_99_all-raters_2022-04-05.csv"))
 setnames(trainees, c("Image", "Rater", "Rating", "Comment", "Time"))
 trainees[, Session := NA]
 
@@ -93,6 +95,15 @@ acq_99_comments <- acq_99[
 ## TSV
 write_delim(acq_99_comments, here("data/derivatives/acq_99_comments.csv"),
             delim = "\t")
+
+# Original Label
+case_ids <- here("data/raw/nacc/CaseIDs.csv") |> fread()
+case_ids[, QC := factor(QC,
+                        levels = c("Pass", "Warn", "Fail"),
+                        labels = c("Pass", "Borderline", "Fail"))]
+acq_99 <- case_ids[, .(Orig_QC = QC, Image = CaseID)
+                   ][acq_99, on = "Image"]
+rm(case_ids)
 
 # Write RDS objects
 write_rds(acq_99, here("data/derivatives/acquisition_99_dt.rds"))

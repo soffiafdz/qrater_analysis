@@ -6,10 +6,11 @@ library("data.table")
 library("readr")
 
 # Read raw data
-acquis1 <- fread(here("data/raw/ADNI_Raw_Louis_Ratings_2022-11-23.csv"))
+path <- "data/raw/qc_ratings/raw/complete_data"
+acquis1 <- fread(here(path, "ADNI_Raw_Expert_2022-11-23.csv"))
 setnames(acquis1, c("Image", "Rater", "Rating", "Comment", "Time"))
 
-acquis <- fread(here("data/raw/Raw_ADNI3_rating_2022-06-29.csv"))
+acquis <- fread(here(path, "ADNI_Raw_Raters_2022-06-29.csv"))
 acquis[, V4 := NULL]
 setnames(acquis, c("Image", "Rater", "Rating", "Time", "Comment"))
 
@@ -30,6 +31,9 @@ setorder(acquis, cols = "Time")
 for (rater in acquis[, unique(Rater)]) {
     acquis[Rater == rater, Diff := Time - shift(Time)]
 }
+
+# Remove duplicate rating:
+acquis <- acquis[-6355]
 
 # Write RDS object
 write_rds(acquis, here("data/derivatives/acquisition_dt.rds"))

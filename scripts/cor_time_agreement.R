@@ -16,22 +16,35 @@ if (!file.exists(fname1) || !file.exists(fname2)) {
 }
 
 # Session
-fname3 <- here("data/derivatives/qc_time_dt.rds")
+fname3 <- here("data/derivatives/acq_99_time_dt.rds")
+fname4 <- here("data/derivatives/reg_99_time_dt.rds")
 if (!file.exists(fname3)) {
   source(here("scripts/timing.R"))
 } else {
-  sessions <- read_rds(fname3)
+  acq_99_time_dt <- read_rds(fname3)
+  reg_99_time_dt <- read_rds(fname4)
 }
 
-rm(fname1, fname2, fname3)
+rm(fname1, fname2, fname3, fname4)
 
-## Correlation of Agreement (Count) and Time (hours)
-# raw MRI
-cor.test(acq_99_count[-1, E01],
-         sessions[Rater %like% "Rater" & Dataset == "Training" & Task == "Acquisition",
-                  Time], method = "pearson")
+## Correlation of Agreement (Count) and Time
+
+## raw MRI
+acq_99 <- acq_99_time_dt[Rater %like% "Rater",
+                         .(Total = sum(as.numeric(Diff), na.rm = T),
+                           Median = median(as.numeric(Diff), na.rm = T)),
+                         Rater]
+acq_99[, Agree := acq_99_count[-1, E01]]
+
+acq_99[, cor.test(Agree, Total, method = "spearman")]
+acq_99[, cor.test(Agree, Median, method = "spearman")]
 
 # linear registration
-cor.test(reg_99_count[-1, E01],
-         sessions[Rater %like% "Rater" & Dataset == "Training" & Task == "Registration",
-                  Time], method = "pearson")
+reg_99 <- reg_99_time_dt[Rater %like% "Rater",
+                         .(Total = sum(as.numeric(Diff), na.rm = T),
+                           Median = median(as.numeric(Diff), na.rm = T)),
+                         Rater]
+reg_99[, Agree := reg_99_count[-1, E01]]
+
+reg_99[, cor.test(Agree, Total, method = "spearman")]
+reg_99[, cor.test(Agree, Median, method = "spearman")]

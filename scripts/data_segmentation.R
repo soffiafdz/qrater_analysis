@@ -6,7 +6,7 @@ library("data.table")
 library("readr")
 
 # Read raw data
-rskull <- fread(here("data/raw/redskull_all-raters_2022-09-23.csv"))
+rskull <- fread(here("data/raw/qc_ratings/skull/ADNI_Skull_Experts_2022-09-23.csv"))
 setnames(rskull, c("Image", "Rating", "Rater", "Time"))
 
 # Louis: 1746; Mahsa 6968

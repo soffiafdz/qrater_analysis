@@ -9,7 +9,7 @@ library("magrittr")
 
 # Read raw data
 
-regis <- here("data/raw") %>%
+regis <- here("data/raw/qc_ratings/registration/complete_data") %>%
   list.files(full.names = TRUE) %>%
   str_subset("ADNI_Linear_\\S*_Ratings") %>%
   lapply(fread) %>%
