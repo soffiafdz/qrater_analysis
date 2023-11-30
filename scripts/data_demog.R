@@ -96,8 +96,8 @@ nacc_99     <- nacc_99[nacc_99[, .I[DATE_DIFF == min(DATE_DIFF)],
                                .(ID, MRI_DATE)]$V1]
 rm(missing, nacc_demog, nacc_mri)
 
-nacc        <- rbindlist(list(nacc_338[, .(AGE, SEX, DX, COHORT = "Initial")],
-                              nacc_99[, .(AGE, SEX, DX, COHORT = "Selected")]))
+nacc        <- rbindlist(list(nacc_338[, .(SEX, AGE, DX, COHORT = "Initial")],
+                              nacc_99[, .(SEX, AGE, DX, COHORT = "Selected")]))
 
 nacc |>
   tbl_summary(by = COHORT,

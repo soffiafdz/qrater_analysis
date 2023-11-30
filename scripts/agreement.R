@@ -604,11 +604,6 @@ reg_meeting |>
   italic(~ Rater == "Average") |>
   hline(i = ~ before(Rater, "Average"),
         border = fp_border_default(width = 2)) |>
-  footnote(part = "header", i = 2, j = 2:6,
-           value = as_paragraph("n (%)"), ref_symbols = "1") |>
-  #footnote(part = "header", j = 6,
-           #value = as_paragraph("n (%)"), ref_symbols = "1",
-           #inline = TRUE) |>
   autofit() |>
   save_as_docx(path = "data/derivatives/agreement_pre-post_meeting.docx")
 
