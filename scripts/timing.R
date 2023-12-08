@@ -91,8 +91,8 @@ acq_99_summ1  <-
 
 acq_99_all1 <- acq_99_summ1[, .(Rater = "All",
                                 N = 99,
-                                Rests = round(mean(Rests)),
-                                Session = as_hms(round(mean(Session))))]
+                                Rests = round(median(Rests)),
+                                Session = as_hms(round(median(Session))))]
 acq_99_all1[, PvF := acq_99_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                                na.action = na.omit)$p.value]]
 
@@ -110,7 +110,7 @@ acq_99_all2 <- acq_99_time[, .(Rater = "All",
                dcast(Rater ~ Rating, value.var = c("Median", "Sd"))
 
 acq_99_all2 <- cbind(acq_99_all2,
-                     acq_99_summ2[, lapply(.SD, mean), .SDcols = 2:3])
+                     acq_99_summ2[, lapply(.SD, median), .SDcols = 2:3])
 
 acq_99_summ2  <- rbindlist(list(acq_99_summ2, acq_99_all2), use.names = TRUE)
 
@@ -159,8 +159,8 @@ acquis_wilcox <- acquis_time[Rater %in% no_w_raters,
 acquis_summ1[Rater %in% no_w_raters, PvWvF := acquis_wilcox$PvWvF]
 
 acquis_all1 <- acquis_summ1[, .(Rater = "All", N = sum(N),
-                                Rests = round(mean(Rests)),
-                                Session = as_hms(round(mean(Session))))]
+                                Rests = round(median(Rests)),
+                                Session = as_hms(round(median(Session))))]
 acquis_all1[, PvWvF := acquis_time[, kruskal.test(as.numeric(Diff) ~ Rating,
                                                   na.action = na.omit)$p.value]]
 
@@ -209,12 +209,6 @@ acquis_summ <- acquis_summ1[acquis_summ2, on = "Rater",
 acquis_summ[Rater %in% no_w_raters, `:=`(Warning_N = "0 (0%)",
                                         Warning_Time = "-")]
 
-# Will need these P-values for later
-acquis_p_pvwvf <- acquis_summ1[, .(Comp = "PvWvF", Rater, p = PvWvF)]
-
-rm(acquis, acquis_wilcox, acquis_summ1, acquis_all1, acquis_summ2, acquis_all2,
-   no_w_raters)
-
 
 # Registration 99
 reg_99[Session == "First" & Rater == "Expert01", Rater := "Expert-1 (S1)"]
@@ -236,8 +230,8 @@ reg_99_summ1 <-
 
 reg_99_all1 <- reg_99_summ1[, .(Rater = "All",
                                 N = 99,
-                                Rests = round(mean(Rests)),
-                                Session = as_hms(round(mean(Session))))]
+                                Rests = round(median(Rests)),
+                                Session = as_hms(round(median(Session))))]
 reg_99_all1[, PvF := reg_99_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                                na.action = na.omit)$p.value]]
 
@@ -255,7 +249,7 @@ reg_99_all2 <- reg_99_time[, .(Rater = "All",
                   dcast(Rater ~ Rating, value.var = c("Median", "Sd"))
 
 reg_99_all2 <- cbind(reg_99_all2,
-                      reg_99_summ2[, lapply(.SD, mean), .SDcols = 2:3])
+                      reg_99_summ2[, lapply(.SD, median), .SDcols = 2:3])
 
 reg_99_summ2 <- rbindlist(list(reg_99_summ2, reg_99_all2), use.names = TRUE)
 
@@ -293,8 +287,8 @@ regis_summ1 <-
                                      na.action = na.omit))$p.value), Rater]
 
 regis_all1 <- regis_summ1[, .(Rater = "All", N = sum(N),
-                              Rests = round(mean(Rests)),
-                              Session = as_hms(round(mean(Session))))]
+                              Rests = round(median(Rests)),
+                              Session = as_hms(round(median(Session))))]
 regis_all1[, PvF := regis_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                              na.action = na.omit)$p.value]]
 
@@ -460,9 +454,9 @@ rm(raters_adni, acq_99_acquis_time)
 raters_kruskal <- acquis_summ[, unique(Rater)][c(2:4, 6, 8)]
 acquis_posthoc <- acquis_time[Rater %in% raters_kruskal,
                               dunn.test(as.numeric(Diff), Rating,
-                                        method = "bonferroni"), Rater]
+                                        method = "holm"), Rater]
 acquis_posthoc_all <- acquis_time[, dunn.test(as.numeric(Diff), Rating,
-                                              method = "bonferroni")]
+                                              method = "holm")]
 acquis_posthoc_all[, Rater := "All"]
 acquis_posthoc <- rbindlist(list(acquis_posthoc[order(Rater)],
                                  acquis_posthoc_all),
@@ -482,7 +476,7 @@ rm(acquis_p_pvwvf)
 # Total of 18 comparisons
 acquis_p_fdr[, p_adj := p.adjust(p, method = "holm", n = 18)]
 
-acquis_posthoc[, p.adjusted := p.adjust(P, method = "holm", n = 18)]
+acquis_posthoc[, P.adjusted := p.adjust(P, method = "holm", n = 18)]
 
 acquis_summ[, p2 := acquis_p_fdr[1:9, sprintf("%04.3f", p_adj)]]
 
@@ -552,7 +546,6 @@ rm(regis_p_pvf)
 
 
 # Skull segmentation
-# Analyses
 rskull_time[, median(Diff, na.rm = TRUE), .(Rating, Rater)]
 
 # Expert-1
@@ -578,22 +571,13 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     separate_header() |>
     labelizor(part = "header", labels = c("Session" = "Total Time",
-                                          "p" = "p-value")) |>
+                                          "p2" = "p adj.")) |>
     bold(part = "header") |>
-    italic(part = "header", j = "p") |>
+    #italic(part = "header", j = "p") |>
     italic(~ Rater == "All") |>
     hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
     bold(~ p < 0.05, j = "p") |>
-    footnote(part = "header", i = 1, j = 2,
-             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-    footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
-             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(5, 7),
-             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = 8,
-             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
-    footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
-             ref_symbols = "5") |> #, inline = TRUE) |>
+    bold(~ p2 < 0.05, j = "p2") |>
     autofit() |>
     save_as_docx(path = fname)
 }
@@ -606,26 +590,15 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     separate_header() |>
     labelizor(part = "header", labels = c("Session" = "Total Time",
-                                          "p" = "p-value")) |>
+                                          "p2" = "p adj.")) |>
     bold(part = "header") |>
-    italic(part = "header", j = "p") |>
+    #italic(part = "header", j = "p") |>
     italic(~ Rater == "All") |>
     hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
     bold(~ p < 0.05, j = "p") |>
+    bold(~ p2 < 0.05, j = "p2") |>
     labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-    footnote(part = "header", i = 1, j = 2,
-             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = 3,
-             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(4, 6, 8),
-             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(5, 7, 9),
-             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-    footnote(part = "header", j = 10,
-             value = as_paragraph("Wilcoxon rank-sum test; Kruskal-Wallis rank-sum test"),
-             ref_symbols = "5") |>#, inline = TRUE) |>
-    footnote(part = "body", i = 9, j = c(2:3), value = as_paragraph("Average"),
-             ref_symbols = "6") |>#, inline = TRUE) |>
+    labelizor(j = "p2", labels = c("0.000" = "<0.001")) |>
     autofit() |>
     save_as_docx(path = fname)
 }
@@ -638,8 +611,8 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     colformat_double(digits = 3) |>
     labelizor(part = "header", labels = c("chi2" = "Chi-squared",
-                                          "P" = "p-value",
-                                          "P.adjusted" = "Adjusted p-value",
+                                          "P" = "p",
+                                          "P.adjusted" = "p adj.",
                                           "comparisons" = "Comparisons")) |>
     bold(part = "header") |>
     italic(part = "header", j = 4:5) |>
@@ -662,22 +635,13 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     separate_header() |>
     labelizor(part = "header", labels = c("Session" = "Total Time",
-                                          "p" = "p-value")) |>
+                                          "p2" = "p adj.")) |>
     bold(part = "header") |>
-    italic(part = "header", j = "p") |>
+    #italic(part = "header", j = "p") |>
     italic(~ Rater == "All") |>
     hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
     bold(~ p < 0.05, j = "p") |>
-    footnote(part = "header", i = 1, j = 2,
-             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-    footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
-             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(5, 7),
-             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = 8,
-             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
-    footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
-             ref_symbols = "5") |> #, inline = TRUE) |>
+    bold(~ p2 < 0.05, j = "p2") |>
     autofit() |>
     save_as_docx(path = fname)
 }
@@ -690,25 +654,14 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     separate_header() |>
     labelizor(part = "header", labels = c("Session" = "Total Time",
-                                          "p" = "p-value")) |>
+                                          "p2" = "p adj.")) |>
     bold(part = "header") |>
-    italic(part = "header", j = "p") |>
+    #italic(part = "header", j = "p") |>
     italic(~ Rater == "All") |>
     hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
     bold(~ p < 0.05, j = "p") |>
     labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-    footnote(part = "header", i = 1, j = 2,
-             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = 3,
-             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(4, 6),
-             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(5, 7),
-             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = "p",
-             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
-    footnote(~ Rater == "All", j = c(2:3), value = as_paragraph("Average"),
-             ref_symbols = "6") |> #, inline = TRUE) |>
+    labelizor(j = "p2", labels = c("0.000" = "<0.001")) |>
     autofit() |>
     save_as_docx(path = fname)
 }
@@ -720,21 +673,13 @@ if (!file.exists(fname) | rec_tables) {
     flextable() |>
     separate_header() |>
     labelizor(part = "header", labels = c("Session" = "Total Time",
-                                          "p" = "p-value")) |>
+                                          "p" = "p adj.")) |>
     bold(part = "header") |>
-    italic(part = "header", j = "p") |>
+    #italic(part = "header", j = "p") |>
     bold(~ p < 0.05, j = "p") |>
+    bold(~ p2 < 0.05, j = "p2") |>
     labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-    footnote(part = "header", i = 1, j = 2,
-             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = 3,
-             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(4, 6),
-             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 2, j = c(5, 7),
-             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-    footnote(part = "header", i = 1, j = "p",
-             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
+    labelizor(j = "p2", labels = c("0.000" = "<0.001")) |>
     autofit() |>
     save_as_docx(path = fname)
 }
