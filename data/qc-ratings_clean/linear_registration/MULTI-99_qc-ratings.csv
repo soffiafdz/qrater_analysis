@@ -1,0 +1,1092 @@
+Database,Subject,Session,RegistMethod,QC_orig,Rating,Comment,Rater,Session
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Scale (LR); Small,Expert01,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big,Expert01,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Z-Scale (IS); Small,Expert01,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Expert01,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Pass,Z-Scale (IS); Big,Expert01,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Expert01,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,"",Expert01,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Expert01,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Expert01,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Expert01,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Expert01,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,Expert01,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,"",Expert01,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Expert01,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Expert01,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,"",Expert01,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Expert01,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Expert01,V1
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Expert01,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Expert01,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Expert01,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,"",Expert01,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Expert01,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Expert01,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Small,Expert01,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,odd intensity artefact/inhomogeneity,Expert01,
+,,,,,Pass,X-Scale (LR); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Z-Scale (IS); Small,Expert01,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Pass,"",Expert01,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Small,Expert01,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Z-Scale (IS); Small,Expert01,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Expert01,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Pass,Z-Scale (IS); Big,Expert01,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Expert01,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,"",Expert01,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Expert01,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,Z-Scale (IS); Small,Expert01,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,Z-Scale (IS); Small,Expert01,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Expert01,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,Y-Scale (AP); Big; Occipital,Expert01,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Expert01,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Expert01,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Occipital,Expert01,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,X-Rot (LR); Orbitofrontal/Eyes,Expert01,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,Z-Scale (IS); Big,Expert01,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Expert01,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,X-Rot (LR); Orbitofrontal/Eyes,Expert01,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Pass,"while there is a slight orbitofrontal misreg, the temporal lobes fit well.... X-Rot (LR); Orbitofrontal/Eyes",Expert01,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Expert01,V1
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Expert01,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Expert01,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,huge ventricles. X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Expert01,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Expert01,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Expert01,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Small,Expert01,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Pass,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Expert01,
+,,,,,Pass,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Scale (LR); Small,Expert01,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Pass,Z-Scale (IS); Big,Expert01,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Z-Scale (IS); Small,Expert01,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Expert01,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,Z-Scale (IS); Big,Expert01,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Expert01,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,"",Expert01,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Expert01,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Expert01,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Expert01,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Expert01,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Pass,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,Expert01,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,"",Expert01,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Expert01,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Expert01,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,"",Expert01,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Expert01,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Expert01,V1
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Expert01,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Expert01,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Expert01,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,"",Expert01,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Expert01,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Expert01,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Small,Expert01,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital,Expert01,m06
+,,,,,Pass,"",Expert01,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,odd intensity artefact/inhomogeneity,Expert01,
+,,,,,Pass,X-Scale (LR); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,Z-Scale (IS); Small,Expert01,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,Z-Scale (IS); Big,Expert01,
+,,,,,Fail,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Pass,"",Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Expert01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Rater01,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Pass,"",Rater01,bl
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,bl
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Pass,"",Rater01,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Rater01,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Pass,"",Rater01,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater01,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,"",Rater01,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Rater01,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater01,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,Z-Scale (IS); Small,Rater01,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Rater01,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater01,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater01,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Frontal,Rater01,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,"",Rater01,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Pass,"",Rater01,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Rater01,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,"",Rater01,m12
+,,,,,Pass,"",Rater01,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater01,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater01,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,X-Scale (LR); Small,Rater01,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,Z-Scale (IS); Big,Rater01,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Rater01,m12
+,,,,,Pass,"",Rater01,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Rater01,bl
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater01,m06
+,,,,,Pass,"",Rater01,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,Z-Scale (IS); Big,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,Y-Scale (AP); Big; Frontal,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,Z-Scale (IS); Big,Rater01,
+,,,,,Fail,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Pass,"",Rater01,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater01,
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Pass,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater01,m12
+,,,,,Fail,Y-Scale (AP); Big; Occipital. X-Rot (LR); Cerebellum/Tentorium,Rater01,
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater01,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Pass,X-Rot (LR); Orbitofrontal/Eyes,Rater01,m18
+HCP,784565,V1,pp_elx,Borderline,Pass,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater01,V1
+ADNI,002_S_4654,m06,pp_elx,Borderline,Pass,Y-Scale (AP); Big; Occipital,Rater01,m06
+HCP,322224,V1,pp_graph,Borderline,Pass,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,V1
+,,,,,Pass,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Fail,Z-Scale (IS); Small. X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater01,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater01,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater01,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater01,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater02,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Z-Scale (IS); Small,Rater02,bl
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big,Rater02,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Z-Scale (IS); Small,Rater02,NAPEN00
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,Z-Scale (IS); Big,Rater02,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater02,V1
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater02,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,m06
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Frontal,Rater02,2011-Apr-26
+ADNI,037_S_0150,m12,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,m18
+,,,,,Fail,Z-Scale (IS); Small,Rater02,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater02,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater02,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater02,m24
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,m06
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater02,m06
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,m03
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,"",Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Pass,"",Rater02,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater02,
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,m12
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater02,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater02,2012-Jun-20
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,m06
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,m03
+ADNI,029_S_0843,bl,pp_graph,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Small. X-Scale (LR); Small,Rater02,V1
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater02,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,X-Scale (LR); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Rot (LR); Orbitofrontal/Eyes,Rater02,
+,,,,,Fail,Z-Scale (IS); Small,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Fail,"",Rater02,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Fail,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,Rater02,m36
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Rater02,V1
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+ADNI,033_S_0725,bl,pp_claude,Pass,Fail,Z-Scale (IS); Big,Rater02,bl
+ADNI,130_S_4660,m24,pp_fsl,Pass,Fail,I really don't know what to do with this one. Cerebellum is torturing me.. X-Rot (LR); Cerebellum/Tentorium,Rater02,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,m12
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,Z-Scale (IS); Big,Rater02,
+,,,,,Fail,Cerebellum!. X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,Z-Scale (IS); Small,Rater02,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater02,
+ADNI,082_S_4224,m03,pp_fsl,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,m03
+,,,,,Fail,Cerebellum!,Rater02,
+,,,,,Fail,X-Scale; Big?zz,Rater02,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater02,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater02,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater02,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater02,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,"",Rater03,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,Z-Scale (IS); Big,Rater03,m12
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big,Rater03,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Z-Scale (IS); Small,Rater03,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Rater03,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,Z-Scale (IS); Big,Rater03,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater03,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Fail,Y-Scale (AP); Big; Occipital,Rater03,m03
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,Z-Scale (IS); Small,Rater03,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,"",Rater03,m06
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,Rater03,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater03,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,"",Rater03,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-scale (AP); Small; Frontal. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater03,2011-Apr-26
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater03,m06
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater03,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,Rater03,V1
+,,,,,Fail,"",Rater03,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater03,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater03,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Rater03,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,"",Rater03,m24
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Rater03,m06
+ADNI,029_S_0843,bl,pp_graph,Pass,Fail,Z-Scale (IS); Big,Rater03,bl
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,"",Rater03,m06
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,m03
+,,,,,Fail,Z-Scale (IS); Small,Rater03,
+,,,,,Fail,Z-Scale (IS); Small,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,Z-Scale (IS); Small,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,"",Rater03,
+,,,,,Fail,"",Rater03,
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,bl
+,,,,,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,X-Scale; big?,Rater03,
+,,,,,Pass,Z-Scale (IS); Big,Rater03,
+,,,,,Pass,"",Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Big,Rater03,V1
+ADNI,037_S_0150,m12,pp_elx,Borderline,Fail,Z-Scale (IS); Small,Rater03,m12
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Fail,Z-Scale (IS); Big,Rater03,m36
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Fail,Z-Scale (IS); Big,Rater03,2014-Jan-09
+ADNI,130_S_4660,m24,pp_fsl,Pass,Fail,Z-Scale (IS); Big,Rater03,m24
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+ADNI,036_S_0869,m12,pp_claude,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater03,m12
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+ADNI,082_S_4224,m03,pp_fsl,Pass,Fail,Z-Scale (IS); Big,Rater03,m03
+,,,,,Pass,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater03,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater03,
+,,,,,Fail,Z-Scale (IS); Big,Rater03,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater04,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater04,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater04,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,Rater04,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,Z-Scale (IS); Small,Rater04,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,Y-Scale (AP); Big; Occipital,Rater04,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,Y-Scale (AP); Big; Occipital,Rater04,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Rater04,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,"",Rater04,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,"",Rater04,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater04,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater04,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater04,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater04,V1
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater04,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater04,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater04,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Rater04,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater04,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,m06
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater04,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,bl
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater04,m03
+,,,,,Fail,Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,Z-Scale (IS); Big,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small,Rater04,
+,,,,,Pass,"",Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater04,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Pass,X-Scale (LR); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater04,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Pass,"",Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Pass,"",Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater04,
+,,,,,Pass,X-Scale (LR); Small,Rater04,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Pass,"",Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Pass,X-Rot (LR); Orbitofrontal/Eyes,Rater04,
+,,,,,Pass,Y-Scale (AP); Big; Frontal,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater04,
+,,,,,Fail,"",Rater04,
+,,,,,Pass,Z-Scale (IS); Big,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater04,
+,,,,,Pass,"",Rater04,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater04,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater04,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater04,
+HCP,322224,V1,pp_graph,Borderline,Fail,X-Scale (LR); Small,Rater04,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,"",Rater04,m06
+,,,,,Pass,"",Rater04,
+,,,,,Pass,"",Rater05,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Pass,"",Rater05,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater05,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater05,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Pass,Z-Scale (IS); Small,Rater05,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Rater05,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater05,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater05,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital,Rater05,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Fail,Z-Scale (IS); Big,Rater05,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Rater05,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,Rater05,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,Z-Scale (IS); Small,Rater05,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater05,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,"",Rater05,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater05,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater05,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater05,V1
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater05,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater05,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater05,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,Off-center. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Big,Rater05,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater05,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,X-Rot (LR); Orbitofrontal/Eyes,Rater05,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,Rater05,m06
+,,,,,Pass,Z-Scale (IS); Big,Rater05,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Rater05,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,Z-Scale (IS); Small,Rater05,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,m06
+,,,,,Pass,"",Rater05,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Pass,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,Z-Scale (IS); Big,Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,X-Rot (LR); Orbitofrontal/Eyes,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater05,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater05,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater05,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,Z-Scale (IS); Big,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater05,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,Y-Scale (AP); Small; Occipital,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,Z-Scale (IS); Big,Rater05,
+,,,,,Fail,"",Rater05,
+,,,,,Fail,Z-Scale (IS); Big,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Pass,"",Rater05,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater05,
+,,,,,Fail,Y-Scale (AP); Big; Occipital. X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater05,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater06,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater06,bl
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,off center on coronal view LR axis. Z-Scale (IS); Small. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater06,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,Z-Scale (IS); Big,Rater06,bl
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,x-scale big in cerebellum,Rater06,V1
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"",Rater06,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,"",Rater06,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Rater06,m03
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,"",Rater06,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,"",Rater06,2012-Jun-20
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,Z-Scale (IS); Small,Rater06,2014-Jan-09
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Rater06,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Fail,"",Rater06,m12
+,,,,,Fail,"",Rater06,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater06,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,"",Rater06,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,Y-Scale (AP); Small; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater06,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,"",Rater06,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Rater06,m12
+,,,,,Pass,"",Rater06,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Rater06,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,"",Rater06,V1
+,,,,,Pass,cerebellum sticks out,Rater06,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,"",Rater06,m03
+,,,,,Fail,Z-Scale (IS); Small,Rater06,
+,,,,,Fail,Z-Scale (IS); Big,Rater06,
+,,,,,Fail,"",Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater06,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Scale (LR); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,total fail,Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Pass,LR big. Z-Scale (IS); Big,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,Rater06,m12
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater06,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Pass,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,Rater06,m06
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Pass,Y-Scale (AP); Big; Occipital,Rater06,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,2013-Sep-04
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,y scale small frontal. Y-Scale (AP); Big; Frontal. X-Rot (LR); Cerebellum/Tentorium,Rater06,2011-Apr-26
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,Rater06,m06
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater06,m18
+HCP,784565,V1,pp_elx,Borderline,Pass,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,Rater06,V1
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,m06
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Rater06,m06
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Pass,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Pass,"",Rater06,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. X-Scale (LR); Small,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Pass,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Pass,Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Y-Scale (AP); Big; Occipital,Rater06,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Big,Rater06,
+,,,,,Pass,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,Rater06,
+,,,,,Fail,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,Z-Scale (IS); Big,Rater06,
+,,,,,Pass,also big LR. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater06,
+,,,,,Pass,X-Rot (LR); Cerebellum/Tentorium,Rater06,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater06,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,Rater07,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big,Rater07,m12
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Rater07,bl
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater07,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Fail,X Big. Z-Scale (IS); Big,Rater07,m03
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater07,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater07,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Rater07,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,Z-Scale (IS); Small,Rater07,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Rater07,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,2012-Jun-20
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Pass,"",Rater07,2014-Jan-09
+ADNI,130_S_4660,m24,pp_fsl,Pass,Pass,"",Rater07,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,"",Rater07,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Pass,"",Rater07,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital,Rater07,V1
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater07,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,Z-Scale (IS); Small,Rater07,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,"",Rater07,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,"",Rater07,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Pass,"",Rater07,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Big,Rater07,m06
+,,,,,Pass,"",Rater07,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Rater07,bl
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Rater07,m06
+,,,,,Pass,"",Rater07,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,m03
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Z-Scale (IS); Big,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Cerebellum/Tentorium,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,Rater07,
+,,,,,Fail,Y-Scale (AP); Big; Frontal,Rater07,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,"",Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Pass,"",Rater07,
+,,,,,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater07,
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Frontal,Rater07,2011-Apr-26
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater07,
+,,,,,Pass,near,Rater07,
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,bl
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,shear. Z-Scale (IS); Small,Rater07,NAPEN00
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater07,
+,,,,,Fail,X big,Rater07,
+,,,,,Pass,Y-Scale (AP); Big; Occipital,Rater07,
+,,,,,Fail,near. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater07,
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+,,,,,Pass,"",Rater07,
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater07,m12
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater07,m06
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Pass,"Z small (only by a little)
+",Rater07,m36
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,Rater07,m06
+HCP,322224,V1,pp_graph,Borderline,Fail,X-Scale (LR); Small,Rater07,V1
+,,,,,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,Rater07,
+,,,,,Fail,Z-Scale (IS); Big,Rater07,
+,,,,,Pass,"near
+. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital",Rater07,
+,,,,,Fail,Z-Scale (IS); Small,Rater07,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,
+,,,,,Fail,Y-Scale (AP); Small; Occipital,Rater08,
+ADNI,130_S_0423,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,bl
+ADNI,099_S_4475,m12,pp_xcorr,Borderline,Fail,Z-Scale (IS); Big,Rater08,m12
+ADNI,135_S_4406,bl,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,bl
+ADNI,073_S_5023,m12,pp_mritotal,Pass,Fail,Z-Scale (IS); Big,Rater08,m12
+PreventAD,977578,NAPEN00,pp_mritotal,Borderline,Fail,"",Rater08,NAPEN00
+ADNI,033_S_0725,bl,pp_claude,Pass,Pass,"",Rater08,bl
+ADNI,073_S_4559,m06,pp_graph,Pass,Fail,Z-Scale (IS); Big,Rater08,m06
+HCP,792766,V1,pp_mritotal_icbm,Pass,Pass,"",Rater08,V1
+ADNI,006_S_4449,m03,pp_mritotal,Borderline,Fail,Y-Scale (AP); Big; Frontal,Rater08,m03
+ADNI,072_S_0315,m36,pp_mritotal_icbm,Pass,Fail,Z-Scale (IS); Big,Rater08,m36
+ADNI,029_S_1384,m06,pp_mritotal,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,Rater08,m06
+ADNI,023_S_0604,m06,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,m06
+ADNI,082_S_4224,m03,pp_fsl,Pass,Pass,"",Rater08,m03
+PPMI_3T,3866,2013-Sep-04,pp_elx,Pass,Fail,Z-Scale (IS); Small,Rater08,2013-Sep-04
+ADNI,126_S_0606,bl,pp_mritotal_icbm,Fail,Fail,X-Scale (LR); Small,Rater08,bl
+PPMI_3T,3178,2012-Jun-20,pp_elx,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,2012-Jun-20
+PPMI_3T,3607,2011-Apr-26,pp_mritotal_icbm,Borderline,Fail,Y-Scale (AP); Big; Occipital,Rater08,2011-Apr-26
+PPMI_3T,4030,2014-Jan-09,pp_xcorr,Pass,Fail,Z-Scale (IS); Big,Rater08,2014-Jan-09
+ADNI,014_S_4093,m06,pp_elx,Borderline,Fail,Z-Scale (IS); Small,Rater08,m06
+ADNI,130_S_4660,m24,pp_fsl,Pass,Fail,Z-Scale (IS); Big,Rater08,m24
+ADNI,037_S_0150,m12,pp_elx,Borderline,Pass,"",Rater08,m12
+ADNI,031_S_0294,m18,pp_elx,Pass,Fail,"",Rater08,m18
+HCP,784565,V1,pp_elx,Borderline,Fail,"",Rater08,V1
+,,,,,Fail,"",Rater08,
+ADNI,068_S_2184,m03,pp_elx,Pass,Pass,"",Rater08,m03
+ADNI,024_S_4392,m03,pp_xcorr,Borderline,Fail,"",Rater08,m03
+ADNI,067_S_0290,m06,pp_graph,Borderline,Fail,shift & scaling,Rater08,m06
+ADNI,136_S_0195,m24,pp_mritotal,Fail,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,Rater08,m24
+ADNI,036_S_0869,m12,pp_claude,Pass,Fail,Z-Scale (IS); Big,Rater08,m12
+ADNI,002_S_4654,m06,pp_elx,Borderline,Fail,Z-Scale (IS); Small,Rater08,m06
+,,,,,Pass,"",Rater08,
+ADNI,029_S_0843,bl,pp_graph,Pass,Pass,"",Rater08,bl
+HCP,322224,V1,pp_graph,Borderline,Fail,X-Scale (LR); Small,Rater08,V1
+ADNI,128_S_0310,m06,pp_mritotal_icbm,Fail,Fail,"",Rater08,m06
+,,,,,Pass,"",Rater08,
+ADNI,941_S_4255,m03,pp_fsl,Borderline,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,m03
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Y-Scale (AP); Big; Frontal,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,Y-Scale (AP); Big; Occipital,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,"",Rater08,
+,,,,,Fail,x-scale big,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Y-Scale (AP); Big; Frontal,Rater08,
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Fail,"",Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Fail,Y-Scale (AP); Big; Frontal,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Fail,"",Rater08,
+,,,,,Fail,X-Scale (LR); Small,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,Z-Scale (IS); Small,Rater08,
+,,,,,Fail,Y-Scale (AP); Big; Frontal,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,"z-shift,. Z-Scale (IS); Big",Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,x-scale big . Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Rot (LR); Orbitofrontal/Eyes,Rater08,
+,,,,,Pass,"",Rater08,
+,,,,,Fail,Z-Scale (IS); Big,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,
+,,,,,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,Rater08,

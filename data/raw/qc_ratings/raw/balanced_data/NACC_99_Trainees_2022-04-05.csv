@@ -1,0 +1,891 @@
+Case_16,Rater01,Fail,ringing artifact,2022-02-01T21:02:11Z
+Case_17,Rater01,Pass,"",2022-02-01T21:02:38Z
+Case_18,Rater01,Pass,"",2022-02-01T21:02:57Z
+Case_19,Rater01,Pass,"",2022-02-01T21:03:15Z
+Case_2,Rater01,Pass,"",2022-02-01T21:03:28Z
+Case_24,Rater01,Fail,"",2022-02-01T21:07:27Z
+Case_28,Rater01,Fail,Incomplete AP coverage,2022-02-01T21:10:05Z
+Case_30,Rater01,Pass,"",2022-02-01T21:12:51Z
+Case_32,Rater01,Pass,"",2022-02-01T21:24:23Z
+Case_33,Rater01,Fail,AP coverage; low dynamic range,2022-02-01T21:24:49Z
+Case_37,Rater01,Pass,low GM/WM contrast,2022-02-01T21:27:00Z
+Case_38,Rater01,Pass,"",2022-02-01T21:27:13Z
+Case_39,Rater01,Pass,"",2022-02-01T21:27:38Z
+Case_4,Rater01,Fail,incomplete AP coverage,2022-02-01T21:27:59Z
+Case_40,Rater01,Pass,"",2022-02-01T21:28:11Z
+Case_42,Rater01,Pass,"",2022-02-01T21:29:09Z
+Case_49,Rater01,Pass,Tight FOV,2022-02-01T21:39:01Z
+Case_5,Rater01,Pass,Tight FOV,2022-02-01T21:39:51Z
+Case_50,Rater01,Pass,"",2022-02-01T21:40:12Z
+Case_53,Rater01,Fail,Cerebellum cut,2022-02-01T21:41:32Z
+Case_54,Rater01,Fail,Ring artifacts,2022-02-01T21:41:57Z
+Case_55,Rater01,Pass,Slight noise?,2022-02-01T21:42:20Z
+Case_59,Rater01,Fail,"Noise, ring artifacts",2022-02-01T21:43:40Z
+Case_63,Rater01,Fail,Motion artifacts; cerebellum cut?,2022-02-01T21:46:42Z
+Case_64,Rater01,Pass,"Bright scalp, big ventricles",2022-02-01T21:46:59Z
+Case_65,Rater01,Fail,No data,2022-02-01T21:47:06Z
+Case_69,Rater01,Fail,Incomplete AP coverage,2022-02-01T21:48:53Z
+Case_7,Rater01,Fail,Ring artifacts; incomplete inf/sup coverage,2022-02-01T21:49:43Z
+Case_70,Rater01,Pass,Huge ventricles,2022-02-01T21:49:59Z
+Case_71,Rater01,Pass,Bright spots,2022-02-01T21:50:37Z
+Case_72,Rater01,Pass,"",2022-02-01T21:50:48Z
+Case_74,Rater01,Fail,No data,2022-02-01T21:51:07Z
+Case_75,Rater01,Pass,"",2022-02-01T21:51:16Z
+Case_78,Rater01,Pass,low WM/GM contrast,2022-02-01T21:52:22Z
+Case_79,Rater01,Fail,Signal drop-off left inferior portion,2022-02-01T21:53:10Z
+Case_80,Rater01,Fail,Incomplete coverage (Inf/Sup),2022-02-01T21:53:54Z
+Case_81,Rater01,Pass,Tight FOV; wrap-around; brain intact,2022-02-01T21:54:19Z
+Case_86,Rater01,Pass,"",2022-02-01T21:57:15Z
+Case_87,Rater01,Pass,"",2022-02-01T21:57:24Z
+Case_93,Rater01,Pass,"",2022-02-01T22:00:05Z
+Case_94,Rater01,Fail,Motion artifacts,2022-02-01T22:00:18Z
+Case_98,Rater01,Fail,Incomplete coverage (cerebellum cut),2022-02-01T22:01:45Z
+Case_99,Rater01,Pass,Tight AP fit,2022-02-01T22:02:00Z
+Case_12,Rater01,Pass,Low intensity,2022-02-01T22:58:23Z
+Case_13,Rater01,Pass,Tight AP coverage,2022-02-01T22:58:37Z
+Case_20,Rater01,Pass,Reduced dynamic range due to bright nose,2022-02-01T22:59:45Z
+Case_25,Rater01,Pass,Tight AP fit (cut scalp),2022-02-01T23:00:07Z
+Case_26,Rater01,Pass,low WM/GM contrast; Tight AP fit,2022-02-01T23:00:24Z
+Case_29,Rater01,Pass,Barely covering cerebellum,2022-02-01T23:00:53Z
+Case_31,Rater01,Pass,Tight AP fit (scalp cut off),2022-02-01T23:02:10Z
+Case_36,Rater01,Pass,Tight superior coverage,2022-02-01T23:02:57Z
+Case_46,Rater01,Pass,Posterior scalp cut,2022-02-01T23:03:28Z
+Case_47,Rater01,Pass,Superior scalp cut off,2022-02-01T23:03:40Z
+Case_51,Rater01,Fail,slight intensity non-uniformity; incomplete cerebellum coverage?,2022-02-01T23:04:47Z
+Case_58,Rater01,Pass,"Bright nose, low dynamic range; tight inferior fit",2022-02-01T23:05:25Z
+Case_60,Rater01,Pass,Low dynamic range due to bright nose; tight inferior fit,2022-02-01T23:05:46Z
+Case_62,Rater01,Pass,Tight AP fit,2022-02-01T23:06:02Z
+Case_73,Rater01,Pass,Very tight cerebellum fit,2022-02-01T23:07:02Z
+Case_1,Rater01,Fail,non-uniformity artifact,2022-02-01T23:20:42Z
+Case_10,Rater01,Pass,"Tight FOV; signal drop-off mouth, doesn't affect brain",2022-02-01T23:20:56Z
+Case_11,Rater01,Pass,intensity non-uniformity artifact; Inf/Sup coverage,2022-02-01T23:21:48Z
+Case_14,Rater01,Pass,Slight noise;,2022-02-01T23:22:15Z
+Case_15,Rater01,Pass,Tight FOV; scalp cut,2022-02-02T18:16:46Z
+Case_21,Rater01,Fail,Non-uniformity Intensity artifact,2022-02-02T18:18:03Z
+Case_22,Rater01,Fail,VERY tight FOV; incomplete AP coverage?,2022-02-02T18:18:11Z
+Case_23,Rater01,Fail,Tight FOV; incomplete coverage,2022-02-02T18:18:25Z
+Case_27,Rater01,Fail,Incomplete coverage (posterior)?,2022-02-02T18:18:36Z
+Case_3,Rater01,Fail,Slight noise; incomplete AP coverage?,2022-02-02T18:18:59Z
+Case_34,Rater01,Fail,Tight FOV; incomplete coverage AP,2022-02-02T18:19:11Z
+Case_35,Rater01,Fail,slight motion artifacts; Incomplete coverage,2022-02-02T18:19:31Z
+Case_41,Rater01,Fail,low dynamic range due to bright nose,2022-02-02T18:19:42Z
+Case_43,Rater01,Fail,Tight Inf/Sup coverage?,2022-02-02T18:19:56Z
+Case_44,Rater01,Fail,Incomplete AP coverage,2022-02-02T18:20:08Z
+Case_45,Rater01,Fail,Reduced dynamic range; Non-uniformity intensity artifact,2022-02-02T18:20:26Z
+Case_48,Rater01,Fail,Intensity non-uniformity; cerebellum cut?,2022-02-02T18:20:31Z
+Case_52,Rater01,Fail,low dynamic range; non-uniformity intensity artifact,2022-02-02T18:20:45Z
+Case_56,Rater01,Fail,VERY tight FOV; incomplete coverage,2022-02-02T18:20:54Z
+Case_57,Rater01,Fail,Cerebellum cut?,2022-02-02T18:21:00Z
+Case_6,Rater01,Fail,"Tight fit, scalp off picture; Incomplete coverage?",2022-02-02T18:21:15Z
+Case_61,Rater01,Fail,Is cerebellum cut? low dynamic range; non-uniformity intensity artifact,2022-02-02T18:21:36Z
+Case_66,Rater01,Pass,Tight fit; scalp off; AP poles fit?,2022-02-02T18:21:51Z
+Case_68,Rater01,Fail,Tight FOV; incomplete IS coverage,2022-02-02T18:22:41Z
+Case_76,Rater01,Fail,cerebellum coverage?,2022-02-02T18:22:48Z
+Case_97,Rater01,Fail,Tight FOV (Inf/Sup)?,2022-02-02T18:23:28Z
+Case_77,Rater01,Fail,Non-uniformity intensity artifact,2022-02-02T18:23:55Z
+Case_8,Rater01,Fail,Tight FOV; scalp cut AP,2022-02-02T18:24:06Z
+Case_82,Rater01,Fail,Tight FOV; wrap-around; Incomplete coverage; intensity non-uniformity artifact,2022-02-02T18:24:30Z
+Case_83,Rater01,Fail,Incomplete coverage (cerebellum),2022-02-02T18:24:35Z
+Case_84,Rater01,Fail,Incomplete coverage (AP)? Poles in picture,2022-02-02T18:25:01Z
+Case_85,Rater01,Pass,Tight FOV; scalp cut (AP),2022-02-02T18:25:11Z
+Case_88,Rater01,Fail,Noisy? Tight FOV; brain still in picture,2022-02-02T18:25:31Z
+Case_89,Rater01,Fail,Incomplete coverage,2022-02-02T18:25:37Z
+Case_9,Rater01,Fail,Tight FOV (Inf/Sup),2022-02-02T18:25:39Z
+Case_90,Rater01,Fail,Cerebellum cut,2022-02-02T18:25:44Z
+Case_91,Rater01,Pass,"Tight FOV; AP scalp cut, brain intact?",2022-02-02T18:26:12Z
+Case_92,Rater01,Fail,Is cerebellum complete?,2022-02-02T18:26:21Z
+Case_95,Rater01,Pass,Tight FOV (AP); scalp cut off; Are Poles in picture?,2022-02-02T18:26:44Z
+Case_96,Rater01,Pass,Tight FOV (AP),2022-02-02T18:26:53Z
+Case_67,Rater01,Fail,Non-uniformity intensity artifact,2022-02-02T18:31:42Z
+Case_12,Rater03,Pass,low intensity range; non uniformity,2022-02-03T17:12:17Z
+Case_13,Rater03,Pass,"",2022-02-03T17:12:57Z
+Case_14,Rater03,Pass,"",2022-02-03T17:13:24Z
+Case_15,Rater03,Pass,Is there ringing artefact?,2022-02-03T17:17:08Z
+Case_16,Rater03,Fail,ringing artefact,2022-02-03T17:20:55Z
+Case_17,Rater03,Pass,"",2022-02-03T17:22:33Z
+Case_18,Rater03,Pass,"",2022-02-03T17:29:03Z
+Case_99,Rater03,Pass,"",2022-02-03T17:32:28Z
+Case_16,Rater02,Fail,Considerable movement (ringing) artefacts,2022-02-03T18:05:47Z
+Case_18,Rater02,Pass,Thick dura,2022-02-03T18:11:48Z
+Case_19,Rater02,Pass,"",2022-02-03T18:13:47Z
+Case_20,Rater02,Pass,"",2022-02-03T18:18:25Z
+Case_23,Rater02,Pass,"",2022-02-03T18:39:16Z
+Case_28,Rater02,Fail,Part of occipital lobe is cropped.,2022-02-03T19:41:31Z
+Case_31,Rater02,Pass,"",2022-02-03T19:44:10Z
+Case_98,Rater02,Fail,Part of cerebellum is cropped.,2022-02-03T19:52:51Z
+Case_10,Rater02,Pass,Low GM/WM contrast,2022-02-07T04:12:10Z
+Case_14,Rater02,Pass,A bit noisy?,2022-02-07T04:26:00Z
+Case_15,Rater02,Pass,Slight ringing artefact,2022-02-07T04:27:30Z
+Case_17,Rater02,Pass,Low GM/WM contrast,2022-02-07T04:28:44Z
+Case_2,Rater02,Pass,"Eye movement artefact, low GM/WM contrast",2022-02-07T04:35:19Z
+Case_25,Rater02,Pass,"Slight movement (ringing) artefacts, Low GM/WM artefacts",2022-02-07T04:43:04Z
+Case_26,Rater02,Pass,"Low GM/WM contrast, and overall low contrast",2022-02-07T04:43:49Z
+Case_30,Rater02,Pass,"Slight movement (ringing) artefacts, ",2022-02-07T04:58:17Z
+Case_34,Rater02,Pass,"",2022-02-07T05:48:20Z
+Case_35,Rater02,Fail,Incomplete coverage of cerebellum.,2022-02-07T05:49:59Z
+Case_37,Rater02,Pass,"Slight movement (ringing) artefacts (look at the 4th row, second slice from right), Low GM/WM contrast",2022-02-07T06:09:26Z
+Case_38,Rater02,Pass,Low GM/WM contrast,2022-02-07T06:11:54Z
+Case_40,Rater02,Pass,"Slight movement (ringing) artefacts (look at the axial view, 2nd row, 4th and 5th slice from right)",2022-02-07T06:21:58Z
+Case_42,Rater02,Fail,Considerable movement (ringing) artefacts,2022-02-07T06:34:30Z
+Case_44,Rater02,Pass,"Intensity non-uniformity, very very slight movement (look at artefacts outside the skull)",2022-02-07T06:44:22Z
+Case_46,Rater02,Pass,"",2022-02-07T06:48:10Z
+Case_47,Rater02,Pass,"",2022-02-07T06:49:04Z
+Case_49,Rater02,Pass,"Very slight movement (ringing) artefacts (look at 3rd row, 2nd image from right)",2022-02-07T15:19:41Z
+Case_5,Rater02,Pass,"",2022-02-07T15:20:27Z
+Case_50,Rater02,Pass,Vascular problem on frontal lobe?,2022-02-07T15:29:04Z
+Case_53,Rater02,Fail,Incomplete coverage of cerebellum.,2022-02-07T15:36:46Z
+Case_54,Rater02,Fail,Considerable amount of movement (ringing) artefact.,2022-02-07T15:38:03Z
+Case_55,Rater02,Fail,Considerable amount of movement (ringing) artefact.,2022-02-07T15:40:44Z
+Case_56,Rater02,Fail,Considerable movement (ringing) artefact.,2022-02-07T15:45:38Z
+Case_58,Rater02,Pass,Intensity non-uniformity,2022-02-07T15:50:33Z
+Case_59,Rater02,Fail,"Considerable movement (ringing) artefacts, low GM/WM contrast",2022-02-07T15:52:31Z
+Case_10,Rater03,Pass,low dynamic range,2022-02-07T15:54:40Z
+Case_19,Rater03,Pass,small nonuniformity,2022-02-07T15:59:25Z
+Case_62,Rater02,Pass,Low contrast,2022-02-07T16:31:20Z
+Case_63,Rater02,Fail,"Too much movement (ringing) artefacts, Inappropriate cut of cerebellum base",2022-02-07T16:32:11Z
+Case_64,Rater02,Pass,"Slight movement artefacts, bright skull (possible short echo time), Low GM/WM contrast",2022-02-07T16:34:41Z
+Case_67,Rater02,Pass,Too much intensity non-uniformity,2022-02-07T16:44:22Z
+Case_68,Rater02,Pass,Intensity non-uniformity,2022-02-07T16:50:12Z
+Case_69,Rater02,Pass,No GM/WM contrast!  Slight movement (ringing) artefacts,2022-02-07T16:51:21Z
+Case_23,Rater03,Pass,"",2022-02-07T16:57:20Z
+Case_24,Rater03,Fail,"",2022-02-07T16:57:28Z
+Case_25,Rater03,Pass,"",2022-02-07T16:58:39Z
+Case_26,Rater03,Pass,low intensity range; dark scan,2022-02-07T17:00:48Z
+Case_71,Rater02,Pass,"UBO in different parts, Possible bad phase encoding direction",2022-02-07T17:14:56Z
+Case_72,Rater02,Pass,"Slight movement, Low GM/WM contrast",2022-02-07T17:21:07Z
+Case_30,Rater03,Pass,slight ringing artefact,2022-02-07T17:24:14Z
+Case_73,Rater02,Pass,Slight movement and possible bad phase encoding direction,2022-02-07T17:24:14Z
+Case_31,Rater03,Pass,"",2022-02-07T17:27:14Z
+Case_75,Rater02,Pass,Low GM/WM contrast,2022-02-07T17:27:45Z
+Case_34,Rater03,Pass,"",2022-02-07T17:29:52Z
+Case_76,Rater02,Pass,"Intensity non-uniformity, Low GM/WM contrast",2022-02-07T17:32:58Z
+Case_78,Rater02,Pass,Low GM/WM contrast,2022-02-07T17:36:04Z
+Case_79,Rater02,Fail,"Low contrast, Signal blackout (look at middle columns, especially coronal and axial view)",2022-02-07T17:38:46Z
+Case_8,Rater02,Pass,Low GM/WM contrast,2022-02-07T17:44:31Z
+Case_80,Rater02,Fail,Incomplete coverage (both at some upper parts of the cortex and cerebellum base),2022-02-07T17:45:56Z
+Case_81,Rater02,Pass,Movement artefacts and possible bad phase encoding direction,2022-02-07T17:49:52Z
+Case_84,Rater02,Pass,"Low dynamic range, Low GM/WM contrast",2022-02-07T17:52:19Z
+Case_85,Rater02,Pass,"Low dynamic range, Low GM/WM contrast",2022-02-07T17:53:23Z
+Case_86,Rater02,Pass,Low GM/WM contrast,2022-02-07T17:54:12Z
+Case_87,Rater02,Pass,Intensity non-uniformity,2022-02-07T17:56:16Z
+Case_88,Rater02,Pass,"Slight movement (ringing) artefacts, Low GM/WM contrast",2022-02-07T17:57:51Z
+Case_38,Rater03,Pass,"",2022-02-07T17:58:39Z
+Case_91,Rater02,Pass,Low GM/WM contrast,2022-02-07T19:08:22Z
+Case_93,Rater02,Pass,"",2022-02-07T19:10:50Z
+Case_94,Rater02,Fail,Considerable amount of movement (ringing) artefacts,2022-02-07T19:11:36Z
+Case_95,Rater02,Pass,"Low dynamic range, Low GM/WM contrast",2022-02-07T19:12:22Z
+Case_96,Rater02,Pass,"Very slight movement (ringing) artefacts, Low GM/WM contrast",2022-02-07T19:13:43Z
+Case_99,Rater02,Pass,"High intensity in the middle of axial view (look at the top row, 5th from the right)",2022-02-07T19:16:45Z
+Case_10,Rater08,Pass,"",2022-02-07T19:24:00Z
+Case_11,Rater08,Warning,strong inhomogeneity reduced dynamic range ,2022-02-07T19:26:19Z
+Case_12,Rater08,Warning,bright skull reduced dynamic range,2022-02-07T19:27:15Z
+Case_13,Rater08,Pass,"",2022-02-07T19:27:42Z
+Case_14,Rater08,Pass,"",2022-02-07T19:28:24Z
+Case_15,Rater08,Warning,skull cut in front and back very bright blood vessels,2022-02-07T19:29:42Z
+Case_16,Rater08,Fail,"",2022-02-07T19:29:48Z
+Case_17,Rater08,Pass,"",2022-02-07T19:29:57Z
+Case_18,Rater08,Pass,"",2022-02-07T19:30:18Z
+Case_19,Rater08,Warning,strong inhomogeneity ,2022-02-07T19:30:44Z
+Case_2,Rater08,Warning,low contrast,2022-02-07T19:32:23Z
+Case_20,Rater08,Warning,strong inhomogeneity,2022-02-07T19:32:37Z
+Case_21,Rater08,Warning,strong inhomogeneity ,2022-02-07T19:32:49Z
+Case_22,Rater08,Pass,"",2022-02-07T19:32:59Z
+Case_23,Rater08,Pass,"",2022-02-07T19:33:05Z
+Case_24,Rater08,Fail,no brain visible,2022-02-07T19:33:17Z
+Case_25,Rater08,Pass,"",2022-02-07T19:33:21Z
+Case_26,Rater08,Warning,low contrast,2022-02-07T19:33:39Z
+Case_27,Rater08,Pass,"",2022-02-07T19:33:45Z
+Case_28,Rater08,Fail,brain cut in the back,2022-02-07T19:34:04Z
+Case_29,Rater08,Warning,strong inhomogeneity,2022-02-07T19:34:16Z
+Case_3,Rater08,Warning,skull cut in front and back,2022-02-07T19:42:36Z
+Case_30,Rater08,Pass,"",2022-02-07T19:42:51Z
+Case_31,Rater08,Pass,skull cut in front and back,2022-02-07T19:43:22Z
+Case_32,Rater08,Warning,strong inhomogeneity ,2022-02-07T19:44:08Z
+Case_33,Rater08,Warning,skull cut in front and back,2022-02-07T19:44:36Z
+Case_39,Rater03,Pass,"",2022-02-07T19:45:12Z
+Case_34,Rater08,Pass,skull cut in the back,2022-02-07T19:45:13Z
+Case_35,Rater08,Warning,strong inhomogeneity top of the skull is cut,2022-02-07T19:45:52Z
+Case_36,Rater08,Pass,skull is very bright,2022-02-07T19:46:27Z
+Case_37,Rater08,Warning,low intensity low contrast,2022-02-07T19:46:55Z
+Case_38,Rater08,Pass,"",2022-02-07T19:46:59Z
+Case_39,Rater08,Pass,skull cut in the back ,2022-02-07T19:47:23Z
+Case_4,Rater08,Warning,skull cut in the front and in the back,2022-02-07T19:47:45Z
+Case_40,Rater08,Pass,"",2022-02-07T19:47:50Z
+Case_41,Rater08,Warning,strong inhomogeneity low contrast ,2022-02-07T19:48:17Z
+Case_42,Rater08,Pass,"",2022-02-07T19:48:49Z
+Case_43,Rater08,Warning,very bright skull low contrast low dynamic range,2022-02-07T19:49:22Z
+Case_44,Rater08,Pass,"",2022-02-07T19:49:32Z
+Case_45,Rater08,Warning,very low contrast strong inhomogeneity low dynamic range,2022-02-07T19:50:14Z
+Case_46,Rater08,Pass,back of the skull cut ,2022-02-07T19:50:32Z
+Case_47,Rater08,Pass,"",2022-02-07T19:50:36Z
+Case_48,Rater08,Warning,strong inhomogeneity very low contrast ,2022-02-07T19:51:04Z
+Case_49,Rater08,Pass,"",2022-02-07T19:51:08Z
+Case_5,Rater08,Pass,"",2022-02-07T19:51:20Z
+Case_50,Rater08,Pass,"",2022-02-07T19:51:25Z
+Case_40,Rater03,Pass,"",2022-02-07T22:10:29Z
+Case_46,Rater03,Pass,low wm/gm contrast,2022-02-07T22:22:25Z
+Case_47,Rater03,Pass,slight non-uniformity,2022-02-07T22:23:34Z
+Case_96,Rater03,Pass,"",2022-02-07T22:53:50Z
+Case_98,Rater03,Fail,incomplete coverage - missing the base of the cerebellum,2022-02-07T22:56:40Z
+Case_95,Rater03,Pass,"",2022-02-07T22:59:18Z
+Case_49,Rater03,Pass,slight moving artefact,2022-02-07T23:01:00Z
+Case_5,Rater03,Pass,"",2022-02-07T23:01:41Z
+Case_50,Rater03,Pass,"",2022-02-07T23:01:58Z
+Case_53,Rater03,Fail,missing cerebellum,2022-02-07T23:09:20Z
+Case_54,Rater03,Pass,very slight movement and ringing artefact,2022-02-07T23:11:13Z
+Case_55,Rater03,Pass,"",2022-02-07T23:13:30Z
+Case_59,Rater03,Fail,movement artefact,2022-02-08T16:30:35Z
+Case_6,Rater03,Pass,"",2022-02-08T16:33:58Z
+Case_62,Rater03,Pass,"",2022-02-08T16:41:35Z
+Case_63,Rater03,Fail,movement artefact,2022-02-08T16:42:28Z
+Case_65,Rater03,Fail,"",2022-02-08T16:44:49Z
+Case_66,Rater03,Pass,slightly tight AP FOV,2022-02-08T16:52:11Z
+Case_69,Rater03,Pass,low wm/gm contrast; slightly tight AP FOV and non-uniformity,2022-02-08T16:57:54Z
+Case_13,Rater02,Pass,Low GM/WM contrast,2022-02-08T17:06:28Z
+Case_13,Rater04,Pass,tight AP FOV but brain fully covered; larger ventricles,2022-02-08T17:17:46Z
+Case_14,Rater04,Pass,Some noise (recoverable),2022-02-08T17:20:53Z
+Case_15,Rater04,Pass,tight AP FOV but brain is covered,2022-02-08T17:23:06Z
+Case_17,Rater04,Pass,some noise (recoverable),2022-02-08T17:33:27Z
+Case_18,Rater04,Pass,"",2022-02-08T17:36:18Z
+Case_2,Rater04,Pass,"",2022-02-08T17:43:03Z
+Case_70,Rater03,Pass,non-uniformity,2022-02-08T17:57:43Z
+Case_72,Rater03,Pass,low wm/gm contrast,2022-02-08T18:04:48Z
+Case_74,Rater03,Fail,"",2022-02-08T18:06:53Z
+Case_75,Rater03,Pass,"",2022-02-08T18:07:27Z
+Case_78,Rater03,Pass,"",2022-02-08T18:15:55Z
+Case_79,Rater03,Fail,incomplete coverage (part of the brain is lost),2022-02-08T18:16:41Z
+Case_8,Rater03,Pass,"",2022-02-08T18:17:34Z
+Case_82,Rater03,Fail,shadow on occipital part; ,2022-02-08T18:34:17Z
+Case_84,Rater03,Pass,"",2022-02-08T18:38:45Z
+Case_85,Rater03,Pass,"",2022-02-08T18:42:37Z
+Case_86,Rater03,Pass,low wm/gm contrast,2022-02-08T18:44:02Z
+Case_87,Rater03,Pass,cropped neck but cerebellum is intact; slight non-uniformity,2022-02-08T18:45:43Z
+Case_88,Rater03,Fail,movement and ringing artefact,2022-02-08T18:49:58Z
+Case_91,Rater03,Pass,"",2022-02-08T18:56:00Z
+Case_93,Rater03,Pass,"",2022-02-08T18:56:20Z
+Case_36,Rater03,Pass,cropped neck but cerebellum is intact; slight AP non-uniformity,2022-02-08T19:09:36Z
+Case_24,Rater04,Fail,No data,2022-02-08T19:28:53Z
+Case_35,Rater03,Fail,incomplete coverage (tight top to bottom FOV) Might be useful for task that don't require the whole brain - wmh analysis,2022-02-08T20:53:43Z
+Case_9,Rater03,Fail,incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain - wmh analysis,2022-02-08T20:54:30Z
+Case_80,Rater03,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T20:55:15Z
+Case_1,Rater03,Fail,"low dynamic range; very dark incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:03:33Z
+Case_11,Rater03,Fail,"low dynamic range; non uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:15:43Z
+Case_37,Rater03,Pass,low dynamic range - dark low wm/gm contrast,2022-02-08T21:16:47Z
+Case_41,Rater03,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:18:35Z
+Case_42,Rater03,Pass,non-uniformity artefact; slight movement,2022-02-08T21:20:45Z
+Case_43,Rater03,Fail,"non-uniformity artefact incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:20:57Z
+Case_45,Rater03,Fail,"non-uniformity artefact (bright forehead); low dynamic range incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:22:33Z
+Case_48,Rater03,Fail,"non-uniformity; low dynamic range; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:22:48Z
+Case_51,Rater03,Fail,"intensity non-uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:23:00Z
+Case_64,Rater03,Pass,cutting the neck but cerebellum is intact,2022-02-08T21:23:35Z
+Case_7,Rater03,Fail,"ringing artefact; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:24:05Z
+Case_83,Rater03,Fail,"thick scalp; non-uniformity (brighter in the back); incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:24:25Z
+Case_90,Rater03,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:24:40Z
+Case_57,Rater03,Fail,"incomplete coverage Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:41:36Z
+Case_92,Rater03,Fail,"incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-08T21:42:43Z
+Case_21,Rater02,Fail,"Non-uniformity, Incomplete cerebellum coverage (dura cannot be seen in the 5th row, 5th slice from right), Low GM/WM contrast, UBO (look at second row, 3rd, 4th, and 5th image from left, also look at 4th row, first image from right)",2022-02-09T00:37:37Z
+Case_22,Rater02,Fail,"Part of occipital lobe seems to be cut (look at third row, the second from the right)",2022-02-09T00:38:13Z
+Case_12,Rater02,Pass,Intensity non-uniformity,2022-02-09T00:39:45Z
+Case_11,Rater02,Fail,"Intensity non-uniformity, incomplete coverage of cerebellum (coronal view)",2022-02-09T00:40:34Z
+Case_1,Rater02,Fail,"Intensity non-uniformity, Low dynamic range, Possible bad cut of cerebellum (dura cannot be seen in the coronal view)",2022-02-09T00:42:13Z
+Case_27,Rater02,Fail,"Occipital lobe is not completely covered (look at the second row, second from left, and fourth row, second from the right).",2022-02-09T00:44:26Z
+Case_29,Rater02,Fail,"Intensity non-uniformity, incomplete coverage of cerebellum (dura cannot be seen in the coronal view)",2022-02-09T00:45:18Z
+Case_3,Rater02,Fail,"Incomplete coverage of frontal lobe (look at 3rd and 4th row, 1st slice from the right)",2022-02-09T00:46:03Z
+Case_32,Rater02,Pass,A slight intensity non-uniformity,2022-02-09T00:49:10Z
+Case_33,Rater02,Fail,"Inappropriate crop of occipital lobe (look at the 3rd row, 3rd slice from the right)",2022-02-09T00:50:11Z
+Case_36,Rater02,Pass,"Possible unwanted noise (look at the 4th row, first image from the right)",2022-02-09T00:52:46Z
+Case_39,Rater02,Pass,"",2022-02-09T00:56:12Z
+Case_4,Rater02,Fail,"Inappropriate crop of occipital lobe (look at the 3rd row, 2nd image from right)",2022-02-09T00:56:56Z
+Case_41,Rater02,Pass,"Intensity non-uniformity, Possible inappropriate coverage of cerebellum base (when I increase the contrast of this image, I kinda can detect the dura below the cerebellum, so I passed this one)",2022-02-09T01:06:50Z
+Case_43,Rater02,Fail,"Intensity non-uniformity, Bad coverage of cerebellum (dura cannot be seen in some images - such as 5th row, 5th from right)",2022-02-09T01:09:43Z
+Case_45,Rater02,Fail,"Intensity non-uniformity, UBO (look at those white lines between two hemispheres), Bad crop of cerebellum (look at 3rd row, second slice from the right)",2022-02-09T01:16:13Z
+Case_48,Rater02,Fail,"Intensity non-uniformity, Bad coverage of cerebellum (dura cannot be seen, plus look at 4th row, 2nd and 3rd image from right)",2022-02-09T01:19:26Z
+Case_51,Rater02,Fail,"Intensity non-uniformity, Inappropriate cut of cerebellum base (look at the 3rd row, 2nd slice from right, or 4th row, 3rd slice from left)",2022-02-09T01:23:42Z
+Case_52,Rater02,Pass,"Low contrast (probably due to intensity non-uniformity), bad correction of eye movement? (phase encoding in AP direction, instead of LR direction)",2022-02-09T01:24:25Z
+Case_57,Rater02,Fail,"Intensity non-uniformity, Inappropriate cut of cerebellum (look at 5th row, 5th column from the right)",2022-02-09T01:28:51Z
+Case_6,Rater02,Pass,Possible slight movement (ringing) artefacts,2022-02-09T01:30:11Z
+Case_60,Rater02,Fail,"Intensity non-uniformity, Low contrast, Inappropriate cut of cerebellum base (it could be passed I think)",2022-02-09T01:42:49Z
+Case_66,Rater02,Fail,"Low contrast, Bad cut of occipital lobe (look at the 3rd row, second slice from right).",2022-02-09T01:46:37Z
+Case_7,Rater02,Fail,"Considerable movement (ringing) artefacts, Bad cut of cerebellum base (look at 5th row, 4th image from the right)",2022-02-09T01:48:42Z
+Case_70,Rater02,Pass,"Intensity non-uniformity, Movement artefacts and possible bad phase encoding direction",2022-02-09T01:49:31Z
+Case_77,Rater02,Pass,Too much intensity non-uniformity,2022-02-09T01:52:15Z
+Case_82,Rater02,Fail,"Low GM/WM contrast, Severe intensity non-uniformity (look at 3rd row, 2nd image from the right - there is a sudden change in the intensity of occipital lobe)",2022-02-09T01:59:40Z
+Case_83,Rater02,Fail,"Bright skull, Possible loss of cerebellum coverage (look at the 3rd row, 2nd and 3rd image from the right)",2022-02-09T02:11:02Z
+Case_9,Rater02,Fail,"Bad cut of cerebellum base (look at 5th row, 4th column from the right)",2022-02-09T02:16:12Z
+Case_90,Rater02,Fail,"Slight intensity non-uniformity, Possible bad cut of cerebellum base (look at the 4th row, 3rd column from the right)",2022-02-09T02:19:28Z
+Case_92,Rater02,Fail,"Possible bad cut of cerebellum base (look at 5th row, 5th slice from the right)",2022-02-09T02:21:42Z
+Case_97,Rater02,Pass,"Intensity non-uniformity, Possible bad cut of cerebellum base (look at the 3rd row, 3rd column from the right - however I passed this one)",2022-02-09T02:27:29Z
+Case_61,Rater02,Fail,"Intensity non-uniformity, Low GM/WM contrast, Bad cut of cerebellum base (look at the 5th row, 5th column from the right)",2022-02-09T02:28:49Z
+Case_10,Rater04,Pass,tight AP FOV but brain still covered,2022-02-09T15:20:10Z
+Case_11,Rater04,Pass,dark/low dynamic range - non-uniformity artefact (bright nose); bright calcified falx cerebri; low GM/WM contrast but some slides are good; signal loss on lowest slices; tight SI FOV; threshold pass,2022-02-09T15:30:14Z
+Case_12,Rater04,Pass,non-uniformity artefact (signal loss on lowest scans); low GM/WM contrast in top most and bottom most scans; threshold pass; tight SI FOV,2022-02-09T15:34:47Z
+Case_19,Rater04,Pass,low GM/WM contrast in lower slices; some non-uniformity - signal dropout (recoverable?),2022-02-09T15:44:07Z
+Case_20,Rater04,Pass,low dynamic range; low GM/WM contrast in some slices; threshold pass,2022-02-09T15:46:18Z
+Case_21,Rater04,Pass,"bright calcified falx cerebri; non-uniformity artefact (bright nose, recoverable); low GM/WM contrast in some slices",2022-02-09T15:47:38Z
+Case_22,Rater04,Pass,tight AP FOV but brain is covered,2022-02-09T15:48:26Z
+Case_23,Rater04,Pass,tight AP FOV but full brain covered; low GM/WM contrast in some slices,2022-02-09T15:50:30Z
+Case_25,Rater04,Pass,tight AP FOV but brain is covered;,2022-02-09T15:52:52Z
+Case_26,Rater04,Pass,low dynamic range; low GM/WM contrast; threshold pass,2022-02-09T16:02:33Z
+Case_27,Rater04,Pass,tight AP FOV but brain is JUST covered; GM/WM contrast low in few slices; threshold pass due to coverage,2022-02-09T16:08:06Z
+Case_28,Rater04,Fail,tight AP FOV - incomplete coverage,2022-02-09T16:08:31Z
+Case_29,Rater04,Pass,low GM/WM contrast in few slides,2022-02-09T16:12:31Z
+Case_3,Rater04,Pass,tight AP FOV but brain is covered; thick dura in frontal pole?,2022-02-09T16:16:27Z
+Case_30,Rater04,Pass,"",2022-02-09T16:18:11Z
+Case_89,Rater03,Fail,"tight top to bottom FOV; might be useful for tasks that don't require the whole brain, i. e. wmh analysis",2022-02-09T16:21:06Z
+Case_31,Rater04,Pass,tight AP FOV but brain is covered,2022-02-09T16:34:01Z
+Case_32,Rater04,Pass,"",2022-02-09T16:35:39Z
+Case_33,Rater04,Pass,tight AP FOV but brain seems to be covered; low dynamic range; low GM/WM contrast in some slices,2022-02-09T16:41:34Z
+Case_34,Rater04,Pass,tight AP FOV but brain is covered; low GM/WM contrast,2022-02-09T16:45:04Z
+Case_35,Rater04,Fail,incomplete coverage - cerebellum cut off,2022-02-09T16:47:58Z
+Case_36,Rater04,Pass,bright region in LH frontal lobe;,2022-02-09T16:51:25Z
+Case_37,Rater04,Pass,non-uniformity artefact/low dynamic range; low GM/WM contrast,2022-02-09T16:58:54Z
+Case_38,Rater04,Pass,low GM/WM contrast in few slices;,2022-02-09T17:00:33Z
+Case_39,Rater04,Pass,tight AP FOV but brain is covered,2022-02-09T17:02:38Z
+Case_4,Rater04,Pass,tight AP FOV but brain is JUST covered;,2022-02-09T17:04:19Z
+Case_40,Rater04,Pass,low GM/WM contrast;,2022-02-09T17:05:59Z
+Case_41,Rater04,Pass,non-uniformity artefact (bright nose); low GM/WM contrast; threshold pass,2022-02-09T17:13:52Z
+Case_42,Rater04,Pass,non-uniformity artefact (recoverable),2022-02-09T17:16:56Z
+Case_43,Rater04,Pass,low GM/WM contrast;,2022-02-09T17:18:34Z
+Case_44,Rater04,Pass,tight AP FOV but brain covered; non-uniformity artefact (recoverable),2022-02-09T17:21:15Z
+Case_45,Rater04,Pass,non-uniformity artefact (bright nose); low dynamic range; low Gm/WM contrast; bright calcified flax cerebri; threshold pass;,2022-02-09T17:23:27Z
+Case_46,Rater04,Pass,tight AP FOV but brain covered;,2022-02-09T17:29:18Z
+Case_47,Rater04,Pass,"",2022-02-09T17:30:20Z
+Case_48,Rater04,Pass,non-uniformity artefact (bright nose); low dynamic range; low GM/WM contrast; threshold pass,2022-02-09T17:37:35Z
+Case_49,Rater04,Pass,"",2022-02-09T17:43:26Z
+Case_5,Rater04,Pass,"",2022-02-09T17:44:38Z
+Case_50,Rater04,Pass,"",2022-02-09T17:45:32Z
+Case_51,Rater04,Pass,low GM/WM contrast; large ventricle; non-uniformity artefact (bright nose);,2022-02-09T17:46:58Z
+Case_52,Rater04,Pass,non-uniformity artefact (bright nose); low GM/WM contrast; threshold pass,2022-02-09T17:48:43Z
+Case_53,Rater04,Fail,incomplete coverage - cerebellum cut off;,2022-02-09T17:49:28Z
+Case_54,Rater04,Pass,"",2022-02-09T17:50:46Z
+Case_55,Rater04,Pass,"",2022-02-09T20:16:54Z
+Case_56,Rater04,Pass,tight AP FOV but brain is JUST covered;,2022-02-09T20:20:07Z
+Case_57,Rater04,Pass,non-uniformity artefact (bright nose); low GM/WM contrast,2022-02-09T20:22:44Z
+Case_58,Rater04,Pass,non-uniformity artefact (bright nose); GM/WM contrast low in some slides,2022-02-09T20:30:16Z
+Case_59,Rater04,Pass,slight movement;,2022-02-09T20:33:43Z
+Case_6,Rater04,Pass,"",2022-02-09T20:36:31Z
+Case_60,Rater04,Pass,low dynamic range; low GM/WM contrast,2022-02-09T20:38:00Z
+Case_61,Rater04,Pass,low dynamic range/ non-uniformity artefact (bright nose); bright calcified falx cerebri; low GM/WM contrast,2022-02-09T20:40:27Z
+Case_62,Rater04,Pass,"",2022-02-09T20:42:31Z
+Case_63,Rater04,Fail,incomplete coverage - cerebellum cut off; slight movement (recoverable);,2022-02-09T20:51:21Z
+Case_64,Rater04,Pass,large ventricle;,2022-02-09T20:52:49Z
+Case_65,Rater04,Fail,no data,2022-02-09T20:53:07Z
+Case_66,Rater04,Pass,"",2022-02-09T20:54:23Z
+Case_67,Rater04,Pass,non-uniformity artefact (bright nose); poor GM/WM contrast;  threshold pass,2022-02-09T20:56:28Z
+Case_68,Rater04,Pass,tight SI FOV but brain looks fully covered; low GM/WM contrast;,2022-02-09T20:58:46Z
+Case_69,Rater04,Pass,tight AP FOV but brain covered; low GM/WM contrast in few slides,2022-02-09T21:03:03Z
+Case_7,Rater04,Fail,slight movement; dark region in RH (infarct?); incomplete coverage - cerebellum cutoff,2022-02-09T21:08:17Z
+Case_70,Rater04,Pass,low GM/WM contrast in some slides;,2022-02-09T21:11:54Z
+Case_71,Rater04,Pass,non-uniformity artefact (bright blood vessels);,2022-02-09T21:15:02Z
+Case_72,Rater04,Pass,slight movement;,2022-02-09T21:20:40Z
+Case_73,Rater04,Pass,"",2022-02-09T21:23:12Z
+Case_74,Rater04,Fail,no data,2022-02-09T21:34:11Z
+Case_75,Rater04,Pass,"",2022-02-09T21:35:47Z
+Case_76,Rater04,Pass,tight SI FOV but brain seems fully covered; some non-uniformity artefact (bright nose);,2022-02-09T21:38:31Z
+Case_78,Rater04,Pass,"",2022-02-09T21:46:24Z
+Case_79,Rater04,Fail,acquisition artefact; incomplete coverage,2022-02-09T21:47:10Z
+Case_8,Rater04,Pass,"",2022-02-09T21:49:56Z
+Case_80,Rater04,Pass,non-uniformity artefact (blood vessels); tight SI FOV - brain is JUST covered?; threshold pass,2022-02-09T21:53:06Z
+Case_81,Rater04,Pass,severe atrophy; low GM/WM contrast in some slices;,2022-02-09T21:55:18Z
+Case_1,Rater09,Fail,incomplete coverage,2022-02-10T00:27:37Z
+Case_11,Rater09,Fail,incomplete coverage,2022-02-10T00:32:02Z
+Case_13,Rater09,Pass,"",2022-02-10T00:38:39Z
+Case_16,Rater09,Fail,ringing artifact,2022-02-10T00:45:34Z
+Case_17,Rater09,Pass,"",2022-02-10T00:47:42Z
+Case_19,Rater09,Pass,"",2022-02-10T00:52:51Z
+Case_20,Rater09,Fail,incomplete coverage,2022-02-10T00:57:14Z
+Case_21,Rater09,Fail,incomplete coverage,2022-02-10T01:02:14Z
+Case_23,Rater09,Pass,"",2022-02-10T01:18:02Z
+Case_24,Rater09,Fail,"",2022-02-10T01:18:12Z
+Case_10,Rater09,Pass,"",2022-02-10T01:40:15Z
+Case_12,Rater09,Pass,intensity non-uniformity,2022-02-10T01:40:49Z
+Case_25,Rater09,Pass,slightly ringing artifact,2022-02-10T01:50:16Z
+Case_2,Rater09,Pass,"",2022-02-10T01:53:38Z
+Case_26,Rater09,Pass,"",2022-02-10T02:01:32Z
+Case_27,Rater09,Fail,incomplete coverage of occipital,2022-02-10T02:05:18Z
+Case_28,Rater09,Fail,incomplete coverage,2022-02-10T02:07:27Z
+Case_74,Rater02,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,2022-02-10T02:11:01Z
+Case_65,Rater02,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,2022-02-10T02:11:13Z
+Case_29,Rater09,Fail,incomplete coverage of cerebellum,2022-02-10T02:11:25Z
+Case_24,Rater02,Fail,Very very low dynamic range. Preprocessing success is heavily related to the precision of the image. I prefer to fail this image since I am not sure about the precision.,2022-02-10T02:11:41Z
+Case_3,Rater09,Fail,incomplete coverage (front to back),2022-02-10T02:14:14Z
+Case_30,Rater09,Fail,ringing artifact,2022-02-10T02:16:53Z
+Case_31,Rater09,Pass,"",2022-02-10T02:25:43Z
+Case_32,Rater09,Pass,intensity nonuniformity,2022-02-10T02:30:34Z
+Case_33,Rater09,Fail,incomplete coverage,2022-02-10T02:33:06Z
+Case_34,Rater09,Pass,"",2022-02-10T02:35:25Z
+Case_35,Rater09,Fail,incomplete coverage,2022-02-10T02:36:20Z
+Case_36,Rater09,Pass,intensity non-uniformity,2022-02-10T02:40:25Z
+Case_38,Rater09,Pass,"",2022-02-10T02:49:23Z
+Case_39,Rater09,Pass,"",2022-02-10T02:51:50Z
+Case_4,Rater09,Fail,incomplete coverage,2022-02-10T02:54:06Z
+Case_41,Rater09,Fail,incomplete coverage,2022-02-10T02:59:24Z
+Case_42,Rater09,Pass,"",2022-02-10T03:58:06Z
+Case_43,Rater09,Fail,incomplete coverage,2022-02-10T03:59:21Z
+Case_44,Rater09,Pass,non-uniformity intensity,2022-02-10T04:01:49Z
+Case_46,Rater09,Pass,"",2022-02-10T13:33:42Z
+Case_47,Rater09,Pass,intensity non-uniformity,2022-02-10T13:57:53Z
+Case_48,Rater09,Fail,"incomplete coverage, dark",2022-02-10T13:59:50Z
+Case_5,Rater09,Pass,"",2022-02-10T14:10:06Z
+Case_50,Rater09,Pass,"",2022-02-10T14:12:50Z
+Case_52,Rater09,Pass,"",2022-02-10T16:02:15Z
+Case_53,Rater09,Fail,incomplete coverage,2022-02-10T16:02:47Z
+Case_54,Rater09,Fail,ringing artifact,2022-02-10T16:03:17Z
+Case_55,Rater09,Fail,ringing artifact,2022-02-10T16:04:32Z
+Case_56,Rater09,Fail,ringing artifact,2022-02-10T16:09:37Z
+Case_57,Rater09,Fail,incomplete coverage,2022-02-10T16:10:47Z
+Case_58,Rater09,Pass,"",2022-02-10T16:12:50Z
+Case_65,Rater09,Fail,"",2022-02-10T16:21:49Z
+Case_59,Rater09,Fail,ringing artifact,2022-02-10T16:23:47Z
+Case_45,Rater09,Fail,"incomplete coverage, dark, low dynamic range",2022-02-10T16:28:37Z
+Case_51,Rater09,Fail,"incomplete coverage, intensity non-uniformity",2022-02-10T16:31:26Z
+Case_82,Rater04,Pass,tight AP FOV barely enough coverage; signal drop off in occipital lobe; threshold pass,2022-02-10T16:38:19Z
+Case_83,Rater04,Pass,"",2022-02-10T16:39:32Z
+Case_84,Rater04,Pass,tight AP FOV but brain covered,2022-02-10T16:41:57Z
+Case_85,Rater04,Pass,low GM/WM contrast in some slides;,2022-02-10T16:45:10Z
+Case_14,Rater09,Pass,noise?,2022-02-10T16:46:03Z
+Case_86,Rater04,Pass,"",2022-02-10T16:47:11Z
+Case_87,Rater04,Pass,"",2022-02-10T16:49:02Z
+Case_88,Rater04,Pass,slight movement;,2022-02-10T16:51:35Z
+Case_89,Rater04,Pass,tight SI FOV but brain covered,2022-02-10T16:53:38Z
+Case_9,Rater04,Pass,"",2022-02-10T16:56:13Z
+Case_90,Rater04,Pass,"",2022-02-10T16:57:36Z
+Case_91,Rater04,Pass,"",2022-02-10T16:59:18Z
+Case_15,Rater09,Pass,slightly ringing artifact,2022-02-10T16:59:43Z
+Case_92,Rater04,Pass,tight SI FOV but brain seems covered,2022-02-10T17:01:10Z
+Case_93,Rater04,Pass,"",2022-02-10T17:02:41Z
+Case_94,Rater04,Pass,slight movement (recoverable?); threshold pass,2022-02-10T17:04:52Z
+Case_18,Rater09,Pass,"",2022-02-10T17:06:01Z
+Case_95,Rater04,Pass,GM/WM contrast low in some slices,2022-02-10T17:06:36Z
+Case_96,Rater04,Pass,"",2022-02-10T17:08:21Z
+Case_97,Rater04,Pass,bright anomaly between eyes; low GM/WM contrast,2022-02-10T17:13:55Z
+Case_94,Rater03,Fail,noisy,2022-02-10T17:14:01Z
+Case_98,Rater04,Fail,incomplete coverage -cerebellum cut off,2022-02-10T17:15:10Z
+Case_99,Rater04,Pass,"",2022-02-10T17:16:23Z
+Case_1,Rater04,Pass,"dark/low dynamic range - non-uniformity artefact (bright nose, recoverable); low GM/WM contrast; tight SI FOV; threshold pass",2022-02-10T17:21:49Z
+Case_6,Rater09,Pass,"",2022-02-10T17:22:46Z
+Case_60,Rater09,Fail,"incomplete coverage, intensity non-uniformity",2022-02-10T17:24:35Z
+Case_16,Rater04,Fail,movement (non-recoverable?); large ventricle; tight AP FOV but brain is covered,2022-02-10T17:25:03Z
+Case_67,Rater03,Fail,"non-uniformity; incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-10T17:27:37Z
+Case_77,Rater04,Pass,poor GM/WM contrast; tight SI FOV - not sure of coverage; threshold pass,2022-02-10T17:37:54Z
+Case_61,Rater09,Fail,"incomplete coverage, intensity non-uniformity",2022-02-10T17:55:59Z
+Case_62,Rater09,Pass,"",2022-02-10T17:57:47Z
+Case_63,Rater09,Fail,"ringing artifact, incomplete movement",2022-02-10T18:02:43Z
+Case_1,Rater05,Fail,Incomplete coverage Non-uniformity artifact,2022-02-10T18:59:57Z
+Case_10,Rater05,Pass,"",2022-02-10T19:11:27Z
+Case_11,Rater05,Fail,Incomplete coverage Intensity non-uniformity artefacts,2022-02-10T19:14:54Z
+Case_12,Rater05,Fail,Incomplete coverage,2022-02-10T19:15:30Z
+Case_64,Rater09,Pass,"",2022-02-10T19:16:04Z
+Case_66,Rater09,Pass,unidentified bright object,2022-02-10T19:19:00Z
+Case_15,Rater05,Pass,"",2022-02-10T19:21:57Z
+Case_16,Rater05,Pass,Head tilted forward and to the left,2022-02-10T19:26:36Z
+Case_17,Rater05,Pass,Some incomplete coverage near nose,2022-02-10T19:27:49Z
+Case_18,Rater05,Pass,"",2022-02-10T19:28:01Z
+Case_19,Rater05,Fail,Incomplete coverage,2022-02-10T19:28:25Z
+Case_68,Rater09,Pass,"intensity inhomogeneity,",2022-02-11T02:02:13Z
+Case_69,Rater09,Pass,low WM/GM contrast,2022-02-11T02:10:43Z
+Case_7,Rater09,Fail,"incomplete coverage, slight ringing artifact",2022-02-11T02:12:12Z
+Case_70,Rater09,Pass,"",2022-02-11T02:14:01Z
+Case_71,Rater09,Pass,"wrap around artifact, no effect on the brain",2022-02-11T02:37:16Z
+Case_72,Rater09,Pass,low GM/WM contrast,2022-02-11T02:39:07Z
+Case_73,Rater09,Pass,incomplete coverage?,2022-02-11T02:45:13Z
+Case_74,Rater09,Fail,"",2022-02-11T02:45:56Z
+Case_75,Rater09,Pass,slightly ringing artifact,2022-02-11T02:48:05Z
+Case_76,Rater09,Fail,incomplete coverage,2022-02-11T02:51:59Z
+Case_77,Rater09,Fail,"low dynamic range, incomplete coverage",2022-02-11T02:54:25Z
+Case_78,Rater09,Pass,"",2022-02-11T02:55:31Z
+Case_79,Rater09,Fail,"",2022-02-11T02:55:59Z
+Case_8,Rater09,Pass,"",2022-02-11T02:57:34Z
+Case_80,Rater09,Fail,incomplete coverage,2022-02-11T02:58:15Z
+Case_81,Rater09,Pass,"",2022-02-11T03:00:21Z
+Case_82,Rater09,Fail,"low GM/WM contrast, intensity non-uniformity",2022-02-11T03:06:53Z
+Case_83,Rater09,Pass,"",2022-02-11T03:09:01Z
+Case_84,Rater09,Pass,"",2022-02-11T03:10:31Z
+Case_85,Rater09,Pass,"",2022-02-11T03:11:50Z
+Case_86,Rater09,Pass,"",2022-02-11T03:14:18Z
+Case_87,Rater09,Pass,"",2022-02-11T03:15:42Z
+Case_88,Rater09,Fail,noisy scan ,2022-02-11T03:18:00Z
+Case_89,Rater09,Fail,incomplete coverage,2022-02-11T03:19:07Z
+Case_9,Rater09,Fail,incomplete coverage,2022-02-11T03:19:48Z
+Case_90,Rater09,Pass,coverage?,2022-02-11T03:22:15Z
+Case_91,Rater09,Pass,"",2022-02-11T03:23:27Z
+Case_92,Rater09,Pass,"",2022-02-11T03:25:02Z
+Case_93,Rater09,Pass,consider shape of brain ,2022-02-11T03:26:58Z
+Case_94,Rater09,Fail,ringing artifact,2022-02-11T03:27:37Z
+Case_95,Rater09,Pass,"",2022-02-11T03:28:41Z
+Case_96,Rater09,Pass,"",2022-02-11T03:30:08Z
+Case_97,Rater09,Pass,intensity non-uniformity,2022-02-11T03:32:44Z
+Case_98,Rater09,Fail,incomplete coverage,2022-02-11T03:33:04Z
+Case_99,Rater09,Pass,"",2022-02-11T03:34:04Z
+Case_22,Rater09,Pass,low GM/WM contrast,2022-02-11T03:35:55Z
+Case_37,Rater09,Pass,low GM/WM contrast,2022-02-11T03:37:56Z
+Case_40,Rater09,Pass,slightly ringing artifact,2022-02-11T03:39:30Z
+Case_49,Rater09,Pass,slightly ringing artifacts,2022-02-11T03:40:17Z
+Case_67,Rater09,Fail,"low dynamic range, dark, intensity inhomogeneity, (coverage of cerebellum?)",2022-02-11T03:40:57Z
+Case_2,Rater05,Pass,"",2022-02-11T21:33:18Z
+Case_20,Rater05,Fail,Incomplete coverage,2022-02-11T21:34:04Z
+Case_21,Rater05,Fail,Incomplete coverage,2022-02-11T21:34:54Z
+Case_22,Rater05,Pass,Head tilted forward,2022-02-11T21:35:45Z
+Case_23,Rater05,Pass,Head tilted forward,2022-02-11T21:36:46Z
+Case_24,Rater05,Fail,Intensity non-uniformity Very dark with no contrast in color or intensity,2022-02-11T21:37:48Z
+Case_26,Rater05,Pass,"",2022-02-11T21:39:35Z
+Case_27,Rater05,Pass,Head tilted forward and to the right,2022-02-11T21:40:00Z
+Case_28,Rater05,Fail,Incomplete coverage Movement artifacts,2022-02-11T21:44:00Z
+Case_29,Rater05,Fail,Incomplete coverage,2022-02-11T21:44:19Z
+Case_3,Rater05,Pass,Head tilted forward,2022-02-11T21:45:01Z
+Case_30,Rater05,Pass,"",2022-02-11T21:46:02Z
+Case_31,Rater05,Pass,"",2022-02-11T21:46:44Z
+Case_32,Rater05,Fail,Incomplete coverage,2022-02-11T21:47:03Z
+Case_33,Rater05,Pass,"",2022-02-11T21:47:22Z
+Case_34,Rater05,Pass,Head tilted to left,2022-02-11T21:48:09Z
+Case_35,Rater05,Fail,Incomplete coverage,2022-02-11T21:48:36Z
+Case_36,Rater05,Fail,Incomplete coverage,2022-02-11T21:48:49Z
+Case_39,Rater05,Pass,Reduced signal intensity,2022-02-11T21:50:35Z
+Case_4,Rater05,Pass,"",2022-02-11T21:51:06Z
+Case_40,Rater05,Pass,"",2022-02-11T21:51:23Z
+Case_41,Rater05,Fail,"Incomplete coverage, reduced signal intensity",2022-02-11T21:51:47Z
+Case_43,Rater05,Fail,Incomplete coverage,2022-02-11T21:53:27Z
+Case_44,Rater05,Pass,Head tilted forward and to the right,2022-02-11T21:54:02Z
+Case_45,Rater05,Fail,Incomplete coverage Reduced intensity,2022-02-11T21:54:27Z
+Case_46,Rater05,Pass,Noisy scan with some movement artifacts,2022-02-11T21:55:39Z
+Case_47,Rater05,Fail,Incomplete coverage Slightly noisy scan,2022-02-11T21:56:31Z
+Case_48,Rater05,Fail,"Incomplete coverage Bright intensity around nose, slighty reduced intensity",2022-02-11T21:57:02Z
+Case_49,Rater05,Pass,Reduced signal intensity at the neck and front of the face,2022-02-11T21:57:48Z
+Case_5,Rater05,Pass,Some reduced intensity at bottom of the neck,2022-02-11T21:58:21Z
+Case_50,Rater05,Pass,Very slight movement artifacts,2022-02-11T21:59:00Z
+Case_51,Rater05,Fail,Incomplete coverage Noisy scan,2022-02-11T21:59:25Z
+Case_52,Rater05,Fail,Incomplete coverage Bright intensity near nose,2022-02-11T21:59:59Z
+Case_53,Rater05,Fail,Bright intensity but enough contrast Incomplete coverage,2022-02-11T22:00:44Z
+Case_54,Rater05,Pass,"",2022-02-11T22:00:54Z
+Case_55,Rater05,Pass,Slight movement artifacts,2022-02-11T22:01:27Z
+Case_56,Rater05,Pass,Slightly noisy scan Reduced coverage near front of face,2022-02-11T22:02:10Z
+Case_57,Rater05,Fail,Incomplete coverage Intensity non-uniformity,2022-02-11T22:02:52Z
+Case_58,Rater05,Fail,"Incomplete coverage Bright intensity at nose, signl dropout at neck",2022-02-11T22:03:25Z
+Case_6,Rater05,Pass,Movement artifacts,2022-02-11T22:05:09Z
+Case_60,Rater05,Fail,Reduced dynamic range Incomplete coverage,2022-02-11T22:05:33Z
+Case_61,Rater05,Fail,Incomplete coverage,2022-02-11T22:06:02Z
+Case_62,Rater05,Pass,"Intensity non-uniformity, lower intensity near front of face",2022-02-11T22:06:38Z
+Case_63,Rater05,Fail,Incomplete coverage,2022-02-11T22:06:54Z
+Case_64,Rater05,Fail,Incomplete coverage,2022-02-11T22:07:19Z
+Case_65,Rater05,Fail,Very low intensity Some bright artifacts in the back-to-front scans,2022-02-11T22:08:05Z
+Case_66,Rater05,Pass,Movement artifacts Lower signal intensity in the neck area,2022-02-11T22:09:05Z
+Case_67,Rater05,Fail,"Incomplete coverage Bright intensity at nose, reduced intensity throughout scan",2022-02-11T22:09:32Z
+Case_68,Rater05,Fail,Incomplete coverage,2022-02-11T22:09:53Z
+Case_13,Rater06,Pass,Anterior/forehead skull cut slightly by FOV.,2022-02-13T16:37:54Z
+Case_14,Rater06,Pass,Appears noisy.,2022-02-13T16:40:00Z
+Case_15,Rater06,Pass,Thick and bright dura?,2022-02-13T16:41:49Z
+Case_16,Rater06,Fail,"Significant ringing due to motion, low GM/WM contrast.",2022-02-13T16:42:55Z
+Case_17,Rater06,Pass,"",2022-02-13T16:43:20Z
+Case_18,Rater06,Pass,Frontal and parietal/occipital lobe pathology or inhomogeneity?,2022-02-13T16:44:53Z
+Case_2,Rater06,Pass,"Bright image, bright scalp and fat, low GM/WM contrast.",2022-02-13T16:48:14Z
+Case_22,Rater06,Pass,"Posterior skull, maybe dura, cut by limited FOV.",2022-02-13T16:52:49Z
+Case_23,Rater06,Pass,"low GM/WM contrast, skull and maybe dura cut anterior+posterior due to limited FOV ",2022-02-13T16:54:36Z
+Case_24,Rater06,Fail,No image is visible.,2022-02-13T16:55:07Z
+Case_26,Rater06,Pass,"Low intensity dynamic range, low GM/WM contrast, posterior skull cut by FOV, potentially into occipital lobe.",2022-02-13T16:59:19Z
+Case_28,Rater06,Fail,Occipital and frontal lobes cut by limited FOV.,2022-02-13T17:01:37Z
+Case_31,Rater06,Pass,Posterior skull cut by limited FOV.,2022-02-13T17:08:23Z
+Case_34,Rater06,Pass,Posterior skull cut by limited FOV.,2022-02-13T17:11:36Z
+Case_38,Rater06,Pass,"Bright scalp, limited WM GM contrast.",2022-02-13T17:16:05Z
+Case_39,Rater06,Pass,"Appears noisy, posterior skull cut by limited FOV.",2022-02-13T17:16:56Z
+Case_46,Rater06,Pass,"Appears noisy, posterior skull cut by limited FOV.",2022-02-13T17:33:13Z
+Case_49,Rater06,Pass,"Appears noisy, posterior skull cut by limited FOV.",2022-02-13T17:36:23Z
+Case_5,Rater06,Pass,Posterior and anterior skull cut by FOV,2022-02-13T17:36:55Z
+Case_53,Rater06,Fail,Incomplete coverage - base of cerebellum cut by FOV,2022-02-13T17:43:08Z
+Case_6,Rater06,Pass,Anterior and posterior skull cut by FOV,2022-02-13T18:01:37Z
+Case_64,Rater06,Pass,"bright scalp, inhomogeneity at edge of cerebellum, FOV cut at edge of cerebellum1",2022-02-13T18:07:43Z
+Case_65,Rater06,Fail,No image visible.,2022-02-13T18:08:00Z
+Case_66,Rater06,Pass,FOV cuts posterior skull to edge of occipital lobe.,2022-02-13T18:08:47Z
+Case_72,Rater06,Pass,"Low GM WM contrast, noisy",2022-02-13T18:51:11Z
+Case_74,Rater06,Fail,No visible image.,2022-02-13T18:52:37Z
+Case_79,Rater06,Fail,Left side cerebellum and inferior brain signal loss.,2022-02-13T18:58:00Z
+Case_8,Rater06,Pass,"Severe frontal lobe pathology, FOV cuts anterior and posterior skull to brain edge.",2022-02-13T18:58:52Z
+Case_81,Rater06,Pass,"Severe left hemisphere pathology, FOV hits base edge of cerebellum, bright scalp and nose, limited dynamic range ",2022-02-13T19:01:07Z
+Case_86,Rater06,Pass,"some inhomogeneity across the image, noisy",2022-02-13T19:11:44Z
+Case_87,Rater06,Pass,some inhomogeneity,2022-02-13T19:12:18Z
+Case_91,Rater06,Pass,"noisy, FOV cuts posterior skull ",2022-02-13T19:20:05Z
+Case_94,Rater06,Fail,Ringing throughout WM and near cortex,2022-02-13T19:24:10Z
+Case_98,Rater06,Fail,base of cerebellum cut by FOV,2022-02-13T19:28:22Z
+Case_19,Rater06,Pass,"Bright scalp/nose/forehead, intensity inhomogeneity, low GM/WM contrast.",2022-02-13T19:29:59Z
+Case_71,Rater03,Pass,non-uniformity,2022-02-14T14:43:11Z
+Case_1,Rater08,Warning,"bright voxel on the nose, reduced dynamic range, intensity homogeneity ",2022-02-14T14:50:20Z
+Case_51,Rater08,Pass,strong signal inhomogeneity,2022-02-14T14:57:12Z
+Case_52,Rater08,Pass,"",2022-02-14T14:57:21Z
+Case_53,Rater08,Warning,cerebellum cut off,2022-02-14T14:58:01Z
+Case_54,Rater08,Pass,"",2022-02-14T14:58:04Z
+Case_55,Rater08,Pass,"",2022-02-14T14:58:18Z
+Case_56,Rater08,Pass,"",2022-02-14T14:58:31Z
+Case_57,Rater08,Warning,"",2022-02-14T14:58:37Z
+Case_58,Rater08,Warning,"strong inhomogeneity, low contrast",2022-02-14T14:59:21Z
+Case_60,Rater03,Fail,low dynamic range,2022-02-14T14:59:37Z
+Case_59,Rater08,Fail,strong motion artefacts,2022-02-14T14:59:38Z
+Case_6,Rater08,Pass,"",2022-02-14T14:59:47Z
+Case_60,Rater08,Warning,"low contrast, strong inhomogeneity",2022-02-14T15:00:16Z
+Case_61,Rater08,Warning,"low contrast,strong inhomogeneity",2022-02-14T15:00:28Z
+Case_62,Rater08,Pass,"",2022-02-14T15:00:33Z
+Case_63,Rater08,Warning,"ghosting, cerebellum cut off",2022-02-14T15:01:00Z
+Case_64,Rater08,Pass,"",2022-02-14T15:01:11Z
+Case_65,Rater08,Fail,no signal,2022-02-14T15:01:22Z
+Case_66,Rater08,Pass,"",2022-02-14T15:01:28Z
+Case_67,Rater08,Warning,"low contrast, strong inhomogeneity",2022-02-14T15:01:52Z
+Case_68,Rater08,Pass,"",2022-02-14T15:02:00Z
+Case_21,Rater03,Fail,non-uniformity artefact; low dynamic range,2022-02-14T15:02:05Z
+Case_69,Rater08,Pass,"",2022-02-14T15:02:10Z
+Case_7,Rater08,Warning,"cerebellum cut off, motion artifacts",2022-02-14T15:02:49Z
+Case_70,Rater08,Pass,"",2022-02-14T15:03:05Z
+Case_58,Rater03,Pass,incomplete coverage (tight top to bottom FOV),2022-02-14T15:03:18Z
+Case_71,Rater08,Pass,"",2022-02-14T15:03:28Z
+Case_72,Rater08,Warning,low contrast,2022-02-14T15:03:44Z
+Case_73,Rater08,Pass,"",2022-02-14T15:03:52Z
+Case_74,Rater08,Fail,no signal,2022-02-14T15:04:05Z
+Case_75,Rater08,Pass,"",2022-02-14T15:04:19Z
+Case_76,Rater08,Pass,"",2022-02-14T15:04:28Z
+Case_77,Rater08,Warning,"low contrast, strong inhomogeneity ",2022-02-14T15:05:14Z
+Case_78,Rater08,Pass,"",2022-02-14T15:05:23Z
+Case_79,Rater08,Fail,big signal void,2022-02-14T15:06:06Z
+Case_8,Rater08,Pass,"",2022-02-14T15:06:17Z
+Case_80,Rater08,Warning,cerebellum slightly cutoff,2022-02-14T15:06:46Z
+Case_81,Rater08,Pass,"",2022-02-14T15:06:55Z
+Case_82,Rater08,Warning,"back of the head cut-off, signal drop off in the back of the brain",2022-02-14T15:07:54Z
+Case_83,Rater08,Pass,"",2022-02-14T15:08:03Z
+Case_84,Rater08,Pass,"",2022-02-14T15:08:12Z
+Case_85,Rater08,Pass,"",2022-02-14T15:08:24Z
+Case_77,Rater03,Fail,tight top to bottom FOV; could be used in tasks such as WMH analysis low dynamic range;dark,2022-02-14T15:08:33Z
+Case_86,Rater08,Pass,"",2022-02-14T15:08:34Z
+Case_87,Rater08,Pass,"",2022-02-14T15:08:44Z
+Case_88,Rater08,Pass,"",2022-02-14T15:08:59Z
+Case_81,Rater03,Pass,slight movement artefact; neck is cropped but cerebellum is intact,2022-02-14T15:09:11Z
+Case_89,Rater08,Pass,"",2022-02-14T15:09:14Z
+Case_9,Rater08,Warning,cerebellum slightly cut off,2022-02-14T15:09:39Z
+Case_90,Rater08,Warning,cerebellum slightly cut off,2022-02-14T15:09:55Z
+Case_91,Rater08,Pass,"",2022-02-14T15:10:06Z
+Case_92,Rater08,Pass,"",2022-02-14T15:10:23Z
+Case_93,Rater08,Pass,"",2022-02-14T15:10:35Z
+Case_94,Rater08,Fail,motion artefacts,2022-02-14T15:10:50Z
+Case_95,Rater08,Pass,"",2022-02-14T15:11:04Z
+Case_96,Rater08,Pass,"",2022-02-14T15:11:17Z
+Case_97,Rater08,Pass,"",2022-02-14T15:11:30Z
+Case_98,Rater08,Warning,half of cerebellum cut off,2022-02-14T15:11:47Z
+Case_99,Rater08,Pass,"",2022-02-14T15:11:55Z
+Case_2,Rater03,Pass,low WM/GM contrast thick scalp,2022-02-14T15:23:03Z
+Case_28,Rater03,Fail,incomplete coverage tight AP FOV (losing both occipital and frontal sections) ,2022-02-14T15:27:12Z
+Case_32,Rater03,Pass,non-uniformity; tight FOV but cerebellum is intact,2022-02-14T15:28:33Z
+Case_27,Rater03,Fail,incomplete coverage tight AP FOV; Occipital lobe is cut,2022-02-14T15:52:38Z
+Case_33,Rater03,Fail,incomplete coverage tight AP FOV; low dynamic range,2022-02-14T15:52:57Z
+Case_4,Rater03,Fail,incomplete coverage,2022-02-14T15:53:01Z
+Case_52,Rater03,Pass,low dynamic range; dark tight top to bottom FOV but cerebellum seems to be intact ,2022-02-14T15:53:53Z
+Case_29,Rater03,Fail,"incomplete coverage - tight top to bottom FOV; Might be useful for tasks that don't require the whole brain, e.g. wmh analysis non-uniformity;",2022-02-14T15:55:26Z
+Case_20,Rater03,Pass,low dynamic range,2022-02-14T15:57:01Z
+Case_22,Rater03,Fail,incomplete coverage; tight AP FOV; Occipital lobe is cut.,2022-02-14T15:57:35Z
+Case_76,Rater03,Pass,tight top to bottom FOV; could be used in tasks such as WMH analysis,2022-02-14T16:36:07Z
+Case_89,Rater02,Fail,"Bad coverage of cerebellum (look at 5th row, 4th column from the right)",2022-02-14T17:22:26Z
+Case_3,Rater03,Fail,incomplete coverage tight AP FOV,2022-02-14T17:28:48Z
+Case_73,Rater03,Pass,tight top to bottom FOV; could be used in tasks such as WMH analysis,2022-02-14T17:38:02Z
+Case_56,Rater03,Pass,slight movement and ringing artefact Tight AP,2022-02-14T17:39:00Z
+Case_61,Rater03,Fail,"low dynamic range; AP non-uniformity incomplete coverage (tight top to bottom FOV) Might be useful for tasks that don't require the whole brain, e.g. wmh analysis",2022-02-14T17:39:13Z
+Case_44,Rater03,Fail,non-uniformity artefact; slightly tight AP FOV,2022-02-14T17:42:18Z
+Case_68,Rater03,Fail,tight top to bottom FOV; could be used in tasks such as WMH analysis,2022-02-14T17:42:48Z
+Case_97,Rater03,Pass,"incomplete coverage - tight top to bottom FOV; Might be useful for tasks that don't require the whole brain, e.g. wmh analysis slight non-uniformity",2022-02-14T17:43:04Z
+Case_69,Rater05,Pass,Some signal dropout around neck,2022-02-14T19:42:45Z
+Case_7,Rater05,Fail,Incomplete coverage,2022-02-14T19:43:06Z
+Case_70,Rater05,Fail,Incomplete coverage Low signal intensity throughout,2022-02-14T19:43:42Z
+Case_72,Rater05,Fail,Intensity non-uniformity Signal loss around neck and front of face,2022-02-14T19:45:23Z
+Case_73,Rater05,Fail,Incomplete coverage,2022-02-14T19:45:38Z
+Case_74,Rater05,Fail,"Very low signal intensity, all images very unclear",2022-02-14T19:46:08Z
+Case_75,Rater05,Pass,Head tilted forward Some movement artifacts,2022-02-14T19:46:57Z
+Case_76,Rater05,Fail,"Incomplete coverage Intensity non-uniformity, AP inhomogeneity at nose",2022-02-14T19:47:55Z
+Case_77,Rater05,Fail,Incomplete coverage Intensity non-uniformity due to bright spot at nose,2022-02-14T19:48:23Z
+Case_78,Rater05,Pass,Signal loss around neck,2022-02-14T19:48:42Z
+Case_79,Rater05,Fail,Very low-intensity signal Complete signal loss on the left side of the left-to-right images,2022-02-14T19:49:47Z
+Case_8,Rater05,Pass,Some signal dropout at bottom of neck,2022-02-14T19:50:13Z
+Case_80,Rater05,Fail,Incomplete coverage,2022-02-14T19:50:24Z
+Case_81,Rater05,Fail,Incomplete coverage,2022-02-14T19:50:32Z
+Case_82,Rater05,Pass,Some cutoff on the left of the front-to-back images,2022-02-14T19:51:05Z
+Case_83,Rater05,Fail,Incomplete coverage Very bright skull,2022-02-14T19:51:21Z
+Case_84,Rater05,Pass,"",2022-02-14T19:51:26Z
+Case_85,Rater05,Pass,Low signal intensity,2022-02-14T19:51:37Z
+Case_86,Rater05,Pass,Intensity non-uniformity around the neck Head tilted back Movement artifacts,2022-02-14T19:52:18Z
+Case_87,Rater05,Fail,Incomplete coverage,2022-02-14T19:52:36Z
+Case_88,Rater05,Pass,"Signal dropout in the mouth due to dental work, causing signal dropout further behind in the brain",2022-02-14T19:54:29Z
+Case_89,Rater05,Fail,Incomplete coverage Intensity non-uniformity,2022-02-14T19:54:44Z
+Case_9,Rater05,Fail,Incomplete coverage,2022-02-14T19:54:54Z
+Case_90,Rater05,Fail,Incomplete coverage Intensity non-uniformity with bright spot around nose and scalp,2022-02-14T19:55:23Z
+Case_91,Rater05,Pass,Head tilted forward,2022-02-14T19:55:39Z
+Case_92,Rater05,Fail,Incomplete coverage Intensity non-uniformity,2022-02-14T19:55:55Z
+Case_93,Rater05,Pass,Signal dropout in mouth area,2022-02-14T19:56:17Z
+Case_94,Rater05,Pass,Some movement artifacts,2022-02-14T19:56:36Z
+Case_95,Rater05,Pass,Slightly noisy signal Low intensity signal,2022-02-14T19:56:56Z
+Case_96,Rater05,Pass,"",2022-02-14T19:57:04Z
+Case_97,Rater05,Fail,Incomplete coverage Noisy signal,2022-02-14T19:57:17Z
+Case_98,Rater05,Fail,Incomplete coverage,2022-02-14T19:57:27Z
+Case_99,Rater05,Pass,Low intensity signal Head tilted forward,2022-02-14T19:57:51Z
+Case_1,Rater06,Fail,"Bright nose, very dark images, low intensity dynamic range, cerebellum cut?, low GM/WM contrast. ",2022-02-16T15:09:30Z
+Case_10,Rater06,Pass,"Potential occipital lobe cut by FOV limit (posterior skull cut), low GM/WM contrast (possibly due to noise).",2022-02-16T15:09:43Z
+Case_11,Rater06,Fail,"Inferior cerebellum cut by FOV, low GM/WM contrast, bright forehead, nose, and temples; dark image and low intensity dynamic range.",2022-02-16T15:15:50Z
+Case_12,Rater06,Pass,"Inferior cerebellum maybe cut by FOV? Hard to tell. Bright nose and scalp, dark image and low intensity dynamic range. ",2022-02-16T15:17:14Z
+Case_20,Rater06,Fail,"Low intensity dynamic range, bright nose, intensity homogeneity leading to darkened inferior portion of cerebellum, potential base of cerebellum cut by limited FOV, low GM/WM contrast.",2022-02-16T15:20:08Z
+Case_21,Rater06,Fail,"Low intensity dynamic range, bright forehead and nose, potential base of cerebellum cut by limited FOV, UBO near midline.",2022-02-16T15:20:17Z
+Case_25,Rater06,Pass,"Posterior skull cut by limited FOV, some striations visible in WM near midline - due to pathology or ringing from motion?",2022-02-16T15:21:54Z
+Case_27,Rater06,Pass,"Appears noisy, low GM/WM contrast, posterior skull cut by limited FOV",2022-02-16T15:22:39Z
+Case_29,Rater06,Fail,"Intensity inhomogeneity, bright scalp, limited GM/WM contrast,  base of the cerebellum cut by FOV?",2022-02-16T15:23:16Z
+Case_3,Rater06,Fail,Striations due to ringing or pathology in WM? Intensity inhomogeneity due to pathology near midline? Edge of frontal lobe cut by limited FOV.,2022-02-16T15:27:08Z
+Case_30,Rater06,Pass,Some ringing or is it pathology? Low GM/WM contrast.,2022-02-16T15:30:07Z
+Case_32,Rater06,Pass,"Bright forehead and nose, low GM/WM contrast, low contrast at base edge of cerebellum.",2022-02-16T15:31:19Z
+Case_33,Rater06,Fail,"Low intensity dynamic range, low GM/WM contrast, edge of occipital lobe cut by limited FOV.",2022-02-16T15:31:50Z
+Case_35,Rater06,Fail,Some ringing or pathology? Superior skull cut and potential superior brain cut due to limited FOV.,2022-02-16T15:32:46Z
+Case_36,Rater06,Fail,"Left side UBO, bright scalp, low WM/GM contrast, superior skull and maybe superior brain cut by limited FOV.",2022-02-16T15:33:18Z
+Case_37,Rater06,Pass,"Dark image, low intensity dynamic range, low GM WM contrast.",2022-02-16T15:33:37Z
+Case_4,Rater06,Fail,"Low WM GM contrast, posterior skull including edge of occipital lobe cut by limited FOV.",2022-02-16T15:34:11Z
+Case_40,Rater06,Pass,"Appears noisy, ringing due to limited motion in WM?",2022-02-16T15:34:33Z
+Case_41,Rater06,Fail,"Low intensity dynamic range, bright nose, dark image, low GM WM contrast, base of occipital partially cut by FOV.",2022-02-16T15:35:21Z
+Case_42,Rater06,Pass,"Bright brain tissue, low MW GM contrast, some ringing, intensity inhomogeneity.",2022-02-16T15:36:16Z
+Case_43,Rater06,Fail,"Bright scalp, base of cerebellum cut by limited FOV, superior skull cut to edge of brain by limited FOV.",2022-02-16T15:36:32Z
+Case_44,Rater06,Fail,"Posterior skull cuts edge of occipital lobe by limited FOV, low GM WM contrast.",2022-02-16T15:37:28Z
+Case_45,Rater06,Fail,"Very dark image, low intensity dynamic range, bright nose and forehead, inferior edge of cerebellum cut by limited FOV / inhomogeneity.",2022-02-16T15:37:48Z
+Case_47,Rater06,Fail,"Superior skull cut by limited FOV to superior edge of brain, intensity inhomogeneity, low WM GM contrast.",2022-02-16T15:38:30Z
+Case_48,Rater06,Fail,"Bright nose, limited intensity dynamic range, dark image, low GM WM contrast, potential inferior edge of cerebellum cut by limited FOV",2022-02-16T15:39:21Z
+Case_50,Rater06,Pass,"Appears noisy, frontal lobe pathology or intensity inhomogeneity?",2022-02-16T15:39:40Z
+Case_51,Rater06,Pass,"Bright nose, intensity inhomogeneity, low GM WM contrast, potential inferior edge of cerebellum cut by limited FOV",2022-02-16T15:40:41Z
+Case_52,Rater06,Pass,"Bright nose, low intensity dynamic range, dark image, low GM WM contrast, superior skull cut by FOV",2022-02-16T15:40:56Z
+Case_54,Rater06,Fail,"Ringing in WM near cortex, can affect cortical thickness estimates.",2022-02-16T15:41:11Z
+Case_55,Rater06,Fail,Ringing in WM and near cortex.,2022-02-16T15:41:33Z
+Case_56,Rater06,Fail,Ringing in WM and near cortex.,2022-02-16T15:41:46Z
+Case_57,Rater06,Fail,"Low GM WM contrast, base of cerebellum cut by FOV",2022-02-16T15:42:25Z
+Case_58,Rater06,Pass,"Low intensity dynamic range, bright nose, low WM  GM contrast",2022-02-16T15:42:39Z
+Case_59,Rater06,Fail,Noisy and ringing in WM,2022-02-16T15:43:00Z
+Case_60,Rater06,Fail,"bright nose, limited dynamic range, dark image, low GM WM contrast, FOV cuts to inferior edge of cerebellum ",2022-02-16T15:43:13Z
+Case_61,Rater06,Fail,"dark image, low intensity dynamic range, bright noise and forehead, low GM WM contrast, inhomogeneity ",2022-02-16T15:43:32Z
+Case_62,Rater06,Pass,"low intensity dynamic range, low GM WM contrast, anterior and posterior skull cut by FOV",2022-02-16T15:43:50Z
+Case_63,Rater06,Fail,"Ringing throughout WM, inferior image cut to base of cerebellum by FOV",2022-02-16T15:44:00Z
+Case_67,Rater06,Pass,"dark image, limited intensity dynamic range, bright nose, low GM WM contrast, inhomogeneity ",2022-02-16T15:44:32Z
+Case_68,Rater06,Fail,"Bright nose, low WM GM contrast, FOV at the edge of the base of the cerebellum and cuts superior skull into edge of brain",2022-02-16T15:45:07Z
+Case_69,Rater06,Pass,"Posterior skull cut by FOV to the edge of the occipital lobe, inhomogeneity ",2022-02-16T15:45:29Z
+Case_7,Rater06,Fail,"Ringing, lower edge of cerebellum cut by FOV, superior skull cut by FOV",2022-02-16T15:46:03Z
+Case_70,Rater06,Fail,"Bright nose and forehead, inhomogeneity at superior edge of brain, superior skull cut to brain's edge by FOV, inhomogeneity in frontal lobe ",2022-02-16T15:46:21Z
+Case_71,Rater06,Pass,"Noisy, inhomogeneity, signal drop out near midline or severe pathology?",2022-02-16T15:47:12Z
+Case_73,Rater06,Fail,"Base of cerebellum darkens near FOV limit, FOV hit base of cerebellum, bright scalp ",2022-02-16T15:48:07Z
+Case_75,Rater06,Pass,Signal dropout near midline or severe pathology?,2022-02-16T15:48:34Z
+Case_76,Rater06,Pass,"Inhomogeneity near superior and inferior edge of FOV, edge of FOV hits base of cerebellum",2022-02-16T15:48:54Z
+Case_77,Rater06,Fail,"Bright nose, low dynamic range, very dark image, very low GM WM contrast, based of cerebellum may be cut by limited FOV, superior skull cut to edge of brain",2022-02-16T15:49:26Z
+Case_78,Rater06,Pass,"Noisy, inhomogeneity or severe pathology near midline?",2022-02-16T15:49:47Z
+Case_80,Rater06,Fail,"Inhomogeneity, tight FOV hits edge of cerebellum, cuts superior skull and superior brain",2022-02-16T15:50:08Z
+Case_82,Rater06,Fail,"FOV cuts posterior skull, inhomogeneity at occipital lobe near FOV edge, noisy ",2022-02-16T15:50:23Z
+Case_83,Rater06,Fail,"Bright scalp, inhomogeneity in frontal lobe and toward edge of cerebellum, low GM WM contrast, FOV hits lower edge of cerebellum and cuts it",2022-02-16T15:50:52Z
+Case_84,Rater06,Fail,"low dynamic range, FOV cuts posterior skull to edge of occipital lobe, noisy, low GM WM contrast, signal dropout at frontal lobe due to FOV",2022-02-16T15:52:13Z
+Case_85,Rater06,Pass,"low dynamic range, noisy, inhomogeneity or pathology toward midline?",2022-02-16T15:52:28Z
+Case_88,Rater06,Pass,"Noisy, some ringing, bright scalp ",2022-02-16T15:52:58Z
+Case_89,Rater06,Fail,"Inhomogeneity, superior skull cut by limited FOV, inferior cerebellum hit by FOV, inhomogeneity near FOV edge for cerebellum and superior brain",2022-02-16T15:53:06Z
+Case_9,Rater06,Fail,"superior skull cut by FOV, inhomogeneity in superior brain near FOV edge, some ringing in occipital lobe, inferior edge of FOV hits cerebellum ",2022-02-16T15:53:29Z
+Case_90,Rater06,Fail,"Bright scalp and nose, inhomogeneity near cerebellum at inferior FOV edge ",2022-02-16T15:53:37Z
+Case_92,Rater06,Fail,"inhomogeneity globally and near base of cerebellum, bright scalp, low WM GM contrast, FOV cuts cerebellum base",2022-02-16T15:54:06Z
+Case_93,Rater06,Pass,signal loss / inhomogeneity or pathology near midline?,2022-02-16T15:54:20Z
+Case_95,Rater06,Pass,"low dynamic range, low WM GM contrast, posterior and anterior skull cut by FOV",2022-02-16T15:54:48Z
+Case_96,Rater06,Pass,some ringing left side,2022-02-16T15:55:04Z
+Case_97,Rater06,Fail,"bright nose and scalp, inhomogeneity near FOV edges, superior skull cut by FOV, inferior FOV hits base of cerebellum ",2022-02-16T15:55:25Z
+Case_99,Rater06,Pass,"dark image, limited dynamic range",2022-02-16T15:55:35Z
+Case_13,Rater05,Pass,Signal drop out on both sides of neck,2022-02-16T20:53:21Z
+Case_14,Rater05,Pass,Incomplete coverage on front to back image Some signal dropout at the posterior neck ,2022-02-16T20:53:53Z
+Case_25,Rater05,Pass,Intensity non-uniformity near posterior neck,2022-02-16T20:54:00Z
+Case_37,Rater05,Pass,"Signal dropout around neck, reduced intensity throughout",2022-02-16T20:54:15Z
+Case_42,Rater05,Pass,Reduced signal intensity at front of face near the mouth and at the neck Noisy signal,2022-02-16T20:54:32Z
+Case_59,Rater05,Pass,Movement artifacts Signal dropout or incomplete coverage at bottom of neck Head tilted forward,2022-02-16T20:54:55Z
+Case_71,Rater05,Fail,Low signal intensity and intensity non-uniformity Head tilted back,2022-02-16T20:55:05Z
+Case_38,Rater05,Pass,Reduced intensity,2022-02-16T20:55:30Z
+Case_12,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:12:26Z
+Case_13,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:14:05Z
+Case_14,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:14:45Z
+Case_15,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:15:43Z
+Case_16,Rater07,Fail,strong Ringing artifact,2022-02-18T17:16:22Z
+Case_17,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:17:31Z
+Case_18,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:18:03Z
+Case_19,Rater07,Pass,"",2022-02-18T17:18:23Z
+Case_20,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:21:23Z
+Case_21,Rater07,Fail,"incomplete coverage (cerebellum, cut)",2022-02-18T17:22:48Z
+Case_22,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:23:33Z
+Case_23,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:23:52Z
+Case_25,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:27:13Z
+Case_26,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:27:31Z
+Case_27,Rater07,Fail,incomplete coverage (occipital lobe),2022-02-18T17:36:07Z
+Case_29,Rater07,Fail,incomplete coverage (cerebellum),2022-02-18T17:38:12Z
+Case_28,Rater07,Fail,incomplete coverage (occipital and frontal lobe),2022-02-18T17:41:51Z
+Case_30,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:43:52Z
+Case_31,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:44:29Z
+Case_32,Rater07,Pass,"",2022-02-18T17:44:57Z
+Case_33,Rater07,Fail,incomplete coverage (occipital lobe) + weird shering in axial,2022-02-18T17:45:56Z
+Case_34,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:46:36Z
+Case_36,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:48:23Z
+Case_38,Rater07,Pass,"",2022-02-18T17:49:37Z
+Case_39,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:50:03Z
+Case_4,Rater07,Fail,incomplete coverage (occipital lobe),2022-02-18T17:50:37Z
+Case_40,Rater07,Pass,"",2022-02-18T17:51:11Z
+Case_46,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:56:05Z
+Case_47,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:56:21Z
+Case_48,Rater07,Fail,incomplete coverage (cerebellum),2022-02-18T17:56:56Z
+Case_49,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T17:57:44Z
+Case_50,Rater07,Pass,"",2022-02-18T17:58:35Z
+Case_51,Rater07,Fail,incomplete coverage (cerebellum) + some non-uniformity,2022-02-18T17:59:24Z
+Case_53,Rater07,Fail,incomplete coverage (cerebellum),2022-02-18T18:00:14Z
+Case_54,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:00:32Z
+Case_55,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:01:18Z
+Case_58,Rater07,Pass,"",2022-02-18T18:02:28Z
+Case_6,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:03:44Z
+Case_61,Rater07,Pass,potential incomplete coverage (cerebellum) but I think its ,2022-02-18T18:08:44Z
+Case_62,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:09:23Z
+Case_63,Rater07,Fail,"incomplete coverage (cerebellum) + Noisy * skull cut by the FOV, might cause masking issues",2022-02-18T18:10:48Z
+Case_64,Rater07,Pass,Some ringing outsie of the brain (frontal),2022-02-18T18:11:57Z
+Case_67,Rater07,Pass,"some non-uniformity, * skull cut by the FOV, might cause masking issues",2022-02-18T18:14:38Z
+Case_68,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:15:01Z
+Case_7,Rater07,Fail,"incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T18:17:20Z
+Case_70,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:17:48Z
+Case_71,Rater07,Pass,"",2022-02-18T18:18:08Z
+Case_73,Rater07,Pass,"",2022-02-18T18:19:31Z
+Case_75,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:21:14Z
+Case_77,Rater07,Pass,"some non-uniformity because of the high intensity nose * skull cut by the FOV, might cause masking issues",2022-02-18T18:22:46Z
+Case_78,Rater07,Pass,"",2022-02-18T18:22:59Z
+Case_79,Rater07,Fail,"Strong deformation (maybe from metal, jaw) missing part of the brain",2022-02-18T18:24:33Z
+Case_8,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:25:08Z
+Case_81,Rater07,Pass,"",2022-02-18T18:29:27Z
+Case_82,Rater07,Fail,non-uniformity + incomplete coverage (occipital and frontal lobe),2022-02-18T18:31:17Z
+Case_85,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:32:28Z
+Case_86,Rater07,Pass,"",2022-02-18T18:32:54Z
+Case_87,Rater07,Pass,"",2022-02-18T18:33:08Z
+Case_88,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:33:31Z
+Case_89,Rater07,Pass,"potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",2022-02-18T18:34:52Z
+Case_91,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:36:16Z
+Case_92,Rater07,Pass,potential incomplete coverage (cerebellum),2022-02-18T18:36:56Z
+Case_93,Rater07,Pass,"some shearing in coronal * skull cut by the FOV, might cause masking issues",2022-02-18T18:37:32Z
+Case_94,Rater07,Fail,Noisy + ringing artifact in Axial / coronal,2022-02-18T18:38:14Z
+Case_95,Rater07,Pass,"",2022-02-18T18:38:23Z
+Case_96,Rater07,Pass,"",2022-02-18T18:39:00Z
+Case_98,Rater07,Fail,incomplete coverage (cerebellum),2022-02-18T18:40:03Z
+Case_99,Rater07,Pass,"",2022-02-18T18:40:09Z
+Case_5,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:40:54Z
+Case_84,Rater07,Pass,"* skull cut by the FOV, might cause masking issues",2022-02-18T18:41:07Z
+Case_1,Rater07,Pass,incomplete coverage (cerebellum migh be cut off) + non-uniformity,2022-02-18T23:50:00Z
+Case_10,Rater07,Fail,"potential : incomplete coverage (occipital lobe, very close to the end) + weird shearing effect in the axial",2022-02-18T23:50:11Z
+Case_11,Rater07,Pass,potential incomplete coverage (cerebellum) + some non-uniformity,2022-02-18T23:50:27Z
+Case_2,Rater07,Pass,"Intensity not normalized + """"Fat"""" around skull, that might cause BET problem low wm/GM contrast",2022-02-18T23:50:54Z
+Case_24,Rater07,Pass,"""""Non-uniformity"""" We cannot see much with the current scaling, the small high-intensity dot throw off the scaling.  low GM/WM contrast but except from that, brain coverage seems fine and : * skull cut by the FOV, might cause masking issues",2022-02-18T23:51:25Z
+Case_3,Rater07,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",2022-02-18T23:51:28Z
+Case_35,Rater07,Fail,"some non-uniformity + potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",2022-02-18T23:51:30Z
+Case_37,Rater07,Pass,"nearly no contrast, might be from the image scaling low wm/gm contrast",2022-02-18T23:52:03Z
+Case_41,Rater07,Fail,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T23:52:15Z
+Case_42,Rater07,Pass,non-uniformity,2022-02-18T23:52:23Z
+Case_43,Rater07,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T23:52:40Z
+Case_44,Rater07,Fail,"potential : incomplete coverage (occipital lobe, very close to the end) + some non-uniformity",2022-02-18T23:52:46Z
+Case_45,Rater07,Pass,potential incomplete coverage (cerebellum),2022-02-18T23:52:58Z
+Case_52,Rater07,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T23:53:05Z
+Case_56,Rater07,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",2022-02-18T23:53:12Z
+Case_57,Rater07,Fail,potential incomplete coverage (cerebellum),2022-02-18T23:53:21Z
+Case_59,Rater07,Fail,"Noisy, maybe some ringing",2022-02-18T23:53:30Z
+Case_60,Rater07,Pass,potential incomplete coverage (cerebellum) + very dark near GM in the occipital lobe,2022-02-18T23:53:48Z
+Case_65,Rater07,Pass,"Scaling is wrong, white slice on top, however the brain looks fine, but hard to see with this scaling low GM/WM contrast",2022-02-18T23:53:58Z
+Case_66,Rater07,Fail,potential incomplete coverage (occipital and frontal lobe),2022-02-18T23:54:02Z
+Case_69,Rater07,Fail,"potential incomplete coverage (occipital and frontal lobe) * skull cut by the FOV, might cause masking issues",2022-02-18T23:54:13Z
+Case_72,Rater07,Pass,low GM/WM contrast,2022-02-18T23:54:26Z
+Case_74,Rater07,Pass,"Scaling is of because of few high intensity voxels otherwise the brain lookis fine, but hard to see anything with the current scaling low wm/gm contrast low GM/WM contrast",2022-02-18T23:54:36Z
+Case_76,Rater07,Pass,potential incomplete coverage (cerebellum),2022-02-18T23:54:48Z
+Case_80,Rater07,Fail,"potential incomplete coverage (top) * skull cut by the FOV, might cause masking issues",2022-02-18T23:54:52Z
+Case_83,Rater07,Fail,potential incomplete coverage (cerebellum),2022-02-18T23:54:55Z
+Case_9,Rater07,Fail,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T23:54:58Z
+Case_90,Rater07,Pass,potential incomplete coverage (cerebellum),2022-02-18T23:55:13Z
+Case_97,Rater07,Pass,"potential incomplete coverage (cerebellum) * skull cut by the FOV, might cause masking issues",2022-02-18T23:55:23Z

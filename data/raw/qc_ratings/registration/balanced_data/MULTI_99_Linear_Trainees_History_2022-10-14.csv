@@ -1,0 +1,902 @@
+Case_127,Rater01,Pass,"",2022-08-02T22:26:25Z
+Case_127,Rater08,Pass,"",2022-08-04T14:02:20Z
+Case_127,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T00:43:29Z
+Case_127,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:06:21Z
+Case_127,Rater06,Fail,"",2022-08-05T23:29:22Z
+Case_127,Rater03,Warning,Z-Scale (IS); Small,2022-08-07T21:39:56Z
+Case_127,Rater07,Pass,"",2022-08-08T17:24:15Z
+Case_127,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-09T00:16:46Z
+Case_27,Rater01,Pass,"",2022-08-02T22:34:42Z
+Case_27,Rater08,Fail,Y-Scale (AP); Big; Frontal,2022-08-04T14:12:06Z
+Case_27,Rater05,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T01:06:34Z
+Case_27,Rater02,Pass,Z-Scale (IS); Big,2022-08-05T23:40:20Z
+Case_27,Rater02,Warning,Z-Scale (IS); Big,2022-08-08T00:57:47Z
+Case_27,Rater06,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:12:44Z
+Case_27,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:49:57Z
+Case_27,Rater07,Pass,"",2022-08-08T17:34:00Z
+Case_27,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:26:21Z
+Case_104,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:19:05Z
+Case_104,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T13:49:50Z
+Case_104,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T00:23:26Z
+Case_104,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T18:46:49Z
+Case_104,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T21:45:56Z
+Case_104,Rater03,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:21:35Z
+Case_104,Rater07,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T16:12:21Z
+Case_104,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T23:56:56Z
+Case_20,Rater01,Fail,Z-Scale (IS); Big,2022-08-02T22:32:31Z
+Case_20,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:10:18Z
+Case_20,Rater05,Fail,Z-Scale (IS); Big,2022-08-05T01:04:23Z
+Case_20,Rater02,Fail,Z-Scale (IS); Big,2022-08-05T23:27:56Z
+Case_20,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:10:17Z
+Case_20,Rater03,Fail,"",2022-08-07T21:47:33Z
+Case_20,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T19:20:42Z
+Case_20,Rater04,Fail,Z-Scale (IS); Big,2022-08-12T22:19:42Z
+Case_95,Rater01,Pass,"",2022-08-02T22:48:11Z
+Case_95,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:27:09Z
+Case_95,Rater05,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:21:14Z
+Case_95,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:42:46Z
+Case_95,Rater06,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T15:13:19Z
+Case_95,Rater02,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:41:24Z
+Case_95,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T01:16:02Z
+Case_95,Rater03,Warning,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-07T20:50:50Z
+Case_95,Rater07,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T18:14:11Z
+Case_95,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small,2022-08-12T23:03:09Z
+Case_103,Rater05,Pass,"",2022-08-01T19:35:09Z
+Case_103,Rater01,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:18:35Z
+Case_103,Rater01,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:51:21Z
+Case_103,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T13:49:16Z
+Case_103,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T17:28:26Z
+Case_103,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T13:33:28Z
+Case_103,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T21:43:31Z
+Case_103,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T21:43:41Z
+Case_103,Rater03,Fail,Z-Scale (IS); Big,2022-08-07T21:21:04Z
+Case_103,Rater07,Warning,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T16:11:50Z
+Case_103,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T23:54:19Z
+Case_107,Rater01,Pass,"",2022-08-02T22:20:01Z
+Case_107,Rater08,Pass,"",2022-08-04T13:51:18Z
+Case_107,Rater05,Pass,"",2022-08-05T00:25:27Z
+Case_107,Rater06,Pass,Z-Scale (IS); Big,2022-08-05T18:56:13Z
+Case_107,Rater02,Pass,Z-Scale (IS); Big,2022-08-05T21:47:39Z
+Case_107,Rater03,Pass,"",2022-08-07T21:22:42Z
+Case_107,Rater07,Warning,"",2022-08-08T16:55:38Z
+Case_107,Rater04,Pass,Z-Scale (IS); Small,2022-08-09T00:01:29Z
+Case_90,Rater01,Pass,"",2022-08-02T22:47:16Z
+Case_90,Rater08,Pass,"",2022-08-04T14:26:29Z
+Case_90,Rater05,Pass,"",2022-08-05T01:19:52Z
+Case_90,Rater06,Pending,also big LR. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-06T00:41:53Z
+Case_90,Rater06,Fail,also big LR. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-06T00:41:59Z
+Case_90,Rater06,Pass,also big LR. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-08T15:12:16Z
+Case_90,Rater02,Pass,Y-Scale (AP); Big; Occipital,2022-08-06T21:39:11Z
+Case_90,Rater02,Fail,Y-Scale (AP); Big; Occipital,2022-08-08T02:54:02Z
+Case_90,Rater03,Pass,Y-Scale (AP); Big; Occipital,2022-08-07T20:51:35Z
+Case_90,Rater03,Warning,Y-Scale (AP); Big; Occipital,2022-08-15T03:51:40Z
+Case_90,Rater07,Warning,"",2022-08-08T18:10:27Z
+Case_90,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T23:01:00Z
+Case_71,Rater01,Pass,"",2022-08-02T22:44:05Z
+Case_71,Rater08,Pass,"",2022-08-04T14:22:05Z
+Case_71,Rater05,Pass,"",2022-08-05T01:16:16Z
+Case_71,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-06T00:33:23Z
+Case_71,Rater06,Pass,Y-Scale (AP); Big; Occipital,2022-08-08T15:06:45Z
+Case_71,Rater02,Pass,Y-Scale (AP); Big; Occipital,2022-08-06T21:32:35Z
+Case_71,Rater02,Fail,Y-Scale (AP); Big; Occipital,2022-08-08T02:53:39Z
+Case_71,Rater03,Warning,Y-Scale (AP); Big; Occipital,2022-08-07T22:24:16Z
+Case_71,Rater07,Pending,near; . X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T17:57:50Z
+Case_71,Rater07,Pass,near; . X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T17:57:53Z
+Case_71,Rater07,Fail,near; . X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T17:58:30Z
+Case_71,Rater07,Warning,near; . X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T19:17:37Z
+Case_71,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-12T22:53:04Z
+Case_105,Rater01,Warning,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-02T22:19:36Z
+Case_105,Rater01,Pass,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-02T22:49:48Z
+Case_105,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T13:50:12Z
+Case_105,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T00:23:57Z
+Case_105,Rater06,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T18:51:44Z
+Case_105,Rater02,Fail,Z-Scale (IS); Big,2022-08-05T21:46:35Z
+Case_105,Rater03,Fail,Z-Scale (IS); Big,2022-08-07T21:21:57Z
+Case_105,Rater07,Fail,Z-Scale (IS); Big,2022-08-08T16:13:02Z
+Case_105,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-08T23:58:10Z
+Case_112,Rater01,Pass,"",2022-08-02T22:21:02Z
+Case_112,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T13:52:17Z
+Case_112,Rater05,Fail,Z-Scale (IS); Big,2022-08-05T00:33:59Z
+Case_112,Rater06,Pass,"",2022-08-05T20:58:42Z
+Case_112,Rater02,Fail,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,2022-08-05T22:34:56Z
+Case_112,Rater02,Pass,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,2022-08-08T00:36:20Z
+Case_112,Rater02,Pass,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,2022-08-08T00:36:22Z
+Case_112,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:24:25Z
+Case_112,Rater07,Warning,"",2022-08-08T17:17:53Z
+Case_112,Rater07,Warning,Z small (only by a little);,2022-08-08T17:18:13Z
+Case_112,Rater04,Pass,"",2022-08-09T00:06:12Z
+Case_2,Rater01,Pass,"",2022-08-02T22:32:22Z
+Case_2,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:10:07Z
+Case_2,Rater05,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:04:09Z
+Case_2,Rater02,Fail,Y-Scale (AP); Small; Occipital,2022-08-05T23:27:45Z
+Case_2,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:10:09Z
+Case_2,Rater03,Fail,Z-Scale (IS); Small,2022-08-07T21:47:28Z
+Case_2,Rater07,Warning,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-08T17:30:57Z
+Case_2,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:19:01Z
+Case_30,Rater01,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:35:26Z
+Case_30,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:13:11Z
+Case_30,Rater05,Fail,Z-Scale (IS); Small,2022-08-05T01:07:46Z
+Case_30,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T23:41:49Z
+Case_30,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:16:38Z
+Case_30,Rater03,Fail,"",2022-08-07T21:50:54Z
+Case_30,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:35:00Z
+Case_30,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:29:17Z
+Case_110,Rater01,Pass,"",2022-08-02T22:20:35Z
+Case_110,Rater08,Pass,"",2022-08-04T13:51:46Z
+Case_110,Rater05,Pass,"",2022-08-05T00:33:08Z
+Case_110,Rater06,Pending,"",2022-08-05T19:02:44Z
+Case_110,Rater06,Pending,x-scale big,2022-08-05T19:02:54Z
+Case_110,Rater06,Pass,x-scale big,2022-08-05T19:03:16Z
+Case_110,Rater02,Pass,"",2022-08-05T22:04:40Z
+Case_110,Rater03,Pass,"",2022-08-07T21:23:37Z
+Case_110,Rater07,Pass,"",2022-08-08T16:57:19Z
+Case_110,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-09T00:03:48Z
+Case_36,Rater01,Pass,"",2022-08-02T22:36:54Z
+Case_36,Rater08,Pass,"",2022-08-04T14:15:20Z
+Case_36,Rater05,Pass,"",2022-08-05T01:09:29Z
+Case_36,Rater06,Fail,X-Scale (LR); Small,2022-08-06T00:20:55Z
+Case_36,Rater02,Pass,"",2022-08-06T00:35:00Z
+Case_36,Rater03,Pass,"",2022-08-07T22:05:22Z
+Case_36,Rater07,Pass,"",2022-08-08T17:37:46Z
+Case_36,Rater04,Pass,X-Scale (LR); Small,2022-08-12T22:36:02Z
+Case_114,Rater01,Fail,Z-Scale (IS); Small,2022-08-02T22:22:16Z
+Case_114,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T13:53:02Z
+Case_114,Rater05,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T00:34:56Z
+Case_114,Rater06,Fail,"",2022-08-05T21:02:53Z
+Case_114,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T22:36:08Z
+Case_114,Rater03,Fail,"",2022-08-07T21:25:14Z
+Case_114,Rater07,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-08T17:19:03Z
+Case_114,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-09T00:07:58Z
+Case_23,Rater01,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:33:49Z
+Case_23,Rater01,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:52:28Z
+Case_23,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:11:09Z
+Case_23,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-05T01:05:23Z
+Case_23,Rater02,Warning,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:33:31Z
+Case_23,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:56:45Z
+Case_23,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:11:14Z
+Case_23,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:49:00Z
+Case_23,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T19:20:58Z
+Case_23,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T22:23:44Z
+Case_55,Rater01,Warning,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:41:01Z
+Case_55,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:18:52Z
+Case_55,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:12:21Z
+Case_55,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:25:07Z
+Case_55,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:25:50Z
+Case_55,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-07T22:09:13Z
+Case_55,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:50:55Z
+Case_55,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:44:38Z
+Case_108,Rater01,Pass,"",2022-08-02T22:20:23Z
+Case_108,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T13:51:25Z
+Case_108,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-05T00:32:55Z
+Case_108,Rater06,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T18:57:05Z
+Case_108,Rater06,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:47:25Z
+Case_108,Rater02,Fail,Z-Scale (IS); Big,2022-08-05T21:48:21Z
+Case_108,Rater03,Fail,Z-Scale (IS); Big,2022-08-07T21:23:15Z
+Case_108,Rater07,Warning,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-08T16:56:37Z
+Case_108,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-09T00:02:52Z
+Case_39,Rater01,Pass,"",2022-08-02T22:37:39Z
+Case_39,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:15:47Z
+Case_39,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T01:10:03Z
+Case_39,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:21:33Z
+Case_39,Rater02,Fail,Z-Scale (IS); Big,2022-08-06T21:19:53Z
+Case_39,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T22:05:50Z
+Case_39,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-08T17:38:32Z
+Case_39,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-12T22:38:02Z
+Case_150,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:31:42Z
+Case_150,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T14:09:14Z
+Case_150,Rater05,Pass,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:03:17Z
+Case_150,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:25:01Z
+Case_150,Rater06,Fail,"",2022-08-06T00:04:57Z
+Case_150,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:46:42Z
+Case_150,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:29:59Z
+Case_150,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-12T22:17:27Z
+Case_54,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:40:07Z
+Case_54,Rater08,Fail,"",2022-08-04T14:18:35Z
+Case_54,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:12:10Z
+Case_54,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:24:56Z
+Case_54,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:23:40Z
+Case_54,Rater03,Fail,"",2022-08-07T22:08:49Z
+Case_54,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-08T17:50:06Z
+Case_54,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:44:10Z
+Case_143,Rater01,Warning,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:30:41Z
+Case_143,Rater01,Pass,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:52:09Z
+Case_143,Rater08,Fail,X-Scale (LR); Small,2022-08-04T14:08:19Z
+Case_143,Rater05,Fail,Z-Scale (IS); Small,2022-08-05T01:01:51Z
+Case_143,Rater02,Fail,Z-Scale (IS); Small. X-Scale (LR); Small,2022-08-05T23:19:14Z
+Case_143,Rater02,Fail,Z-Scale (IS); Small. X-Scale (LR); Small,2022-08-05T23:19:15Z
+Case_143,Rater06,Fail,"",2022-08-06T00:03:10Z
+Case_143,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:45:13Z
+Case_143,Rater07,Warning,X-Scale (LR); Small,2022-08-08T17:29:11Z
+Case_143,Rater04,Pass,X-Scale (LR); Small,2022-08-09T00:27:40Z
+Case_60,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:42:21Z
+Case_60,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:20:03Z
+Case_60,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T01:13:47Z
+Case_60,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:30:22Z
+Case_60,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:29:34Z
+Case_60,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:13:57Z
+Case_60,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:52:25Z
+Case_60,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Big; Frontal,2022-08-12T22:48:07Z
+Case_77,Rater01,Pass,Y-Scale (AP); Big; Frontal,2022-08-02T22:44:55Z
+Case_77,Rater08,Fail,Y-Scale (AP); Big; Frontal,2022-08-04T14:22:55Z
+Case_77,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Small,2022-08-05T01:17:12Z
+Case_77,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Y-Scale (AP); Big; Occipital,2022-08-06T00:35:17Z
+Case_77,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-06T21:35:39Z
+Case_77,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-08T01:11:38Z
+Case_77,Rater03,Fail,Y-Scale (AP); Big; Occipital,2022-08-07T22:26:32Z
+Case_77,Rater07,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-08T18:01:31Z
+Case_77,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-12T22:55:21Z
+Case_92,Rater01,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-02T22:47:32Z
+Case_92,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:26:38Z
+Case_92,Rater05,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:19:59Z
+Case_92,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:42:05Z
+Case_92,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:39:30Z
+Case_92,Rater03,Fail,"",2022-08-07T20:51:21Z
+Case_92,Rater07,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-08T18:10:38Z
+Case_92,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T23:01:14Z
+Case_70,Rater01,Pass,"",2022-08-02T22:43:55Z
+Case_70,Rater08,Pass,"",2022-08-04T14:21:33Z
+Case_70,Rater05,Pass,"",2022-08-05T01:15:59Z
+Case_70,Rater06,Pass,"",2022-08-06T00:32:51Z
+Case_70,Rater02,Pass,"",2022-08-06T21:31:33Z
+Case_70,Rater03,Pass,"",2022-08-07T22:19:57Z
+Case_70,Rater07,Pass,"",2022-08-08T17:57:04Z
+Case_70,Rater04,Pass,X-Scale (LR); Small,2022-08-12T22:52:30Z
+Case_128,Rater01,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:26:49Z
+Case_128,Rater01,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:51:28Z
+Case_128,Rater08,Fail,"",2022-08-04T14:02:40Z
+Case_128,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T00:43:42Z
+Case_128,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:07:20Z
+Case_128,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:31:39Z
+Case_128,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-07T21:40:36Z
+Case_128,Rater07,Pass,"",2022-08-08T17:24:35Z
+Case_128,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-09T00:18:48Z
+Case_82,Rater01,Fail,Z-Scale (IS); Big,2022-08-02T22:45:41Z
+Case_82,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:23:48Z
+Case_82,Rater05,Fail,Z-Scale (IS); Big,2022-08-05T01:18:21Z
+Case_82,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:38:27Z
+Case_82,Rater02,Fail,Z-Scale (IS); Big,2022-08-06T21:36:10Z
+Case_82,Rater03,Fail,"",2022-08-07T22:27:31Z
+Case_82,Rater07,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T18:04:25Z
+Case_82,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-12T22:57:20Z
+Case_45,Rater01,Pass,"",2022-08-02T22:38:37Z
+Case_45,Rater08,Fail,"",2022-08-04T14:16:47Z
+Case_45,Rater05,Pass,"",2022-08-05T01:10:52Z
+Case_45,Rater06,Fail,"",2022-08-06T00:23:43Z
+Case_45,Rater06,Pass,"",2022-08-08T14:48:10Z
+Case_45,Rater02,Pass,"",2022-08-06T21:21:36Z
+Case_45,Rater02,Fail,"",2022-08-08T01:23:20Z
+Case_45,Rater02,Fail,X-Scale; Big?zz,2022-08-08T03:19:48Z
+Case_45,Rater03,Pending,X-Scale; big?,2022-08-07T22:07:08Z
+Case_45,Rater03,Warning,X-Scale; big?,2022-08-07T22:07:09Z
+Case_45,Rater07,Warning,"",2022-08-08T17:43:22Z
+Case_45,Rater07,Warning,X big,2022-08-08T17:43:32Z
+Case_45,Rater04,Pass,"",2022-08-12T22:41:39Z
+Case_85,Rater01,Pass,"",2022-08-02T22:46:16Z
+Case_85,Rater08,Pass,"",2022-08-04T14:25:05Z
+Case_85,Rater05,Fail,Z-Scale (IS); Big,2022-08-05T01:18:46Z
+Case_85,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:39:03Z
+Case_85,Rater06,Pass,Z-Scale (IS); Big,2022-08-08T15:11:22Z
+Case_85,Rater02,Pass,Z-Scale (IS); Big,2022-08-06T21:37:25Z
+Case_85,Rater02,Fail,Z-Scale (IS); Big,2022-08-08T01:14:03Z
+Case_85,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T22:28:14Z
+Case_85,Rater07,Warning,Z-Scale (IS); Small,2022-08-08T18:05:20Z
+Case_85,Rater04,Pass,Z-Scale (IS); Big,2022-08-12T22:58:29Z
+Case_15,Rater01,Pass,"",2022-08-02T22:31:24Z
+Case_15,Rater08,Pass,"",2022-08-04T14:08:54Z
+Case_15,Rater05,Pass,"",2022-08-05T01:02:41Z
+Case_15,Rater02,Pass,"",2022-08-05T23:22:30Z
+Case_15,Rater02,Warning,"",2022-08-08T00:55:35Z
+Case_15,Rater02,Fail,"",2022-08-08T02:29:35Z
+Case_15,Rater02,Fail,Cerebellum!,2022-08-08T03:10:04Z
+Case_15,Rater06,Pass,"",2022-08-06T00:04:07Z
+Case_15,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:46:23Z
+Case_15,Rater03,Pass,Z-Scale (IS); Big,2022-08-08T04:50:46Z
+Case_15,Rater07,Pass,"",2022-08-08T17:29:44Z
+Case_15,Rater04,Pass,"",2022-08-12T23:07:22Z
+Case_25,Rater01,Warning,Z-Scale (IS); Small. X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:34:34Z
+Case_25,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:11:43Z
+Case_25,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:05:50Z
+Case_25,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T23:39:50Z
+Case_25,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-06T00:12:31Z
+Case_25,Rater03,Fail,"",2022-08-07T21:49:23Z
+Case_25,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T17:33:39Z
+Case_25,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:25:35Z
+Case_73,Rater01,Warning,Y-Scale (AP); Big; Occipital. X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:44:24Z
+Case_73,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:22:21Z
+Case_73,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:16:29Z
+Case_73,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:33:51Z
+Case_73,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:32:48Z
+Case_73,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:25:06Z
+Case_73,Rater07,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,2022-08-08T17:59:27Z
+Case_73,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T22:53:33Z
+Case_115,Rater01,Pass,"",2022-08-02T22:22:34Z
+Case_115,Rater08,Pass,"",2022-08-04T13:53:42Z
+Case_115,Rater05,Pass,"",2022-08-05T00:36:00Z
+Case_115,Rater06,Pass,"",2022-08-05T21:03:55Z
+Case_115,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T22:36:28Z
+Case_115,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T02:46:03Z
+Case_115,Rater03,Pass,Z-Scale (IS); Big,2022-08-07T21:26:10Z
+Case_115,Rater03,Warning,Z-Scale (IS); Big,2022-08-15T03:46:06Z
+Case_115,Rater07,Pass,"",2022-08-08T17:19:24Z
+Case_115,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:09:17Z
+Case_113,Rater01,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-02T22:22:02Z
+Case_113,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-04T13:52:52Z
+Case_113,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T00:34:43Z
+Case_113,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T21:02:44Z
+Case_113,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T22:35:22Z
+Case_113,Rater03,Fail,Z-Scale (IS); Small,2022-08-07T21:25:09Z
+Case_113,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-08T17:18:49Z
+Case_113,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-09T00:07:09Z
+Case_79,Rater01,Pass,"",2022-08-02T22:45:08Z
+Case_79,Rater08,Pass,"",2022-08-04T14:23:27Z
+Case_79,Rater05,Pass,Y-Scale (AP); Small; Occipital,2022-08-05T01:17:42Z
+Case_79,Rater06,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Big,2022-08-06T00:35:36Z
+Case_79,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:35:52Z
+Case_79,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T01:13:16Z
+Case_79,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T01:13:18Z
+Case_79,Rater03,Fail,"",2022-08-07T22:26:54Z
+Case_79,Rater07,Fail,Y-Scale (AP); Big; Frontal,2022-08-08T18:02:18Z
+Case_79,Rater04,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-12T22:56:17Z
+Case_98,Rater01,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:48:21Z
+Case_98,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:27:17Z
+Case_98,Rater05,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:21:29Z
+Case_98,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:42:52Z
+Case_98,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:41:56Z
+Case_98,Rater03,Fail,"",2022-08-07T20:50:24Z
+Case_98,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T18:14:49Z
+Case_98,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T23:03:22Z
+Case_117,Rater01,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:23:52Z
+Case_117,Rater08,Fail,X-Scale (LR); Small,2022-08-04T13:54:14Z
+Case_117,Rater05,Fail,Z-Scale (IS); Small,2022-08-05T00:36:47Z
+Case_117,Rater06,Fail,"",2022-08-05T21:11:00Z
+Case_117,Rater02,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-05T22:40:54Z
+Case_117,Rater03,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-07T21:31:09Z
+Case_117,Rater07,Fail,X-Scale (LR); Small,2022-08-08T17:20:32Z
+Case_117,Rater04,Fail,"",2022-08-09T00:11:31Z
+Case_88,Rater01,Fail,Y-Scale (AP); Small; Occipital,2022-08-02T22:46:45Z
+Case_88,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:25:45Z
+Case_88,Rater05,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:19:12Z
+Case_88,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:39:18Z
+Case_88,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,2022-08-06T21:38:17Z
+Case_88,Rater03,Fail,"",2022-08-07T20:52:12Z
+Case_88,Rater07,Fail,Y-Scale (AP); Small; Occipital,2022-08-08T18:05:44Z
+Case_88,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-12T22:59:16Z
+Case_137,Rater01,Warning,Y-Scale (AP); Big; Occipital,2022-08-02T22:29:44Z
+Case_137,Rater01,Pass,Y-Scale (AP); Big; Occipital,2022-08-02T22:51:58Z
+Case_137,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:07:27Z
+Case_137,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,2022-08-05T01:00:16Z
+Case_137,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:17:40Z
+Case_137,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:42:09Z
+Case_137,Rater03,Fail,Y-Scale (AP); Big; Occipital,2022-08-07T21:44:31Z
+Case_137,Rater07,Warning,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Big,2022-08-08T17:27:30Z
+Case_137,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-09T00:23:35Z
+Case_130,Rater01,Pass,"",2022-08-02T22:27:34Z
+Case_130,Rater08,Pass,"",2022-08-04T14:03:39Z
+Case_130,Rater05,Pass,"",2022-08-05T00:45:25Z
+Case_130,Rater02,Pass,"",2022-08-05T23:10:54Z
+Case_130,Rater06,Pass,"",2022-08-05T23:39:08Z
+Case_130,Rater03,Pass,"",2022-08-07T21:42:37Z
+Case_130,Rater07,Pass,"",2022-08-08T17:25:59Z
+Case_130,Rater04,Pass,"",2022-08-09T00:21:03Z
+Case_123,Rater01,Pass,"",2022-08-02T22:25:43Z
+Case_123,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T13:55:59Z
+Case_123,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-05T00:42:48Z
+Case_123,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T22:44:46Z
+Case_123,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:45:52Z
+Case_123,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-05T23:26:27Z
+Case_123,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-07T21:37:24Z
+Case_123,Rater07,Pass,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,2022-08-08T17:23:03Z
+Case_123,Rater07,Warning,Z-Scale (IS); Big. Y-Scale (AP); Big; Occipital,2022-08-08T19:22:49Z
+Case_123,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:14:39Z
+Case_56,Rater01,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:41:32Z
+Case_56,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:19:04Z
+Case_56,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:12:40Z
+Case_56,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:25:24Z
+Case_56,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:26:31Z
+Case_56,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-07T22:11:35Z
+Case_56,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T17:51:14Z
+Case_56,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T22:45:09Z
+Case_22,Rater01,Pass,"",2022-08-02T22:33:02Z
+Case_22,Rater08,Pass,"",2022-08-04T14:10:49Z
+Case_22,Rater05,Pass,Z-Scale (IS); Small,2022-08-05T01:04:48Z
+Case_22,Rater02,Pass,Z-Scale (IS); Big,2022-08-05T23:29:46Z
+Case_22,Rater06,Pass,"",2022-08-06T00:10:50Z
+Case_22,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:48:36Z
+Case_22,Rater03,Pass,Z-Scale (IS); Big,2022-08-08T04:51:16Z
+Case_22,Rater03,Warning,Z-Scale (IS); Big,2022-08-15T03:47:08Z
+Case_22,Rater07,Pass,"",2022-08-08T17:32:29Z
+Case_22,Rater04,Pass,"",2022-08-12T22:22:53Z
+Case_65,Rater01,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-02T22:42:46Z
+Case_65,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:20:34Z
+Case_65,Rater05,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:14:20Z
+Case_65,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:31:16Z
+Case_65,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:29:55Z
+Case_65,Rater03,Fail,"",2022-08-07T22:14:55Z
+Case_65,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:54:11Z
+Case_65,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:49:20Z
+Case_94,Rater01,Pass,"",2022-08-02T22:47:59Z
+Case_94,Rater08,Pass,"",2022-08-04T14:26:57Z
+Case_94,Rater05,Pass,"",2022-08-05T01:20:38Z
+Case_94,Rater06,Pass,"",2022-08-06T00:42:34Z
+Case_94,Rater02,Pass,"",2022-08-06T21:40:41Z
+Case_94,Rater03,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T20:51:01Z
+Case_94,Rater03,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-15T03:52:10Z
+Case_94,Rater07,Pass,"",2022-08-08T18:11:41Z
+Case_94,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-12T23:02:40Z
+Case_101,Rater05,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-01T19:34:58Z
+Case_101,Rater01,Pass,"",2022-08-02T22:17:56Z
+Case_101,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T13:48:58Z
+Case_101,Rater06,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-05T17:26:15Z
+Case_101,Rater02,Fail,Z-Scale (IS); Small,2022-08-05T21:43:03Z
+Case_101,Rater03,Fail,"",2022-08-07T21:20:02Z
+Case_101,Rater07,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T16:11:08Z
+Case_101,Rater04,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T23:52:57Z
+Case_10,Rater05,Pass,"",2022-08-01T19:33:19Z
+Case_10,Rater01,Warning,Y-Scale (AP); Small; Occipital,2022-08-02T22:17:42Z
+Case_10,Rater01,Pass,Y-Scale (AP); Small; Occipital,2022-08-02T22:49:27Z
+Case_10,Rater01,Pending,Y-Scale (AP); Small; Occipital,2022-09-07T10:28:29Z
+Case_10,Rater01,Pass,Y-Scale (AP); Small; Occipital,2022-09-07T10:48:10Z
+Case_10,Rater01,Pending,Y-Scale (AP); Small; Occipital,2022-09-07T11:05:49Z
+Case_10,Rater01,Pass,Y-Scale (AP); Small; Occipital,2022-09-07T17:40:11Z
+Case_10,Rater01,Pending,Y-Scale (AP); Small; Occipital,2022-09-07T17:40:13Z
+Case_10,Rater01,Fail,Y-Scale (AP); Small; Occipital,2022-09-07T18:17:40Z
+Case_10,Rater08,Fail,Y-Scale (AP); Small; Occipital,2022-08-04T13:47:45Z
+Case_10,Rater06,Fail,Y-Scale (AP); Small; Occipital,2022-08-05T17:24:39Z
+Case_10,Rater02,Fail,Y-Scale (AP); Small; Occipital,2022-08-05T21:42:29Z
+Case_10,Rater02,Fail,Y-Scale (AP); Small; Occipital,2022-08-05T21:42:31Z
+Case_10,Rater03,Warning,"",2022-08-07T21:03:51Z
+Case_10,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,2022-08-08T16:10:43Z
+Case_10,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T23:51:52Z
+Case_136,Rater01,Pass,"",2022-08-02T22:29:22Z
+Case_136,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:07:16Z
+Case_136,Rater05,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T00:48:18Z
+Case_136,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:13:57Z
+Case_136,Rater06,Pass,"",2022-08-05T23:41:53Z
+Case_136,Rater03,Warning,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-07T21:43:59Z
+Case_136,Rater03,Pass,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-08T04:46:30Z
+Case_136,Rater07,Pass,"",2022-08-08T17:27:17Z
+Case_136,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:22:59Z
+Case_33,Rater01,Pass,"",2022-08-02T22:36:07Z
+Case_33,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:14:28Z
+Case_33,Rater05,Pass,"",2022-08-05T01:08:28Z
+Case_33,Rater06,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:17:52Z
+Case_33,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:34:05Z
+Case_33,Rater02,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:58:40Z
+Case_33,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T02:36:53Z
+Case_33,Rater02,Pass,Cerebellum!. X-Rot (LR); Cerebellum/Tentorium,2022-08-08T02:49:40Z
+Case_33,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:52:27Z
+Case_33,Rater07,Pass,"",2022-08-08T17:36:04Z
+Case_33,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:31:44Z
+Case_89,Rater01,Pass,"",2022-08-02T22:46:58Z
+Case_89,Rater08,Pass,"",2022-08-04T14:26:05Z
+Case_89,Rater05,Pass,"",2022-08-05T01:19:27Z
+Case_89,Rater06,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:39:59Z
+Case_89,Rater02,Pass,"",2022-08-06T21:38:34Z
+Case_89,Rater03,Pass,"",2022-08-07T20:51:59Z
+Case_89,Rater07,Pass,"",2022-08-08T18:06:11Z
+Case_89,Rater04,Pass,"",2022-08-12T22:59:43Z
+Case_28,Rater01,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:35:00Z
+Case_28,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:52:49Z
+Case_28,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:12:45Z
+Case_28,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-05T01:07:15Z
+Case_28,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:40:56Z
+Case_28,Rater06,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:13:39Z
+Case_28,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:13:39Z
+Case_28,Rater03,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:50:25Z
+Case_28,Rater07,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:34:15Z
+Case_28,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-12T22:28:16Z
+Case_120,Rater01,Fail,Y-Scale (AP); Big; Frontal,2022-08-02T22:25:16Z
+Case_120,Rater08,Fail,Y-Scale (AP); Big; Occipital,2022-08-04T13:55:04Z
+Case_120,Rater05,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T00:37:47Z
+Case_120,Rater02,Fail,Y-Scale (AP); Big; Frontal,2022-08-05T22:42:47Z
+Case_120,Rater06,Fail,Y-Scale (AP); Big; Frontal. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:21:58Z
+Case_120,Rater06,Fail,y scale small frontal. Y-Scale (AP); Big; Frontal. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:23:36Z
+Case_120,Rater06,Fail,y scale small frontal. Y-Scale (AP); Big; Frontal. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:23:50Z
+Case_120,Rater06,Fail,y scale small frontal. Y-Scale (AP); Big; Frontal. X-Rot (LR); Cerebellum/Tentorium,2022-08-08T13:51:42Z
+Case_120,Rater03,Pending,Y-scale (AP); Small; Frontal. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-07T21:32:44Z
+Case_120,Rater03,Pending,Y-scale (AP); Small; Frontal. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-07T21:33:42Z
+Case_120,Rater07,Fail,Y-Scale (AP); Big; Frontal,2022-08-08T19:20:07Z
+Case_120,Rater04,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-09T00:13:09Z
+Case_46,Rater01,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-02T22:38:52Z
+Case_46,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:17:31Z
+Case_46,Rater05,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:11:05Z
+Case_46,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:23:54Z
+Case_46,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:22:05Z
+Case_46,Rater03,Fail,"",2022-08-07T22:07:17Z
+Case_46,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:43:47Z
+Case_46,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T22:42:05Z
+Case_146,Rater01,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-02T22:31:15Z
+Case_146,Rater08,Fail,"",2022-08-04T14:08:24Z
+Case_146,Rater05,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:02:02Z
+Case_146,Rater02,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-05T23:21:17Z
+Case_146,Rater06,Fail,X-Scale (LR); Small,2022-08-06T00:03:34Z
+Case_146,Rater03,Fail,"",2022-08-07T21:45:22Z
+Case_146,Rater07,Fail,X-Scale (LR); Small,2022-08-08T17:29:28Z
+Case_146,Rater04,Fail,"",2022-08-12T23:06:50Z
+Case_135,Rater01,Fail,Z-Scale (IS); Big,2022-08-02T22:29:11Z
+Case_135,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-04T14:05:04Z
+Case_135,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T00:47:45Z
+Case_135,Rater02,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T23:13:43Z
+Case_135,Rater06,Fail,"",2022-08-05T23:41:22Z
+Case_135,Rater03,Fail,"",2022-08-07T21:43:29Z
+Case_135,Rater07,Fail,"",2022-08-08T17:26:34Z
+Case_135,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-09T00:22:17Z
+Case_29,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-02T22:35:15Z
+Case_29,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-04T14:12:56Z
+Case_29,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:07:32Z
+Case_29,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:41:34Z
+Case_29,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:13:54Z
+Case_29,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:50:49Z
+Case_29,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-08T19:21:14Z
+Case_29,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-12T22:28:51Z
+Case_132,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-02T22:28:13Z
+Case_132,Rater08,Fail,"",2022-08-04T14:03:48Z
+Case_132,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-05T00:45:49Z
+Case_132,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T23:11:29Z
+Case_132,Rater06,Fail,"",2022-08-05T23:39:17Z
+Case_132,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-07T21:42:53Z
+Case_132,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T17:26:12Z
+Case_132,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-09T00:21:30Z
+Case_93,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:47:50Z
+Case_93,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:26:45Z
+Case_93,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:20:19Z
+Case_93,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:42:12Z
+Case_93,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:39:36Z
+Case_93,Rater03,Fail,"",2022-08-07T20:51:14Z
+Case_93,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T18:11:14Z
+Case_93,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-12T23:01:49Z
+Case_67,Rater01,Pass,"",2022-08-02T22:43:01Z
+Case_67,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:20:47Z
+Case_67,Rater05,Pass,Z-Scale (IS); Big,2022-08-05T01:14:46Z
+Case_67,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:31:29Z
+Case_67,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium. X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:30:28Z
+Case_67,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T01:08:36Z
+Case_67,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T01:08:41Z
+Case_67,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T22:30:29Z
+Case_67,Rater03,Pass,Z-Scale (IS); Big,2022-08-08T04:44:10Z
+Case_67,Rater07,Warning,Z-Scale (IS); Big,2022-08-08T17:54:24Z
+Case_67,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:50:09Z
+Case_21,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:32:54Z
+Case_21,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T14:10:33Z
+Case_21,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-05T01:04:36Z
+Case_21,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-05T23:29:30Z
+Case_21,Rater06,Fail,"",2022-08-06T00:10:22Z
+Case_21,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:48:10Z
+Case_21,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:31:37Z
+Case_21,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small,2022-08-12T22:20:32Z
+Case_75,Rater01,Pass,"",2022-08-02T22:44:41Z
+Case_75,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:22:46Z
+Case_75,Rater05,Fail,Z-Scale (IS); Small,2022-08-05T01:16:53Z
+Case_75,Rater06,Fail,Z-Scale (IS); Small,2022-08-06T00:35:05Z
+Case_75,Rater02,Warning,Z-Scale (IS); Small,2022-08-06T21:35:21Z
+Case_75,Rater02,Fail,Z-Scale (IS); Small,2022-08-08T01:11:10Z
+Case_75,Rater03,Fail,"",2022-08-07T22:25:54Z
+Case_75,Rater07,Warning,Z-Scale (IS); Small,2022-08-08T19:21:26Z
+Case_75,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-12T22:54:49Z
+Case_140,Rater01,Pass,"",2022-08-02T22:30:04Z
+Case_140,Rater08,Pass,"",2022-08-04T14:08:02Z
+Case_140,Rater05,Pass,"",2022-08-05T01:01:20Z
+Case_140,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:18:17Z
+Case_140,Rater06,Pass,"",2022-08-05T23:44:39Z
+Case_140,Rater03,Fail,Z-Scale (IS); Big,2022-08-07T21:45:02Z
+Case_140,Rater07,Pass,"",2022-08-08T17:28:25Z
+Case_140,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:26:43Z
+Case_35,Rater01,Pass,"",2022-08-02T22:36:36Z
+Case_35,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:15:08Z
+Case_35,Rater05,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:09:09Z
+Case_35,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:19:59Z
+Case_35,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:20:17Z
+Case_35,Rater02,Fail,Z-Scale (IS); Big. X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:34:38Z
+Case_35,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T22:04:36Z
+Case_35,Rater07,Pass,"",2022-08-08T17:36:31Z
+Case_35,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:34:37Z
+Case_48,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:39:26Z
+Case_48,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:18:18Z
+Case_48,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:11:36Z
+Case_48,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:24:28Z
+Case_48,Rater02,Pass,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:22:33Z
+Case_48,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T01:00:55Z
+Case_48,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:08:02Z
+Case_48,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:48:37Z
+Case_48,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:42:49Z
+Case_116,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-02T22:23:28Z
+Case_116,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T13:53:59Z
+Case_116,Rater05,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,2022-08-05T00:36:25Z
+Case_116,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T21:04:23Z
+Case_116,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T22:39:55Z
+Case_116,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T22:40:23Z
+Case_116,Rater03,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,2022-08-07T21:26:46Z
+Case_116,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T17:19:46Z
+Case_116,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-09T00:11:22Z
+Case_43,Rater01,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:38:25Z
+Case_43,Rater08,Fail,"",2022-08-04T14:16:02Z
+Case_43,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:10:42Z
+Case_43,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:23:05Z
+Case_43,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:21:13Z
+Case_43,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:59:56Z
+Case_43,Rater03,Fail,"",2022-08-07T22:30:02Z
+Case_43,Rater07,Fail,Z-Scale (IS); Big,2022-08-08T17:41:51Z
+Case_43,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:40:42Z
+Case_74,Rater01,Pass,"",2022-08-02T22:44:33Z
+Case_74,Rater08,Pass,"",2022-08-04T14:22:38Z
+Case_74,Rater05,Pass,"",2022-08-05T01:16:39Z
+Case_74,Rater06,Pass,"",2022-08-06T00:34:39Z
+Case_74,Rater02,Pass,"",2022-08-06T21:34:59Z
+Case_74,Rater03,Pass,"",2022-08-07T22:25:23Z
+Case_74,Rater07,Pass,"",2022-08-08T18:00:57Z
+Case_74,Rater04,Pass,"",2022-08-12T22:54:07Z
+Case_58,Rater01,Pass,"",2022-08-02T22:41:44Z
+Case_58,Rater08,Pass,"",2022-08-04T14:19:40Z
+Case_58,Rater05,Pass,"",2022-08-05T01:12:50Z
+Case_58,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-06T00:25:51Z
+Case_58,Rater06,Pass,Y-Scale (AP); Big; Occipital,2022-08-08T14:57:44Z
+Case_58,Rater02,Pass,"",2022-08-06T21:26:52Z
+Case_58,Rater03,Pass,"",2022-08-07T22:13:25Z
+Case_58,Rater07,Pass,"",2022-08-08T17:51:34Z
+Case_58,Rater04,Pass,"",2022-08-12T22:45:39Z
+Case_122,Rater01,Pass,"",2022-08-02T22:25:27Z
+Case_122,Rater08,Pass,Z-Scale (IS); Big,2022-08-04T13:55:31Z
+Case_122,Rater05,Pass,"",2022-08-05T00:38:29Z
+Case_122,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T22:43:09Z
+Case_122,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:15:54Z
+Case_122,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:43:27Z
+Case_122,Rater06,Pass,Z-Scale (IS); Small,2022-08-05T23:24:06Z
+Case_122,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:36:21Z
+Case_122,Rater07,Pass,"",2022-08-08T17:22:11Z
+Case_122,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-09T00:13:53Z
+Case_63,Rater01,Pass,"",2022-08-02T22:42:32Z
+Case_63,Rater08,Fail,Y-Scale (AP); Big; Frontal,2022-08-04T14:20:28Z
+Case_63,Rater05,Pass,Y-Scale (AP); Big; Occipital,2022-08-05T01:14:11Z
+Case_63,Rater06,Pass,Y-Scale (AP); Big; Occipital,2022-08-06T00:30:43Z
+Case_63,Rater02,Pass,Y-Scale (AP); Big; Occipital,2022-08-06T21:29:44Z
+Case_63,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-07T22:14:49Z
+Case_63,Rater07,Warning,Y-Scale (AP); Big; Occipital,2022-08-08T17:52:52Z
+Case_63,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital,2022-08-12T22:48:43Z
+Case_106,Rater01,Pass,"",2022-08-02T22:19:51Z
+Case_106,Rater08,Fail,"",2022-08-04T13:50:32Z
+Case_106,Rater05,Pass,Z-Scale (IS); Small,2022-08-05T00:25:17Z
+Case_106,Rater06,Pending,off center on coronal view LR axis. Z-Scale (IS); Small. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-05T18:54:19Z
+Case_106,Rater02,Fail,Z-Scale (IS); Small,2022-08-05T21:47:11Z
+Case_106,Rater03,Fail,Z-Scale (IS); Small,2022-08-07T21:22:24Z
+Case_106,Rater07,Warning,Z-Scale (IS); Small,2022-08-08T16:55:08Z
+Case_106,Rater07,Warning,shear. Z-Scale (IS); Small,2022-08-08T21:40:26Z
+Case_106,Rater04,Fail,Y-Scale (AP); Big; Occipital. Z-Scale (IS); Small,2022-08-09T00:00:33Z
+Case_68,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:43:14Z
+Case_68,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:20:54Z
+Case_68,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-05T01:15:09Z
+Case_68,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:31:56Z
+Case_68,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:43:23Z
+Case_68,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:15:25Z
+Case_68,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:54:38Z
+Case_68,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,2022-08-12T22:50:39Z
+Case_87,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:46:33Z
+Case_87,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:25:10Z
+Case_87,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:19:02Z
+Case_87,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:39:11Z
+Case_87,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Small,2022-08-06T21:37:50Z
+Case_87,Rater03,Fail,"",2022-08-07T20:52:23Z
+Case_87,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-08T18:05:30Z
+Case_87,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:58:54Z
+Case_5,Rater01,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal,2022-08-02T22:39:52Z
+Case_5,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-04T14:18:31Z
+Case_5,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:11:51Z
+Case_5,Rater06,Fail,Y-Scale (AP); Small; Occipital. X-Scale (LR); Small,2022-08-06T00:24:49Z
+Case_5,Rater02,Pass,X-Scale (LR); Small,2022-08-06T21:23:16Z
+Case_5,Rater02,Fail,X-Scale (LR); Small,2022-08-08T01:05:27Z
+Case_5,Rater03,Fail,"",2022-08-07T22:08:21Z
+Case_5,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-08T17:49:48Z
+Case_5,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-12T22:43:27Z
+Case_18,Rater01,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:31:58Z
+Case_18,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:09:32Z
+Case_18,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-05T01:03:41Z
+Case_18,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T23:26:24Z
+Case_18,Rater06,Fail,Z-Scale (IS); Small,2022-08-06T00:09:46Z
+Case_18,Rater03,Fail,Z-Scale (IS); Small,2022-08-07T21:46:54Z
+Case_18,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T17:30:28Z
+Case_18,Rater04,Fail,Z-Scale (IS); Small,2022-08-12T22:18:17Z
+Case_99,Rater01,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-02T22:48:30Z
+Case_99,Rater08,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-04T14:27:22Z
+Case_99,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:21:36Z
+Case_99,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:42:58Z
+Case_99,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T21:42:39Z
+Case_99,Rater03,Fail,"",2022-08-07T20:49:47Z
+Case_99,Rater07,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T18:15:05Z
+Case_99,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-12T23:03:35Z
+Case_119,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-02T22:24:15Z
+Case_119,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T13:54:24Z
+Case_119,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T00:37:10Z
+Case_119,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-05T22:42:08Z
+Case_119,Rater06,Fail,"",2022-08-05T23:21:21Z
+Case_119,Rater03,Fail,"",2022-08-07T21:31:17Z
+Case_119,Rater07,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:21:21Z
+Case_119,Rater04,Fail,"",2022-08-09T00:12:01Z
+Case_38,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-02T22:37:08Z
+Case_38,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T14:15:42Z
+Case_38,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:09:41Z
+Case_38,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:21:18Z
+Case_38,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:19:23Z
+Case_38,Rater02,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:19:24Z
+Case_38,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:19:26Z
+Case_38,Rater02,Warning,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:19:27Z
+Case_38,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:05:35Z
+Case_38,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:38:19Z
+Case_38,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-12T22:37:04Z
+Case_34,Rater01,Pass,"",2022-08-02T22:36:19Z
+Case_34,Rater08,Fail,Y-Scale (AP); Big; Occipital,2022-08-04T14:14:59Z
+Case_34,Rater05,Pass,"",2022-08-05T01:08:53Z
+Case_34,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-06T00:18:54Z
+Case_34,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-06T00:19:08Z
+Case_34,Rater06,Pass,Y-Scale (AP); Big; Occipital,2022-08-08T14:25:10Z
+Case_34,Rater02,Pass,Z-Scale (IS); Small,2022-08-06T00:34:17Z
+Case_34,Rater03,Warning,"",2022-08-07T22:04:24Z
+Case_34,Rater07,Pass,"",2022-08-08T17:36:17Z
+Case_34,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-12T22:33:23Z
+Case_24,Rater01,Pass,"",2022-08-02T22:33:57Z
+Case_24,Rater08,Pass,"",2022-08-04T14:11:20Z
+Case_24,Rater05,Pass,"",2022-08-05T01:05:33Z
+Case_24,Rater02,Pass,"",2022-08-05T23:39:29Z
+Case_24,Rater06,Pass,"",2022-08-06T00:12:00Z
+Case_24,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:49:16Z
+Case_24,Rater03,Pass,Z-Scale (IS); Big,2022-08-08T04:42:55Z
+Case_24,Rater03,Warning,Z-Scale (IS); Big,2022-08-15T03:47:12Z
+Case_24,Rater07,Pass,"",2022-08-08T17:33:09Z
+Case_24,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-12T22:25:00Z
+Case_13,Rater01,Pass,"",2022-08-02T22:27:26Z
+Case_13,Rater08,Fail,"",2022-08-04T14:02:58Z
+Case_13,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-05T00:45:11Z
+Case_13,Rater02,Fail,Z-Scale (IS); Small,2022-08-05T23:10:30Z
+Case_13,Rater06,Fail,"",2022-08-05T23:37:29Z
+Case_13,Rater03,Fail,"",2022-08-07T21:42:08Z
+Case_13,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T17:25:42Z
+Case_13,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:20:09Z
+Case_69,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Big,2022-08-02T22:43:34Z
+Case_69,Rater08,Fail,"",2022-08-04T14:21:01Z
+Case_69,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-05T01:15:21Z
+Case_69,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:32:06Z
+Case_69,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:30:57Z
+Case_69,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-07T22:18:41Z
+Case_69,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T17:54:54Z
+Case_69,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-12T22:51:24Z
+Case_7,Rater01,Pass,"",2022-08-02T22:43:45Z
+Case_7,Rater08,Fail,X-Scale (LR); Small,2022-08-04T14:21:22Z
+Case_7,Rater05,Fail,Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-05T01:15:47Z
+Case_7,Rater06,Fail,X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-06T00:32:32Z
+Case_7,Rater02,Pass,Y-Scale (AP); Small; Occipital,2022-08-06T21:31:17Z
+Case_7,Rater02,Fail,Y-Scale (AP); Small; Occipital,2022-08-08T01:09:51Z
+Case_7,Rater03,Fail,"",2022-08-07T22:19:25Z
+Case_7,Rater07,Pending,near. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T17:56:08Z
+Case_7,Rater07,Pass,near. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T17:56:10Z
+Case_7,Rater07,Warning,near. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-08T19:25:32Z
+Case_7,Rater04,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-12T22:51:59Z
+Case_129,Rater01,Warning,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-02T22:27:15Z
+Case_129,Rater01,Pass,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-02T22:51:45Z
+Case_129,Rater08,Fail,"",2022-08-04T14:02:47Z
+Case_129,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-05T00:44:31Z
+Case_129,Rater02,Pass,Y-Scale (AP); Big; Occipital,2022-08-05T23:07:44Z
+Case_129,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-05T23:36:53Z
+Case_129,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Frontal,2022-08-07T21:42:03Z
+Case_129,Rater07,Fail,Y-Scale (AP); Big; Occipital,2022-08-08T17:25:01Z
+Case_129,Rater04,Fail,Y-Scale (AP); Big; Occipital. Y-Scale (AP); Big; Frontal,2022-08-09T00:19:27Z
+Case_84,Rater01,Fail,"",2022-08-02T22:46:09Z
+Case_84,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:23:57Z
+Case_84,Rater05,Fail,"",2022-08-05T01:18:26Z
+Case_84,Rater06,Pending,total fail,2022-08-06T00:38:43Z
+Case_84,Rater02,Fail,"",2022-08-06T21:36:55Z
+Case_84,Rater03,Fail,"",2022-08-07T22:27:39Z
+Case_84,Rater07,Fail,"",2022-08-08T18:04:30Z
+Case_84,Rater04,Fail,"",2022-08-12T22:57:29Z
+Case_133,Rater01,Fail,X-Scale (LR); Small,2022-08-02T22:28:57Z
+Case_133,Rater08,Fail,"",2022-08-04T14:04:28Z
+Case_133,Rater05,Pending,Off-center. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Big,2022-08-05T00:47:24Z
+Case_133,Rater02,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T23:13:20Z
+Case_133,Rater06,Fail,Y-Scale (AP); Small; Occipital. Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-05T23:41:17Z
+Case_133,Rater03,Fail,"",2022-08-07T21:43:14Z
+Case_133,Rater07,Fail,"",2022-08-08T17:26:30Z
+Case_133,Rater04,Fail,"",2022-08-09T00:21:47Z
+Case_9,Rater01,Pass,"",2022-08-02T22:47:08Z
+Case_9,Rater08,Pass,"",2022-08-04T14:26:14Z
+Case_9,Rater05,Pass,"",2022-08-05T01:19:41Z
+Case_9,Rater06,Pass,Z-Scale (IS); Big,2022-08-06T00:40:22Z
+Case_9,Rater02,Pass,"",2022-08-06T21:38:45Z
+Case_9,Rater03,Pass,"",2022-08-07T20:51:46Z
+Case_9,Rater07,Pass,"",2022-08-08T18:06:56Z
+Case_9,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-12T23:00:36Z
+Case_32,Rater01,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-02T22:35:56Z
+Case_32,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small,2022-08-04T14:14:12Z
+Case_32,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-05T01:08:07Z
+Case_32,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:16:56Z
+Case_32,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-06T00:25:35Z
+Case_32,Rater03,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:51:34Z
+Case_32,Rater07,Fail,X-Scale (LR); Small. Z-Scale (IS); Small,2022-08-08T17:35:35Z
+Case_32,Rater04,Warning,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. X-Scale (LR); Small. Y-Scale (AP); Small; Occipital,2022-08-12T22:30:43Z
+Case_80,Rater01,Pass,"",2022-08-02T22:45:29Z
+Case_80,Rater08,Pass,"",2022-08-04T14:23:39Z
+Case_80,Rater05,Pass,"",2022-08-05T01:18:03Z
+Case_80,Rater06,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-06T00:38:03Z
+Case_80,Rater06,Pass,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-06T00:38:06Z
+Case_80,Rater06,Fail,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-06T00:38:20Z
+Case_80,Rater06,Pass,Y-Scale (AP); Big; Frontal. Z-Scale (IS); Big,2022-08-08T15:10:17Z
+Case_80,Rater02,Pass,Z-Scale (IS); Big,2022-08-06T21:36:01Z
+Case_80,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T22:27:21Z
+Case_80,Rater03,Pass,Z-Scale (IS); Big,2022-08-08T04:53:00Z
+Case_80,Rater03,Warning,Z-Scale (IS); Big,2022-08-15T03:50:49Z
+Case_80,Rater07,Pending,near,2022-08-08T18:04:13Z
+Case_80,Rater04,Pass,Y-Scale (AP); Big; Frontal,2022-08-12T22:56:46Z
+Case_4,Rater01,Pass,"",2022-08-02T22:37:52Z
+Case_4,Rater08,Pass,"",2022-08-04T14:15:57Z
+Case_4,Rater05,Fail,Y-Scale (AP); Big; Occipital,2022-08-05T01:10:23Z
+Case_4,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-06T00:22:56Z
+Case_4,Rater02,Pass,"",2022-08-06T21:20:25Z
+Case_4,Rater03,Warning,"",2022-08-07T22:06:16Z
+Case_4,Rater07,Pass,"",2022-08-08T17:38:43Z
+Case_4,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-12T22:39:26Z
+Case_1,Rater05,Pass,Y-Scale (AP); Big; Occipital. X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-01T19:26:04Z
+Case_1,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital,2022-08-02T22:16:54Z
+Case_1,Rater08,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-04T13:47:15Z
+Case_1,Rater06,Warning,Z-Scale (IS); Big,2022-08-05T17:20:58Z
+Case_1,Rater06,Fail,Z-Scale (IS); Big,2022-08-05T17:22:42Z
+Case_1,Rater06,Fail,Z-Scale (IS); Big,2022-08-05T20:50:58Z
+Case_1,Rater06,Fail,Z-Scale (IS); Big,2022-08-05T23:20:42Z
+Case_1,Rater06,Fail,Z-Scale (IS); Big,2022-08-06T00:05:15Z
+Case_1,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Z-Scale (IS); Big,2022-08-05T21:41:06Z
+Case_1,Rater03,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T20:50:13Z
+Case_1,Rater03,Warning,X-Rot (LR); Cerebellum/Tentorium,2022-08-07T21:02:58Z
+Case_1,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-08T16:04:44Z
+Case_1,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Small; Occipital,2022-08-08T23:50:04Z
+Case_47,Rater01,Warning,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-02T22:39:14Z
+Case_47,Rater08,Fail,Y-Scale (AP); Big; Frontal,2022-08-04T14:17:50Z
+Case_47,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-05T01:11:23Z
+Case_47,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-06T00:24:13Z
+Case_47,Rater02,Pass,Y-Scale (AP); Big; Occipital,2022-08-06T21:22:20Z
+Case_47,Rater02,Fail,Y-Scale (AP); Big; Occipital,2022-08-08T01:00:31Z
+Case_47,Rater03,Fail,Y-Scale (AP); Small; Occipital,2022-08-07T22:07:45Z
+Case_47,Rater07,Fail,Y-Scale (AP); Big; Occipital,2022-08-08T17:44:04Z
+Case_47,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T22:42:26Z
+Case_14,Rater01,Pass,"",2022-08-02T22:29:52Z
+Case_14,Rater08,Pass,"",2022-08-04T14:07:51Z
+Case_14,Rater05,Pass,Z-Scale (IS); Big,2022-08-05T01:00:46Z
+Case_14,Rater02,Pass,Z-Scale (IS); Big,2022-08-05T23:17:51Z
+Case_14,Rater06,Pass,"",2022-08-05T23:42:58Z
+Case_14,Rater03,Pass,Y-Scale (AP); Big; Occipital,2022-08-07T21:44:46Z
+Case_14,Rater07,Pass,"",2022-08-08T17:28:08Z
+Case_14,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-09T00:24:23Z
+Case_111,Rater01,Pass,"",2022-08-02T22:20:49Z
+Case_111,Rater08,Fail,Y-Scale (AP); Big; Frontal,2022-08-04T13:52:10Z
+Case_111,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Big; Occipital,2022-08-05T00:33:39Z
+Case_111,Rater06,Fail,Y-Scale (AP); Big; Occipital,2022-08-05T19:05:00Z
+Case_111,Rater02,Pass,"",2022-08-05T22:33:30Z
+Case_111,Rater02,Fail,"",2022-08-05T22:34:05Z
+Case_111,Rater02,Pass,"",2022-08-08T00:33:34Z
+Case_111,Rater02,Pass,"",2022-08-08T00:33:37Z
+Case_111,Rater03,Fail,Y-Scale (AP); Big; Occipital,2022-08-07T21:24:06Z
+Case_111,Rater07,Fail,Z-Scale (IS); Big,2022-08-08T17:00:44Z
+Case_111,Rater04,Pass,Y-Scale (AP); Big; Occipital,2022-08-09T00:05:02Z
+Case_124,Rater01,Pass,"",2022-08-02T22:25:56Z
+Case_124,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:01:35Z
+Case_124,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. Z-Scale (IS); Small,2022-08-05T00:43:08Z
+Case_124,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T22:45:28Z
+Case_124,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:49:17Z
+Case_124,Rater02,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:49:35Z
+Case_124,Rater02,Pass,I really don't know what to do with this one. Cerebellum . X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:49:55Z
+Case_124,Rater02,Pass,I really don't know what to do with this one. Cerebellum is torturing me.. X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:50:29Z
+Case_124,Rater02,Pass,I really don't know what to do with this one. Cerebellum is torturing me.. X-Rot (LR); Cerebellum/Tentorium,2022-08-08T00:50:32Z
+Case_124,Rater06,Pass,"",2022-08-05T23:27:25Z
+Case_124,Rater03,Warning,Z-Scale (IS); Big,2022-08-07T21:39:40Z
+Case_124,Rater07,Pass,"",2022-08-08T17:23:52Z
+Case_124,Rater04,Pass,X-Rot (LR); Cerebellum/Tentorium,2022-08-09T00:15:46Z
+Case_59,Rater01,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:42:00Z
+Case_59,Rater08,Fail,Z-Scale (IS); Small,2022-08-04T14:19:46Z
+Case_59,Rater05,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:13:06Z
+Case_59,Rater06,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T00:30:07Z
+Case_59,Rater02,Fail,X-Rot (LR); Cerebellum/Tentorium,2022-08-06T21:27:03Z
+Case_59,Rater03,Fail,Z-Scale (IS); Small,2022-08-07T22:13:33Z
+Case_59,Rater07,Fail,Z-Scale (IS); Small,2022-08-08T17:51:53Z
+Case_59,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Occipital,2022-08-12T22:46:27Z
+Case_6,Rater01,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-02T22:42:11Z
+Case_6,Rater08,Fail,Z-Scale (IS); Big,2022-08-04T14:19:53Z
+Case_6,Rater05,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-05T01:13:26Z
+Case_6,Rater06,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T00:30:17Z
+Case_6,Rater02,Fail,X-Rot (LR); Orbitofrontal/Eyes,2022-08-06T21:29:20Z
+Case_6,Rater03,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium,2022-08-07T22:13:46Z
+Case_6,Rater07,Fail,X-Rot (LR); Orbitofrontal/Eyes. Y-Scale (AP); Small; Occipital. Z-Scale (IS); Small,2022-08-08T17:52:16Z
+Case_6,Rater04,Fail,X-Rot (LR); Orbitofrontal/Eyes. X-Rot (LR); Cerebellum/Tentorium. Y-Scale (AP); Big; Frontal,2022-08-12T22:47:36Z
