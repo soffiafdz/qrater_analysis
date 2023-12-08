@@ -5,35 +5,40 @@ library("here")
 library("data.table")
 library("readr")
 
-# Read raw data
-path <- "data/raw/qc_ratings/raw/complete_data"
-acquis1 <- fread(here(path, "ADNI_Raw_Expert_2022-11-23.csv"))
-setnames(acquis1, c("Image", "Rater", "Rating", "Comment", "Time"))
+## IN
+indir     <- "data/raw/qc_ratings/raw/complete_data"
+acquis_e  <- here(indir, "ADNI_Raw_Expert_2022-11-23.csv") |> fread()
+acquis_t  <- here(indir, "ADNI_Raw_Trainees_2022-06-29.csv") |> fread()
+rm(indir)
 
-acquis <- fread(here(path, "ADNI_Raw_Raters_2022-06-29.csv"))
-acquis[, V4 := NULL]
-setnames(acquis, c("Image", "Rater", "Rating", "Time", "Comment"))
+## Data cleaning
+setnames(acquis_e, c("Image", "Rater", "Rating", "Comment", "Time"))
+setnames(acquis_t, c("Image", "Rater", "Rating", "Time", "Comment"))
+acquis_t  <- acquis_t[Rating != "Pending"]
 
-acquis <- rbindlist(list(acquis1, acquis), use.names = TRUE)
+## Merge data
+acquis <- rbindlist(list(acquis_e, acquis_t), use.names = TRUE)
+rm(acquis_e, acquis_t)
 
-# Codify raters
-acquis <- acquis[(! Rater %in% c("Mahdiye", "Mahsa")) & Rating != "Pending"]
-rater_codes <- c("Expert01", sprintf("Rater%02d", 1:7))
-rater_usernames <- c("louis", "Sofia", "reza", "Neda", "vmadge",
-                     "alexliv", "dandrews.qrater", "estonge")
-
-for (i in seq_along(rater_codes)) {
-    acquis[Rater == rater_usernames[[i]], Rater := rater_codes[[i]]]
-}
-
-# Timing
+## Timing
 setorder(acquis, cols = "Time")
 for (rater in acquis[, unique(Rater)]) {
     acquis[Rater == rater, Diff := Time - shift(Time)]
 }
+rm(rater)
 
 # Remove duplicate rating:
 acquis <- acquis[-6355]
 
-# Write RDS object
-write_rds(acquis, here("data/derivatives/acquisition_dt.rds"))
+## OUT
+# Cleaned QC ratings
+outdir      <- here("data/qc-ratings_clean/raw")
+if (!dir.exists(outdir)) dir.create(outdir)
+acquis[, .(Image, Rating, Comment, Rater)] |>
+  fwrite(here(outdir, "ADNI_qc-ratings.csv"))
+
+# Data.table RDS
+outdir      <- here("data/derivatives")
+if (!dir.exists(outdir)) dir.create(outdir)
+acquis |> write_rds(here(outdir, "acquisition_dt.rds"))
+rm(outdir)

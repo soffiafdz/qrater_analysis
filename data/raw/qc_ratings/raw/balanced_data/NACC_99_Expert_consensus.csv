@@ -1,99 +1,99 @@
-Case_1,Fail,"extremely dark scan, bright nose; cerebelum cut?. Intensity non-uniformity"
-Case_10,Pass,
-Case_11,Fail,"intensity drop at cerebellum, no bottom cerebellum. Intensity non-uniformity"
-Case_12,Pass,Intensity non-uniformity
-Case_13,Pass,
-Case_14,Pass,Noise
-Case_15,Pass,Movement
-Case_16,Fail,Movement
-Case_17,Pass,
-Case_18,Pass,
-Case_19,Pass,
-Case_2,Pass,Odd contrast
-Case_20,Pass,
-Case_21,Fail,"odd bright mid-saggital struct.  Artefact?  base of cerebellum cut. UBO. Coverage"
-Case_22,Fail,Coverage
-Case_23,Pass,
-Case_24,Fail,no data
-Case_25,Pass,
-Case_26,Pass,
-Case_27,Fail,occipital pole cut. Coverage
-Case_28,Fail,occipital pole cut. Coverage
-Case_29,Pass,cerrebellum cut? very close.. Coverage
-Case_3,Pass,occipital pole cut close; should check brain mask. Coverage
-Case_30,Pass,Movement
-Case_31,Pass,
-Case_32,Pass,
-Case_33,Fail,"signal drop out from dental work? does not affect brain. occipital pole cut. Intensity non-uniformity. Coverage"
-Case_34,Pass,signal drop out from dental work. Intensity non-uniformity
-Case_35,Fail,cerebellum cut. Coverage
-Case_36,Pass,
-Case_37,Pass,Odd contrast
-Case_38,Pass,
-Case_39,Pass,
-Case_4,Fail,occipital pole cut. Coverage
-Case_40,Pass,Movement
-Case_41,Pass,base of cerebellum is close.
-Case_42,Pass,Odd contrast
-Case_43,Fail,IS wrap around; base of cerebellum cut. need to check brain / cerebellum mask.. Coverage
-Case_44,Pass,occipital pole cut close. Odd contrast
-Case_45,Pass,odd mid-sagittal bright UBOl signal drop at base of scan.  Cerebellum cut close.. Intensity non-uniformity. UBO
-Case_46,Pass,
-Case_47,Pass,Intensity non-uniformity
-Case_48,Pass,"cerebellum cut close!  . Intensity non-uniformity"
-Case_49,Pass,
-Case_5,Pass,
-Case_50,Pass,
-Case_51,Fail,signal drop at base; cerebellum base cut
-Case_52,Pass,
-Case_53,Fail,cerebellum cut!. Coverage
-Case_54,Fail,Movement
-Case_55,Fail,Movement
-Case_56,Fail,Movement
-Case_57,Fail,cerebellum cut. Coverage. Intensity non-uniformity
-Case_58,Pass,Intensity non-uniformity
-Case_59,Fail,Movement. Noise
-Case_6,Pass,
-Case_60,Fail,cerebellum slightly cut. Coverage. Intensity non-uniformity
-Case_61,Pass,mid-sagittal UBO; . UBO
-Case_62,Pass,
-Case_63,Fail,Movement. Noise
-Case_64,Pass,
-Case_65,Fail,no data
-Case_66,Pass,ocipital cut close; check brain mask. Coverage
-Case_67,Pass,Intensity non-uniformity
-Case_68,Pass,
-Case_69,Pass,Intensity non-uniformity. Odd contrast
-Case_7,Fail,cerebellum cut. Coverage
-Case_70,Pass,
-Case_71,Pass,
-Case_72,Pass,Odd contrast
-Case_73,Pass,
-Case_74,Fail,no data
-Case_75,Pass,
-Case_76,Pass,
-Case_77,Pass,extremely dark scan; base slices very dark; cerebellum cut?. Odd contrast
-Case_78,Pass,
-Case_79,Fail,huge dental susceptibility!. UDO
-Case_8,Pass,
-Case_80,Fail,cerebellum cut. Coverage
-Case_81,Pass,
-Case_82,Pass,Intensity non-uniformity. Odd contrast
-Case_83,Pass,
-Case_84,Pass,
-Case_85,Pass,
-Case_86,Pass,
-Case_87,Pass,
-Case_88,Fail,Movement. Noise. Odd contrast
-Case_89,Pass,
-Case_9,Fail,cerebellum cut. Coverage
-Case_90,Pass,
-Case_91,Pass,
-Case_92,Pass,
-Case_93,Pass,
-Case_94,Fail,Movement. Noise
-Case_95,Pass,
-Case_96,Pass,
-Case_97,Pass,
-Case_98,Fail,cerebellum cut!. Coverage
-Case_99,Pass,
+Case_1,Fail,"extremely dark scan, bright nose; cerebelum cut?. Intensity non-uniformity"
+Case_10,Pass,""
+Case_11,Fail,"intensity drop at cerebellum, no bottom cerebellum. Intensity non-uniformity"
+Case_12,Pass,Intensity non-uniformity
+Case_13,Pass,""
+Case_14,Pass,Noise
+Case_15,Pass,Movement
+Case_16,Fail,Movement
+Case_17,Pass,""
+Case_18,Pass,""
+Case_19,Pass,""
+Case_2,Pass,Odd contrast
+Case_20,Pass,""
+Case_21,Fail,odd bright mid-saggital struct.  Artefact?  base of cerebellum cut. UBO. Coverage
+Case_22,Fail,Coverage
+Case_23,Pass,""
+Case_24,Fail,no data
+Case_25,Pass,""
+Case_26,Pass,""
+Case_27,Fail,occipital pole cut. Coverage
+Case_28,Fail,occipital pole cut. Coverage
+Case_29,Pass,cerrebellum cut? very close.. Coverage
+Case_3,Pass,occipital pole cut close; should check brain mask. Coverage
+Case_30,Pass,Movement
+Case_31,Pass,""
+Case_32,Pass,""
+Case_33,Fail,signal drop out from dental work? does not affect brain. occipital pole cut. Intensity non-uniformity. Coverage
+Case_34,Pass,signal drop out from dental work. Intensity non-uniformity
+Case_35,Fail,cerebellum cut. Coverage
+Case_36,Pass,""
+Case_37,Pass,Odd contrast
+Case_38,Pass,""
+Case_39,Pass,""
+Case_4,Fail,occipital pole cut. Coverage
+Case_40,Pass,Movement
+Case_41,Pass,base of cerebellum is close.
+Case_42,Pass,Odd contrast
+Case_43,Fail,IS wrap around; base of cerebellum cut. need to check brain / cerebellum mask.. Coverage
+Case_44,Pass,occipital pole cut close. Odd contrast
+Case_45,Pass,odd mid-sagittal bright UBOl signal drop at base of scan.  Cerebellum cut close.. Intensity non-uniformity. UBO
+Case_46,Pass,""
+Case_47,Pass,Intensity non-uniformity
+Case_48,Pass,cerebellum cut close!  . Intensity non-uniformity
+Case_49,Pass,""
+Case_5,Pass,""
+Case_50,Pass,""
+Case_51,Fail,signal drop at base; cerebellum base cut
+Case_52,Pass,""
+Case_53,Fail,cerebellum cut!. Coverage
+Case_54,Fail,Movement
+Case_55,Fail,Movement
+Case_56,Fail,Movement
+Case_57,Fail,cerebellum cut. Coverage. Intensity non-uniformity
+Case_58,Pass,Intensity non-uniformity
+Case_59,Fail,Movement. Noise
+Case_6,Pass,""
+Case_60,Fail,cerebellum slightly cut. Coverage. Intensity non-uniformity
+Case_61,Pass,mid-sagittal UBO; . UBO
+Case_62,Pass,""
+Case_63,Fail,Movement. Noise
+Case_64,Pass,""
+Case_65,Fail,no data
+Case_66,Pass,ocipital cut close; check brain mask. Coverage
+Case_67,Pass,Intensity non-uniformity
+Case_68,Pass,""
+Case_69,Pass,Intensity non-uniformity. Odd contrast
+Case_7,Fail,cerebellum cut. Coverage
+Case_70,Pass,""
+Case_71,Pass,""
+Case_72,Pass,Odd contrast
+Case_73,Pass,""
+Case_74,Fail,no data
+Case_75,Pass,""
+Case_76,Pass,""
+Case_77,Pass,extremely dark scan; base slices very dark; cerebellum cut?. Odd contrast
+Case_78,Pass,""
+Case_79,Fail,huge dental susceptibility!. UDO
+Case_8,Pass,""
+Case_80,Fail,cerebellum cut. Coverage
+Case_81,Pass,""
+Case_82,Pass,Intensity non-uniformity. Odd contrast
+Case_83,Pass,""
+Case_84,Pass,""
+Case_85,Pass,""
+Case_86,Pass,""
+Case_87,Pass,""
+Case_88,Fail,Movement. Noise. Odd contrast
+Case_89,Pass,""
+Case_9,Fail,cerebellum cut. Coverage
+Case_90,Pass,""
+Case_91,Pass,""
+Case_92,Pass,""
+Case_93,Pass,""
+Case_94,Fail,Movement. Noise
+Case_95,Pass,""
+Case_96,Pass,""
+Case_97,Pass,""
+Case_98,Fail,cerebellum cut!. Coverage
+Case_99,Pass,""

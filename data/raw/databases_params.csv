@@ -1,10 +1,12 @@
 Dataset,NACC,ADNI,PPMI,HCP,PREVENT-AD
-Images,388,10196,11,11,5
+Previous QC,Undefined,Available,Unavailable,Available,Available
 QC task,Raw MRI,"All",Lin. Reg.,Lin. Reg.,Lin. Reg.
-Slice thickness,0.8-1.5,1-1.2,1-1.5,0.7,1
+Images,388,10196,11,11,5
+Scanning sites,19,66,Unknown,1,1
+Slice thickness (mm),0.8-1.5,1-1.2,1-1.5,0.7,1
 No. of slices,Min 124,160-170,Min 160,210,175
-Field of view,Multiple,256 x 256,256 x Min 160,224 x 224,256 x 256
-Scan matrix,Multiple,256 x 256,256 x Min 160,224 x 224,256 x 256
-Repetition time,9-3000,2300-3000,5-11,2400,2300
-Echo time,2-4,2.9-3.5,2-6,2.14,2.98
+Field of view (cm2),Multiple,256 x 256,256 x Min 160,224 x 224,256 x 256
+Scan matrix (cm2),Multiple,256 x 256,256 x Min 160,224 x 224,256 x 256
+Repetition time (ms),9-3000,2300-3000,5-11,2400,2300
+Echo time (ms),2-4,2.9-3.5,2-6,2.14,2.98
 Pulse sequence,Multiple,"MPRAGE, GR","MPRAGE, SPGR",MPRAGE,MPRAGE

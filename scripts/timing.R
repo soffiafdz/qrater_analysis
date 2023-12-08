@@ -7,39 +7,81 @@ library("readr")
 library("stringr")
 library("lubridate")
 library("hms")
-library("ggplot2")
 library("flextable")
 library("dunn.test")
 library("rstatix")
 
-## Acquisition 99 / ADNI
-# Data.table 99
-fname <- "acquisition_99_dt.rds"
-fpath <- here("data/derivatives", fname)
+## Recreation
+# Recreate tables
+rec_tables  <- FALSE
+
+## IN
+## Data.table Acquisition 99
+fpath       <- here("data/derivatives/acquisition_99_dt.rds")
 
 if (!file.exists(fpath)) {
   source(here("scripts/data_acquisition99.R"))
 } else {
-  acq_99 <- read_rds(fpath)
+  acq_99    <- read_rds(fpath)
 }
 
-rm(fname, fpath)
+# Data.table Acquisition ADNI
+fpath       <- here("data/derivatives/acquisition_dt.rds")
 
+if (!file.exists(fpath)) {
+  source(here("scripts/data_acquisition.R"))
+} else {
+  acquis    <- read_rds(fpath)
+}
+
+# Data.table Registration 99
+fpath       <- here("data/derivatives/registration_99_dt.rds")
+
+if (!file.exists(fpath)) {
+  source(here("scripts/data_registration99.R"))
+} else {
+  reg_99    <- read_rds(fpath)
+}
+
+# Data.table Registration ADNI
+fpath       <- here("data/derivatives/registration_dt.rds")
+
+if (!file.exists(fpath)) {
+  source(here("scripts/data_registration.R"))
+} else {
+  regis     <- read_rds(fpath)
+}
+
+# Data.table Skull segmentation
+fpath       <- here("data/derivatives/segmentation_dt.rds")
+
+if (!file.exists(fpath)) {
+  source(here("scripts/data_segmentation.R"))
+} else {
+  rskull    <- read_rds(fpath)
+}
+
+rm(fpath)
+
+
+
+## Data Cleaning
+# Acquisition 99
 acq_99[Session == "First" & Rater == "Expert01", Rater := "Expert-1 (S1)"]
 acq_99[Session == "Second" & Rater == "Expert01", Rater := "Expert-1 (S2)"]
-acq_99 <- acq_99[Rater != "Expert01"]
+acq_99      <- acq_99[Rater != "Expert01"]
 
 #acq_99_N <- acq_99[, .N, by = .(Rater, Rating)]
 #acq_99_N[, .(X = mean(N), SD = sd(N)), by = Rating]
 
 acq_99[Diff > duration(15, "minutes"), Rest := TRUE]
-acq_99_time <- acq_99[, .(Image, Rater = str_replace(Rater, "0", "-"),
+acq_99_time <- acq_99[, .(Image = Image_case,
+                          Rater = str_replace(Rater, "0", "-"),
                           Rating, Diff, Rest)]
 acq_99_time[!is.na(Rest), Diff := NA]
-write_rds(acq_99_time, here("data/derivatives/acq_99_time_dt.rds"))
 
 # Session and Pass vs Fail (Wilcoxon test)
-acq_99_summ1 <-
+acq_99_summ1  <-
   acq_99_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
                   Session = as_hms(sum(Diff, na.rm = TRUE)),
@@ -54,13 +96,13 @@ acq_99_all1 <- acq_99_summ1[, .(Rater = "All",
 acq_99_all1[, PvF := acq_99_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                                na.action = na.omit)$p.value]]
 
-acq_99_summ1 <- rbindlist(list(acq_99_summ1, acq_99_all1), use.names = TRUE)
+acq_99_summ1  <- rbindlist(list(acq_99_summ1, acq_99_all1), use.names = TRUE)
 
-acq_99_summ2 <- acq_99_time[, .(N = .N,
-                               Median = as_hms(median(Diff, na.rm = TRUE)),
-                               Sd = hms(sd(Diff, na.rm = TRUE))),
-                           .(Rater, Rating)] |>
-               dcast(Rater ~ Rating, value.var = c("N", "Median", "Sd"))
+acq_99_summ2  <- acq_99_time[, .(N = .N,
+                                 Median = as_hms(median(Diff, na.rm = TRUE)),
+                                 Sd = hms(sd(Diff, na.rm = TRUE))),
+                             .(Rater, Rating)] |>
+                  dcast(Rater ~ Rating, value.var = c("N", "Median", "Sd"))
 
 acq_99_all2 <- acq_99_time[, .(Rater = "All",
                                Median = as_hms(median(Diff, na.rm = TRUE)),
@@ -70,7 +112,7 @@ acq_99_all2 <- acq_99_time[, .(Rater = "All",
 acq_99_all2 <- cbind(acq_99_all2,
                      acq_99_summ2[, lapply(.SD, mean), .SDcols = 2:3])
 
-acq_99_summ2 <- rbindlist(list(acq_99_summ2, acq_99_all2), use.names = TRUE)
+acq_99_summ2  <- rbindlist(list(acq_99_summ2, acq_99_all2), use.names = TRUE)
 
 time_format <- "%02d:%02.0f (%02d:%02.0f)"
 acq_99_summ <- acq_99_summ1[acq_99_summ2, on = "Rater",
@@ -91,45 +133,12 @@ acq_99_summ <- acq_99_summ1[acq_99_summ2, on = "Rater",
 
 rm(acq_99, acq_99_summ1, acq_99_all1, acq_99_summ2, acq_99_all2)
 
-acq_99_summ |>
-  flextable() |>
-  separate_header() |>
-  labelizor(part = "header", labels = c("Session" = "Total Time",
-                                        "p" = "p-value")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = "p") |>
-  italic(~ Rater == "All") |>
-  hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
-  bold(~ p < 0.05, j = "p") |>
-  footnote(part = "header", i = 1, j = 2,
-           value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-  footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
-           value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(5, 7),
-           value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = 8,
-           value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
-  footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
-           ref_symbols = "5") |> #, inline = TRUE) |>
-  autofit() |>
-  save_as_docx(path = "data/derivatives/acq_99_time.docx")
 
-# Data.table ADNI
-fpath <- here("data/derivatives/acquisition_dt.rds")
-
-if (!file.exists(fpath)) {
-  source(here("scripts/data_acquisition.R"))
-} else {
-  acquis <- read_rds(fpath)
-}
-
-rm(fpath)
-
+# Acquisition ADNI
 acquis[Diff > duration(15, "minutes"), Rest := TRUE]
 acquis_time <- acquis[, .(Image, Rater = str_replace(Rater, "0", "-"),
                           Rating, Diff, Rest)]
 acquis_time[!is.na(Rest), Diff := NA]
-write_rds(acquis_time, here("data/derivatives/acquis_time_dt.rds"))
 
 #Session and Pass vs Warning vs Fail (Kruskal-Wallis rank sum test)
 acquis_summ1 <-
@@ -200,83 +209,14 @@ acquis_summ <- acquis_summ1[acquis_summ2, on = "Rater",
 acquis_summ[Rater %in% no_w_raters, `:=`(Warning_N = "0 (0%)",
                                         Warning_Time = "-")]
 
+# Will need these P-values for later
+acquis_p_pvwvf <- acquis_summ1[, .(Comp = "PvWvF", Rater, p = PvWvF)]
+
 rm(acquis, acquis_wilcox, acquis_summ1, acquis_all1, acquis_summ2, acquis_all2,
    no_w_raters)
 
-acquis_summ |>
-  flextable() |>
-  separate_header() |>
-  labelizor(part = "header", labels = c("Session" = "Total Time",
-                                        "p" = "p-value")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = "p") |>
-  italic(~ Rater == "All") |>
-  hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
-  bold(~ p < 0.05, j = "p") |>
-  labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-  footnote(part = "header", i = 1, j = 2,
-           value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = 3,
-           value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(4, 6, 8),
-           value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(5, 7, 9),
-           value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-  footnote(part = "header", j = 10,
-           value = as_paragraph("Wilcoxon rank-sum test; Kruskal-Wallis rank-sum test"),
-           ref_symbols = "5") |>#, inline = TRUE) |>
-  footnote(part = "body", i = 9, j = c(2:3), value = as_paragraph("Average"),
-           ref_symbols = "6") |>#, inline = TRUE) |>
 
-  autofit() |>
-  save_as_docx(path = "data/derivatives/acq_adni_time.docx")
-
-## Post-hoc analysis
-raters_kruskal <- acquis_summ[, unique(Rater)][c(2:4, 6, 8)]
-acquis_posthoc <- acquis_time[Rater %in% raters_kruskal,
-                              dunn.test(as.numeric(Diff), Rating,
-                                        method = "bonferroni"), Rater]
-acquis_posthoc_all <- acquis_time[, dunn.test(as.numeric(Diff), Rating,
-                                              method = "bonferroni")]
-acquis_posthoc_all[, Rater := "All"]
-acquis_posthoc <- rbindlist(list(acquis_posthoc[order(Rater)],
-                                 acquis_posthoc_all),
-                            use.names = TRUE)
-rm(raters_kruskal, acquis_posthoc_all)
-
-acquis_posthoc |>
-  flextable() |>
-  colformat_double(digits = 3) |>
-  labelizor(part = "header", labels = c("chi2" = "Chi-squared",
-                                        "P" = "p-value",
-                                        "P.adjusted" = "Adjusted p-value",
-                                        "comparisons" = "Comparisons")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = 4:5) |>
-  merge_v(j = 1:2) |>
-  italic(~ Rater == "All") |>
-  hline(i = 15, border = fp_border_default(width = 2)) |>
-  fix_border_issues() |>
-  bold(~ P < 0.05, j = 4) |>
-  bold(~ P.adjusted < 0.05, j = 5) |>
-  labelizor(j = 4:5, labels = c("0.000" = "<0.001")) |>
-  autofit() |>
-  save_as_docx(path = "data/derivatives/acq_adni_posthoc.docx")
-
-
-
-## Registration 99 / ADNI
-# Data.table 99
-fpath <- here("data/derivatives/registration_99_dt.rds")
-
-if (!file.exists(fpath)) {
-  source(here("scripts/data_registration99.R"))
-} else {
-  reg_99 <- read_rds(fpath)
-}
-
-rm(fpath)
-
+# Registration 99
 reg_99[Session == "First" & Rater == "Expert01", Rater := "Expert-1 (S1)"]
 reg_99[Session == "Second" & Rater == "Expert01", Rater := "Expert-1 (S2)"]
 reg_99 <- reg_99[Rater != "Expert01"]
@@ -285,7 +225,6 @@ reg_99[Diff > duration(15, "minutes"), Rest := TRUE]
 reg_99_time <- reg_99[, .(Image, Rater = str_replace(Rater, "0", "-"),
                           Rating, Diff, Rest)]
 reg_99_time[!is.na(Rest), Diff := NA]
-write_rds(reg_99_time, here("data/derivatives/reg_99_time_dt.rds"))
 
 reg_99_summ1 <-
   reg_99_time[, .(N = .N,
@@ -338,44 +277,12 @@ reg_99_summ <- reg_99_summ1[reg_99_summ2, on = "Rater",
 
 rm(reg_99, reg_99_summ1, reg_99_all1, reg_99_summ2, reg_99_all2)
 
-reg_99_summ |>
-  flextable() |>
-  separate_header() |>
-  labelizor(part = "header", labels = c("Session" = "Total Time",
-                                        "p" = "p-value")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = "p") |>
-  italic(~ Rater == "All") |>
-  hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
-  bold(~ p < 0.05, j = "p") |>
-  footnote(part = "header", i = 1, j = 2,
-           value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-  footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
-           value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(5, 7),
-           value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = 8,
-           value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
-  footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
-           ref_symbols = "5") |> #, inline = TRUE) |>
-  autofit() |>
-  save_as_docx(path = "data/derivatives/reg_99_time.docx")
 
-# Data.table ADNI
-fpath <- here("data/derivatives/registration_dt.rds")
-
-if (!file.exists(fpath)) {
-  source(here("scripts/data_registration.R"))
-} else {
-  regis <- read_rds(fpath)
-}
-rm(fpath)
-
+# Registration ADNI
 regis[Diff > duration(15, "minutes"), Rest := TRUE]
 regis_time <- regis[, .(Image, Rater = str_replace(Rater, "0", "-"),
                         Rating, Diff, Rest)]
 regis_time[!is.na(Rest), Diff := NA]
-write_rds(regis_time, here("data/derivatives/regis_time_dt.rds"))
 
 regis_summ1 <-
   regis_time[, .(N = .N,
@@ -425,47 +332,13 @@ regis_summ <- regis_summ1[regis_summ2, on = "Rater",
                                                 second(Sd_Fail)),
                             p = sprintf("%04.3f", PvF))]
 
+# Will need these P-values for later
+regis_p_pvf <- regis_summ1[, .(Comp = "PvF", Rater, p = PvF)]
+
 rm(regis, regis_summ1, regis_all1, regis_summ2, regis_all2)
 
-regis_summ |>
-  flextable() |>
-  separate_header() |>
-  labelizor(part = "header", labels = c("Session" = "Total Time",
-                                        "p" = "p-value")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = "p") |>
-  italic(~ Rater == "All") |>
-  hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
-  bold(~ p < 0.05, j = "p") |>
-  labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-  footnote(part = "header", i = 1, j = 2,
-           value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = 3,
-           value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(4, 6),
-           value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(5, 7),
-           value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = "p",
-           value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
-  footnote(~ Rater == "All", j = c(2:3), value = as_paragraph("Average"),
-           ref_symbols = "6") |> #, inline = TRUE) |>
-  autofit() |>
-  save_as_docx(path = "data/derivatives/reg_adni_time.docx")
 
-## Skull Segmentation
-# Data.table
-fname <- "segmentation_dt.rds"
-fpath <- here("data/derivatives", fname)
-
-if (!file.exists(fpath)) {
-  source(here("scripts/data_segmentation.R"))
-} else {
-  rskull <- read_rds(fpath)
-}
-
-rm(fname, fpath)
-
+# Skull Segmentation
 rskull[Diff > duration(15, "minutes"), Rest := TRUE]
 rskull_time <- rskull[, .(Image, Rater = str_c("Expert-", str_sub(Rater, -1)),
                           Rating, Diff, Rest)]
@@ -502,73 +375,74 @@ rskull_summ <- rskull_summ1[rskull_summ2, on = "Rater",
                                                   second(Sd_Fail)),
                               p = sprintf("%04.3f", PvF))]
 
+# Will need these p-values for later
+rskull_p_pvf  <- rskull_summ1[, PvF]
+
 rm(rskull, rskull_summ1, rskull_summ2, time_format)
 
-rskull_summ |>
-  flextable() |>
-  separate_header() |>
-  labelizor(part = "header", labels = c("Session" = "Total Time",
-                                        "p" = "p-value")) |>
-  bold(part = "header") |>
-  italic(part = "header", j = "p") |>
-  bold(~ p < 0.05, j = "p") |>
-  labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
-  footnote(part = "header", i = 1, j = 2,
-           value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = 3,
-           value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(4, 6),
-           value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 2, j = c(5, 7),
-           value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
-  footnote(part = "header", i = 1, j = "p",
-           value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
-  autofit() |>
-  save_as_docx(path = "data/derivatives/seg_adni_time.docx")
 
-## Other analyses
-# Acquisition99
-# Acq99 time between expert sessions
+## Analyses
+# Acquisition 99
+# Time between expert sessions
 acq_99_time[Rater %like% "Expert", median(Diff, na.rm = TRUE), Rater]
-wilcox.test(acq_99_time[Rater %like% "S1", as.numeric(Diff)],
-            acq_99_time[Rater %like% "S2", as.numeric(Diff)],
-            paired = TRUE)
-wilcox_effsize(acq_99_time[Rater %like% "Expert",
-                           .(Diff = as.numeric(Diff), Rater)],
-               Diff ~ Rater, paired = TRUE)
+acq_99_e1_e1_test <- wilcox.test(acq_99_time[Rater %like% "S1",
+                                             as.numeric(Diff)],
+                                 acq_99_time[Rater %like% "S2",
+                                             as.numeric(Diff)],
+                                 paired = TRUE)
+acq_99_e1_e1_es   <- wilcox_effsize(acq_99_time[Rater %like% "Expert",
+                                    .(Diff = as.numeric(Diff), Rater)],
+                                    Diff ~ Rater, paired = TRUE)
 
 
-# Acq99 time between ratings (with expert):
+# Time between ratings (with expert):
 acq_99_time[, median(Diff, na.rm = TRUE), by = Rating]
-wilcox.test(acq_99_time[Rating == "Pass", as.numeric(Diff)],
-            acq_99_time[Rating == "Fail", as.numeric(Diff)])
-wilcox_effsize(acq_99_time[, .(Diff = as.numeric(Diff), Rating)], Diff ~ Rating)
+acq_99_pvf_all_test <- wilcox.test(acq_99_time[Rating == "Pass",
+                                               as.numeric(Diff)],
+                                   acq_99_time[Rating == "Fail",
+                                               as.numeric(Diff)])
+acq_99_pvf_all_es   <- wilcox_effsize(acq_99_time[, .(Diff = as.numeric(Diff),
+                                                      Rating)],
+                                      Diff ~ Rating)
 
-## Acq99 time between ratings (only trainees):
+## Time between ratings (only trainees):
 acq_99_time[Rater %like% "Rater", median(Diff, na.rm = TRUE), Rating]
 
-wilcox.test(acq_99_time[Rater %like% "Rater" & Rating == "Pass",
-            as.numeric(Diff)],
-            acq_99_time[Rater %like% "Rater" & Rating == "Fail",
-            as.numeric(Diff)])
-wilcox_effsize(acq_99_time[Rater %like% "Rater",
-               .(Diff = as.numeric(Diff), Rating)], Diff ~ Rating)
+acq_99_pvf_tr_test  <- wilcox.test(acq_99_time[Rater %like% "Rater" &
+                                               Rating == "Pass",
+                                               as.numeric(Diff)],
+                                   acq_99_time[Rater %like% "Rater" &
+                                               Rating == "Fail",
+                                               as.numeric(Diff)])
+acq_99_pvf_tr_es    <- wilcox_effsize(acq_99_time[Rater %like% "Rater",
+                                                  .(Diff = as.numeric(Diff),
+                                                    Rating)],
+                                      Diff ~ Rating)
 
+# Multiple comparison corrections
+acq_99_p_pvf <- acq_99_summ[, .(Comp = "PvF", Rater, p)]
+acq_99_p_fdr <- rbindlist(list(acq_99_p_pvf,
+                               data.table(Comp = "PvF", Rater = "Trainees",
+                                     p = acq_99_pvf_tr_test$p.value),
+                               data.table(Comp = "S1 v S2", Rater = "Expert-1",
+                                     p = acq_99_e1_e1_test$p.value)))
+acq_99_p_fdr[, p_adj := p.adjust(p, method = "holm")]
+acq_99_summ[, p2 := acq_99_p_fdr[1:12, round(p_adj, digits = 3)]]
+rm(acq_99_p_pvf)
 
-## adni acquisition time between ratings:
+# Acquisition ADNI
+# Time between ratings:
 acquis_time[, median(Diff, na.rm = TRUE), Rating]
-kruskal.test(Diff ~ Rating, acquis_time)
-kruskal_effsize(acquis_time, Diff ~ Rating)
+acquis_pvwvf_all_test <- kruskal.test(Diff ~ Rating, acquis_time)
+acquis_pvwvf_all_es   <- kruskal_effsize(acquis_time, Diff ~ Rating)
 
-## ADNI Acquisition
-
-## ADNI vs training (Expert only)
+# ADNI vs training (Expert only)
 #acq_99_time[startsWith(Rater, "Expert01"), median(Diff)]
 #acquis_time[Rater == "Expert01", median(Diff)]
 #wilcox.test(acq_99_time[startsWith(Rater, "Expert01"), as.numeric(Diff)],
             #acquis_time[Rater == "Expert01", as.numeric(Diff)])
 
-## ADNI vs training
+# ADNI vs training
 raters_adni <- acquis_time[Rater %like% "Rater", unique(Rater)]
 acq_99_acquis_time <- rbindlist(list(acq_99_time[Rater %in% c("Expert-1 (S1)",
                                                               raters_adni),
@@ -578,32 +452,85 @@ acq_99_acquis_time <- rbindlist(list(acq_99_time[Rater %in% c("Expert-1 (S1)",
                                                  .(Task = "ADNI",
                                                    Time = as.numeric(Diff))]))
 acq_99_acquis_time[, median(Time, na.rm = TRUE), Task]
-wilcox.test(Time ~ Task, acq_99_acquis_time)
-wilcox_effsize(acq_99_acquis_time, Time ~ Task)
+acquis_99_adni_test <- wilcox.test(Time ~ Task, acq_99_acquis_time)
+acquis_99_adni_es   <- wilcox_effsize(acq_99_acquis_time, Time ~ Task)
+rm(raters_adni, acq_99_acquis_time)
 
-## Registration 99cases
+# Post-hoc analysis
+raters_kruskal <- acquis_summ[, unique(Rater)][c(2:4, 6, 8)]
+acquis_posthoc <- acquis_time[Rater %in% raters_kruskal,
+                              dunn.test(as.numeric(Diff), Rating,
+                                        method = "bonferroni"), Rater]
+acquis_posthoc_all <- acquis_time[, dunn.test(as.numeric(Diff), Rating,
+                                              method = "bonferroni")]
+acquis_posthoc_all[, Rater := "All"]
+acquis_posthoc <- rbindlist(list(acquis_posthoc[order(Rater)],
+                                 acquis_posthoc_all),
+                            use.names = TRUE)
 
-## Reg99 time between expert sessions
+rm(raters_kruskal, acquis_posthoc_all)
+
+# Multiple comparison correction
+acquis_p_fdr <- rbindlist(list(acquis_p_pvwvf,
+                               data.table(Comp = "99vADNI", Rater = "All",
+                                     p = acquis_99_adni_test$p.value)))
+rm(acquis_p_pvwvf)
+
+# Add the post-hoc comparisons:
+# 8 raters + All
+# 3 comparisons X (5 raters + All)
+# Total of 18 comparisons
+acquis_p_fdr[, p_adj := p.adjust(p, method = "holm", n = 18)]
+
+acquis_posthoc[, p.adjusted := p.adjust(P, method = "holm", n = 18)]
+
+acquis_summ[, p2 := acquis_p_fdr[1:9, sprintf("%04.3f", p_adj)]]
+
+# Registration 99
+# Time between expert sessions
 reg_99_time[Rater %like% "Expert", median(Diff, na.rm = TRUE), Rater]
-wilcox.test(as.numeric(Diff) ~ Rater,
-            reg_99_time[Rater %like% "Expert"],
-            paired = TRUE)
-wilcox_effsize(reg_99_time[Rater %like% "Expert",
-                           .(Diff = as.numeric(Diff), Rater)], Diff ~ Rater)
+reg_99_e1_e1_test <- wilcox.test(as.numeric(Diff) ~ Rater,
+                                 reg_99_time[Rater %like% "Expert"],
+                                 paired = TRUE)
+reg_99_e1_e1_es   <- wilcox_effsize(reg_99_time[Rater %like% "Expert",
+                                    .(Diff = as.numeric(Diff), Rater)],
+                                    Diff ~ Rater)
 
-## Reg99 time between ratings (with expert):
+# Time between ratings (with expert):
 reg_99_time[, median(Diff, na.rm = TRUE), Rating]
-wilcox.test(as.numeric(Diff) ~ Rating, reg_99_time)
-wilcox_effsize(reg_99_time[, .(Diff = as.numeric(Diff), Rating)], Diff ~ Rating)
+reg_99_pvf_all_test <- wilcox.test(as.numeric(Diff) ~ Rating, reg_99_time)
+reg_99_pvf_all_es   <- wilcox_effsize(reg_99_time[,
+                                      .(Diff = as.numeric(Diff), Rating)],
+                                      Diff ~ Rating)
 
-## Reg99 time between ratings (only trainees):
+# Time between ratings (only trainees):
 reg_99_time[Rater %like% "Rater", median(Diff, na.rm = TRUE), Rating]
-wilcox.test(as.numeric(Diff) ~ Rating, reg_99_time[Rater %like% "Rater"])
-wilcox_effsize(reg_99_time[Rater %like% "Rater",
-                           .(Diff = as.numeric(Diff), Rating)], Diff ~ Rating)
+reg_99_pvf_tr_test  <- wilcox.test(as.numeric(Diff) ~ Rating,
+                                   reg_99_time[Rater %like% "Rater"])
+reg_99_pvf_tr_es    <- wilcox_effsize(reg_99_time[Rater %like% "Rater",
+                                      .(Diff = as.numeric(Diff), Rating)],
+                                      Diff ~ Rating)
 
-## ADNI Registration
-## ADNI vs training
+# Multiple comparison correction
+reg_99_p_pvf <- reg_99_summ[, .(Comp = "PvF", Rater, p)]
+reg_99_p_fdr <- rbindlist(list(reg_99_p_pvf,
+                               data.table(Comp = "PvF", Rater = "Trainees",
+                                     p = reg_99_pvf_tr_test$p.value),
+                               data.table(Comp = "S1 v S2", Rater = "Expert-1",
+                                     p = reg_99_e1_e1_test$p.value)))
+reg_99_p_fdr[, p_adj := p.adjust(p, method = "holm")]
+reg_99_summ[, p2 := reg_99_p_fdr[1:11, round(p_adj, digits = 3)]]
+rm(reg_99_p_pvf)
+
+
+# Registration ADNI
+# Time between ratings:
+regis_time[, median(Diff, na.rm = TRUE), Rating]
+regis_pvf_test <- wilcox.test(as.numeric(Diff) ~ Rating, regis_time)
+regis_pvf_es   <- wilcox_effsize(regis_time[, .(Diff = as.numeric(Diff),
+                                                Rating)], Diff ~ Rating)
+
+# ADNI vs training
 raters_adni <- regis_time[, unique(Rater)]
 reg_99_regis_time <- rbindlist(list(reg_99_time[Rater %in% raters_adni,
                                                 .(Task = "Balanced",
@@ -611,23 +538,211 @@ reg_99_regis_time <- rbindlist(list(reg_99_time[Rater %in% raters_adni,
                                     regis_time[, .(Task = "ADNI",
                                                    Time = as.numeric(Diff))]))
 reg_99_regis_time[, median(Time, na.rm = TRUE), Task]
-wilcox.test(Time ~ Task, reg_99_regis_time)
-wilcox_effsize(reg_99_regis_time, Time ~ Task)
+regis_99_adni_test <- wilcox.test(Time ~ Task, reg_99_regis_time)
+regis_99_adni_es   <- wilcox_effsize(reg_99_regis_time, Time ~ Task)
+rm(raters_adni, reg_99_regis_time)
 
-## adni acquisition time between ratings:
-regis_time[, median(Diff, na.rm = TRUE), Rating]
-wilcox.test(as.numeric(Diff) ~ Rating, regis_time)
-wilcox_effsize(regis_time[, .(Diff = as.numeric(Diff), Rating)], Diff ~ Rating)
+# Multiple comparisons correction
+regis_p_fdr <- rbindlist(list(regis_p_pvf,
+                              data.table(Comp = "99vADNI", Rater = "All",
+                                         p = regis_99_adni_test$p.value)))
+regis_p_fdr[, p_adj := p.adjust(p, method = "holm")]
+regis_summ[, p2 := regis_p_fdr[1:9, sprintf("%04.3f", p_adj)]]
+rm(regis_p_pvf)
 
-## Rskull
+
+# Skull segmentation
+# Analyses
 rskull_time[, median(Diff, na.rm = TRUE), .(Rating, Rater)]
 
 # Expert-1
-wilcox.test(as.numeric(Diff) ~ Rating, rskull_time[Rater %like% "1"])
-wilcox_effsize(rskull_time[Rater %like% "1", .(Diff = as.numeric(Diff), Rating)],
-               Diff ~ Rating)
+rskull_e1_test <- wilcox.test(as.numeric(Diff) ~ Rating,
+                              rskull_time[Rater %like% "1"])
+rskull_e1_es   <- wilcox_effsize(rskull_time[Rater %like% "1",
+                                 .(Diff = as.numeric(Diff), Rating)],
+                                 Diff ~ Rating)
 
 # Expert-2
-wilcox.test(as.numeric(Diff) ~ Rating, rskull_time[Rater %like% "2"])
-wilcox_effsize(rskull_time[Rater %like% "2", .(Diff = as.numeric(Diff), Rating)],
-               Diff ~ Rating)
+rskull_e2_test <- wilcox.test(as.numeric(Diff) ~ Rating,
+                              rskull_time[Rater %like% "2"])
+rskull_e2_es   <- wilcox_effsize(rskull_time[Rater %like% "2",
+                                 .(Diff = as.numeric(Diff), Rating)],
+                                 Diff ~ Rating)
+
+
+## OUT: Tables
+# Acquisition 99
+fname       <- here("data/derivatives/acq_99_time.docx")
+if (!file.exists(fname) | rec_tables) {
+  acq_99_summ |>
+    flextable() |>
+    separate_header() |>
+    labelizor(part = "header", labels = c("Session" = "Total Time",
+                                          "p" = "p-value")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = "p") |>
+    italic(~ Rater == "All") |>
+    hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
+    bold(~ p < 0.05, j = "p") |>
+    footnote(part = "header", i = 1, j = 2,
+             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
+    footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
+             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(5, 7),
+             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = 8,
+             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
+    footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
+             ref_symbols = "5") |> #, inline = TRUE) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+
+
+# Acquisition ADNI
+fname       <- here("data/derivatives/acq_adni_time.docx")
+if (!file.exists(fname) | rec_tables) {
+  acquis_summ |>
+    flextable() |>
+    separate_header() |>
+    labelizor(part = "header", labels = c("Session" = "Total Time",
+                                          "p" = "p-value")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = "p") |>
+    italic(~ Rater == "All") |>
+    hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
+    bold(~ p < 0.05, j = "p") |>
+    labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
+    footnote(part = "header", i = 1, j = 2,
+             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = 3,
+             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(4, 6, 8),
+             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(5, 7, 9),
+             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
+    footnote(part = "header", j = 10,
+             value = as_paragraph("Wilcoxon rank-sum test; Kruskal-Wallis rank-sum test"),
+             ref_symbols = "5") |>#, inline = TRUE) |>
+    footnote(part = "body", i = 9, j = c(2:3), value = as_paragraph("Average"),
+             ref_symbols = "6") |>#, inline = TRUE) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+
+
+# Acquisition ADNI: Post-hoc
+fname       <- here("data/derivatives/acq_adni_posthoc.docx")
+if (!file.exists(fname) | rec_tables) {
+  acquis_posthoc |>
+    flextable() |>
+    colformat_double(digits = 3) |>
+    labelizor(part = "header", labels = c("chi2" = "Chi-squared",
+                                          "P" = "p-value",
+                                          "P.adjusted" = "Adjusted p-value",
+                                          "comparisons" = "Comparisons")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = 4:5) |>
+    merge_v(j = 1:2) |>
+    italic(~ Rater == "All") |>
+    hline(i = 15, border = fp_border_default(width = 2)) |>
+    fix_border_issues() |>
+    bold(~ P < 0.05, j = 4) |>
+    bold(~ P.adjusted < 0.05, j = 5) |>
+    labelizor(j = 4:5, labels = c("0.000" = "<0.001")) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+
+
+# Registration 99
+fname       <- here("data/derivatives/reg_99_time.docx")
+if (!file.exists(fname) | rec_tables) {
+  reg_99_summ |>
+    flextable() |>
+    separate_header() |>
+    labelizor(part = "header", labels = c("Session" = "Total Time",
+                                          "p" = "p-value")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = "p") |>
+    italic(~ Rater == "All") |>
+    hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
+    bold(~ p < 0.05, j = "p") |>
+    footnote(part = "header", i = 1, j = 2,
+             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
+    footnote(part = "header", i = c(1, 2, 2), j = c(3, 4, 6),
+             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(5, 7),
+             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "3") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = 8,
+             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "4") |> #, inline = TRUE) |>
+    footnote(~ Rater == "All", j = c(2:4, 6), value = as_paragraph("Average"),
+             ref_symbols = "5") |> #, inline = TRUE) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+
+
+# Registration ADNI
+fname       <- here("data/derivatives/reg_adni_time.docx")
+if (!file.exists(fname) | rec_tables) {
+  regis_summ |>
+    flextable() |>
+    separate_header() |>
+    labelizor(part = "header", labels = c("Session" = "Total Time",
+                                          "p" = "p-value")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = "p") |>
+    italic(~ Rater == "All") |>
+    hline(i = ~ before(Rater, "All"), border = fp_border_default(width = 2)) |>
+    bold(~ p < 0.05, j = "p") |>
+    labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
+    footnote(part = "header", i = 1, j = 2,
+             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = 3,
+             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(4, 6),
+             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(5, 7),
+             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = "p",
+             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
+    footnote(~ Rater == "All", j = c(2:3), value = as_paragraph("Average"),
+             ref_symbols = "6") |> #, inline = TRUE) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+
+# Skull segmentation
+fname       <- here("data/derivatives/seg_adni_time.docx")
+if (!file.exists(fname) | rec_tables) {
+  rskull_summ |>
+    flextable() |>
+    separate_header() |>
+    labelizor(part = "header", labels = c("Session" = "Total Time",
+                                          "p" = "p-value")) |>
+    bold(part = "header") |>
+    italic(part = "header", j = "p") |>
+    bold(~ p < 0.05, j = "p") |>
+    labelizor(j = "p", labels = c("0.000" = "<0.001")) |>
+    footnote(part = "header", i = 1, j = 2,
+             value = as_paragraph("HH:MM:SS"), ref_symbols = "1") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = 3,
+             value = as_paragraph("n"), ref_symbols = "2") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(4, 6),
+             value = as_paragraph("n (%)"), ref_symbols = "3") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 2, j = c(5, 7),
+             value = as_paragraph("Median (SD): MM:SS"), ref_symbols = "4") |> #, inline = TRUE) |>
+    footnote(part = "header", i = 1, j = "p",
+             value = as_paragraph("Wilcoxon rank-sum test"), ref_symbols = "5") |> #, inline = TRUE) |>
+    autofit() |>
+    save_as_docx(path = fname)
+}
+rm(fname, rec_tables)
+
+
+## OUT: RDS
+write_rds(acq_99_time, here("data/derivatives/acq_99_time_dt.rds"))
+write_rds(acquis_time, here("data/derivatives/acquis_time_dt.rds"))
+write_rds(reg_99_time, here("data/derivatives/reg_99_time_dt.rds"))
+write_rds(regis_time, here("data/derivatives/regis_time_dt.rds"))

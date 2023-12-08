@@ -12,69 +12,105 @@ library("ggforce")
 library("cowplot")
 library("flextable")
 
-## Acquisition 338
-# Data.table
-fpath <- here("data/derivatives/acquisition_388_dt.rds")
+## Recreation
+# Recreate plots if existing
+rec_plots   <- FALSE
+
+# Recreate table if existing
+rec_table   <- FALSE
+
+
+## IN
+# Acquisition 338
+fpath       <- here("data/derivatives/acquisition_388_dt.rds")
 if (!file.exists(fpath)) {
   source(here("scripts/data_acquisition388.R"))
 } else {
-  acq_388 <- read_rds(fpath)
+  acq_388   <- read_rds(fpath)
 }
-rm(fpath)
 
-## Intra-rater agreement
-kappa2(acq_388[, .(Expert1, Expert2)])
-# Kappa = 0.401, Z = 9.83
-
-## Acquisition 99
-# Data.table
-fpath <- here("data/derivatives/acquisition_99_dt.rds")
+# Acquisition 99
+fpath       <- here("data/derivatives/acquisition_99_dt.rds")
 if (!file.exists(fpath)) {
   source(here("scripts/data_acquisition99.R"))
 } else {
-  acq_99 <- read_rds(fpath)
+  acq_99    <- read_rds(fpath)
 }
-rm(fpath)
 
-## Intra-rater agreement
-acq_99_bin_1 <- acq_99[Session %in% c("First", "Second"),
-                         .(Image, Session, Rating)]
-acq_99_bin_1[
-  Rating == "Pass", Rating := 1][
-  Rating == "Fail", Rating := 0][
-  , Rating := as.integer(Rating)
-               ]
-acq_99_wide_1 <- dcast(acq_99_bin_1, Image ~ Session,
-                         value.var = "Rating")
-kappa2(acq_99_wide_1[, -1])
-# Kappa = 0.81, Z = 8.14
+# Acquisition Register
+fpath       <- here("data/raw/qc_ratings/raw/off_qrater")
+acq_99_off1 <- fread(here(fpath, "OffQrater_Raw_Rater.csv"))
+acq_99_off2 <- fread(here(fpath, "OffQrater_Raw_Expert.csv"),
+                     nrows = 90)
 
-## Gold_standard: new images
-acq_99[
-  Session == "Consensus" & Image %in% acq_99_wide_1[First != Second, Image],
-  .N,
-  by = Rating
-]
+# Registration 99
+fpath       <- here("data/derivatives/registration_99_dt.rds")
+if (!file.exists(fpath)) {
+    source(here("scripts/data_registration99.R"))
+} else {
+  reg_99    <- read_rds(fpath)
+}
 
-## Gold_standard: proportion
-acq_99[Session == "Consensus", .N, by = Rating]
+# Pre/post protocol meeting agreement
+fnames <- sprintf("registration_%s.rds", c("dt", "premeeting_dt"))
+fpaths <- here("data/derivatives", fnames)
 
-## Inter-rater agreement
+if (!file.exists(fpaths[1])) {
+  source(here("scripts/data_registration.R"))
+} else {
+  reg_post  <- read_rds(fpaths[1])
+}
+
+if (!file.exists(fpaths[2])) {
+  source(here("scripts/data_registration_premeeting.R"))
+} else {
+  reg_pre   <- read_rds(fpaths[2])
+}
+
+# Registration Register
+fpath       <- "data/raw/qc_ratings/registration/off_qrater"
+reg_99_off1 <- fread(here(fpath, "OffQrater_Linear_Rater.csv"))
+reg_99_off2 <- fread(here(fpath, "OffQrater_Linear_Expert.csv"),
+                     nrows = 44)
+
+# Skull segmentation
+fpath <- here("data/derivatives/segmentation_dt.rds")
+if (!file.exists(fpath)) {
+  source(here("scripts/data_segmentation.R"))
+} else {
+  rskull <- read_rds(fpath)
+}
+
+rm(fpath, fpaths, fnames)
+
+
+
+## Data Cleaning
+# Acquisition 99
+# Expert First v Second session
+acq_99_exp  <- acq_99[Session %in% c("First", "Second"),
+                         .(Image = Image_case, Session, Rating)]
+#acq_99_exp[
+  #Rating == "Pass", Rating := 1][
+  #Rating == "Fail", Rating := 0][
+  #, Rating := as.integer(Rating)
+               #]
+
+acq_99_exp  <- dcast(acq_99_exp, Image ~ Session, value.var = "Rating")
 
 # Matrix of ratings
 acq_99_bin <- acq_99[!Session %in% c("First", "Second"),
-                     .(Image, Rater, Rating)]
+                     .(Image = Image_case, Rater, Rating)]
+
 acq_99_bin[
   Rating == "Pass", Rating := 1][
   Rating == "Fail", Rating := 0][
   , Rating := as.integer(Rating)]
+
 acq_99_wide <- dcast(acq_99_bin, Image ~ Rater, value.var = "Rating")[, -1]
+rm(acq_99_bin)
 
-# Calculate Fleiss' Kappa
-kappam.fleiss(acq_99_wide)
-# Kappa = 0.439; Z = 32.4
-
-# Calculate Count for Raw agreement
+# Calculate Count and Correlations for Raw agreement
 acq_99_corr <- acq_99_count <- vector("list", length(acq_99_wide))
 for (i in seq_along(acq_99_wide)) {
   acq_99_corr[[i]] <- acq_99_count[[i]] <- vector("list", length(acq_99_wide))
@@ -84,6 +120,7 @@ for (i in seq_along(acq_99_wide)) {
                                  method = "spearman")
   }
 }
+rm(i, j)
 
 names(acq_99_wide) <- acq_99_wide |>
   names() |>
@@ -93,103 +130,30 @@ names(acq_99_wide) <- acq_99_wide |>
 acq_99_count <- setDT(lapply(acq_99_count, unlist))
 acq_99_count[upper.tri(acq_99_count, diag = TRUE)] <- NA
 names(acq_99_count) <- names(acq_99_wide)
-write_rds(acq_99_count, here("data/derivatives/qc_count_acq_dt.rds"))
+acq_99_count[, Rater := names(acq_99_wide)]
+acq_99_count        <- melt(acq_99_count, id.vars = "Rater",
+                            variable.factor = FALSE, na.rm = TRUE,
+                            variable.name = "Rater2", value.name = "Count")
+acq_99_count[, Perc := sprintf("%.0f%%", Count / 99 * 100)]
 
 acq_99_corr <- setDT(lapply(acq_99_corr, unlist))
 acq_99_corr[upper.tri(acq_99_corr, diag = TRUE)] <- NA
-names(acq_99_corr) <- names(acq_99_wide)
-
-## Off Qrater QC
-# Rater 1:
-path        <- "data/raw/qc_ratings/raw/off_qrater"
-acq_99_off1 <- fread(here(path, "OffQrater_Raw_Rater.csv"))
-
-acq_99_off1 <- acq_99[Rater == "Rater01", .(Image, Prev = Rating)
-                      ][acq_99_off1, on = "Image", .(Image, Prev, Off = QC)]
-
-acq_99_off1 <- acq_99[Session == "Consensus", .(Image, GS = Rating)
-                      ][acq_99_off1, on = "Image",
-                      .(Image, Prev, GS, Off)
-                      ][, `:=`(Off = fifelse(Off == "Pass", 1, 0),
-                               Prev = fifelse(Prev == "Pass", 1, 0),
-                               GS = fifelse(GS == "Pass", 1, 0))]
-
-# Expert1
-acq_99_off2 <- fread(here(path, "OffQrater_Raw_Expert.csv"),
-                     nrows = 90)
-
-acq_99_off2 <- acq_99[Session == "Consensus", .(Image, GS = Rating)
-                      ][acq_99_off2, on = "Image",
-                      .(Image, GS, Off = QC)
-                      ][, `:=`(Off = fifelse(Off == "fail", 0, 1),
-                               GS = fifelse(GS == "Pass", 1, 0))]
-
-# Agreement Gold-Standard
-# Count
-acq_99_off1[Off == GS, .N]
-acq_99_off2[Off == GS, .N]
-
-# Kappa
-irr::kappa2(acq_99_off1[, .(Off, GS)])
-irr::kappa2(acq_99_off2[, .(Off, GS)])
-
-# Agreement Previous task
-# Count
-acq_99_off1[Off == Prev, .N]
-
-# Kappa
-kappa2(acq_99_off1[, .(Off, Prev)])
-
-# Inter-rater agreement
-acq_99_off <- acq_99_off2[acq_99_off1,
-                          on = "Image",
-                          .(Image, R1 = Off, E1 = i.Off)]
-
-acq_99_off[E1 == R1, .N]
-irr::kappa2(acq_99_off[, .(R1, E1)])
-
-## Plots
-# Heatmap
-acq_99_count[, Rater := names(acq_99_wide)]
-acq_99_count_l <- melt(acq_99_count, id.vars = "Rater",
-                       variable.factor = FALSE, na.rm = TRUE,
-                       variable.name = "Rater2", value.name = "Count")
-acq_99_count_l[, Perc := sprintf("%.0f%%", Count / 99 * 100)]
-
-p_count <- ggplot(acq_99_count_l, aes(Rater, Rater2)) +
-  theme_classic() +
-  theme(text = element_text(size = 14), legend.position = "right") +
-  geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
-  scale_fill_gradient(low = "white", high = "#028202") +
-  labs(y = "Rater", fill = "Agreement\n(Percentage)")
-
-ggsave("plots/raw_tiles-agreement.png",
-       width = 8, height = 8, units = "in", dpi = 600)
-
+names(acq_99_corr)  <- names(acq_99_wide)
 acq_99_corr[, Rater := names(acq_99_wide)]
-acq_99_corr_l <- melt(acq_99_corr, id.vars = "Rater",
-                      variable.factor = FALSE, na.rm = TRUE,
-                      variable.name = "Rater2", value.name = "Corr")
-acq_99_corr_l[, Corr := round(Corr, 2)]
+acq_99_corr         <- melt(acq_99_corr, id.vars = "Rater",
+                            variable.factor = FALSE, na.rm = TRUE,
+                            variable.name = "Rater2", value.name = "Corr")
+acq_99_corr[, Corr := round(Corr, 2)]
 
-p_corr <- ggplot(acq_99_corr_l, aes(Rater, Rater2)) +
-  theme_classic() +
-  theme(text = element_text(size = 14), legend.position = "right") +
-  geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
-  scale_fill_gradient(low = "white", high = "#028202") +
-  labs(y = "Rater", fill = "Agreement\n(Correlation)")
-
-ggsave("plots/raw_tiles-agreement2.png",
-       width = 8, height = 8, units = "in", dpi = 600)
-
-# Bar charts
-acq_agree   <- acq_99[Session == "First", .(Image, First = Rating)
+# Data.table for Plot
+acq_agree   <- acq_99[Session == "First", .(Image_case, First = Rating)
                       ][acq_99[Session == "Second",
-                               .(Image, Second = Rating)],
-                      on = "Image"
-                      ][First == Second, .(Image, Expert = "*")]
+                               .(Image_case, Second = Rating)],
+                      on = "Image_case"
+                      ][First == Second, .(Image = Image_case, Expert = "*")]
 
-acq_exp1    <- acq_agree[acq_99[Session == "Consensus", .(Image, Rating)],
+acq_exp1    <- acq_agree[acq_99[Session == "Consensus",
+                                .(Image = Image_case, Rating)],
                          on = "Image"]
 acq_exp1[is.na(Expert), Expert := "†"]
 
@@ -197,7 +161,8 @@ acq_exp1[Expert == "*", GS := Rating]
 acq_exp1[Expert == "†" & Rating == "Fail", GS := "rFail"]
 acq_exp1[Expert == "†" & Rating == "Pass", GS := "rPass"]
 
-acq_99_n <- acq_99[Rater != "Expert01", .N, .(Orig_QC, Image, Rating)]
+acq_99_n <- acq_99[Rater != "Expert01", .N,
+                   .(QC_orig, Image = Image_case, Rating)]
 acq_99_plot <- acq_exp1[, .(Image, GS)][acq_99_n, on = "Image"]
 acq_99_plot[, `:=`(Image = factor(Image,
                                   levels = c(acq_99_plot[GS %like% "Pass"
@@ -213,118 +178,63 @@ acq_99_plot[, `:=`(Image = factor(Image,
                                                   "Fail",
                                                   "Fail (after revision)"))))]
 
-p_pass  <- ggplot(acq_99_plot[Orig_QC == "Pass"],
-                  aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "left") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:9) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected "Pass" Cases',
-       x = "Cases", y = "Ratings",
-       fill = "Trainees\nratings")
+acq_99_summary      <- acq_99_plot |> dcast(... ~ Rating, value.var = "N")
+acq_99_summary[is.na(Fail), Fail := 0]
+acq_99_summary[is.na(Pass), Pass := 0]
+acq_99_summary      <- acq_99_summary[, .(Image, QC_orig, Expert = GS,
+                                          Trainees_Fail = Fail,
+                                          Trainees_Pass = Pass)]
 
-p_bline  <- ggplot(acq_99_plot[Orig_QC == "Borderline"],
-                   aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "none") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:9) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected Borderline Cases',
-       x = "Cases", y = "Ratings")
-
-p_fail  <- ggplot(acq_99_plot[Orig_QC == "Fail"], aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "none") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:9) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected "Fail" Cases',
-       x = "Cases", y = "Ratings")
-
-plot_grid(p_pass, p_bline, p_fail, nrow = 1, rel_widths = c(1.3, 1, 1))
-#plot_grid(p_pass,
-          #plot_grid(p_fail, p_rev_p, p_rev_f,
-                    #nrow = 3, rel_heights = c(2, 1, 1)),
-                    #rel_widths = c(1.3, 1))
-
-ggsave("plots/raw_bars-agreement.png",
-       width = 8, height = 8, units = "in", dpi = 600)
-
-# Number of images with full agreement
-acq_99_n[N == 10, .N, by = Rating] #28:99
-acq_99_n[N >= 8, .N, by = Rating] #69:99
+rm(acq_agree, acq_exp1, acq_99_n)
 
 
-## Registration
-fname <- "registration_99_dt.rds"
-fpath <- here("data/derivatives", fname)
+# Acquisition Register
+# Rater 1:
+acq_99_off1 <- acq_99[Rater == "Rater01",
+                      .(Image = Image_case, Prev = Rating)
+                      ][acq_99_off1, on = "Image", .(Image, Prev, Off = QC)]
 
-if (!file.exists(fpath)) {
-    source(here("scripts/data_registration99.R"))
-} else {
-    reg_99 <- read_rds(fpath)
-}
+acq_99_off1 <- acq_99[Session == "Consensus",
+                      .(Image = Image_case, GS = Rating)
+                      ][acq_99_off1, on = "Image",
+                      .(Image, Prev, GS, Off)
+                      ][, `:=`(Off = fifelse(Off == "Pass", 1, 0),
+                               Prev = fifelse(Prev == "Pass", 1, 0),
+                               GS = fifelse(GS == "Pass", 1, 0))]
 
-rm(fname, fpath)
+# Expert1
+acq_99_off2 <- acq_99[Session == "Consensus",
+                      .(Image = Image_case, GS = Rating)
+                      ][acq_99_off2, on = "Image",
+                      .(Image, GS, Off = QC)
+                      ][, `:=`(Off = fifelse(Off == "fail", 0, 1),
+                               GS = fifelse(GS == "Pass", 1, 0))]
 
-## Intra-rater agreement
-# Matrix of ratings
-reg_99_bin <- copy(reg_99)
+acq_99_off  <- acq_99_off1[acq_99_off2,
+                           on = .(Image, GS),
+                           .(Image, GS, E1_register = i.Off,
+                             R1_qrater = Prev, R1_register = Off)]
+rm(acq_99, acq_99_off1, acq_99_off2)
+
+
+# Registration 99
+# Binarize
+reg_99_bin  <- copy(reg_99)
 reg_99_bin[
   Rating == "Pass", Rating := 1][
   Rating == "Fail", Rating := 0][
   , Rating := as.integer(Rating)]
 
-reg_99_bin_1 <- reg_99_bin[Session %in% c("First", "Second")]
-reg_99_wide_1 <- dcast(reg_99_bin_1,
-                       Image ~ Session,
-                       value.var = "Rating")
+# Expert Firsv v Second session
+reg_99_exp  <- dcast(reg_99_bin[Session %in% c("First", "Second")],
+                     Image ~ Session, value.var = "Rating")
 
-kappa2(reg_99_wide_1[, -1])
-# K=0.873, z=8.69
-sum(reg_99_wide_1[[1]] == reg_99_wide_1[[2]])
-# 93/99
-
-## Gold standard: new images
-reg_99[
-  Session == "Consensus" & Image %in% reg_99_wide_1[First != Second, Image],
-  .N,
-  by = Rating
-]
-
-## Gold standard: proportion
-reg_99[Session == "Consensus", .N, by = Rating]
-
-## Inter-rater agreement
 # Matrix of ratings
 reg_99_wide <- dcast(reg_99_bin[!Session %in% c("First", "Second")],
                      Image ~ Rater, value.var = "Rating")[, -1]
+rm(reg_99_bin)
 
-# Calculate Fleiss' Kappa
-kappam.fleiss(reg_99_wide)
-# Kappa = 0.563; Z = 33.6
-
-# Calculate Cohen's Kappas & Raw agreement
+# Calculate Count and Correlations for Registration agreement
 reg_99_corr <- reg_99_count <- vector("list", length(reg_99_wide))
 for (i in seq_along(reg_99_wide)) {
   reg_99_corr[[i]] <- reg_99_count[[i]] <- vector("list", length(reg_99_wide))
@@ -334,6 +244,7 @@ for (i in seq_along(reg_99_wide)) {
                                  method = "spearman")
   }
 }
+rm(i, j)
 
 names(reg_99_wide) <- reg_99_wide |>
   names() |>
@@ -343,96 +254,22 @@ names(reg_99_wide) <- reg_99_wide |>
 reg_99_count <- setDT(lapply(reg_99_count, unlist))
 reg_99_count[upper.tri(reg_99_count, diag = TRUE)] <- NA
 names(reg_99_count) <- names(reg_99_wide)
-write_rds(reg_99_count, here("data/derivatives/qc_count_reg_dt.rds"))
+reg_99_count[, Rater := names(reg_99_wide)]
+reg_99_count    <- melt(reg_99_count, id.vars = "Rater",
+                        variable.factor = FALSE, na.rm = TRUE,
+                        variable.name = "Rater2", value.name = "Count")
+reg_99_count[, Perc := sprintf("%.0f%%", Count / 99 * 100)]
 
 reg_99_corr <- setDT(lapply(reg_99_corr, unlist))
 reg_99_corr[upper.tri(reg_99_corr, diag = TRUE)] <- NA
 names(reg_99_corr) <- names(reg_99_wide)
-
-## Off Qrater QC
-# Rater1
-path        <- "data/raw/qc_ratings/registration/off_qrater"
-reg_99_off1 <- fread(here(path, "OffQrater_Linear_Rater.csv"))
-
-reg_99_off1 <- reg_99[Rater == "Rater01", .(Image, Prev = Rating)
-                      ][reg_99_off1, on = "Image", .(Image, Prev, Off = QC)]
-
-reg_99_off1 <- reg_99[Session == "Consensus", .(Image, GS = Rating)
-                      ][reg_99_off1, on = "Image",
-                      .(Image, Prev, GS, Off)
-                      ][, `:=`(Off = fifelse(Off == "Pass", 1, 0),
-                               Prev = fifelse(Prev == "Pass", 1, 0),
-                               GS = fifelse(GS == "Pass", 1, 0))]
-
-# Expert1
-reg_99_off2 <- fread(here(path, "OffQrater_Linear_Expert.csv"),
-                     nrows = 44)
-
-reg_99_off2 <- reg_99[Session == "Consensus", .(Image, GS = Rating)
-                      ][reg_99_off2, on = "Image",
-                      .(Image, GS, Off = QC)
-                      ][, `:=`(Off = fifelse(Off == "fail", 0, 1),
-                               GS = fifelse(GS == "Pass", 1, 0))]
-
-# Agreement Gold-Standard
-# Count
-reg_99_off1[Off == GS, .N]
-reg_99_off2[Off == GS, .N]
-
-# Kappa
-irr::kappa2(reg_99_off1[, .(Off, GS)])
-irr::kappa2(reg_99_off2[, .(Off, GS)])
-
-# Agreement Previous task
-# Count
-reg_99_off1[Off == Prev, .N]
-
-# Kappa
-irr::kappa2(reg_99_off1[, .(Off, Prev)])
-
-# Inter-rater agreement
-reg_99_off <- reg_99_off2[reg_99_off1,
-                          on = "Image",
-                          .(Image, R1 = Off, E1 = i.Off)]
-
-reg_99_off[E1 == R1, .N]
-irr::kappa2(reg_99_off[, .(R1, E1)])
-
-## Plots
-# Heatmap
-reg_99_count[, Rater := names(reg_99_wide)]
-reg_99_count_l  <- melt(reg_99_count, id.vars = "Rater",
-                        variable.factor = FALSE, na.rm = TRUE,
-                        variable.name = "Rater2", value.name = "Count")
-reg_99_count_l[, Perc := sprintf("%.0f%%", Count / 99 * 100)]
-
-p_count <- ggplot(reg_99_count_l, aes(Rater, Rater2)) +
-  theme_classic() +
-  theme(text = element_text(size = 14), legend.position = "right") +
-  geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
-  scale_fill_gradient(low = "white", high = "#028202") +
-  labs(y = "Rater", fill = "Agreement\n(Percentage)")
-
-ggsave("plots/lreg_tiles-agreement.png",
-       width = 8, height = 8, units = "in", dpi = 600)
-
 reg_99_corr[, Rater := names(reg_99_wide)]
-reg_99_corr_l  <- melt(reg_99_corr, id.vars = "Rater",
+reg_99_corr    <- melt(reg_99_corr, id.vars = "Rater",
                         variable.factor = FALSE, na.rm = TRUE,
                         variable.name = "Rater2", value.name = "Corr")
-reg_99_corr_l[, Corr := round(Corr, 2)]
+reg_99_corr[, Corr := round(Corr, 2)]
 
-p_corr <- ggplot(reg_99_corr_l, aes(Rater, Rater2)) +
-  theme_classic() +
-  theme(text = element_text(size = 14), legend.position = "right") +
-  geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
-  scale_fill_gradient(low = "white", high = "#028202") +
-  labs(y = "Rater", fill = "Agreement\n(Correlation)")
-
-ggsave("plots/lreg_tiles-agreement2.png",
-       width = 8, height = 8, units = "in", dpi = 600)
-
-# Bar charts
+# Data.table for Plot
 reg_agree   <- reg_99[Session == "First", .(Image, First = Rating)
                       ][reg_99[Session == "Second",
                                .(Image, Second = Rating)],
@@ -447,7 +284,7 @@ reg_exp1[Expert == "*", GS := Rating]
 reg_exp1[Expert == "†" & Rating == "Fail", GS := "rFail"]
 reg_exp1[Expert == "†" & Rating == "Pass", GS := "rPass"]
 
-reg_99_n <- reg_99[Rater != "Expert01", .N, .(Orig_QC, Image, Rating)]
+reg_99_n <- reg_99[Rater != "Expert01", .N, .(QC_orig, Image, Rating)]
 reg_99_plot <- reg_exp1[, .(Image, GS)][reg_99_n, on = "Image"]
 reg_99_plot[, `:=`(Image = factor(Image,
                                   levels = c(reg_99_plot[GS %like% "Pass"
@@ -462,85 +299,41 @@ reg_99_plot[, `:=`(Image = factor(Image,
                                                   "Pass (after revision)",
                                                   "Fail",
                                                   "Fail (after revision)"))))]
-
-p_pass  <- ggplot(reg_99_plot[Orig_QC == "Pass"],
-                  aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "left") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:8) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected "Pass" Cases',
-       x = "Cases", y = "Ratings",
-       fill = "Trainees\nratings")
-
-p_bline  <- ggplot(reg_99_plot[Orig_QC == "Borderline"],
-                  aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "none") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:8) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected Borderline Cases',
-       x = "Cases", y = "Ratings")
-
-p_fail  <- ggplot(reg_99_plot[Orig_QC == "Fail"],
-                  aes(Image, N, fill = Rating)) +
-  theme_classic() +
-  theme(text = element_text(size = 9),
-        #axis.text.y = element_blank(),
-        #axis.ticks.y = element_blank(),
-        legend.position = "none") +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  scale_fill_manual(values = c("#9d0000", "#028202")) +
-  scale_y_continuous(breaks = 1:8) +
-  scale_x_discrete(labels = 1:99) +
-  facet_col(vars(GS), scales = "free", space = "free") +
-  labs(title = 'Selected "Fail" Cases',
-       x = "Cases", y = "Ratings")
-
-plot_grid(p_pass, p_bline, p_fail, nrow = 1, rel_widths = c(1.3, 1, 1))
-
-ggsave("plots/lreg_bars-agreement.png",
-       width = 8, height = 8, units = "in", dpi = 600)
+reg_99_summary      <- reg_99_plot |> dcast(... ~ Rating, value.var = "N")
+reg_99_summary[is.na(Fail), Fail := 0]
+reg_99_summary[is.na(Pass), Pass := 0]
+reg_99_summary      <- reg_99_summary[, .(Image, QC_orig, Expert = GS,
+                                          Trainees_Fail = Fail,
+                                          Trainees_Pass = Pass)]
+rm(reg_agree, reg_exp1, reg_99_n)
 
 
-# Number of images with full agreement
-reg_99_n[N == 9, .N, by = Rating] #28:99
-reg_99_n[N >= 7, .N, by = Rating] #68:99
+# Registration Register
+# Rater1
+reg_99_off1 <- reg_99[Rater == "Rater01", .(Image, Prev = Rating)
+                      ][reg_99_off1, on = "Image", .(Image, Prev, Off = QC)]
+
+reg_99_off1 <- reg_99[Session == "Consensus", .(Image, GS = Rating)
+                      ][reg_99_off1, on = "Image",
+                      .(Image, Prev, GS, Off)
+                      ][, `:=`(Off = fifelse(Off == "Pass", 1, 0),
+                               Prev = fifelse(Prev == "Pass", 1, 0),
+                               GS = fifelse(GS == "Pass", 1, 0))]
+
+# Expert1
+reg_99_off2 <- reg_99[Session == "Consensus", .(Image, GS = Rating)
+                      ][reg_99_off2, on = "Image",
+                      .(Image, GS, Off = QC)
+                      ][, `:=`(Off = fifelse(Off == "fail", 0, 1),
+                               GS = fifelse(GS == "Pass", 1, 0))]
+
+reg_99_off <- reg_99_off1[reg_99_off2, on = .(Image, GS),
+                          .(Image, GS, E1_register = i.Off,
+                            R1_qrater = Prev, R1_register = Off)]
+rm(reg_99, reg_99_off1, reg_99_off2)
 
 
-## Pre/post protocol meeting agreement
-fnames <- sprintf("registration_%s.rds", c("dt", "premeeting_dt"))
-fpaths <- here("data/derivatives", fnames)
-
-if (!file.exists(fpaths[1])) {
-  source(here("scripts/data_registration.R"))
-} else {
-    reg_post <- read_rds(fpaths[1])
-}
-
-if (!file.exists(fpaths[2])) {
-  source(here("scripts/data_registration_premeeting.R"))
-} else {
-    reg_pre <- read_rds(fpaths[2])
-}
-
-rm(fnames, fpaths)
-
+# Registration pre/post interruption
 reg_pre[, Timestamp := NULL]
 reg_pre <- reg_pre[!Rating == "Pending"]
 #reg_pre <- reg_pre[!Rating %in% c("Warning", "Pending")]
@@ -560,7 +353,6 @@ reg_pre_n <- rbindlist(list(reg_pre_n, reg_pre_avg), use.names = TRUE)
 reg_pre_n[is.na(Warning), Warning := 0]
 reg_pre_n[, Total := Pass + Fail + Warning]
 setnames(reg_pre_n, 2:5, str_c("pre", names(reg_pre_n)[-1]))
-#rm(reg_pre_n, reg_pre_avg)
 
 reg_pre_post <- unique(reg_post[reg_pre, on = .(Image, Rater)])
 
@@ -573,7 +365,6 @@ reg_post_n[, Total := Pass + Fail]
 setnames(reg_post_n, 2:4, str_c("post", names(reg_post_n)[-1]))
 
 reg_meeting_n <- reg_pre_n[reg_post_n, on = "Rater"]
-#rm(reg_pre, reg_pre_n, reg_pre_avg, reg_post, reg_post_n, reg_post_avg)
 
 reg_change <- reg_pre_post[Pre != "Warning"
                            ][Post == Pre, .(Agreed = .N), Rater
@@ -595,7 +386,295 @@ reg_meeting <- reg_change[reg_meeting_n, on = "Rater",
                                                  postFail / postTotal * 100),
                         Change = sprintf("%.0f (%.0f%%)", N,
                                          N / (preTotal - preWarning) * 100))]
+rm(reg_pre, reg_pre_n, reg_pre_avg, reg_post, reg_post_n,
+   reg_post_avg, reg_change, reg_meeting_n, reg_pre_post)
 
+
+# Skull segmentation
+rskull_qc   <- dcast(rskull, Image ~ Rater, value.var = "Rating")
+rm(rskull)
+
+
+
+## Analyses
+# Acquisition 338
+# Inter-rater agreement: Experts
+# Kappa = 0.401, Z = 9.83
+acq_388_kappa       <- kappa2(acq_388[, .(Expert1, Expert2)])
+rm(acq_388)
+
+
+# Acquisition 99
+# Intra-rater agreement: Expert between sessions
+# Kappa = 0.81, Z = 8.14
+acq_99_kappa_expert <- kappa2(acq_99_exp[, -1])
+
+# Gold_standard: new images
+acq_99_summary[, .N, Expert]
+
+# Inter-rater agreement
+# Calculate Fleiss' Kappa
+# Kappa = 0.439; Z = 32.4
+acq_99_kappa_raters <- kappam.fleiss(acq_99_wide)
+rm(acq_99_wide)
+
+
+# Acquisition Register
+# Agreement Gold-Standard
+# Count
+acq_99_off[R1_register == GS, .N] ## 68 / 79
+acq_99_off[E1_register == GS, .N] ## 74 / 90
+
+# Kappa
+acq_99_kappa_off_e  <- kappa2(acq_99_off[, .(E1_register, GS)])
+acq_99_kappa_off_r1 <- kappa2(acq_99_off[, .(R1_register, GS)])
+
+# Agreement Previous task
+# Count
+acq_99_off[R1_register == R1_qrater, .N] ## 53 / 79
+
+# Kappa
+acq_99_kappa_off_r2 <- kappa2(acq_99_off[, .(R1_register, R1_qrater)])
+
+# Inter-rater agreement
+acq_99_off[E1_register == R1_register, .N] ## 66 / 79
+acq_99_kappa_off_er <- kappa2(acq_99_off[, .(R1_register, E1_register)])
+
+# Number of images with full agreement
+acq_99_summary[Trainees_Fail == 9 | Trainees_Pass == 9] #29:99
+acq_99_summary[Trainees_Fail == 7 | Trainees_Pass >= 7] #29:99
+
+
+# Registration 99
+# Intra-rater agreement: Expert between sessions
+# K=0.873, z=8.69
+reg_99_kappa_expert <- kappa2(reg_99_exp[, -1])
+sum(reg_99_exp[[1]] == reg_99_exp[[2]])
+# 93/99
+
+# Gold standard: new images
+reg_99_summary[, .N, Expert]
+
+# Inter-rater agreement
+# Calculate Fleiss' Kappa
+reg_99_kappa_raters <- kappam.fleiss(reg_99_wide)
+# Kappa = 0.563; Z = 33.6
+rm(reg_99_wide)
+
+
+# Registration Register
+# Agreement Gold-Standard
+# Count
+reg_99_off[R1_register == GS, .N] ## 24 / 31
+reg_99_off[E1_register == GS, .N] ## 34 / 44
+
+# Kappa
+reg_99_kappa_off_e  <- kappa2(reg_99_off[, .(E1_register, GS)])
+reg_99_kappa_off_r1 <- kappa2(reg_99_off[, .(R1_register, GS)])
+
+# Agreement Previous task
+# Count
+reg_99_off[R1_qrater == R1_register, .N] ## 20 / 31
+
+# Kappa
+reg_99_kappa_off_r2 <- kappa2(reg_99_off[, .(R1_qrater, R1_register)])
+
+# Inter-rater agreement
+reg_99_off[E1_register == R1_register, .N] ## 26 / 31
+reg_99_kappa_off_er <- kappa2(reg_99_off[, .(R1_register, E1_register)])
+
+# Number of images with full agreement
+reg_99_summary[Trainees_Fail == 8 | Trainees_Pass == 8]
+reg_99_summary[Trainees_Fail == 6 | Trainees_Pass >= 6]
+
+
+# Skull segmentation
+# Inter-rater reliability: 0.836 Kappa
+rskull_kappa_experts <- kappa2(rskull_qc[, .(Expert01, Expert02)])
+rm(rskull_qc)
+
+
+
+## OUT: Plots
+# Acquisition
+fp_count    <- here("plots/raw_tiles-agreement.png")
+if (!file.exists(fp_count) | rec_plots) {
+  p_count   <- ggplot(acq_99_count, aes(Rater, Rater2)) +
+    theme_classic() +
+    theme(text = element_text(size = 14), legend.position = "right") +
+    geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
+    scale_fill_gradient(low = "white", high = "#028202") +
+    labs(y = "Rater", fill = "Agreement\n(Percentage)")
+
+  ggsave(fp_count, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_count)
+}
+rm(fp_count)
+
+fp_corr     <- here("plots/raw_tiles-agreement2.png")
+if (!file.exists(fp_corr) | rec_plots) {
+  p_corr      <- ggplot(acq_99_corr, aes(Rater, Rater2)) +
+    theme_classic() +
+    theme(text = element_text(size = 14), legend.position = "right") +
+    geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
+    scale_fill_gradient(low = "white", high = "#028202") +
+    labs(y = "Rater", fill = "Agreement\n(Correlation)")
+
+  ggsave(fp_corr, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_corr)
+}
+rm(fp_corr)
+
+fp_agree_99 <- here("plots/raw_bars-agreement.png")
+if (!file.exists(fp_agree_99) | rec_plots) {
+  p_pass  <- ggplot(acq_99_plot[QC_orig == "Pass"],
+                    aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "left") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:9) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected "Pass" Cases',
+         x = "Cases", y = "Ratings",
+         fill = "Trainees\nratings")
+
+  p_bline  <- ggplot(acq_99_plot[QC_orig == "Borderline"],
+                     aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "none") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:9) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected Borderline Cases',
+         x = "Cases", y = "Ratings")
+
+  p_fail  <- ggplot(acq_99_plot[QC_orig == "Fail"],
+                    aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "none") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:9) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected "Fail" Cases',
+         x = "Cases", y = "Ratings")
+
+  plot_grid(p_pass, p_bline, p_fail, nrow = 1, rel_widths = c(1.3, 1, 1))
+
+  ggsave(fp_agree_99, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_pass, p_bline, p_fail)
+}
+rm(fp_agree_99, acq_99_plot)
+
+# Registration
+
+fp_count    <- here("plots/lreg_tiles-agreement.png")
+if (!file.exists(fp_count) | rec_plots) {
+  p_count   <- ggplot(reg_99_count, aes(Rater, Rater2)) +
+    theme_classic() +
+    theme(text = element_text(size = 14), legend.position = "right") +
+    geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
+    scale_fill_gradient(low = "white", high = "#028202") +
+    labs(y = "Rater", fill = "Agreement\n(Percentage)")
+
+  ggsave(fp_count, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_count)
+}
+rm(fp_count)
+
+fp_corr     <- here("plots/lreg_tiles-agreement2.png")
+if (!file.exists(fp_corr) | rec_plots) {
+  p_corr <- ggplot(reg_99_corr, aes(Rater, Rater2)) +
+    theme_classic() +
+    theme(text = element_text(size = 14), legend.position = "right") +
+    geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
+    scale_fill_gradient(low = "white", high = "#028202") +
+    labs(y = "Rater", fill = "Agreement\n(Correlation)")
+
+  ggsave(fp_corr, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_corr)
+}
+rm(fp_corr)
+
+fp_reg_99   <- here("plots/lreg_bars-agreement.png")
+if (!file.exists(fp_reg_99) | rec_plots) {
+  p_pass  <- ggplot(reg_99_plot[QC_orig == "Pass"],
+                    aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "left") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:8) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected "Pass" Cases',
+         x = "Cases", y = "Ratings",
+         fill = "Trainees\nratings")
+
+  p_bline  <- ggplot(reg_99_plot[QC_orig == "Borderline"],
+                    aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "none") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:8) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected Borderline Cases',
+         x = "Cases", y = "Ratings")
+
+  p_fail  <- ggplot(reg_99_plot[QC_orig == "Fail"],
+                    aes(Image, N, fill = Rating)) +
+    theme_classic() +
+    theme(text = element_text(size = 9),
+          #axis.text.y = element_blank(),
+          #axis.ticks.y = element_blank(),
+          legend.position = "none") +
+    geom_bar(stat = "identity") +
+    coord_flip() +
+    scale_fill_manual(values = c("#9d0000", "#028202")) +
+    scale_y_continuous(breaks = 1:8) +
+    scale_x_discrete(labels = 1:99) +
+    facet_col(vars(GS), scales = "free", space = "free") +
+    labs(title = 'Selected "Fail" Cases',
+         x = "Cases", y = "Ratings")
+
+  plot_grid(p_pass, p_bline, p_fail, nrow = 1, rel_widths = c(1.3, 1, 1))
+
+  ggsave(fp_reg_99, width = 8, height = 8, units = "in", dpi = 600)
+  rm(p_pass, p_bline, p_fail)
+}
+rm(fp_reg_99, reg_99_plot, rec_plots)
+
+
+## OUT: Table
+f_table     <- here("data/derivatives/agreement_pre-post_meeting.docx")
+if (!file.exists(f_table) | rec_table) {
 reg_meeting |>
   flextable() |>
   separate_header() |>
@@ -610,22 +689,19 @@ reg_meeting |>
            #value = as_paragraph("n (%)"), ref_symbols = "1",
            #inline = TRUE) |>
   autofit() |>
-  save_as_docx(path = "data/derivatives/agreement_pre-post_meeting.docx")
-
-## Redskull
-# Data.table
-fpath <- here("data/derivatives", "segmentation_dt.rds")
-
-if (!file.exists(fpath)) {
-  source(here("scripts/data_segmentation.R"))
-} else {
-  rskull <- read_rds(fpath)
+  save_as_docx(path = f_table)
 }
+rm(f_table, rec_table)
 
-rm(fpath)
+## OUT: RDS objects
+# Acquisition 99 — Count
+write_rds(acq_99_count, here("data/derivatives/qc_count_acq_dt.rds"))
 
-rskull_wide <- dcast(rskull, Image ~ Rater, value.var = "Rating")
+# Acquisition 99 — Correlation
+write_rds(acq_99_corr, here("data/derivatives/qc_corr_acq_dt.rds"))
 
-# Inter-rater reliability: 0.836 Kappa
-irr::kappa2(rskull_wide[!is.na(Rater01), .(Rater01, Rater12)],
-  weight = "unweighted")
+# Registration 99 — Count
+write_rds(reg_99_count, here("data/derivatives/qc_count_reg_dt.rds"))
+
+# Registration 99 — Correlation
+write_rds(reg_99_corr, here("data/derivatives/qc_corr_reg_dt.rds"))

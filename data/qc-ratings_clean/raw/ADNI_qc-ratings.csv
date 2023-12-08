@@ -151,8 +151,7 @@ Image,Rating,Comment,Rater
 010_S_0419_20061215_t1,Pass,"",Expert01
 010_S_0419_S52045_t1,Pass,"",Expert01
 010_S_0419_S69112_t1,Pass,"",Expert01
-010_S_0422_20060615_t1,Pass,"slight movement artefact
-",Expert01
+010_S_0422_20060615_t1,Pass,slight movement artefact,Expert01
 010_S_0904_20061207_t1,Pass,"",Expert01
 011_S_0002_20050826_t1,Pass,"",Expert01
 011_S_0005_20050902_t1,Pass,"",Expert01
@@ -662,8 +661,7 @@ Image,Rating,Comment,Rater
 057_S_1265_20090218_t1,Pass,"",Expert01
 057_S_1269_20070822_t1,Pass,"",Expert01
 057_S_1269_20120208_t1,Pass,"",Expert01
-057_S_1371_20070321_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
+057_S_1371_20070321_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
 057_S_5199_20130819_t1,Pass,"",Expert01
 062_S_0535_20060518_t1,Pass,"",Expert01
 062_S_0535_20070604_t1,Pass,"",Expert01
@@ -678,16 +676,13 @@ Image,Rating,Comment,Rater
 067_S_0257_20081024_t1,Pass,"",Expert01
 067_S_0257_20120723_t1,Pass,"",Expert01
 067_S_0290_20070612_t1,Pass,"",Expert01
-067_S_0336_20060504_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
+067_S_0336_20060504_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
 067_S_0607_20070328_t1,Pass,"",Expert01
 067_S_0607_20070813_t1,Pass,"",Expert01
 067_S_1185_20070724_t1,Pass,"",Expert01
 067_S_2196_20110223_t1,Pass,"",Expert01
-067_S_2304_20110524_t1,Pass,"nose & chin AP wrap around; no affect on brain.
-",Expert01
-067_S_2304_20120301_t1,Pass,"nose & chin AP wrap around; no affect on brain.
-",Expert01
+067_S_2304_20110524_t1,Pass,nose & chin AP wrap around; no affect on brain.,Expert01
+067_S_2304_20120301_t1,Pass,nose & chin AP wrap around; no affect on brain.,Expert01
 067_S_4072_20130710_t1,Pass,"",Expert01
 067_S_4072_20150724_t1,Pass,"",Expert01
 067_S_4310_20131111_t1,Pass,"",Expert01
@@ -729,16 +724,11 @@ Image,Rating,Comment,Rater
 072_S_4522_20120217_t1,Pass,"",Expert01
 072_S_4539_20130318_t1,Pass,"",Expert01
 072_S_4606_20120402_t1,Pass,"",Expert01
-072_S_4613_20120402_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-072_S_4941_20121010_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-072_S_4941_20130415_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-072_S_4941_S257843_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-072_S_4941_S257854_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
+072_S_4613_20120402_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+072_S_4941_20121010_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+072_S_4941_20130415_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+072_S_4941_S257843_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+072_S_4941_S257854_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
 072_S_5207_20130910_t1,Pass,"",Expert01
 073_S_0089_20080214_t1,Pass,"",Expert01
 073_S_0386_20080821_t1,Pass,"",Expert01
@@ -775,21 +765,17 @@ Image,Rating,Comment,Rater
 082_S_4244_20121115_t1,Pass,"",Expert01
 082_S_4428_20120417_t1,Pass,"",Expert01
 082_S_4428_S645544_t1,Pass,"",Expert01
-082_S_5029_20121114_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
+082_S_5029_20121114_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
 082_S_5278_S663271_t1,Pass,"",Expert01
-094_S_0434_20090512_t1,Pass,"nose AP wrap around; no affect on brain.
-very bright nose; reduced intensity range.",Expert01
+094_S_0434_20090512_t1,Pass,nose AP wrap around; no affect on brain. very bright nose; reduced intensity range.,Expert01
 094_S_0489_20061121_t1,Pass,"",Expert01
 094_S_0526_20060516_t1,Pass,"",Expert01
 094_S_0921_20081014_t1,Pass,"",Expert01
 094_S_1164_20061211_t1,Pass,"",Expert01
 094_S_1164_20070628_t1,Pass,"",Expert01
 094_S_1267_20070322_t1,Pass,"",Expert01
-094_S_1267_20070924_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-094_S_1293_20070919_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
+094_S_1267_20070924_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+094_S_1293_20070919_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
 094_S_1293_20080911_t1,Pass,"",Expert01
 094_S_1293_20080918_t1,Pass,"",Expert01
 094_S_1314_20100322_t1,Pass,"",Expert01
@@ -797,20 +783,15 @@ very bright nose; reduced intensity range.",Expert01
 094_S_1417_20100903_t1,Pass,"",Expert01
 094_S_2201_S619431_t1,Pass,"",Expert01
 094_S_2201_S97060_t1,Pass,"",Expert01
-094_S_2216_S107548_t1,Pass,"nose AP wrap around; no affect on brain.
-",Expert01
-094_S_2238_S117425_t1,Pass,"nose AP wrap around; no affect on brain.
-bright nose; reduced intensityz",Expert01
-094_S_2238_S96331_t1,Pass,"nose AP wrap around; no affect on brain.
-reduced intensity",Expert01
-094_S_4089_20111018_t1,Pass,"nose AP wrap around; no affect on brain.
-very reduced intensity",Expert01
+094_S_2216_S107548_t1,Pass,nose AP wrap around; no affect on brain.,Expert01
+094_S_2238_S117425_t1,Pass,nose AP wrap around; no affect on brain. bright nose; reduced intensityz,Expert01
+094_S_2238_S96331_t1,Pass,nose AP wrap around; no affect on brain. reduced intensity,Expert01
+094_S_4089_20111018_t1,Pass,nose AP wrap around; no affect on brain. very reduced intensity,Expert01
 094_S_4162_20130927_t1,Pass,"",Expert01
 094_S_4234_20160505_t1,Pass,"",Expert01
 094_S_4460_S140244_t1,Pass,"",Expert01
 094_S_4503_20120222_t1,Pass,"",Expert01
-094_S_4503_20120927_t1,Pass,"nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.
-",Expert01
+094_S_4503_20120927_t1,Pass,nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.,Expert01
 094_S_4560_20120316_t1,Pass,"",Expert01
 094_S_6417_S698530_t1,Pass,"",Expert01
 094_S_6468_S707265_t1,Pass,"",Expert01
@@ -819,10 +800,8 @@ very reduced intensity",Expert01
 098_S_0269_20070414_t1,Pass,"",Expert01
 098_S_0269_20071014_t1,Pass,"",Expert01
 098_S_0269_20080405_t1,Pass,"",Expert01
-098_S_0542_20060521_t1,Pass,"nose AP wrap around; no affect on brain; bright nose; reduced intensity dynamic range.
-",Expert01
-098_S_0667_20120728_t1,Pass,"nose AP wrap around; no affect on brain; bright nose; reduced intensity dynamic range.
-",Expert01
+098_S_0542_20060521_t1,Pass,nose AP wrap around; no affect on brain; bright nose; reduced intensity dynamic range.,Expert01
+098_S_0667_20120728_t1,Pass,nose AP wrap around; no affect on brain; bright nose; reduced intensity dynamic range.,Expert01
 098_S_0896_20091012_t1,Pass,"",Expert01
 098_S_2052_S96530_t1,Pass,"",Expert01
 098_S_4002_S100621_t1,Pass,"",Expert01
@@ -1200,11 +1179,9 @@ very reduced intensity",Expert01
 941_S_6570_S723995_t1,Pass,"",Expert01
 941_S_6574_S725814_t1,Pass,"",Expert01
 002_S_0413_20080731_t1,Pass,"",Expert01
-005_S_0448_20080603_t1,Fail,"nose AP wrap around; affecting brain.
-",Expert01
+005_S_0448_20080603_t1,Fail,nose AP wrap around; affecting brain.,Expert01
 010_S_0420_20060615_t1,Fail,intensity drop in cerebellum,Expert01
-012_S_1321_20081007_t1,Pass,"very bright flow in carotids; reduced dynamic range.
-",Expert01
+012_S_1321_20081007_t1,Pass,very bright flow in carotids; reduced dynamic range.,Expert01
 014_S_0356_20060405_t1,Pass,reduced dynamic range w bright nose; might still pass.,Expert01
 014_S_0356_20061022_t1,Pass,"",Expert01
 014_S_0357_20060404_t1,Pass,"",Expert01
@@ -1234,8 +1211,7 @@ very reduced intensity",Expert01
 031_S_4721_S764480_t1,Pass,superior scalp UBO,Expert01
 035_S_4784_20141006_t1,Pass,intensity inhomogeneity; bright cerebellum,Expert01
 036_S_4491_S389580_t1,Pass,marker on right temporal scalp,Expert01
-037_S_0501_S24745_t1,Pass,"nose AP wraparound; no affect on brain.
-slightly noisy scan... possible small movement",Expert01
+037_S_0501_S24745_t1,Pass,nose AP wraparound; no affect on brain. slightly noisy scan... possible small movement,Expert01
 041_S_0262_20100407_t1,Pass,nose AP wraparound; no affect on brain. but very reduced intensity range.,Expert01
 041_S_0446_20070604_t1,Pass,very bright nose; very dark image.,Expert01
 041_S_1368_20090316_t1,Pass,intensity non-uniformity,Expert01
@@ -1252,18 +1228,13 @@ slightly noisy scan... possible small movement",Expert01
 067_S_0290_20070615_t1,Pass,bright nose; reduced intensity,Expert01
 073_S_0565_20070904_t1,Pass,lots of WM disease,Expert01
 082_S_0928_20061016_t1,Pass,skin marker on left scalp,Expert01
-094_S_4649_20120821_t1,Pass,"almost no intensity dynamic range.
-",Expert01
-098_S_0149_20060122_t1,Pass,"nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.
-",Expert01
+094_S_4649_20120821_t1,Pass,almost no intensity dynamic range.,Expert01
+098_S_0149_20060122_t1,Pass,nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.,Expert01
 098_S_0149_20060812_t1,Pass,"",Expert01
-098_S_0160_20120225_t1,Pass,"nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.
-",Expert01
-098_S_4275_20120327_t1,Pass,"nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.
-",Expert01
+098_S_0160_20120225_t1,Pass,nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.,Expert01
+098_S_4275_20120327_t1,Pass,nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.,Expert01
 009_S_4741_S499964_t1,Pass,is slice thickness OK?  very thin head,Expert01
-098_S_4275_20120607_t1,Pass,"nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.
-",Expert01
+098_S_4275_20120607_t1,Pass,nose AP wrap around; no affect on brain; very bright nose; almost no intensity dynamic range.,Expert01
 099_S_2146_20111116_t1,Pass,bright flow artefacts,Expert01
 100_S_0006_S42920_t1,Pass,thick dura,Expert01
 100_S_2351_S109082_t1,Fail,lots of WM disease,Expert01
@@ -7954,7 +7925,7 @@ slightly noisy scan... possible small movement",Expert01
 131_S_0497_20060607_t1,Warning,aliasing (nose),Rater07
 131_S_0497_20070110_t1,Warning,ringing,Rater07
 133_S_0727_20080326_t1,Warning,"",Rater07
-133_S_0912_20080423_t1,Warning,"spinal chord """"stop"""" metal / field artefact ; (but brain seem ok)",Rater07
+133_S_0912_20080423_t1,Warning,"spinal chord """"""""stop"""""""" metal / field artefact ; (but brain seem ok)",Rater07
 136_S_0184_20070319_t1,Warning,some ringing,Rater07
 136_S_4269_20131206_t1,Pass,ringing,Rater07
 137_S_0481_20061207_t1,Warning,"",Rater07
