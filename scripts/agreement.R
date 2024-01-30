@@ -503,7 +503,7 @@ if (!file.exists(fp_count) | rec_plots) {
     theme_classic() +
     theme(text = element_text(size = 14), legend.position = "right") +
     geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
-    scale_fill_gradient(low = "white", high = "#028202") +
+    scale_fill_gradient(low = "white", high = "#028202", limits = c(0, 1)) +
     labs(y = "Rater", fill = "Agreement\n(Percentage)")
 
   ggsave(fp_count, width = 8, height = 8, units = "in", dpi = 600)
@@ -517,7 +517,7 @@ if (!file.exists(fp_corr) | rec_plots) {
     theme_classic() +
     theme(text = element_text(size = 14), legend.position = "right") +
     geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
-    scale_fill_gradient(low = "white", high = "#028202") +
+    scale_fill_gradient(low = "white", high = "#028202", limits = c(0, 1)) +
     labs(y = "Rater", fill = "Agreement\n(Correlation)")
 
   ggsave(fp_corr, width = 8, height = 8, units = "in", dpi = 600)
@@ -591,7 +591,7 @@ if (!file.exists(fp_count) | rec_plots) {
     theme_classic() +
     theme(text = element_text(size = 14), legend.position = "right") +
     geom_tile(aes(fill = Count)) + geom_text(aes(label = Perc), size = 3.5) +
-    scale_fill_gradient(low = "white", high = "#028202") +
+    scale_fill_gradient(low = "white", high = "#028202", limits = c(0, 1)) +
     labs(y = "Rater", fill = "Agreement\n(Percentage)")
 
   ggsave(fp_count, width = 8, height = 8, units = "in", dpi = 600)
@@ -605,7 +605,7 @@ if (!file.exists(fp_corr) | rec_plots) {
     theme_classic() +
     theme(text = element_text(size = 14), legend.position = "right") +
     geom_tile(aes(fill = Corr)) + geom_text(aes(label = Corr), size = 3.5) +
-    scale_fill_gradient(low = "white", high = "#028202") +
+    scale_fill_gradient(low = "white", high = "#028202", limits = c(0, 1)) +
     labs(y = "Rater", fill = "Agreement\n(Correlation)")
 
   ggsave(fp_corr, width = 8, height = 8, units = "in", dpi = 600)
