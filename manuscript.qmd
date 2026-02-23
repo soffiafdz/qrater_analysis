@@ -90,6 +90,10 @@ format:
       text: |
         \usepackage{float}
         \floatplacement{figure}{H}
+        \usepackage{longtable}
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{makecell}
 execute:
   echo: false
   warning: false
@@ -115,10 +119,8 @@ library(ggplot2)
 library(ggforce)
 library(cowplot)
 library(irr)
-library(flextable)
-library(gtsummary)
+library(gt)
 library(knitr)
-library(kableExtra)
 library(rstatix)
 
 # Set default options
@@ -128,11 +130,109 @@ knitr::opts_chunk$set(
   dpi = 300
 )
 
-# Set flextable defaults for PDF/HTML
-set_flextable_defaults(
-  font.family = "Arial",
-  font.size = 10
-)
+# --- gt table styling ---
+style_manuscript_table <- function(gt_tbl, table_type = "main") {
+  if (table_type == "main") {
+    body_size <- 8; footnote_size <- 7
+  } else {
+    body_size <- 7; footnote_size <- 6
+  }
+  gt_tbl |>
+    tab_options(
+      table.font.size = px(body_size),
+      quarto.disable_processing = TRUE,
+      column_labels.font.size = px(body_size),
+      column_labels.font.weight = "bold",
+      footnotes.font.size = px(footnote_size),
+      source_notes.font.size = px(footnote_size),
+      table.border.top.style = "solid",
+      table.border.bottom.style = "solid",
+      heading.border.bottom.style = "solid"
+    ) |>
+    cols_align(align = "right", columns = everything()) |>
+    cols_align(align = "left", columns = 1)
+}
+
+# --- LaTeX post-processing for gt tables ---
+# Override gt's knit_print.gt_tbl to post-process LaTeX output.
+# Uses assignInNamespace to replace gt's own method, ensuring it is
+# called by knitr/Quarto regardless of S3 dispatch order.
+gt_knit_print_override <- function(x, ..., inline = FALSE) {
+  if (knitr::is_latex_output()) {
+    latex_code <- as.character(gt::as_latex(x))
+
+    # Strip gt's outer \begin{table}...\end{table} float
+    strip_pattern <- "(?s)^.*?(\\\\fontsize\\{[^}]+\\}\\{[^}]+\\}\\\\selectfont\\s*\n?\\\\begin\\{(?:tabular|longtable))"
+    if (grepl(strip_pattern, latex_code, perl = TRUE)) {
+      latex_code <- sub(strip_pattern, "\\1", latex_code, perl = TRUE)
+    } else {
+      latex_code <- sub("(?s)^.*?(\\\\begin\\{(?:tabular|longtable))", "\\1", latex_code, perl = TRUE)
+    }
+    latex_code <- sub("\\\\end\\{table\\}\\s*$", "", latex_code)
+
+    # Convert full-width tabular* to natural-width tabular
+    latex_code <- gsub(
+      "\\\\begin\\{tabular\\*\\}\\{\\\\linewidth\\}\\{@\\{\\\\extracolsep\\{\\\\fill\\}\\}",
+      "\\\\begin{tabular}{", latex_code)
+    latex_code <- gsub("\\\\end\\{tabular\\*\\}", "\\\\end{tabular}", latex_code)
+
+    # HTML tags -> LaTeX commands
+    latex_code <- gsub("<em>([^<]+)</em>", "\\\\textit{\\1}", latex_code)
+    latex_code <- gsub("<strong>([^<]+)</strong>", "\\\\textbf{\\1}", latex_code)
+    latex_code <- gsub("<sub>([^<]+)</sub>", "\\\\textsubscript{\\1}", latex_code)
+    latex_code <- gsub("<sup>([^<]+)</sup>", "\\\\textsuperscript{\\1}", latex_code)
+
+    # Unicode -> LaTeX
+    latex_code <- gsub("\u2264", "$\\\\leq$", latex_code)
+    latex_code <- gsub("\u2265", "$\\\\geq$", latex_code)
+
+    # Fix minipage width for footnotes/source notes
+    latex_code <- gsub(
+      "\\\\begin\\{minipage\\}\\{\\\\linewidth\\}",
+      "\\\\begin{minipage}[t]{0.65\\\\textwidth}\\\\raggedright\\\\small",
+      latex_code)
+
+    # Column alignment: first col left, rest right
+    fix_alignment <- function(code) {
+      pattern <- "(\\\\begin\\{(?:tabular|longtable)\\}\\{)([lcr]+)(\\})"
+      m <- gregexpr(pattern, code, perl = TRUE)
+      if (m[[1]][1] == -1) return(code)
+      matches <- regmatches(code, m)[[1]]
+      for (match in matches) {
+        col_spec <- gsub(".*\\{([lcr]+)\\}$", "\\1", match)
+        n_cols <- nchar(col_spec)
+        if (n_cols > 1) {
+          new_spec <- paste0("l", paste(rep("r", n_cols - 1), collapse = ""))
+          new_match <- gsub("\\{[lcr]+\\}$", paste0("{", new_spec, "}"), match)
+          code <- sub(match, new_match, code, fixed = TRUE)
+        }
+      }
+      code
+    }
+    latex_code <- fix_alignment(latex_code)
+
+    # Table spacing
+    latex_code <- gsub(
+      "\\\\begin\\{tabular\\}",
+      "\\\\renewcommand{\\\\arraystretch}{1.15}\\\\begin{tabular}",
+      latex_code)
+
+    # Center tabular
+    latex_code <- gsub(
+      "(\\\\renewcommand\\{\\\\arraystretch\\}\\{1\\.15\\})(\\\\begin\\{tabular\\})",
+      "\\\\begin{center}\\1\\2", latex_code)
+    latex_code <- gsub(
+      "\\\\end\\{tabular\\}",
+      "\\\\end{tabular}\\\\end{center}", latex_code)
+
+    knitr::asis_output(latex_code)
+  } else {
+    # For HTML: use gt's default rendering
+    x <- gt::as.tags(x, ...)
+    knitr::knit_print(x, ..., inline = FALSE)
+  }
+}
+assignInNamespace("knit_print.gt_tbl", gt_knit_print_override, ns = "gt")
 ```
 
 # Introduction
@@ -208,16 +308,11 @@ A summary table with the imaging parameters for these datasets is presented in @
 #| tbl-cap: "Summary table of the open datasets used for the different QC tasks (Raw MRI, linear registration, and skull segmentation) and their imaging parameters. For the NACC dataset, a single imaging protocol is not available since it is a collection of scans from several AD centers."
 
 params <- fread(here("data/raw/databases_params.csv"))
-params_t <- t(params)
-colnames(params_t) <- params_t[1,]
-params_t <- params_t[-1,]
-params_dt <- as.data.table(params_t, keep.rownames = "Dataset")
+params <- params[Dataset != "Previous QC"]
 
-params_dt |>
-  kable(align = "lccccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE)
+params |>
+  gt() |>
+  style_manuscript_table()
 ```
 
 ## Generated QC Images
@@ -376,11 +471,9 @@ demog_nacc <- data.table(
 )
 
 demog_nacc |>
-  kable(col.names = c("Raw MRI NACC", "Initial, N = 338", "Selected, N = 99", "p-value"),
-        align = "lccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  cols_label(Variable = "Raw MRI NACC") |>
+  style_manuscript_table()
 ```
 
 ```{r}
@@ -497,11 +590,9 @@ demog_adni <- data.table(
 )
 
 demog_adni |>
-  kable(col.names = c("Raw MRI & Lin. Registration ADNI", "N = 10,196"),
-        align = "lc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  cols_label(Variable = latex("\\makecell[l]{Raw MRI \\& Lin. Registration\\\\ADNI}")) |>
+  style_manuscript_table()
 ```
 
 The median time spent on each image was only 11 s, which was a significant decrease compared to the median of 51 s these same raters took on the balanced dataset of selected cases (W = 1,408,928; r = 0.270; p < 0.001, p~adj~ < 0.001). The average time of the raters to complete their QC was 10 hr and 4 min. Expert-1 was the quickest, taking 4 hrs and 9 min to complete their QC. The time of the trainees ranged between 4 hr, 23 min and 22 hr 32 min. Raters took different amounts of time to rate an image depending on the rating given (Pass: 10 s, Warning: 19 s, Fail: 17 s; X² = 158.54; eta² = 0.015; p < 0.001, p~adj~ < 0.001). Post-hoc analysis using Dunn's test of multiple comparisons showed significant differences between "Fail" and "Pass" (Z = 7.219; p < 0.001) and "Pass" and "Warning" (Z = -10.598; p < 0.001), but not between "Warning" and "Fail" (Z = -1.095; p = 0.137). The time data for all raters who performed the QC of ADNI data and the post-hoc analysis are presented in the supplementary materials (S11 and S12).
@@ -530,10 +621,14 @@ demog_linreg <- data.table(
 )
 
 demog_linreg |>
-  kable(align = "lccccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  cols_label(
+    `ADNI, N = 72` = latex("\\makecell[r]{ADNI,\\\\N = 72}"),
+    `HCP, N = 11` = latex("\\makecell[r]{HCP,\\\\N = 11}"),
+    `PPMI, N = 11` = latex("\\makecell[r]{PPMI,\\\\N = 11}"),
+    `PREVENT-AD, N = 5` = latex("\\makecell[r]{PREVENT-AD,\\\\N = 5}")
+  ) |>
+  style_manuscript_table()
 ```
 
 ```{r}
@@ -653,12 +748,9 @@ demog_skull <- data.table(
 )
 
 demog_skull |>
-  kable(col.names = c("Skull Segmentation ADNI", "All, N = 6,968",
-                      "Subset, N = 1,746", "p-value"),
-        align = "lccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  cols_label(Variable = "Skull Segmentation ADNI") |>
+  style_manuscript_table()
 ```
 
 ```{r}
@@ -857,10 +949,8 @@ Training videos were created for each QC task explaining:
 
 acq_99_count |>
   dcast(Rater ~ Rater2, value.var = "Perc") |>
-  kable(align = "lcccccccccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  style_manuscript_table()
 ```
 
 ## S10: Raw MRI Timing Data (Balanced Dataset) {.appendix}
@@ -916,14 +1006,16 @@ acq_99_p[, p_adj := p.adjust(p, method = "holm")]
 acq_99_summ[, p_adj := round(acq_99_p$p_adj, 3)]
 
 acq_99_summ |>
-  kable(col.names = c("Rater", "Total Time", "Rests",
-                      "N", "Time Median (SD)", "N", "Time Median (SD)",
-                      "p", "p adj."),
-        align = "lclclclcc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE) |>
-  add_header_above(c(" " = 3, "Pass" = 2, "Fail" = 2, " " = 2))
+  gt() |>
+  cols_label(
+    Rater = "Rater", Session = "Total Time", Rests = "Rests",
+    Pass_N = "N", Pass_Time = "Time Median (SD)",
+    Fail_N = "N", Fail_Time = "Time Median (SD)",
+    p = "p", p_adj = "p adj."
+  ) |>
+  tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
+  tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S11: Raw MRI Timing Data (ADNI) {.appendix}
@@ -974,14 +1066,16 @@ acquis_summ <- acquis_summ1[acquis_summ2, on = "Rater",
                               p = sprintf("%04.3f", PvWvF))]
 
 acquis_summ |>
-  kable(col.names = c("Rater", "Total Time", "Rests",
-                      "N (%)", "Time Median (SD)",
-                      "N (%)", "Time Median (SD)", "p"),
-        align = "lclclclc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE) |>
-  add_header_above(c(" " = 3, "Pass" = 2, "Fail" = 2, " " = 1))
+  gt() |>
+  cols_label(
+    Rater = "Rater", Session = "Total Time", Rests = "Rests",
+    Pass = "N (%)", Pass_Time = "Time Median (SD)",
+    Fail = "N (%)", Fail_Time = "Time Median (SD)",
+    p = "p"
+  ) |>
+  tab_spanner(label = "Pass", columns = c(Pass, Pass_Time), id = "spanner_pass") |>
+  tab_spanner(label = "Fail", columns = c(Fail, Fail_Time), id = "spanner_fail") |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S12: ADNI Post-hoc Analysis {.appendix}
@@ -1001,10 +1095,8 @@ acquis_posthoc_dt <- data.table(
 )
 
 acquis_posthoc_dt |>
-  kable(align = "lccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S13: Linear Registration Inter-rater Agreement Matrix {.appendix}
@@ -1015,10 +1107,8 @@ acquis_posthoc_dt |>
 
 reg_99_count |>
   dcast(Rater ~ Rater2, value.var = "Perc") |>
-  kable(align = "lcccccccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S14: Linear Registration Timing Data (Balanced Dataset) {.appendix}
@@ -1072,14 +1162,16 @@ reg_99_p[, p_adj := p.adjust(p, method = "holm")]
 reg_99_summ[, p_adj := round(reg_99_p$p_adj, 3)]
 
 reg_99_summ |>
-  kable(col.names = c("Rater", "Total Time", "Rests",
-                      "N", "Time Median (SD)", "N", "Time Median (SD)",
-                      "p", "p adj."),
-        align = "lclclclcc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE) |>
-  add_header_above(c(" " = 3, "Pass" = 2, "Fail" = 2, " " = 2))
+  gt() |>
+  cols_label(
+    Rater = "Rater", Session = "Total Time", Rests = "Rests",
+    Pass_N = "N", Pass_Time = "Time Median (SD)",
+    Fail_N = "N", Fail_Time = "Time Median (SD)",
+    p = "p", p_adj = "p adj."
+  ) |>
+  tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
+  tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S15: Pre/Post Meeting Agreement Changes {.appendix}
@@ -1111,12 +1203,13 @@ reg_meeting_all <- reg_pre_final[, .(
 )]
 
 rbindlist(list(reg_meeting, reg_meeting_all)) |>
-  kable(col.names = c("Rater", "N Rated Pre-meeting", "N Changed",
-                      "% Changed", "Pass to Fail", "Fail to Pass"),
-        align = "lccccc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE)
+  gt() |>
+  cols_label(
+    Rater = "Rater", N_Rated_Pre = "N Rated Pre-meeting",
+    N_Changed = "N Changed", Pct_Changed = "% Changed",
+    Pass_to_Fail = "Pass to Fail", Fail_to_Pass = "Fail to Pass"
+  ) |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S16: Linear Registration Timing Data (ADNI) {.appendix}
@@ -1171,14 +1264,16 @@ regis_p[, p_adj := p.adjust(p, method = "holm")]
 regis_summ[, p_adj := sprintf("%04.3f", regis_p$p_adj)]
 
 regis_summ |>
-  kable(col.names = c("Rater", "Total Time", "Rests",
-                      "N", "Time Median (SD)", "N", "Time Median (SD)",
-                      "p", "p adj."),
-        align = "lclclclcc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "scale_down", "hold_position"),
-                full_width = FALSE) |>
-  add_header_above(c(" " = 3, "Pass" = 2, "Fail" = 2, " " = 2))
+  gt() |>
+  cols_label(
+    Rater = "Rater", Session = "Total Time", Rests = "Rests",
+    Pass_N = "N", Pass_Time = "Time Median (SD)",
+    Fail_N = "N", Fail_Time = "Time Median (SD)",
+    p = "p", p_adj = "p adj."
+  ) |>
+  tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
+  tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
+  style_manuscript_table(table_type = "supplementary")
 ```
 
 ## S17: Skull Segmentation Timing Data {.appendix}
@@ -1214,11 +1309,14 @@ rskull_summ <- rskull_summ1[rskull_summ2, on = "Rater",
                               p = sprintf("%04.3f", PvF))]
 
 rskull_summ |>
-  kable(col.names = c("Rater", "Total Time", "Rests",
-                      "N", "Mean (SD) sec", "N", "Mean (SD) sec", "p"),
-        align = "lclclclc") |>
-  kable_styling(bootstrap_options = c("striped", "hover"),
-                latex_options = c("striped", "hold_position"),
-                full_width = FALSE) |>
-  add_header_above(c(" " = 3, "Pass" = 2, "Fail" = 2, " " = 1))
+  gt() |>
+  cols_label(
+    Rater = "Rater", Session = "Total Time", Rests = "Rests",
+    Pass_N = "N", Pass_Time = "Mean (SD) sec",
+    Fail_N = "N", Fail_Time = "Mean (SD) sec",
+    p = "p"
+  ) |>
+  tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
+  tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
+  style_manuscript_table(table_type = "supplementary")
 ```
