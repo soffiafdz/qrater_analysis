@@ -78,8 +78,7 @@ format:
     self-contained: true
     theme: cosmo
   pdf:
-    toc: true
-    toc-depth: 3
+    toc: false
     number-sections: true
     documentclass: article
     papersize: letter
@@ -94,6 +93,8 @@ format:
         \usepackage{booktabs}
         \usepackage{array}
         \usepackage{makecell}
+        \setlength{\LTleft}{\fill}
+        \setlength{\LTright}{\fill}
 execute:
   echo: false
   warning: false
@@ -133,106 +134,26 @@ knitr::opts_chunk$set(
 # --- gt table styling ---
 style_manuscript_table <- function(gt_tbl, table_type = "main") {
   if (table_type == "main") {
-    body_size <- 8; footnote_size <- 7
+    font_size <- "10pt"
   } else {
-    body_size <- 7; footnote_size <- 6
+    font_size <- "9pt"
   }
-  gt_tbl |>
+  gt_tbl <- gt_tbl |>
+    sub_missing(missing_text = "-") |>
     tab_options(
-      table.font.size = px(body_size),
-      quarto.disable_processing = TRUE,
-      column_labels.font.size = px(body_size),
+      table.font.size = font_size,
+      column_labels.font.size = font_size,
       column_labels.font.weight = "bold",
-      footnotes.font.size = px(footnote_size),
-      source_notes.font.size = px(footnote_size),
-      table.border.top.style = "solid",
-      table.border.bottom.style = "solid",
-      heading.border.bottom.style = "solid"
+      latex.use_longtable = TRUE
     ) |>
-    cols_align(align = "right", columns = everything()) |>
-    cols_align(align = "left", columns = 1)
+    cols_align(align = "right", columns = everything())
+  # Left-align the first visible column (named "label" in gtsummary tables)
+  col_names <- gt_tbl[["_boxhead"]]$var[gt_tbl[["_boxhead"]]$type == "default"]
+  gt_tbl |> cols_align(align = "left", columns = col_names[1])
 }
 
-# --- LaTeX post-processing for gt tables ---
-# Override gt's knit_print.gt_tbl to post-process LaTeX output.
-# Uses assignInNamespace to replace gt's own method, ensuring it is
-# called by knitr/Quarto regardless of S3 dispatch order.
-gt_knit_print_override <- function(x, ..., inline = FALSE) {
-  if (knitr::is_latex_output()) {
-    latex_code <- as.character(gt::as_latex(x))
 
-    # Strip gt's outer \begin{table}...\end{table} float
-    strip_pattern <- "(?s)^.*?(\\\\fontsize\\{[^}]+\\}\\{[^}]+\\}\\\\selectfont\\s*\n?\\\\begin\\{(?:tabular|longtable))"
-    if (grepl(strip_pattern, latex_code, perl = TRUE)) {
-      latex_code <- sub(strip_pattern, "\\1", latex_code, perl = TRUE)
-    } else {
-      latex_code <- sub("(?s)^.*?(\\\\begin\\{(?:tabular|longtable))", "\\1", latex_code, perl = TRUE)
-    }
-    latex_code <- sub("\\\\end\\{table\\}\\s*$", "", latex_code)
 
-    # Convert full-width tabular* to natural-width tabular
-    latex_code <- gsub(
-      "\\\\begin\\{tabular\\*\\}\\{\\\\linewidth\\}\\{@\\{\\\\extracolsep\\{\\\\fill\\}\\}",
-      "\\\\begin{tabular}{", latex_code)
-    latex_code <- gsub("\\\\end\\{tabular\\*\\}", "\\\\end{tabular}", latex_code)
-
-    # HTML tags -> LaTeX commands
-    latex_code <- gsub("<em>([^<]+)</em>", "\\\\textit{\\1}", latex_code)
-    latex_code <- gsub("<strong>([^<]+)</strong>", "\\\\textbf{\\1}", latex_code)
-    latex_code <- gsub("<sub>([^<]+)</sub>", "\\\\textsubscript{\\1}", latex_code)
-    latex_code <- gsub("<sup>([^<]+)</sup>", "\\\\textsuperscript{\\1}", latex_code)
-
-    # Unicode -> LaTeX
-    latex_code <- gsub("\u2264", "$\\\\leq$", latex_code)
-    latex_code <- gsub("\u2265", "$\\\\geq$", latex_code)
-
-    # Fix minipage width for footnotes/source notes
-    latex_code <- gsub(
-      "\\\\begin\\{minipage\\}\\{\\\\linewidth\\}",
-      "\\\\begin{minipage}[t]{0.65\\\\textwidth}\\\\raggedright\\\\small",
-      latex_code)
-
-    # Column alignment: first col left, rest right
-    fix_alignment <- function(code) {
-      pattern <- "(\\\\begin\\{(?:tabular|longtable)\\}\\{)([lcr]+)(\\})"
-      m <- gregexpr(pattern, code, perl = TRUE)
-      if (m[[1]][1] == -1) return(code)
-      matches <- regmatches(code, m)[[1]]
-      for (match in matches) {
-        col_spec <- gsub(".*\\{([lcr]+)\\}$", "\\1", match)
-        n_cols <- nchar(col_spec)
-        if (n_cols > 1) {
-          new_spec <- paste0("l", paste(rep("r", n_cols - 1), collapse = ""))
-          new_match <- gsub("\\{[lcr]+\\}$", paste0("{", new_spec, "}"), match)
-          code <- sub(match, new_match, code, fixed = TRUE)
-        }
-      }
-      code
-    }
-    latex_code <- fix_alignment(latex_code)
-
-    # Table spacing
-    latex_code <- gsub(
-      "\\\\begin\\{tabular\\}",
-      "\\\\renewcommand{\\\\arraystretch}{1.15}\\\\begin{tabular}",
-      latex_code)
-
-    # Center tabular
-    latex_code <- gsub(
-      "(\\\\renewcommand\\{\\\\arraystretch\\}\\{1\\.15\\})(\\\\begin\\{tabular\\})",
-      "\\\\begin{center}\\1\\2", latex_code)
-    latex_code <- gsub(
-      "\\\\end\\{tabular\\}",
-      "\\\\end{tabular}\\\\end{center}", latex_code)
-
-    knitr::asis_output(latex_code)
-  } else {
-    # For HTML: use gt's default rendering
-    x <- gt::as.tags(x, ...)
-    knitr::knit_print(x, ..., inline = FALSE)
-  }
-}
-assignInNamespace("knit_print.gt_tbl", gt_knit_print_override, ns = "gt")
 ```
 
 # Introduction
@@ -457,22 +378,7 @@ The balanced dataset of raw MRIs was constructed from the QC of a subset (n=338)
 #| label: tbl-demog-nacc
 #| tbl-cap: "Demographic information of the initial 338 images and the selected 99 images from the NACC data that would form the balanced dataset for the raw MRI QC task. For categorical variables, number (n) and percentage of the total are reported. For numerical variables, the mean and standard deviation (SD) are reported."
 
-# This would require the demographic data files which may not be available
-# Using pre-computed summary if available
-demog_nacc <- data.table(
-  Variable = c("Sex", "  Male", "  Female", "Age (years)", "Clinical Label",
-               "  Normal Cognition", "  Impaired-not-MCI",
-               "  Mild Cognitive Impairment", "  Dementia"),
-  `Initial, N = 338` = c("", "139 (41%)", "199 (59%)", "75 (10)", "",
-                         "157 (46%)", "9 (2.7%)", "93 (28%)", "79 (23%)"),
-  `Selected, N = 99` = c("", "45 (45%)", "54 (55%)", "76 (10)", "",
-                         "48 (48%)", "2 (2.0%)", "18 (18%)", "31 (31%)"),
-  `p-value` = c("0.4", "", "", "0.4", "0.2", "", "", "", "")
-)
-
-demog_nacc |>
-  gt() |>
-  cols_label(Variable = "Raw MRI NACC") |>
+read_rds(here("data/derivatives/nacc_demog_gt.rds")) |>
   style_manuscript_table()
 ```
 
@@ -581,17 +487,7 @@ The demographics of the ADNI data are presented in @tbl-demog-adni. From the 10,
 #| label: tbl-demog-adni
 #| tbl-cap: "Demographic information of the 10,196 images from the ADNI data that were QCed in the raw MRI and linear registration tasks. For categorical variables, number (n) and percentage of the total are reported. For numerical variables, the mean and standard deviation (SD) are reported. Some of the missing information was due to the subjects that were dropped from ADNI and whose information is no longer maintained in their dataset."
 
-demog_adni <- data.table(
-  Variable = c("Sex", "  Female", "  Male", "  Missing", "Age (years)", "  Missing",
-               "Clinical Label", "  Normal Cognition", "  Mild Cognitive Impairment",
-               "  Dementia", "  Missing"),
-  `N = 10,196` = c("", "4,059 (44%)", "5,260 (56%)", "877", "74 (7)", "877",
-                   "", "2,690 (32%)", "3,805 (45%)", "2,008 (24%)", "1,693")
-)
-
-demog_adni |>
-  gt() |>
-  cols_label(Variable = latex("\\makecell[l]{Raw MRI \\& Lin. Registration\\\\ADNI}")) |>
+read_rds(here("data/derivatives/adni_demog_gt.rds")) |>
   style_manuscript_table()
 ```
 
@@ -601,34 +497,26 @@ The median time spent on each image was only 11 s, which was a significant decre
 
 The demographic information for the preselected "Pass", "Fail" and borderline cases of linear registration is shown on @tbl-demog-linreg.
 
+\newpage
+
 ```{r}
 #| label: tbl-demog-linreg
 #| tbl-cap: "Demographic information of the selected 99 images that would form the balanced dataset for the linear registration QC task. For categorical variables, number (n) and percentage of the total are reported. For numerical variables, the mean and standard deviation (SD) are reported."
 
-demog_linreg <- data.table(
-  Variable = c("Sex", "  Male", "  Female", "  Missing", "Age (years)", "  Missing",
-               "Clinical Label", "  Normal Cognition", "  Mild Cognitive Impairment",
-               "  Dementia", "  Parkinson's", "  Missing"),
-  `ADNI, N = 72` = c("", "45 (63%)", "27 (38%)", "0", "75 (7)", "0",
-                     "", "20 (28%)", "31 (43%)", "21 (29%)", "0 (0%)", "0"),
-  `HCP, N = 11` = c("", "6 (55%)", "5 (45%)", "0", "NA (NA)", "11",
-                    "", "11 (100%)", "0 (0%)", "0 (0%)", "0 (0%)", "0"),
-  `PPMI, N = 11` = c("", "5 (63%)", "3 (38%)", "3", "60 (9)", "3",
-                     "", "0 (0%)", "0 (0%)", "0 (0%)", "8 (100%)", "3"),
-  `PREVENT-AD, N = 5` = c("", "0 (0%)", "4 (100%)", "1", "64 (4)", "1",
-                          "", "4 (100%)", "0 (0%)", "0 (0%)", "0 (0%)", "1"),
-  `p-value` = c("0.10", "", "", "", "<0.001", "", "<0.001", "", "", "", "", "")
-)
-
-demog_linreg |>
-  gt() |>
+read_rds(here("data/derivatives/linreg99_demog_gt.rds")) |>
   cols_label(
-    `ADNI, N = 72` = latex("\\makecell[r]{ADNI,\\\\N = 72}"),
-    `HCP, N = 11` = latex("\\makecell[r]{HCP,\\\\N = 11}"),
-    `PPMI, N = 11` = latex("\\makecell[r]{PPMI,\\\\N = 11}"),
-    `PREVENT-AD, N = 5` = latex("\\makecell[r]{PREVENT-AD,\\\\N = 5}")
+    label = "Lin. Reg. Selected Cases",
+    stat_1 = "ADNI, N = 72",
+    stat_2 = "HCP, N = 11",
+    stat_3 = "PPMI, N = 11",
+    stat_4 = "PREVENT-AD, N = 5"
   ) |>
-  style_manuscript_table()
+  text_transform(
+    locations = cells_body(columns = "label"),
+    fn = function(x) gsub("Mild Cognitive Impairment", "Mild Impairment", x)
+  ) |>
+  style_manuscript_table() |>
+  tab_options(table.font.size = "9pt", column_labels.font.size = "9pt")
 ```
 
 ```{r}
@@ -736,20 +624,7 @@ The demographic information for both the complete set of subjects from ADNI whos
 #| label: tbl-demog-skull
 #| tbl-cap: "Demographic information of the 6,968 images evaluated by Expert-2 and the subset of 1,746 images evaluated by both experts from the ADNI data that were QCed in the skull segmentation task. For categorical variables, number (n) and percentage of the total are reported. For numerical variables, the mean and standard deviation (SD) are reported. Some of the missing information was due to the subjects that were dropped from ADNI and whose information is no longer maintained in their dataset."
 
-demog_skull <- data.table(
-  Variable = c("Sex", "  Female", "  Male", "  Missing", "Age (years)", "  Missing",
-               "Clinical Label", "  Normal Cognition", "  Mild Cognitive Impairment",
-               "  Dementia", "  Missing"),
-  `All, N = 6,968` = c("", "3,037 (44%)", "3,846 (56%)", "85", "74 (7)", "85",
-                       "", "1,896 (30%)", "2,879 (46%)", "1,528 (24%)", "665"),
-  `Subset, N = 1,746` = c("", "818 (48%)", "903 (52%)", "25", "73 (7)", "25",
-                          "", "440 (31%)", "723 (51%)", "266 (19%)", "317"),
-  `p-value` = c("0.011", "", "", "", "<0.001", "", "<0.001", "", "", "", "")
-)
-
-demog_skull |>
-  gt() |>
-  cols_label(Variable = "Skull Segmentation ADNI") |>
+read_rds(here("data/derivatives/skull_demog_gt.rds")) |>
   style_manuscript_table()
 ```
 
@@ -874,90 +749,242 @@ We declare that none of the authors involved in this work have any conflicts of 
 
 {{< pagebreak >}}
 
-# Supplementary Materials {.appendix}
+# Supplementary Materials {.unnumbered}
 
-## S1: Technical Report - Qrater Architecture {.appendix}
-
-Qrater is built using a modern web application stack consisting of:
-
-- **Flask**: A lightweight Python web framework that handles HTTP requests and serves the web application
-- **MySQL**: A relational database management system for storing user data, ratings, and image metadata
-- **Redis**: An in-memory data structure store used for caching and session management
-- **Docker**: Containerization platform for easy deployment and reproducibility
-
-The application architecture follows a Model-View-Controller (MVC) pattern where:
-
-1. The **Model** layer handles data storage and retrieval through SQLAlchemy ORM
-2. The **View** layer renders HTML templates using Jinja2 templating engine
-3. The **Controller** layer processes user requests and manages business logic
-
-Key features include:
-
-- **User Authentication**: Secure login system with password hashing
-- **Role-based Access Control**: Admins can manage datasets and users
-- **Real-time Collaboration**: Multiple users can rate simultaneously
-- **Rating History**: All ratings are timestamped for audit trails
-- **Export Functionality**: QC results can be exported as CSV files
-
-## S2: Example QC Images {.appendix}
-
-The mosaic images generated for each QC task consisted of 60 thumbnail sub-images (256x256 pixels each) extracted from axial, sagittal, and coronal slices throughout the volume. Examples of QC images for each task:
-
-1. **Raw MRI**: Standard grayscale brain images showing structural anatomy
-2. **Linear Registration**: Registered volume with red contours showing the template overlay
-3. **Skull Segmentation**: MRI slices with skull voxels labeled in red, plus 3D renderings
-
-## S3-S5: QC Protocols {.appendix}
-
-### Raw MRI QC Protocol
-
-The QC criteria for raw MRI focused on:
-
-- **Field-of-view**: Complete brain coverage, no cut-off of brain tissue
-- **Noise**: Excessive noise or signal dropout
-- **Motion**: Ringing artifacts, ghosting, or blurring
-- **Intensity uniformity**: Severe intensity inhomogeneity
-
-### Linear Registration QC Protocol
-
-Based on criteria from Dadar et al. (2018):
-
-- **Symmetry**: Brain should appear symmetric in the stereotaxic space
-- **Rotation**: No visible rotation of the brain
-- **Scaling**: Appropriate size match between subject and template
-
-### Skull Segmentation QC Protocol
-
-- **Completeness**: Full skull coverage without large holes
-- **Accuracy**: Segmentation follows actual skull boundaries
-- **Artifacts**: No inclusion of non-skull tissues
-
-## S6-S8: Training Video Transcripts {.appendix}
-
-Training videos were created for each QC task explaining:
-
-- What artifacts to look for
-- How to use Qrater features (zoom, brightness controls)
-- Decision criteria for Pass vs. Fail
-- Example cases of clear passes, clear fails, and borderline cases
-
-## S9: Raw MRI Inter-rater Agreement Matrix {.appendix}
-
-```{r}
-#| label: tbl-agreement-raw
-#| tbl-cap: "Inter-rater agreement matrix showing percentage agreement between each pair of raters for the raw MRI QC task."
-
-acq_99_count |>
-  dcast(Rater ~ Rater2, value.var = "Perc") |>
-  gt() |>
-  style_manuscript_table()
+```{=latex}
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
 ```
 
-## S10: Raw MRI Timing Data (Balanced Dataset) {.appendix}
+## S1. Technical report of Qrater {.unnumbered}
+
+Qrater is a python application designed to facilitate the rating of quality control (QC) images within a web browser. This report describes in detail the technical aspects of Qrater's including its architecture and the technologies used.
+
+### Architecture {.unnumbered}
+
+*Core Technologies*
+
+- Qrater web service
+    - Python 3.9. Qrater is developed using Python, a versatile, simple, and readable coding language with extensive libraries.
+    - Flask 2.0.1. Flask is a minimalistic web framework for python. Its flexibility and simplicity allow for easy integration with other components and extensions.
+    - Gunicorn 20.1. Gunicorn, a Python WSGI HTTP server, is employed in Qrater to serve the Flask application and make it accessible to the web browser.
+- Multiple tasks management
+    - Redis 6.2.4. To handle multiple concurrent users, Redis works within Qrater's deployment as a message broker, enabling the management of multiple worker instances of the web-application. This setup permits Qrater to handle multiple simultaneous users.
+- Database
+    - pyMySQL 1.0.2. Data management in Qrater is handled through this MySQL client library written in Python. This data includes, but it's not limited to imaging data and their metadata, registered users, and QC labels and qualitative comments.
+    - SQLAlchemy 1.4.20. This ORM python library manages Qrater's database operations and interactions.
+
+*Containerization and deployment*
+
+Qrater, the Flask-based web application, is available as a Docker image (https://hub.docker.com/r/soffiafdz/qrater).
+
+Qrater's full deployment, however, relies on the use of other services. These dependencies consisting of a MySQL database, for data storage and management, and Redis, for the management of the concurrent Qrater worker's processes, are also available as Docker images: MySQL:8.0.25 and Redis:6.2.4-alpine.
+
+To streamline the deployment of these three interconnected services, we utilize Docker Compose. Docker Compose manages the multiple Docker containers needed for Qrater with a single configuration file. This setup allows that the Flask application, the MySQL database, Redis, and the multiple worker instances are correctly configured and can communicate seamlessly with each other.
+
+### Remote Access and Security {.unnumbered}
+
+Once Qrater is running, it is accessible on a specific port of the computer it is running on. With SSH port forwarding, remote access is possible giving the possibility to multiple users to access the application on the host from different locations.
+
+Qrater contains different measures to not compromise data security. To use Qrater, each user has to register within the application with a username and a password. When loading data, it can be marked as private restricting its access only to specific users. The data contained in private datasets including its ratings will be accessible only to those selected by the data owner.
+
+### Frontend Development {.unnumbered}
+
+The interface of Qrater is built using Bootstrap, a front-end framework that offers pre-designed components and a responsive grid system. This ensures the application is visually consistent and works across different devices, web browsers and screen sizes.
+
+*Image Viewer*
+
+Qrater's built-in image viewer includes several features written in JavaScript to aid in the QC process:
+
+- Image Editing: From a drop-down with sliders, users can adjust image attributes such as contrast, brightness, and saturation.
+- Magnifying glass: There is a feature to activate a magnifying glass over the image. It is moved by the cursor and the level of zooming can be adjusted.
+- Keyboard key-bindings: These shortcuts are implemented to improve the efficiency of the QC process, allowing users to perform actions quickly without relying on the mouse. These were coded using the mousetrap library.
+
+*Data Management*
+
+QC data can be accessed within the browser in the form of tables, using jQuery's DataTables plugin, which provides functionalities like:
+
+- Viewing: Displaying data in a structured table format.
+- Sorting: Users can sort data by different columns to organize information.
+- Filtering: The plugin supports filtering options to narrow down data sets based on criteria.
+- Searching: A search box allows users to quickly locate specific records within the data table.
+
+### Conclusion {.unnumbered}
+
+In conclusion, Qrater is a practical and efficient tool designed to simplify the rating of quality control (QC) images through a user-friendly web interface. Its utilization of Flask, Gunicorn, Redis, and Docker Compose ensures robust performance and seamless integration of essential services, making it a reliable solution for managing QC processes and data effectively.
+
+\newpage
+
+## S2. QC mosaic image examples {.unnumbered}
+
+```{r}
+#| label: fig-qc-images
+#| fig-cap: "Example images selected for the three QC tasks. A) Mosaic containing 60 slices of raw (native) MRI data of the brain of one subject (20 axial slices, 20 sagittal slices, and 20 coronal slices). B) For the stereotaxic registration task, 60 MR image slices (20 axial slices, 20 sagittal slices, and 20 coronal slices) from the subject's MRI scan, resampled into the standard stereotaxic coordinate system, with the standard template's cortical boundaries overlaid in red. C) For the segmentation task, 60 brain MR image slices from one subject (20 axial slices, 20 sagittal slices, and 20 coronal slices). In the 2D images comprising the mosaic, we highlighted the segmented skull tissue in red. To the right of the mosaic, we show six 2D representations of 3D reconstructions of the subject's skull."
+#| out-width: "100%"
+
+knitr::include_graphics(here("plots/QC_images.png"), error = FALSE) |>
+  suppressWarnings()
+```
+
+\newpage
+
+## S3. QC protocol - raw MRI {.unnumbered}
+
+The task was designed to assess whether the trainees could accurately QC raw MRI. Once everyone had finished the QC of the selected cases, they would receive the QC labels assigned by the expert. Some brief explanations on the reasoning behind the more challenging cases were also shared. A secondary goal was to assure matching levels of strictness between all raters before moving forward with the QC of large datasets as ADNI and UKBiobank.
+
+Trainees were instructed to leave qualitative commentary for QA and/or the cases which they were not sure if they had correctly identified the issue with the scan. These comments served two purposes: 1) they were placeholders that would allow them to return and review these specific images, and 2) that the experts could have an idea of what types of artifacts are more challenging to detect and might require further clarification.
+
+The overall QC criteria consisted of:
+
+- Coverage: For a scan to pass, the entire brain (including the occipital and frontal poles, the superior convexity and the base of the cerebellum as well as left-right coverage) has to be within the volume. Some of the 3D acquisition might have a very tight Anterior-Posterior Field of View, cutting the occipital (or frontal poles) and the transverse acquisitions often cut the base of the cerebellum. For both cases, the datasets should be failed, along with an "Incomplete Coverage" comment.
+- Movement: Slight movement artifacts (slight ringing) can be accepted as most of the processing pipelines used in the lab can deal with them. However, the trainee should leave a "slight movement" comment since those cases should not be used in specific analyses (e.g., deformation-based morphometry (DBM) or cortical thickness.
+- Noise: Slightly noisy scans could similarly be accepted along with a comment, as the processing pipelines can deal with them.
+- Intensity non-uniformity artifacts: Our implementation of N3 or N4 might not be able to deal with severe non-uniformity, therefore, those cases should fail. Trainees should include a "non-uniformity artifact" comment. Problematic cases often have one of two issues: 1) the lowest slices are affected by signal loss (due to the imperfect volume excitation pulse), or 2) there's a very strong AP inhomogeneity due to the nose or forehead being very close to the coil, and thus having a very bright signal.
+- Data should not be failed if the GM/WM contrast is diminished. Nonetheless, the trainee should leave a "low GM/WM contrast" comment.
+
+\newpage
+
+## S4. QC protocol - linear registration {.unnumbered}
+
+For the QC of linear registration of MRI to a standard template, the criteria to pass or fail an image was the following:
+
+- Rotations and translations of the image.
+    - Check the brain rotation primarily about the Left-Right axis.
+    - Errors in rotation can be noticed by looking at the frontal lobe, specifically the orbital frontal contour; one sign of failure is the outline of the registration cutting through eyes and surrounding muscles or through occipital fat.
+    - Check that the occipital area, tentorium and cerebellum fit the contours.
+- Scaling of the image.
+    - Inferior-Superior axis -- inferior/superior stretching or shrinking of the entire image; the contour should (roughly) fit the top of the cerebrum and the bottom of the orbito-frontal area and the bottom of the temporal lobes. The cerebellum can be ignored.
+    - Left-Right axis -- left/right stretching or shrinking of the entire image. It can be seen best on coronal and transverse slices.
+    - Anterior-Posterior axis -- anterior/posterior stretching or shrinking of the entire image. It can be seen best in transverse and sagittal slices.
+- Symmetry of the image
+    - Check the coronal and transverse images for left-right symmetric contour fits.
+    - Occipital or frontal patellia are possible (one side larger than the other) and this cannot be fixed by linear registration and should pass if the rest of the image is good.
+
+Notes regarding limitations of linear registration:
+
+- The template contour is fixed and never changes between images: It is only the MR image volume that is scaled, rotated, and translated to fit that fixed contour.
+- All voxels along an axis are increased or decreased in size by the same amount, thus a perfect contour fit along the full length of any axis should not be expected. Subjects with non-average brain shapes may have imperfect contour fits but are still QC passes.
+- There are no skew parameters in linear registration, so no shearing of the volume is done to account for asymmetric brain shapes.
+
+Contour problems to ignore (in most cases), summarized:
+
+- Inferior cerebellum contour issues linked to non-average cerebellum shape/size and the limitations of linear registration.
+- Ventricles not outlined perfectly.
+- Contour dent in \~superior occipital lobe -- this is an idiosyncrasy from the ADNI template and should be ignored.
+- Somewhat imperfect contour fits generally (i.e., little bits of brain sticking outside the contour in some places) -- non-linear registration will fix this.
+- There is no tentorium contour line in sagittal slices near the midline in the ADNI template contours.
+- Look for the occipital-cerebellar notch in the contour pressing into the anterior tentorium viewed from the sagittal perspective near the midline.
+
+\newpage
+
+## S5. QC protocol - skull segmentation {.unnumbered}
+
+The main goal of the skull segmentation was to use its output as a feature in longitudinal registration. The QC task was done in order to build a library for the training of an automatic tool. QC labels were limited to "Pass" and "Fail".
+
+A successful segmentation was defined as having at least 95% of the top half of the skull properly segmented. Up to three holes of less than 2 cm2 were allowed for a segmentation to pass QC.
+
+\newpage
+
+## S6. Technical summary of the training video for raw MRI {.unnumbered}
+
+In this video, the speaker examines different MRI cases and evaluates their image quality. They observe various artifacts, signal drop-off, and non-uniformities, but overall, most of the cases shown pass the quality control (QC) criteria. The speaker leaves comments for the anomalies observed, suggesting further investigation during the processing QC stage. The speaker then focuses on the eligibility of different data sets for passing MRI acquisition quality control. They highlight various aspects that are commonly considered, including features like high intensity voxels that limit dynamic range, slight ringing artifacts, and the presence of fat in specific anatomical regions. The speaker explains how these factors can influence the quality of the images and whether they would meet the requirements for quality control.
+
+(00:00:00 - 00:05:00). The speaker states that the goal is to demonstrate how to perform quality control (QC) on raw MRI data using the Qrater software. The software displays JPEG images of specific subjects, with each subject having one JPEG image per imaging modality. The images show different planes---axial, sagittal, and coronal---providing a comprehensive view of the brain anatomy. During QC, several checks are performed, including assessing the intensities to ensure the image is neither too dark nor too bright. The coverage of the brain from left to right, front to back, and top to bottom is also evaluated, along with the absence of artifacts caused by movement, flow, or wrap around. Multiple examples are shown to illustrate both passing and thresholded passing data sets, highlighting the importance of assessing image quality before further processing.
+
+(00:05:00 - 00:10:00). The speaker highlights the importance of intensity normalization in the image processing pipeline to correct for brightness discrepancies. They examine images with good coverage and dynamic intensity range, but observe dark areas in the white matter indicating vascular lesions. Despite this, the overall quality of the images is deemed satisfactory. The speaker also mentions bright artifacts in the scalp due to fat content and explains the wraparound artifact caused by a small field of view. Lastly, they examine a case with a bright artifact in the front of the brain and note that while the coverage is good, the intensities appear dark for the rest of the brain. It is unclear if this specific case should pass the QC.
+
+(00:10:00 - 00:15:00). The speaker points out that certain artifacts, such as brightness at the front and darkness at the back of an image, can be corrected by the imaging processing pipeline, allowing the data set to pass QC. However, if the artifact is severe, like very bright pixels in certain areas and very dark regions in others, the data set may fail QC. They explain that dynamic range reduction due to these artifacts makes it challenging for intensity normalization and non-uniform correction steps to correct them. The speaker emphasizes the importance of examining the processed data to determine if the intensity contrast is acceptable before making a final decision. They also mention other artifact issues, like wrap-around artifacts and odd brain shape, which can impact the QC evaluation. Overall, these observations highlight the need for careful assessment and potential warnings in certain cases when evaluating MRI scans.
+
+(00:15:00 - 00:20:00) The speaker evaluates the coverage, intensities, and presence of artifacts in different MRI scans. They note that while some MRI scans show brightness or wraparound artifacts, they believe that the non-uniformity correction and intensity normalization procedures can address these issues. They also mention that one image shows a tilted head and signal dropout near the mouth, likely due to dental work, but determine that it still passes quality control. In another one, they observe brightness due to a wraparound artifact at the shoulders, but note that the rest of the image has good homogeneity and no artifacts. Finally, they mention a case with good coverage and intensities, but notice a lack of signal in the back of the neck without an explanation.
+
+(00:20:00 - 00:25:00). They notice that some parts of the neck are missing in certain images, and although they are unsure of the reason, they decide to leave a warning comment for the quality control (QC) process. In another scan, they observe a dark image with wraparound artifacts, but since it does not affect the brain, it will pass the QC. They also mention the possibility of a failed coil or the nose being close to the coil as reasons for a bright nose in one of the images. However, they believe that the non-uniformity correction and intensity normalization procedures will fix the dark image. Overall, despite some concerns, the speaker decides to pass these images for QC but leaves comments to keep track of any potential issues.
+
+(00:25:00 - 00:30:00). The MRI QC expert observes that the nose wraps around the MRI scan presented but it doesn't affect the image intensity, which is a good thing. They also note the presence of large ventricles, which is typical in cases of Alzheimer's disease or other neurodegenerative diseases. They point out a vitamin E capsule taped to the patient's scalp to indicate the right side of the brain for analysis. Overall, they find that the scans have good image quality, large ventricles, and no movement or noise artifacts, indicating that they pass the MRI QC assessment.
+
+(00:30:00 - 00:35:00). The speaker mentions that a particular scan has excellent anatomical detail and passes QC despite a small wraparound artifact around the nose. Another scan with a similar artifact also passes QC due to good coverage and intensity without any noise or movement artifacts. They also discuss a scan with dark intensities but decide to pass it since the wraparound artifact does not affect the brain. However, another scan with a bright nose and ringing artifacts fails QC due to motion artifacts that cannot be corrected. Lastly, they mention a scan with a subtle degradation of intensities and recommend further investigation of the acquisition parameters before making a final determination.
+
+(00:35:00 - 00:40:00). The speaker notes that an MRI scan has a reduced dynamic range, likely due to a short TE, and another has bright voxels around the scalp. They also mention a scan with reduced intensity contrast and a wraparound effect, which doesn't affect the brain. Additionally, they highlight a dark image with bright pixels at the nose, indicating reduced intensity range. Finally, they mention a case with good coverage but signal dropout in the mouth, possibly due to dental work, and an unidentified bright object resembling a bump on the head. These observations will be noted for further analysis during the image processing quality control.
+
+(00:40:00 - 00:45:00). The speaker notes that some data sets have good coverage and intensities, while others exhibit brightness variations and movement artifacts. Despite these issues, most of the data sets pass the quality control (QC) criteria. The speaker adds comments regarding the observed anomalies, such as intensity inhomogeneity, wrap-around artifacts, and noise, to be checked during the processing QC stage. However, one data set with a very bright nose is noted but deemed acceptable. Overall, the speaker concludes that most of the reviewed data sets meet the QC standards, with minor issues that can be addressed in the processing QC.
+
+(00:45:00 - 00:50:00). The speaker examines several MRI scans and evaluates their quality. The first dataset has a thick, bright scalp, but the brain's intensities are homogeneous and free of artifacts, so it passes quality control (QC). However, in another dataset, there is a lack of contrast in the brain, indicating a potential issue with the echo time (TE) and repetition time (TR) of the acquisition. This dataset fails QC. The speaker also comes across datasets with intensely non-uniformly bright scalps, but overall, the quality is good, and they pass QC. A dataset with a bright voxel in an unusual location is flagged for further investigation, but the intensities are generally good. The speaker also notes signal dropout in the mouth and low contrast in the white matter, but these factors do not impact the brain's assessment.
+
+(00:50:00 - 00:55:00). The speaker examines different MRI scans and assesses their image quality. The first one shows a bright nose but overall looks good. Another shows a dark image, possibly due to a bright nose again, but it passes the quality check. Some have reduced dynamic range or signal drop off, possibly influenced by dental work. Another shows dark images, likely caused by a bright nose on a slice not shown. A few scans have bright wraparound of the nose and lips, but still pass with some comments. A final one shows a structure in the brain, which could be the thick dura mater or bone, but the image quality is still deemed as good.
+
+(00:55:00 - 01:00:00). The speaker points out ring artifacts and noise in some scans, while others show good coverage and intensities. They also mention the presence of non-uniformity, vascular disease, ventricles, and brain atrophy in certain cases. Additionally, a scan with a bright marker taped to the skin is noted, which affects the dynamic range of the rest of the brain. Overall, some scans pass the MRI quality control (QC) while others do not, with comments highlighting specific issues for further consideration during processing.
+
+(01:00:00 - 01:05:00). The speaker points out common elements in the reviewed cases such as bright skin markers, intense markers that reduce dynamic range, slight ringing artifacts, and the presence of fat in certain areas of the body. The speaker explains how these factors can affect the overall quality of the images and whether they would pass or fail the quality control. They encourage viewers to reach out with any further questions.
+
+\newpage
+
+## S7. Technical summary of the training video for linear registration {.unnumbered}
+
+In the video titled "QC linear stx reg2", the speaker discusses quality control of linear stereotactic registration. They demonstrate the use of the Qrater program to analyze different databases of images and evaluate the quality of stereotactic registration. The speaker examines various data sets, assessing the fit and symmetry of brain contours. They highlight cases where the registration passes or fails, identifying specific errors such as incorrect orientation or scaling. The speaker also discusses issues with z-scaling, rotation, and overall size of the data set. They emphasize the importance of checking scaling, contours, and symmetry to ensure the quality of the MRI scans.
+
+(00:00:00 - 00:05:00). The speaker discusses quality control of linear stereotactic registration. They explain that stereotactic space is defined by specific points, but manual identification of these points is difficult, so automatic techniques have been developed. To ensure proper transformation and registration of subject data to stereotactic space, quality control is necessary. The speaker introduces the Qrater program, which allows them to analyze different databases of images. They demonstrate how to evaluate the quality of stereotactic registration by visually assessing the fit of the contour of the unbiased stereotactic template to the MRI image. They emphasize the importance of checking the overall orientation and size of the data set, as well as ensuring that the cortex fits well with the data. The speaker showcases several slices of data and points out areas where the registration seems to align well and areas where there are slight differences.
+
+(00:05:00 - 00:10:00). The speaker examines several data sets to assess the fit and symmetry of brain contours. The first example shows a well-fitting and symmetrical data set, with only a slight extension in the back indicating some residual variability. Another data set with atrophy also fits well, except for some areas where cerebrospinal fluid is present. Overall, these are considered Pass. However, the speaker also demonstrates cases where the QC fails, such as when the brain contours exceed the MRI image vertically or when the entire temporal lobe is outside the contour. These failures are attributed to issues with z-scaling. The speaker demonstrates how to add comments and mark these cases as failures.
+
+(00:10:00 - 00:15:00). The speaker reviews different images and evaluates their registration success. They highlight cases where the registration passes, fails catastrophically, or has specific errors such as incorrect orientation or scaling. The speaker examines the symmetry and contour fit of various brain regions and identifies issues like misregistration and scaling errors. They also point out cases where the MRI does not align correctly with the contour. Overall, they provide a detailed analysis of the registration quality for each image.
+
+(00:15:00 - 00:20:00). The speaker discusses various issues and failures in the quality control of MRI scans. They point out instances where the z scale is too small, causing the data to fail. They also highlight cases where the overall size of the data set is too small in various dimensions. In some cases, the brain appears too large and extends past the contours. There are also instances where the intensity of the image is not aligned with the MRI contours. The speaker identifies problems with rotation, scale, and fit, ultimately leading to failures in the quality control process.
+
+(00:20:00 - 00:25:00). The speaker discusses the issue of rotation in MRI images. They point out that the rotations in the images seem to be okay, with the orientation of the brain looking good. However, there are some concerns about the scaling and rotation, as the tectorium and cerebellum do not fit well in the sagittal images. The speaker also mentions a rotation error related to the orbital frontal contour cutting through the occipital fat. They emphasize the importance of checking the scaling, contours at the top of the brain, base of the cerebellum, and temporal lobes. Additionally, they highlight the need for left-right symmetry in both transverse and coronal images. Overall, these issues should be addressed to ensure the quality of the MRI.
+
+\newpage
+
+## S8. Technical summary of the training video of the follow-up meeting: linear registration of ADNI data {.unnumbered}
+
+In this video, the linear stx QC is examined through various examples of brain images. The reviewer evaluates each case based on scale, intensity, contour fitting, and symmetry. While there is some disagreement among the reviewers regarding the pass or fail status of certain cases, they discuss the limitations of linear registration in handling protrusions or asymmetries in the brain. They emphasize the importance of evaluating the accuracy of linear registration rather than purely relying on the image's appearance. The reviewers also discuss the impact of Z scale on assessing asymmetry, as well as the presence of shear or asymmetry in the Z axis. They analyze different data sets and debate whether certain cases should pass or fail, considering factors such as contour fitting and signal drop-off. The reviewer highlights the need for proper alignment using linear registration and provides detailed analysis and recommendations for improvement based on the intra-rater experiment results. The reviewer also mentions the feedback received from participants regarding the scale and shape of the brain, acknowledging the challenges in accurately judging images with slight deviations from the standard model.
+
+(00:00:00 - 00:05:00). The reviewer goes through several examples of brain images and determines whether they pass or fail the linear stereotactic registration QC. The first example fails due to poor scale and intensity, while the second fails because the brain is too small compared to the contour. Another example fails due to scale issues in the occipital lobe. However, the reviewer finds one example to pass, despite some residual misregistration and a slight extension in the cerebellum. The group discusses the variability in the cerebellum, but ultimately agrees that linear registration is primarily focused on the cerebrum. The reviewer also notes the design scaling as a reason for some failures. Overall, there is some disagreement among the reviewers regarding which cases should pass or fail.
+
+(00:05:00 - 00:10:00). The reviewer discusses the limitations of linear registration in the QC video and highlights that it primarily involves scaling and rotation, which cannot handle protrusions or asymmetries in the brain. They explain that if the scaling and rotation appear correct, there may still be small pieces of the brain sticking out because linear registration is not designed to address this. The reviewer suggests considering this when evaluating images with anatomical abnormalities. Furthermore, they emphasize that failing QC should not be solely based on the image's appearance but rather on the accuracy of linear registration. The subsequent section presents an example of a brain with significant asymmetry, particularly in the occipital area, where the right hemisphere is noticeably smaller. They note that while the left hemisphere fits well, the right side poses challenges in fitting the contour due to its size difference.
+
+(00:10:00 - 00:15:00). The reviewer discusses the Z scale and its impact on the assessment of asymmetry in the brain. They mention that the orientation of the brain seems aligned, but there is a shear or asymmetry in the Z axis. The reviewer questions whether this shear is normal and suggests that it may be due to anatomical variability or local atrophy in the patient's brain. Despite this asymmetry, the reviewer concludes that the overall orientation and scaling of the brain are acceptable, and the images can be passed. They also note that the transforms used in the pipeline do not account for this type of anatomical variability.
+
+(00:15:00 - 00:20:00). The reviewers are examining different data sets and evaluating their quality. They discuss the asymmetry in one data set, with an extension on the frontal and posterior ends, but ultimately agree that it should pass. Another data set presents a borderline case, with a possible issue in the frontal area. The reviewers debate whether to pass or not, but ultimately decide to pass it. However, they note that it is a difficult decision. They encounter a data set where the MRI appears small but fits well, except for some signal drop-off in the occipital area. It is another borderline case, but they lean towards accepting it as it is. They encounter a failure in a data set where the cerebellum appears small and there is an error in the rotation. Finally, they discuss a data set with a possible small rotation error, specifically in the Contour cutting through the occipital fat.
+
+(00:20:00 - 00:25:00). The reviewer examines various data sets and evaluates their performance. In one case, the cerebellum does not fit well, suggesting an issue with the Contour at the Falk. The reviewer also notices a discrepancy with the Z-scale indicating potential problems with scale alignment. Another data set shows local misregistration between the Contour and the gray matter cortex of the MRI, but overall, it fits well. However, some rotation and scale errors are identified in other data sets, causing the Contour to cut into the occipital fat and extend outside the MRI, suggesting a failure. The reviewer highlights the importance of properly aligning the Contour and MRI using linear registration.
+
+(00:25:00 - 00:30:00). The reviewer is discussing the results of the intra-rater experiment for QC on linear stx. They mention that the rotation looks good, and there is a small cerebellum observed in one subject. They comment on various aspects such as Z scale, X scale, Y scale, and Left-Right symmetry. Based on their observations, they determine whether each case should pass or fail QC. They note instances where the Z scale seems short or the contour is outside the brain, leading to a failure. They also mention cases where people failed due to X rotation and Z scale. Overall, they provide a detailed analysis of each case and make recommendations for improvement.
+
+(00:30:00 - 00:35:00). Finally, the reviewer discusses the feedback received from the participants regarding the set scale of the images. Some participants mentioned that the scale appeared small, while others mentioned that the white matter was big. The reviewer then proceeds to analyze the Y scale contour, pointing out that the occipital pole had a slight extension, but overall, the contour seemed to fit the shape of the brain well. The Y scale in the front, back, and temporal lobe also appeared to be reasonably good. However, it is noted that some people might be offended by the Z scale since the cerebellum was not included within the contour. Additionally, the reviewer acknowledges that the shape of the brain being slightly different from the standard model could make it challenging to judge the images accurately.
+
+\newpage
+
+## S9. Matrix of detailed inter-rater agreement of the raw MRI QC task {.unnumbered}
+
+```{r}
+#| label: fig-agreement-raw
+#| fig-cap: "Confusion matrix representing the percentage of agreement between the expert's gold standard ratings represented as E01 and the trainees represented as R01 - R09 for the QC labels given in the raw MRI QC task."
+#| out-width: "80%"
+#| fig-width: 7
+#| fig-height: 6
+
+acq_count_plot <- copy(acq_99_count)
+acq_count_plot[, Perc := as.numeric(gsub("%", "", Perc))]
+ggplot(acq_count_plot, aes(x = Rater2, y = Rater, fill = Perc)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = paste0(round(Perc), "%")), size = 3) +
+  scale_fill_gradient(low = "#c7e9c0", high = "#006d2c",
+                      limits = c(0, 100),
+                      name = "Agreement\n(Percentage)") +
+  labs(x = "Rater", y = "Rater") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0),
+        panel.grid = element_blank())
+```
+
+\newpage
+
+## S10. Time measurements of raters for QC of the balanced dataset of raw MRI {.unnumbered}
 
 ```{r}
 #| label: tbl-time-acq99
-#| tbl-cap: "Timing data for all raters on the balanced dataset of 99 raw MRI images. Session = total QC session duration; Rests = number of breaks (>15 min); Pass/Fail N = number of images rated; Pass/Fail Time = median (SD) time per image in mm:ss format; p = Wilcoxon test p-value for Pass vs. Fail time difference; p adj. = Holm-adjusted p-value."
+#| tbl-cap: "Measurements of the time to complete their raw MRI QC sessions (HH:MM:SS), number of rests, number of images assigned as \"Pass\" or \"Fail\", and the time spent per image divided by their assigned QC label (median and standard deviation; MM:SS) for the balanced subset of preselected cases for the trainees and for the two sessions performed by the expert (Ses1 & Ses2). Rests were defined as any time higher than 900 s (15 min) assumed to be time spent away from the computer and thus discarded for the timing analyses. Adjusted p-values show the significance of the different in timing between Pass and Fail ratings. The last row represents the median of the total time, number of rests, and number of \"Pass\" and \"Fail\" images, as well as the median time data by QC label among all raters."
 
 acq_99_time <- read_rds(here("data/derivatives/acq_99_time_dt.rds"))
 acq_99_time[Diff > as.difftime(15*60, units = "secs"), Rest := TRUE]
@@ -965,14 +992,14 @@ acq_99_time[!is.na(Rest), Diff := NA]
 
 acq_99_summ1 <- acq_99_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
-                  Session = hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE)),
+                  Session = as.character(hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE))),
                   PvF = suppressWarnings(
                           wilcox.test(as.numeric(Diff) ~ Rating,
                                       na.action = na.omit))$p.value), Rater]
 
 acq_99_all1 <- acq_99_summ1[, .(Rater = "All", N = 99,
                                 Rests = round(median(Rests)),
-                                Session = hms::as_hms(round(median(as.numeric(Session)))))]
+                                Session = as.character(hms::as_hms(round(median(hms::as_hms(Session))))))]
 acq_99_all1[, PvF := acq_99_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                                na.action = na.omit)$p.value]]
 acq_99_summ1 <- rbindlist(list(acq_99_summ1, acq_99_all1), use.names = TRUE)
@@ -983,7 +1010,7 @@ acq_99_summ2 <- acq_99_time[, .(N = .N,
                             .(Rater, Rating)] |>
                 dcast(Rater ~ Rating, value.var = c("N", "Median", "Sd"))
 
-time_format <- "%02d:%02.0f (%02d:%02.0f)"
+time_format <- "%d:%02.0f (%d:%02.0f)"
 acq_99_summ <- acq_99_summ1[acq_99_summ2, on = "Rater",
                             .(Rater, Session, Rests,
                               Pass_N = round(N_Pass),
@@ -1007,22 +1034,25 @@ acq_99_summ[, p_adj := round(acq_99_p$p_adj, 3)]
 
 acq_99_summ |>
   gt() |>
+  cols_hide(columns = p) |>
   cols_label(
     Rater = "Rater", Session = "Total Time", Rests = "Rests",
-    Pass_N = "N", Pass_Time = "Time Median (SD)",
-    Fail_N = "N", Fail_Time = "Time Median (SD)",
-    p = "p", p_adj = "p adj."
+    Pass_N = "N", Pass_Time = "Time",
+    Fail_N = "N", Fail_Time = "Time",
+    p_adj = "p adj."
   ) |>
   tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
   tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
   style_manuscript_table(table_type = "supplementary")
 ```
 
-## S11: Raw MRI Timing Data (ADNI) {.appendix}
+\newpage
+
+## S11. Time measurements of raters for raw MRI QC of the ADNI dataset {.unnumbered}
 
 ```{r}
 #| label: tbl-time-acq-adni
-#| tbl-cap: "Timing data for all raters on the ADNI raw MRI dataset of 10,196 images. Session = total QC session duration; Rests = number of breaks; Pass/Warning/Fail columns show N (%) and median (SD) time per image in mm:ss format."
+#| tbl-cap: "Measurements of the time to complete the raw MRI QC of the ADNI data (HH:MM:SS), number of rests, number of images assigned as \"Pass\" or \"Fail\", and the time spent per image divided by their assigned QC label (median and standard deviation; MM:SS) for the expert and the trainees. Rests were defined as any time higher than 900 s (15 min) assumed to be time spent away from the computer and thus discarded for the timing analyses. Adjusted p-values show the significance of the different in timing between Pass, Warning and Fail ratings; values in bold are statistically significant. The last row represents the median total time and number of rests as well as the QC label and time data among all raters."
 
 acquis_time <- read_rds(here("data/derivatives/acquis_time_dt.rds"))
 acquis_time[, Rater := stringr::str_replace(Rater, "0", "-")]
@@ -1031,14 +1061,14 @@ acquis_time[!is.na(Rest), Diff := NA]
 
 acquis_summ1 <- acquis_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
-                  Session = hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE)),
+                  Session = as.character(hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE))),
                   PvWvF = suppressWarnings(
                             kruskal.test(as.numeric(Diff) ~ Rating,
                                          na.action = na.omit))$p.value), Rater]
 
 acquis_all1 <- acquis_summ1[, .(Rater = "All", N = sum(N),
                                 Rests = round(median(Rests)),
-                                Session = hms::as_hms(round(median(as.numeric(Session)))))]
+                                Session = as.character(hms::as_hms(round(median(hms::as_hms(Session))))))]
 acquis_all1[, PvWvF := acquis_time[, kruskal.test(as.numeric(Diff) ~ Rating,
                                                   na.action = na.omit)$p.value]]
 acquis_summ1 <- rbindlist(list(acquis_summ1[order(Rater)], acquis_all1), use.names = TRUE)
@@ -1049,73 +1079,148 @@ acquis_summ2 <- acquis_time[, .(N = .N,
                             .(Rater, Rating)] |>
                 dcast(Rater ~ Rating, value.var = c("N", "Median", "Sd"))
 
-acquis_summ <- acquis_summ1[acquis_summ2, on = "Rater",
-                            .(Rater, Session, Rests,
-                              Pass = sprintf("%d (%.0f%%)", N_Pass, N_Pass / N * 100),
-                              Pass_Time = sprintf(time_format,
-                                                  lubridate::minute(Median_Pass),
-                                                  lubridate::second(Median_Pass),
-                                                  lubridate::minute(Sd_Pass),
-                                                  lubridate::second(Sd_Pass)),
-                              Fail = sprintf("%d (%.0f%%)", N_Fail, N_Fail / N * 100),
-                              Fail_Time = sprintf(time_format,
-                                                  lubridate::minute(Median_Fail),
-                                                  lubridate::second(Median_Fail),
-                                                  lubridate::minute(Sd_Fail),
-                                                  lubridate::second(Sd_Fail)),
-                              p = sprintf("%04.3f", PvWvF))]
+# Build summary with Pass, Warning, and Fail columns
+acquis_summ <- acquis_summ1[acquis_summ2, on = "Rater"]
+# Replace NA with 0 for Warning counts
+acquis_summ[is.na(N_Warning), N_Warning := 0L]
+acquis_summ[, `:=`(
+  Pass_N = sprintf("%d (%d%%)", N_Pass, round(N_Pass / N * 100)),
+  Pass_Time = sprintf(time_format,
+                      lubridate::minute(Median_Pass),
+                      lubridate::second(Median_Pass),
+                      lubridate::minute(Sd_Pass),
+                      lubridate::second(Sd_Pass)),
+  Warn_N = sprintf("%d (%d%%)", N_Warning, round(N_Warning / N * 100)),
+  Warn_Time = fifelse(is.na(Median_Warning), "-",
+                sprintf(time_format,
+                        lubridate::minute(Median_Warning),
+                        lubridate::second(Median_Warning),
+                        lubridate::minute(Sd_Warning),
+                        lubridate::second(Sd_Warning))),
+  Fail_N = sprintf("%d (%d%%)", N_Fail, round(N_Fail / N * 100)),
+  Fail_Time = sprintf(time_format,
+                      lubridate::minute(Median_Fail),
+                      lubridate::second(Median_Fail),
+                      lubridate::minute(Sd_Fail),
+                      lubridate::second(Sd_Fail)),
+  p = PvWvF
+)]
 
-acquis_summ |>
+# Holm correction
+acquis_p <- acquis_summ[, .(Rater, p)]
+acquis_p[, p_adj := p.adjust(p, method = "holm")]
+acquis_summ[, p_adj := acquis_p$p_adj]
+# Format p-values
+acquis_summ[, p := fifelse(p < 0.001, "<0.001", sprintf("%.3f", p))]
+acquis_summ[, p_adj := fifelse(as.numeric(p_adj) < 0.001, "<0.001", sprintf("%.3f", as.numeric(p_adj)))]
+
+acquis_summ[, .(Rater, Session, Rests, Pass_N, Pass_Time,
+                Warn_N, Warn_Time, Fail_N, Fail_Time, p, p_adj)] |>
   gt() |>
+  cols_hide(columns = p) |>
   cols_label(
     Rater = "Rater", Session = "Total Time", Rests = "Rests",
-    Pass = "N (%)", Pass_Time = "Time Median (SD)",
-    Fail = "N (%)", Fail_Time = "Time Median (SD)",
-    p = "p"
+    Pass_N = "N", Pass_Time = "Time",
+    Warn_N = "N", Warn_Time = "Time",
+    Fail_N = "N", Fail_Time = "Time",
+    p_adj = "p adj."
   ) |>
-  tab_spanner(label = "Pass", columns = c(Pass, Pass_Time), id = "spanner_pass") |>
-  tab_spanner(label = "Fail", columns = c(Fail, Fail_Time), id = "spanner_fail") |>
-  style_manuscript_table(table_type = "supplementary")
+  tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time), id = "spanner_pass") |>
+  tab_spanner(label = "Warning", columns = c(Warn_N, Warn_Time), id = "spanner_warn") |>
+  tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time), id = "spanner_fail") |>
+  style_manuscript_table(table_type = "supplementary") |>
+  tab_options(table.font.size = "8pt", column_labels.font.size = "8pt")
 ```
 
-## S12: ADNI Post-hoc Analysis {.appendix}
+\newpage
+
+## S12. Post-hoc analysis of time differences by QC label in the ADNI data {.unnumbered}
 
 ```{r}
 #| label: tbl-posthoc-adni
-#| tbl-cap: "Dunn's test results comparing timing differences between Pass, Warning, and Fail ratings on the ADNI raw MRI dataset. P-values adjusted using Holm's method."
+#| tbl-cap: "Post-hoc analysis of the time differences by QC label of the ADNI data performed by the Dunn's test of multiple comparisons using rank sums using the Holm method for multiple comparisons. P values in bold are statistically significant."
 
-acquis_posthoc <- acquis_time[, dunn.test::dunn.test(as.numeric(Diff), Rating,
-                                                     method = "holm", table = FALSE,
-                                                     list = FALSE, kw = FALSE)]
-acquis_posthoc_dt <- data.table(
-  Comparison = acquis_posthoc$comparisons,
-  Z = round(acquis_posthoc$Z, 3),
-  P = sprintf("%.4f", acquis_posthoc$P),
-  P.adjusted = sprintf("%.4f", acquis_posthoc$P.adjusted)
-)
+# Per-rater Dunn's test with Kruskal-Wallis chi-squared
+raters_posthoc <- unique(acquis_time$Rater)
+raters_posthoc <- raters_posthoc[order(raters_posthoc)]
 
-acquis_posthoc_dt |>
+posthoc_list <- lapply(c(raters_posthoc, "All"), function(r) {
+  if (r == "All") {
+    dt_sub <- acquis_time[!is.na(Diff)]
+  } else {
+    dt_sub <- acquis_time[Rater == r & !is.na(Diff)]
+  }
+
+  # Only run if there are at least 3 rating levels (Pass, Warning, Fail)
+  rating_levels <- unique(dt_sub$Rating)
+  if (length(rating_levels) < 3) return(NULL)
+
+  # Kruskal-Wallis chi-squared
+  kw <- suppressWarnings(kruskal.test(as.numeric(Diff) ~ Rating, data = dt_sub))
+
+  # Dunn's test
+  dtest <- suppressMessages(
+    dunn.test::dunn.test(as.numeric(dt_sub$Diff), dt_sub$Rating,
+                         method = "holm", table = FALSE,
+                         list = FALSE, kw = FALSE)
+  )
+
+  data.table(
+    Rater = c(r, rep("", length(dtest$Z) - 1)),
+    Chi_squared = c(round(kw$statistic, 3), rep(NA_real_, length(dtest$Z) - 1)),
+    Z = round(dtest$Z, 3),
+    p = dtest$P,
+    p_adj = dtest$P.adjusted,
+    Comparisons = dtest$comparisons
+  )
+})
+
+posthoc_dt <- rbindlist(posthoc_list)
+posthoc_dt[, p_fmt := fifelse(p < 0.001, "<0.001", sprintf("%.3f", p))]
+posthoc_dt[, p_adj_fmt := fifelse(p_adj < 0.001, "<0.001", sprintf("%.3f", p_adj))]
+
+posthoc_dt[, .(Rater, Chi_squared, Z, p = p_fmt, p_adj = p_adj_fmt, Comparisons)] |>
   gt() |>
+  cols_hide(columns = p) |>
+  cols_label(
+    Rater = "Rater", Chi_squared = "Chi-squared",
+    Z = "Z", p_adj = "p adj.", Comparisons = "Comparisons"
+  ) |>
   style_manuscript_table(table_type = "supplementary")
 ```
 
-## S13: Linear Registration Inter-rater Agreement Matrix {.appendix}
+\newpage
+
+## S13. Matrix of detailed inter-rater agreement of the linear registration QC task {.unnumbered}
 
 ```{r}
-#| label: tbl-agreement-reg
-#| tbl-cap: "Inter-rater agreement matrix showing percentage agreement between each pair of raters for the linear registration QC task."
+#| label: fig-agreement-reg
+#| fig-cap: "Confusion matrix representing the percentage of agreement between the expert's gold standard ratings represented as E01 and the trainees represented as R01 - R09 for the QC labels given in the linear registration QC task."
+#| out-width: "80%"
+#| fig-width: 7
+#| fig-height: 6
 
-reg_99_count |>
-  dcast(Rater ~ Rater2, value.var = "Perc") |>
-  gt() |>
-  style_manuscript_table(table_type = "supplementary")
+reg_count_plot <- copy(reg_99_count)
+reg_count_plot[, Perc := as.numeric(gsub("%", "", Perc))]
+ggplot(reg_count_plot, aes(x = Rater2, y = Rater, fill = Perc)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = paste0(round(Perc), "%")), size = 3) +
+  scale_fill_gradient(low = "#c7e9c0", high = "#006d2c",
+                      limits = c(0, 100),
+                      name = "Agreement\n(Percentage)") +
+  labs(x = "Rater", y = "Rater") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0),
+        panel.grid = element_blank())
 ```
 
-## S14: Linear Registration Timing Data (Balanced Dataset) {.appendix}
+\newpage
+
+## S14. Time measurements of raters for QC of the balanced dataset of linear registration {.unnumbered}
 
 ```{r}
 #| label: tbl-time-reg99
-#| tbl-cap: "Timing data for the expert and trainees on the balanced dataset of 99 linear registration images."
+#| tbl-cap: "Measurements of the time to complete the linear registration QC (HH:MM:SS), number of rests, number of images assigned as \"Pass\" or \"Fail\", and the time spent per image divided by their assigned QC label (median and standard deviation; MM:SS) for the balanced subset of preselected cases for the trainees and for the two sessions performed by the expert (Ses1 & Ses2). Rests were defined as any time higher than 900 s (15 min) assumed to be time spent away from the computer and thus discarded for the timing analyses. Adjusted p-values show the significance of the different in timing between Pass and Fail ratings; values in bold are statistically significant. The last row represents the median total time and number of rests as well as the QC label and time data among all raters."
 
 reg_99_time <- read_rds(here("data/derivatives/reg_99_time_dt.rds"))
 reg_99_time[Diff > as.difftime(15*60, units = "secs"), Rest := TRUE]
@@ -1123,14 +1228,14 @@ reg_99_time[!is.na(Rest), Diff := NA]
 
 reg_99_summ1 <- reg_99_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
-                  Session = hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE)),
+                  Session = as.character(hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE))),
                   PvF = suppressWarnings(
                           wilcox.test(as.numeric(Diff) ~ Rating,
                                       na.action = na.omit))$p.value), Rater]
 
 reg_99_all1 <- reg_99_summ1[, .(Rater = "All", N = 99,
                                 Rests = round(median(Rests)),
-                                Session = hms::as_hms(round(median(as.numeric(Session)))))]
+                                Session = as.character(hms::as_hms(round(median(hms::as_hms(Session))))))]
 reg_99_all1[, PvF := reg_99_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                                na.action = na.omit)$p.value]]
 reg_99_summ1 <- rbindlist(list(reg_99_summ1, reg_99_all1), use.names = TRUE)
@@ -1163,60 +1268,97 @@ reg_99_summ[, p_adj := round(reg_99_p$p_adj, 3)]
 
 reg_99_summ |>
   gt() |>
+  cols_hide(columns = p) |>
   cols_label(
     Rater = "Rater", Session = "Total Time", Rests = "Rests",
-    Pass_N = "N", Pass_Time = "Time Median (SD)",
-    Fail_N = "N", Fail_Time = "Time Median (SD)",
-    p = "p", p_adj = "p adj."
+    Pass_N = "N", Pass_Time = "Time",
+    Fail_N = "N", Fail_Time = "Time",
+    p_adj = "p adj."
   ) |>
   tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
   tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
   style_manuscript_table(table_type = "supplementary")
 ```
 
-## S15: Pre/Post Meeting Agreement Changes {.appendix}
+\newpage
+
+## S15. Change before and after protocol refinement of linear registration {.unnumbered}
 
 ```{r}
 #| label: tbl-prepost
-#| tbl-cap: "Summary of QC label changes before and after the mid-task protocol clarification meeting for the linear registration task. The table shows the number of images that changed QC label after the meeting for each rater."
+#| tbl-cap: "Change in QC before and after the interruption of the linear registration QC of the ADNI data. QC labels of the images already evaluated before the task interruption and after the protocol refinement (n and percentage of the total). The images flagged as \"Warning\" were not considered when calculating the number of images changed."
 
 # Compare pre-meeting and final ratings
 reg_pre_final <- reg_pre[regis[, .(Image, Final = Rating, Rater)],
                          on = .(Image, Rater), nomatch = 0]
-reg_pre_final[, Changed := Rating != Final]
+reg_pre_final[, Rater := stringr::str_replace(Rater, "0", "-")]
 
-reg_meeting <- reg_pre_final[, .(
-  N_Rated_Pre = .N,
-  N_Changed = sum(Changed),
-  Pct_Changed = sprintf("%.1f%%", sum(Changed) / .N * 100),
-  Pass_to_Fail = sum(Rating == "Pass" & Final == "Fail"),
-  Fail_to_Pass = sum(Rating == "Fail" & Final == "Pass")
+# Before counts (pre-meeting ratings)
+before_summ <- reg_pre_final[, .(
+  Before_Pass = sum(Rating == "Pass"),
+  Before_Warning = sum(Rating == "Warning"),
+  Before_Fail = sum(Rating == "Fail"),
+  N_total = .N
 ), Rater]
 
-reg_meeting_all <- reg_pre_final[, .(
-  Rater = "All",
-  N_Rated_Pre = .N,
-  N_Changed = sum(Changed),
-  Pct_Changed = sprintf("%.1f%%", sum(Changed) / .N * 100),
-  Pass_to_Fail = sum(Rating == "Pass" & Final == "Fail"),
-  Fail_to_Pass = sum(Rating == "Fail" & Final == "Pass")
+# After counts (final ratings) - only Pass/Fail
+after_summ <- reg_pre_final[, .(
+  After_Pass = sum(Final == "Pass"),
+  After_Fail = sum(Final == "Fail")
+), Rater]
+
+# Images changed (excluding Warning from pre-meeting)
+changed_summ <- reg_pre_final[Rating != "Warning", .(
+  Images_changed = sum(Rating != Final)
+), Rater]
+
+prepost <- before_summ[after_summ, on = "Rater"][changed_summ, on = "Rater"]
+
+# Format with n (%)
+prepost[, `:=`(
+  Before_Pass_fmt = sprintf("%d (%d%%)", Before_Pass, round(Before_Pass / N_total * 100)),
+  Before_Warning_fmt = sprintf("%d (%d%%)", Before_Warning, round(Before_Warning / N_total * 100)),
+  Before_Fail_fmt = sprintf("%d (%d%%)", Before_Fail, round(Before_Fail / N_total * 100)),
+  After_Pass_fmt = sprintf("%d (%d%%)", After_Pass, round(After_Pass / N_total * 100)),
+  After_Fail_fmt = sprintf("%d (%d%%)", After_Fail, round(After_Fail / N_total * 100)),
+  Images_changed_fmt = sprintf("%d (%d%%)", Images_changed, round(Images_changed / N_total * 100))
 )]
 
-rbindlist(list(reg_meeting, reg_meeting_all)) |>
+# Average row
+avg_row <- prepost[, .(
+  Rater = "Average",
+  Before_Pass_fmt = sprintf("%d (%d%%)", round(mean(Before_Pass)), round(mean(Before_Pass / N_total * 100))),
+  Before_Warning_fmt = sprintf("%d (%d%%)", round(mean(Before_Warning)), round(mean(Before_Warning / N_total * 100))),
+  Before_Fail_fmt = sprintf("%d (%d%%)", round(mean(Before_Fail)), round(mean(Before_Fail / N_total * 100))),
+  After_Pass_fmt = sprintf("%d (%d%%)", round(mean(After_Pass)), round(mean(After_Pass / N_total * 100))),
+  After_Fail_fmt = sprintf("%d (%d%%)", round(mean(After_Fail)), round(mean(After_Fail / N_total * 100))),
+  Images_changed_fmt = sprintf("%d (%d%%)", round(mean(Images_changed)), round(mean(Images_changed / N_total * 100)))
+)]
+
+rbindlist(list(
+  prepost[, .(Rater, Before_Pass_fmt, Before_Warning_fmt, Before_Fail_fmt,
+              After_Pass_fmt, After_Fail_fmt, Images_changed_fmt)],
+  avg_row
+)) |>
   gt() |>
   cols_label(
-    Rater = "Rater", N_Rated_Pre = "N Rated Pre-meeting",
-    N_Changed = "N Changed", Pct_Changed = "% Changed",
-    Pass_to_Fail = "Pass to Fail", Fail_to_Pass = "Fail to Pass"
+    Rater = "Rater",
+    Before_Pass_fmt = "Pass", Before_Warning_fmt = "Warning", Before_Fail_fmt = "Fail",
+    After_Pass_fmt = "Pass", After_Fail_fmt = "Fail",
+    Images_changed_fmt = "Images changed"
   ) |>
+  tab_spanner(label = "Before", columns = c(Before_Pass_fmt, Before_Warning_fmt, Before_Fail_fmt)) |>
+  tab_spanner(label = "After", columns = c(After_Pass_fmt, After_Fail_fmt)) |>
   style_manuscript_table(table_type = "supplementary")
 ```
 
-## S16: Linear Registration Timing Data (ADNI) {.appendix}
+\newpage
+
+## S16. Time measurements for the linear registration QC of the ADNI data {.unnumbered}
 
 ```{r}
 #| label: tbl-time-reg-adni
-#| tbl-cap: "Timing data for trainees on the ADNI linear registration dataset of 10,196 images."
+#| tbl-cap: "Measurements of the time to complete the linear registration QC (HH:MM:SS), number of rests, number of images assigned as \"Pass\" or \"Fail\", and the time spent per image divided by their assigned QC label (median and standard deviation; MM:SS) for the ADNI data. Rests were defined as any time higher than 900 s (15 min) assumed to be time spent away from the computer and thus discarded for the timing analyses. Adjusted p-values show the significance of the different in timing between Pass and Fail ratings; values in bold are statistically significant. The last row represents the median total time and number rests as well as the QC label and time data among all raters."
 
 regis_time <- read_rds(here("data/derivatives/regis_time_dt.rds"))
 regis_time[, Rater := stringr::str_replace(Rater, "0", "-")]
@@ -1225,14 +1367,14 @@ regis_time[!is.na(Rest), Diff := NA]
 
 regis_summ1 <- regis_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
-                  Session = hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE)),
+                  Session = as.character(hms::as_hms(sum(as.numeric(Diff), na.rm = TRUE))),
                   PvF = suppressWarnings(
                           wilcox.test(as.numeric(Diff) ~ Rating,
                                       na.action = na.omit))$p.value), Rater]
 
 regis_all1 <- regis_summ1[, .(Rater = "All", N = sum(N),
                               Rests = round(median(Rests)),
-                              Session = hms::as_hms(round(median(as.numeric(Session)))))]
+                              Session = as.character(hms::as_hms(round(median(hms::as_hms(Session))))))]
 regis_all1[, PvF := regis_time[, wilcox.test(as.numeric(Diff) ~ Rating,
                                              na.action = na.omit)$p.value]]
 regis_summ1 <- rbindlist(list(regis_summ1[order(Rater)], regis_all1), use.names = TRUE)
@@ -1245,51 +1387,57 @@ regis_summ2 <- regis_time[, .(N = .N,
 
 regis_summ <- regis_summ1[regis_summ2, on = "Rater",
                           .(Rater, Session, Rests,
-                            Pass_N = round(N_Pass),
+                            Pass_N = sprintf("%d (%d%%)", round(N_Pass), round(N_Pass / N * 100)),
                             Pass_Time = sprintf(time_format,
                                                 lubridate::minute(Median_Pass),
                                                 lubridate::second(Median_Pass),
                                                 lubridate::minute(Sd_Pass),
                                                 lubridate::second(Sd_Pass)),
-                            Fail_N = round(N_Fail),
+                            Fail_N = sprintf("%d (%d%%)", round(N_Fail), round(N_Fail / N * 100)),
                             Fail_Time = sprintf(time_format,
                                                 lubridate::minute(Median_Fail),
                                                 lubridate::second(Median_Fail),
                                                 lubridate::minute(Sd_Fail),
                                                 lubridate::second(Sd_Fail)),
-                            p = sprintf("%04.3f", PvF))]
+                            p = PvF)]
 
-regis_p <- regis_summ[, .(Rater, p = as.numeric(p))]
+regis_p <- regis_summ[, .(Rater, p)]
 regis_p[, p_adj := p.adjust(p, method = "holm")]
-regis_summ[, p_adj := sprintf("%04.3f", regis_p$p_adj)]
+regis_summ[, p_adj := regis_p$p_adj]
+regis_summ[, p := fifelse(p < 0.001, "<0.001", sprintf("%.3f", p))]
+regis_summ[, p_adj := fifelse(as.numeric(p_adj) < 0.001, "<0.001", sprintf("%.3f", as.numeric(p_adj)))]
 
 regis_summ |>
   gt() |>
+  cols_hide(columns = p) |>
   cols_label(
     Rater = "Rater", Session = "Total Time", Rests = "Rests",
-    Pass_N = "N", Pass_Time = "Time Median (SD)",
-    Fail_N = "N", Fail_Time = "Time Median (SD)",
-    p = "p", p_adj = "p adj."
+    Pass_N = "N", Pass_Time = "Time",
+    Fail_N = "N", Fail_Time = "Time",
+    p_adj = "p adj."
   ) |>
   tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
   tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>
   style_manuscript_table(table_type = "supplementary")
 ```
 
-## S17: Skull Segmentation Timing Data {.appendix}
+\newpage
+
+## S17. Time measurements of experts for the skull segmentation QC of the ADNI data {.unnumbered}
 
 ```{r}
 #| label: tbl-time-seg
-#| tbl-cap: "Timing data for both experts on the skull segmentation dataset."
+#| tbl-cap: "Measurements of the time to complete the skull segmentation QC (HH:MM:SS), number of rests, number of images assigned as \"Pass\" or \"Fail\", and the time spent per image divided by their assigned QC label (median and standard deviation; MM:SS) for the ADNI data. Rests were defined as any time higher than 900 s (15 min) assumed to be time spent away from the computer and thus discarded for the timing analyses. Adjusted p-values show the significance of the different in timing between Pass and Fail ratings; values in bold are statistically significant."
 
 rskull_time <- copy(rskull)
+rskull_time[, Rater := stringr::str_replace(Rater, "0", "-")]
 rskull_time[, Diff := as.numeric(Diff)]
 rskull_time[Diff > 15*60 | Diff < 0, Rest := TRUE]
 rskull_time[!is.na(Rest), Diff := NA]
 
 rskull_summ1 <- rskull_time[, .(N = .N,
                   Rests = sum(Rest, na.rm = TRUE),
-                  Session = hms::as_hms(sum(Diff, na.rm = TRUE)),
+                  Session = as.character(hms::as_hms(sum(Diff, na.rm = TRUE))),
                   PvF = suppressWarnings(
                           wilcox.test(Diff ~ Rating,
                                       na.action = na.omit))$p.value), Rater]
@@ -1302,19 +1450,31 @@ rskull_summ2 <- rskull_time[, .(N = .N,
 
 rskull_summ <- rskull_summ1[rskull_summ2, on = "Rater",
                             .(Rater, Session, Rests,
-                              Pass_N = N_Pass,
-                              Pass_Time = sprintf("%.1f (%.1f)", Mean_Pass, Sd_Pass),
-                              Fail_N = N_Fail,
-                              Fail_Time = sprintf("%.1f (%.1f)", Mean_Fail, Sd_Fail),
-                              p = sprintf("%04.3f", PvF))]
+                              Pass_N = sprintf("%d (%d%%)", N_Pass, round(N_Pass / N * 100)),
+                              Pass_Time = sprintf("%.0f:%02.0f (%.0f:%02.0f)",
+                                                  Mean_Pass %/% 60, Mean_Pass %% 60,
+                                                  Sd_Pass %/% 60, Sd_Pass %% 60),
+                              Fail_N = sprintf("%d (%d%%)", N_Fail, round(N_Fail / N * 100)),
+                              Fail_Time = sprintf("%.0f:%02.0f (%.0f:%02.0f)",
+                                                  Mean_Fail %/% 60, Mean_Fail %% 60,
+                                                  Sd_Fail %/% 60, Sd_Fail %% 60),
+                              p = PvF)]
+
+# Holm correction
+rskull_p <- rskull_summ[, .(Rater, p)]
+rskull_p[, p_adj := p.adjust(p, method = "holm")]
+rskull_summ[, p_adj := rskull_p$p_adj]
+rskull_summ[, p := fifelse(p < 0.001, "<0.001", sprintf("%.3f", p))]
+rskull_summ[, p_adj := fifelse(as.numeric(p_adj) < 0.001, "<0.001", sprintf("%.3f", as.numeric(p_adj)))]
 
 rskull_summ |>
   gt() |>
+  cols_hide(columns = p) |>
   cols_label(
     Rater = "Rater", Session = "Total Time", Rests = "Rests",
-    Pass_N = "N", Pass_Time = "Mean (SD) sec",
-    Fail_N = "N", Fail_Time = "Mean (SD) sec",
-    p = "p"
+    Pass_N = "N", Pass_Time = "Time",
+    Fail_N = "N", Fail_Time = "Time",
+    p_adj = "p adj."
   ) |>
   tab_spanner(label = "Pass", columns = c(Pass_N, Pass_Time)) |>
   tab_spanner(label = "Fail", columns = c(Fail_N, Fail_Time)) |>

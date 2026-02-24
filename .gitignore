@@ -17,3 +17,8 @@ manuscript.html
 manuscript.pdf
 manuscript_cache/
 manuscript_files/
+
+*.pdf
+*.docx
+
+final_manuscript*
